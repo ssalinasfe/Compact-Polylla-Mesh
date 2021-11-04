@@ -1,0 +1,193 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "sdsl-lite/test/int_vector_mapper_test"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"target_link_libraries",
+			"cxx_library_with_type",
+			"cxx_library",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"sdsl-lite/test/CMakeLists.txt",
+			"sdsl-lite/external/googletest/googletest/cmake/internal_utils.cmake",
+			"sdsl-lite/external/googletest/googletest/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 90,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 174,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 161,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -std=c++11 -march=native -Wall -Wextra -DNDEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "MODE_TI"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 1,
+			"id" : "divsufsort64::@a67a85304d657e09d5bd"
+		},
+		{
+			"backtrace" : 1,
+			"id" : "divsufsort::@a67a85304d657e09d5bd"
+		},
+		{
+			"backtrace" : 1,
+			"id" : "gtest::@9c358f30fa9d260f3d1b"
+		},
+		{
+			"backtrace" : 1,
+			"id" : "sdsl::@76e8b83454748ef7d0b8"
+		}
+	],
+	"id" : "int_vector_mapper_test::@a3c4eb46c4c819802e88",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-std=c++11 -march=native -Wall -Wextra -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "../lib/libsdsl.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "../external/googletest/googletest/libgtest.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "../external/libdivsufsort/lib/libdivsufsort.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "../external/libdivsufsort/lib/libdivsufsort64.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "int_vector_mapper_test",
+	"nameOnDisk" : "int_vector_mapper_test",
+	"paths" : 
+	{
+		"build" : "sdsl-lite/test",
+		"source" : "sdsl-lite/test"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "sdsl-lite/test/int_vector_mapper_test.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

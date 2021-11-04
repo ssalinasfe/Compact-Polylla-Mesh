@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Delfin.dir/main.cpp.o -o Delfin  sdsl-lite/lib/libsdsl.a 
