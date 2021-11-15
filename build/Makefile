@@ -198,17 +198,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Delfin
+# Target rules for targets named compressDelfin
 
 # Build rule for target.
-Delfin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Delfin
-.PHONY : Delfin
+compressDelfin: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 compressDelfin
+.PHONY : compressDelfin
 
 # fast build rule for target.
-Delfin/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delfin.dir/build.make CMakeFiles/Delfin.dir/build
-.PHONY : Delfin/fast
+compressDelfin/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressDelfin.dir/build.make CMakeFiles/compressDelfin.dir/build
+.PHONY : compressDelfin/fast
 
 #=============================================================================
 # Target rules for targets named uninstall-sdsl
@@ -3148,13 +3148,26 @@ rank-support-test_int-vec.16.1.r.42/fast:
 	$(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/build
 .PHONY : rank-support-test_int-vec.16.1.r.42/fast
 
+#=============================================================================
+# Target rules for targets named voidfiles
+
+# Build rule for target.
+voidfiles: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 voidfiles
+.PHONY : voidfiles
+
+# fast build rule for target.
+voidfiles/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/voidfiles.dir/build.make src/CMakeFiles/voidfiles.dir/build
+.PHONY : voidfiles/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delfin.dir/build.make CMakeFiles/Delfin.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressDelfin.dir/build.make CMakeFiles/compressDelfin.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -3163,7 +3176,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delfin.dir/build.make CMakeFiles/Delfin.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressDelfin.dir/build.make CMakeFiles/compressDelfin.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -3172,7 +3185,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delfin.dir/build.make CMakeFiles/Delfin.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressDelfin.dir/build.make CMakeFiles/compressDelfin.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -3380,12 +3393,12 @@ help:
 	@echo "... wt-int-test_int-vec.1023.1.0"
 	@echo "... wt-int-test_int-vec.64.2.0"
 	@echo "... zarathustra.txt"
-	@echo "... Delfin"
 	@echo "... bit_vector_generator"
 	@echo "... bit_vector_test"
 	@echo "... bits_test"
 	@echo "... coder_test"
 	@echo "... compile_test"
+	@echo "... compressDelfin"
 	@echo "... csa_byte_test"
 	@echo "... csa_int_test"
 	@echo "... cst_byte_test"
@@ -3414,6 +3427,7 @@ help:
 	@echo "... select_support_test"
 	@echo "... sorted_int_stack_test"
 	@echo "... sorted_stack_support_test"
+	@echo "... voidfiles"
 	@echo "... wt_byte_test"
 	@echo "... wt_int_test"
 	@echo "... main.o"

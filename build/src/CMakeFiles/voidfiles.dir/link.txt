@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvoidfiles.a CMakeFiles/voidfiles.dir/io_void.cpp.o
+/usr/bin/ranlib libvoidfiles.a

@@ -171,7 +171,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Delfin
+CMAKE_PROJECT_NAME:STATIC=compressDelfin
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -244,12 +244,6 @@ DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
 //Doxygen documentation generation tool (http://www.doxygen.org)
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
-//Value Computed by CMake
-Delfin_BINARY_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
-
-//Value Computed by CMake
-Delfin_SOURCE_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
-
 //Single output directory for building all executables.
 EXECUTABLE_OUTPUT_PATH:PATH=
 
@@ -269,13 +263,19 @@ LIBRARY_OUTPUT_PATH:PATH=
 LIB_SUFFIX:STRING=
 
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3.9
+PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 
 //Use OpenMP for parallelization
 USE_OPENMP:BOOL=OFF
 
 //Enable Large File Support
 WITH_LFS:BOOL=ON
+
+//Value Computed by CMake
+compressDelfin_BINARY_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+
+//Value Computed by CMake
+compressDelfin_SOURCE_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
 
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/googletest/googletest
@@ -316,6 +316,12 @@ sdsl_BINARY_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/bu
 
 //Value Computed by CMake
 sdsl_SOURCE_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite
+
+//Value Computed by CMake
+voidfiles_BINARY_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/src
+
+//Value Computed by CMake
+voidfiles_SOURCE_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/src
 
 
 ########################
@@ -432,7 +438,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -484,7 +490,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_CxaDemangle:INTERNAL=[1][v()]
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.30.2()]
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3.9][v3.9.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.18()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE

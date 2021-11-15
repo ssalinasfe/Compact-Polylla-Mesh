@@ -161,6 +161,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../sdsl-lite/sdsl-lite.pc.cmake"
   "../sdsl-lite/test/CMakeLists.txt"
   "../sdsl-lite/test/compile_test.cpp.cmake"
+  "../src/CMakeLists.txt"
   "/usr/share/cmake-3.18/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -352,11 +353,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "sdsl-lite/lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "../sdsl-lite/test/compile_test.cpp"
   "sdsl-lite/test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Delfin.dir/DependInfo.cmake"
+  "CMakeFiles/compressDelfin.dir/DependInfo.cmake"
   "sdsl-lite/CMakeFiles/uninstall-sdsl.dir/DependInfo.cmake"
   "sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/DependInfo.cmake"
@@ -583,4 +585,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.14.1.0.dir/DependInfo.cmake"
   "sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-MAT-SELECT.dir/DependInfo.cmake"
   "sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/DependInfo.cmake"
+  "src/CMakeFiles/voidfiles.dir/DependInfo.cmake"
   )
