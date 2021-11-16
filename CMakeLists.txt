@@ -1,10 +1,11 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.18)
 
-# set the project name
-project(Delfin)
-
-# add the executable
-add_executable(Delfin main.cpp)
+project(compressDelfin)
 
 add_subdirectory(sdsl-lite)
-target_link_libraries(Delfin PUBLIC sdsl)
+add_subdirectory(src)
+include_directories(src)
+
+add_executable(compressDelfin main.cpp)
+
+target_link_libraries(compressDelfin PUBLIC voidfiles sdsl)

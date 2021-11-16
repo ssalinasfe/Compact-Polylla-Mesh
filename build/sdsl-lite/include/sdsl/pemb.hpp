@@ -17,6 +17,8 @@
 #include "../complementary/Tree.hpp"
 #include "../complementary/Graph.hpp"
 
+#include <iostream>
+
 //! Namespace for the succinct data structure library.
 namespace sdsl
 {
@@ -110,6 +112,12 @@ namespace sdsl
 				unsigned int init = 0;
 
 				Tree t = g.dfs_spanning_tree(init, parent, count_edges, references);
+
+				//for (size_t i = 0; i < m_vertices; i++)
+				//{
+				//	std::cout<<t.getNode(i).getFirst()<<" ";
+				//}
+				//std::cout<<std::endl;
 
 				bit_vector_type A_local(2 *m_edges, 0);
 				bit_vector_type B_local(2 *m_vertices, 0);

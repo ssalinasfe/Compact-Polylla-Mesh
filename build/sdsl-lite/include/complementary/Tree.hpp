@@ -46,16 +46,19 @@ public:
   void setNode(int i, unsigned int first, unsigned int last) {
     this->V[i].setFirst(first);
     this->V[i].setLast(last);
+    //this->V[i].setIndex(i);
   }
 
   // V[i].first = first
   void setNodeFirst(int i, unsigned int first) {
     this->V[i].setFirst(first);
+    //this->V[i].setIndex(i);
   }
 
   // V[i].last = last
   void setNodeLast(int i, unsigned int last) {
     this->V[i].setLast(last);
+   // this->V[i].setIndex(i);
   }
 
   void setEdgeCmp(int i, int c) {

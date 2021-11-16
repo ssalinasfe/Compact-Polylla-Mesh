@@ -156,14 +156,15 @@ class Graph {
 
     while (!s.empty()) {
       unsigned int curr = s.top();
+      //std::cout<<"poppong "<<s.top()<<std::endl;
       s.pop();
-
       for (unsigned int i = this -> V[curr].getFirst(); i <= this -> V[curr].getLast(); i++) {
         unsigned int tgt = this -> E[i].getTgt();
 
         if (visited[tgt] == 0) { // Not visited	
           visited[tgt] = 1;
           s.push(tgt);
+          //std::cout << "Pushing " << tgt << std::endl;
           parent[tgt] = this -> E[i].getCmp(); // Edge child-to-parent
         }
       }
@@ -206,6 +207,7 @@ class Graph {
           else if (t.getEdgeSrc(mm) != t.getEdgeSrc(mm - 1)) {
             t.setNodeLast(t.getEdgeSrc(mm - 1), mm - 1);
             t.setNodeFirst(t.getEdgeSrc(mm), mm);
+           
           }
           mm++;
         } else
@@ -233,6 +235,39 @@ class Graph {
     }
 
     return t;
+  }
+
+  void tree_indices(std::vector<double> &points){
+    unsigned int n = this -> vertices();
+    unsigned int m = this -> edges();
+    std::vector<double> aux = points;
+    
+    char * visited = new char[n](); // TODO: Change to a boolean array
+    unsigned int init = 0;
+    stack < unsigned int > s;
+    visited[init] = 1;
+    s.push(init);
+
+    unsigned int k = 1;
+    double x,y;
+    while (!s.empty()) {
+      unsigned int curr = s.top();
+      s.pop();
+      for (unsigned int i = this -> V[curr].getFirst(); i <= this -> V[curr].getLast(); i++) {
+        unsigned int tgt = this -> E[i].getTgt();
+
+        if (visited[tgt] == 0) { // Not visited	
+          visited[tgt] = 1;
+          s.push(tgt);
+          std::cout << "moving vertex " << k  << " to pos "<< tgt << std::endl;
+          aux[2*tgt] = points[2*k];
+          aux[2*tgt+1] = points[2*k+1];
+          k++;
+        }
+      }
+    }
+    points = aux;
+    delete [] visited;
   }
 
   void connected_graph() {

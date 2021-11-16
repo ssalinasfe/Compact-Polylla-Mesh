@@ -31,17 +31,19 @@
 #################################################################################
 
 args <- commandArgs(trailingOnly = TRUE)
-numPoints <- as.integer(args[1])
+numPoints <- as.integer(args[1]) 
 
+#numPoints <- 10 
 ## Generate points
 ## This gives you numPoints x-coordinates and numPoints y-coordinates sampled
 ## from normal distributions with mean 0 and standard deviation 10000.
 
 dsx <- 10000
 dsy <- 10000
-set.seed(1991)
-x <- rnorm(numPoints, 0, dsx)
-y <- rnorm(numPoints, 0, dsy)
+set.seed(1993)
+x <- c(0, abs(rnorm(numPoints - 1, 0, dsx)))
+y <- c(0, abs(rnorm(numPoints - 1, 0, dsy)))
+
 
 cat(sprintf("%d 2 0 0\n",numPoints))
 for(i in 1:numPoints) {
