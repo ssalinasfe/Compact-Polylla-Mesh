@@ -81,10 +81,52 @@ bool is_frontier_edge(const uint e, sdsl::pemb<> &pe, bit_vector &max_edges, vec
     uint mate = pe.mate(e);
     //cout<<"testing "<<e<<" "<<mate<<( (pe.is_interior_face(e) || !(max_edges[e] || max_edges[mate]) ) ? " fe" : "" )<<   endl;
 
-    if(!pe.is_interior_face(e) || !(max_edges[e] || max_edges[mate]) )
+    if(!pe.is_interior_face(e) || !pe.is_interior_face(pe.mate(e)) || !(max_edges[e] || max_edges[mate]) )
         return true;
     else
         return false;
 }
 
+uint search_frontier_edge(const uint e, sdsl::pemb<> &pe, bit_vector &frontier_edges)
+{
+    uint prev;
+    uint nxt = e;
+    //cout<<" searching for frontier edge "<<e<<endl;
+    while(!frontier_edges[nxt])
+    {
+        prev = nxt;
+        nxt = pe.next(nxt);
+        if (nxt >= pe.size_bitvectorA())
+        {
+            nxt = pe.first(pe.vertex(prev));
+        }
+      //  cout<<" next: "<<nxt<<endl;
+    }
+    //cout<<",found "<<nxt<<".";
+    return nxt;
+}
+
+void generate_polygon(const uint e, sdsl::pemb<> &pe, bit_vector &frontier_edges, bit_vector &triangles)
+{   
+    triangles[e] = false;
+    //std::vector<uint> polygon;
+    uint e_init = search_frontier_edge(e, pe, frontier_edges);
+    uint v_init = pe.vertex(e_init);
+    cout<<"polygon "<<e<<": " <<v_init;
+    uint e_curr = pe.succ(e_init);;
+    uint v_curr = pe.vertex(e_curr);
+    //uint e_curr = e_init;
+    //uint v_curr = v_init;
+    
+    while(e_curr != e_init && v_curr != v_init)
+    {
+        triangles[e_curr] = false;
+        e_curr = search_frontier_edge(e_curr, pe, frontier_edges);
+        v_curr = pe.vertex(e_curr);
+        cout<<" "<<v_curr;
+        e_curr = pe.succ(e_curr);
+    }
+    cout<<endl;
+    
+}
 //000010001010001010001010010001100011000000

@@ -92,53 +92,20 @@ int main(int argc, char **argv) {
 	//Label frontier edges
 	for (int e = 0; e < pe.size_bitvectorA(); e++){
 		frontier_edges[e] = is_frontier_edge(e, pe, max_edges, points);
+		cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
 	}
 	cout<<"frontier_edges: "<<frontier_edges<<endl;
 
+	//Generate polygons
 	
+	for (int e = 0; e < triangles.size(); e++){
+		if(triangles[e] == true){
+			generate_polygon(e, pe, frontier_edges, triangles);
+		}
+	}
+
+
 
 	
-
-/*
-	for (int ptr = 0; ptr < g.vertices(); ptr++)
-	{
-		std::cout<<"vertex "<<ptr<<": ";
-		std::cout<<points[2*ptr+0]<<" "<<points[2*ptr+1];
-		std::cout<<std::endl;
-	}
-	cout<<endl;
-	for (int ptr = 0; ptr < pe.vertices(); ptr++)
-	{
-	cout<<"vertex "<<ptr<<": ";
-	std::cout<<points[2*ptr+0]<<" "<<points[2*ptr+1];
-	std::cout<<std::endl;
-	}
-	cout<<endl;
-
-	for (int ptr = 0; ptr < pe.vertices(); ptr++)
-	{
-	cout<<"Degree vertex "<<ptr<<": ";
-	cout<<pe.degree(ptr); 
-	std::cout<<std::endl;
-	}
-	cout<<endl;
-
-
-	for (int ptr = 0; ptr < pe.edges(); ptr++)
-	{
-	cout<<"Face edge "<<ptr<<": ";
-	pe.face(ptr);
-	std::cout<<std::endl;
-	}
-	cout<<endl;
-
-	for (int ptr = 0; ptr < pe.vertices(); ptr++)
-	{
-	cout<<"Neigh vertex "<<ptr<<": ";
-	pe.list_neighbors(ptr);
-	std::cout<<std::endl;
-	}
-	cout<<endl;
-	*/
 	return 0;
 }

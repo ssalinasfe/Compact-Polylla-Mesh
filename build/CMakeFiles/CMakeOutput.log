@@ -2652,3 +2652,71 @@ gmake[1]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/progr
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG succeeded with the following output:
+Change Dir: /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_65b23/fast && gmake[1]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_65b23.dir/build.make CMakeFiles/cmTC_65b23.dir/build
+gmake[2]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_65b23.dir/src.cxx.o
+/usr/bin/c++   -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -o CMakeFiles/cmTC_65b23.dir/src.cxx.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_65b23
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65b23.dir/link.txt --verbose=1
+/usr/bin/c++  -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -rdynamic CMakeFiles/cmTC_65b23.dir/src.cxx.o -o cmTC_65b23 
+gmake[2]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG succeeded with the following output:
+Change Dir: /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ed722/fast && gmake[1]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_ed722.dir/build.make CMakeFiles/cmTC_ed722.dir/build
+gmake[2]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ed722.dir/src.cxx.o
+/usr/bin/c++   -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -o CMakeFiles/cmTC_ed722.dir/src.cxx.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ed722
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed722.dir/link.txt --verbose=1
+/usr/bin/c++  -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -rdynamic CMakeFiles/cmTC_ed722.dir/src.cxx.o -o cmTC_ed722 
+gmake[2]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG succeeded with the following output:
+Change Dir: /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_bd8de/fast && gmake[1]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_bd8de.dir/build.make CMakeFiles/cmTC_bd8de.dir/build
+gmake[2]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bd8de.dir/src.cxx.o
+/usr/bin/c++   -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -o CMakeFiles/cmTC_bd8de.dir/src.cxx.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bd8de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd8de.dir/link.txt --verbose=1
+/usr/bin/c++  -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -rdynamic CMakeFiles/cmTC_bd8de.dir/src.cxx.o -o cmTC_bd8de 
+gmake[2]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG succeeded with the following output:
+Change Dir: /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_9f289/fast && gmake[1]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_9f289.dir/build.make CMakeFiles/cmTC_9f289.dir/build
+gmake[2]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9f289.dir/src.cxx.o
+/usr/bin/c++   -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -o CMakeFiles/cmTC_9f289.dir/src.cxx.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9f289
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f289.dir/link.txt --verbose=1
+/usr/bin/c++  -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -rdynamic CMakeFiles/cmTC_9f289.dir/src.cxx.o -o cmTC_9f289 
+gmake[2]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

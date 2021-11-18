@@ -606,6 +606,16 @@ namespace sdsl
 				}
 			}
 
+			size_type succ(size_type e){
+				size_type mt = mate(e);
+				size_type nxt = next(mt);
+				if (nxt >= 2 *m_edges)
+				{
+					nxt = first(vertex(mt));
+				}
+				return nxt;
+			}
+
 			int first_vertex(size_type e)
 			{
 				if (e >= 2 *m_edges)
@@ -621,7 +631,7 @@ namespace sdsl
 				size_type mt = mate(nxt);
 				size_type curr_vertex = vertex(mt);
 				return curr_vertex;
-		}
+			}
 
 		int size_bitvectorA()
 		{
