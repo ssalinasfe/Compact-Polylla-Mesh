@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/voidfiles.dir/delfin.cpp.o"
   "CMakeFiles/voidfiles.dir/io_void.cpp.o"
   "libvoidfiles.a"
   "libvoidfiles.pdb"

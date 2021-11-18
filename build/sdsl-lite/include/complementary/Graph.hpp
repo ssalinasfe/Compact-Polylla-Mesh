@@ -240,7 +240,7 @@ class Graph {
   void tree_indices(std::vector<double> &points){
     unsigned int n = this -> vertices();
     unsigned int m = this -> edges();
-    std::vector<double> aux = points;
+    std::vector<double> aux(points.size());
     
     char * visited = new char[n](); // TODO: Change to a boolean array
     unsigned int init = 0;
@@ -260,8 +260,8 @@ class Graph {
           visited[tgt] = 1;
           s.push(tgt);
           std::cout << "moving vertex " << k  << " to pos "<< tgt << std::endl;
-          aux[2*tgt] = points[2*k];
-          aux[2*tgt+1] = points[2*k+1];
+          aux[2*k] = points[2*tgt];
+          aux[2*k+1] = points[2*tgt+1];
           k++;
         }
       }

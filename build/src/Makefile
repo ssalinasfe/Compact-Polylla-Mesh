@@ -212,6 +212,33 @@ voidfiles/fast:
 	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/voidfiles.dir/build.make src/CMakeFiles/voidfiles.dir/build
 .PHONY : voidfiles/fast
 
+delfin.o: delfin.cpp.o
+
+.PHONY : delfin.o
+
+# target to build an object file
+delfin.cpp.o:
+	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/voidfiles.dir/build.make src/CMakeFiles/voidfiles.dir/delfin.cpp.o
+.PHONY : delfin.cpp.o
+
+delfin.i: delfin.cpp.i
+
+.PHONY : delfin.i
+
+# target to preprocess a source file
+delfin.cpp.i:
+	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/voidfiles.dir/build.make src/CMakeFiles/voidfiles.dir/delfin.cpp.i
+.PHONY : delfin.cpp.i
+
+delfin.s: delfin.cpp.s
+
+.PHONY : delfin.s
+
+# target to generate assembly for a file
+delfin.cpp.s:
+	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/voidfiles.dir/build.make src/CMakeFiles/voidfiles.dir/delfin.cpp.s
+.PHONY : delfin.cpp.s
+
 io_void.o: io_void.cpp.o
 
 .PHONY : io_void.o
@@ -254,6 +281,9 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... voidfiles"
+	@echo "... delfin.o"
+	@echo "... delfin.i"
+	@echo "... delfin.s"
 	@echo "... io_void.o"
 	@echo "... io_void.i"
 	@echo "... io_void.s"

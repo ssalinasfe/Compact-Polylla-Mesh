@@ -11,6 +11,7 @@ std::vector<double> read_nodes_from_file(std::string name, int pnumber){
     double a1, a2, a3;
     int i = 0;
     std::vector<double> points(2*pnumber);
+    
     if (nodefile.is_open())
     {
         std::getline(nodefile, line); // skip the first line

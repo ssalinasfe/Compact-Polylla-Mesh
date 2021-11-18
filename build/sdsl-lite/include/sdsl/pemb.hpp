@@ -552,7 +552,92 @@ namespace sdsl
 				}
 				
 			}
-		};
+
+
+			// Return true if the face of the edge e is a triangle
+			bool is_interior_face(size_type e)
+			{
+				char flag = 1;
+				size_type nxt = e;
+				size_type mt;
+				size_type init_vertex = vertex(nxt);
+				size_type curr_vertex = -1;
+				size_type i = 0;
+				while (curr_vertex != init_vertex || flag)
+				{
+					if (nxt >= 2 *m_edges)
+					{
+						nxt = first(vertex(mt));
+					}
+
+					flag = 0;
+					mt = mate(nxt);
+					curr_vertex = vertex(mt);
+					i++;
+					nxt = next(mt);
+				}
+				return i == 3;
+			}
+
+
+			// Return index of interior face where edge e belongs
+			void get_face(size_type e, array<int, 3> &face)
+			{
+				char flag = 1;
+				size_type nxt = e;
+				size_type mt;
+				size_type init_vertex = vertex(nxt);
+				size_type curr_vertex = -1;
+				size_type i = 0;
+				while (curr_vertex != init_vertex || flag)
+				{
+					if (nxt >= 2 *m_edges)
+					{
+						nxt = first(vertex(mt));
+					}
+
+					flag = 0;
+					mt = mate(nxt);
+					curr_vertex = vertex(mt);
+					//std::cout<<curr_vertex<<" ";
+					face[i] = curr_vertex;
+					i++;
+					nxt = next(mt);
+				}
+			}
+
+			int first_vertex(size_type e)
+			{
+				if (e >= 2 *m_edges)
+					return -1;
+				return vertex(e);
+			}
+
+			int second_vertex(size_type e)
+			{
+
+				size_type nxt = e;
+				size_type init_vertex = vertex(nxt);
+				size_type mt = mate(nxt);
+				size_type curr_vertex = vertex(mt);
+				return curr_vertex;
+		}
+
+		int size_bitvectorA()
+		{
+			return m_A.size();
+		}
+
+		int size_bitvectorB()
+		{
+			return m_B.size();
+		}
+
+		int size_bitvectorm_B_st()
+		{
+			return m_B_st.size();
+		}
+	};
 
 }	// end namespace sdsl
 #endif
