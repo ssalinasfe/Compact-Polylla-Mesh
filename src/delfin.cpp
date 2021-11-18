@@ -87,7 +87,7 @@ bool is_frontier_edge(const uint e, sdsl::pemb<> &pe, bit_vector &max_edges, vec
         return false;
 }
 
-uint search_frontier_edge(const uint e, sdsl::pemb<> &pe, bit_vector &frontier_edges)
+uint search_frontier_edge(const uint e, sdsl::pemb<> &pe, bit_vector &frontier_edges, bit_vector &triangles)
 {
     uint prev;
     uint nxt = e;
@@ -100,6 +100,7 @@ uint search_frontier_edge(const uint e, sdsl::pemb<> &pe, bit_vector &frontier_e
         {
             nxt = pe.first(pe.vertex(prev));
         }
+        triangles[nxt] = false;
       //  cout<<" next: "<<nxt<<endl;
     }
     //cout<<",found "<<nxt<<".";
@@ -110,21 +111,25 @@ void generate_polygon(const uint e, sdsl::pemb<> &pe, bit_vector &frontier_edges
 {   
     triangles[e] = false;
     //std::vector<uint> polygon;
-    uint e_init = search_frontier_edge(e, pe, frontier_edges);
+    uint e_init = search_frontier_edge(e, pe, frontier_edges, triangles);
+    triangles[e_init] = false;
     uint v_init = pe.vertex(e_init);
     cout<<"polygon "<<e<<": " <<v_init;
-    uint e_curr = pe.succ(e_init);;
+    uint e_curr = pe.succ(e_init);
+    triangles[e_curr] = false;
     uint v_curr = pe.vertex(e_curr);
     //uint e_curr = e_init;
     //uint v_curr = v_init;
     
     while(e_curr != e_init && v_curr != v_init)
     {
+        
+        e_curr = search_frontier_edge(e_curr, pe, frontier_edges, triangles);
         triangles[e_curr] = false;
-        e_curr = search_frontier_edge(e_curr, pe, frontier_edges);
         v_curr = pe.vertex(e_curr);
         cout<<" "<<v_curr;
         e_curr = pe.succ(e_curr);
+        triangles[e_curr] = false;
     }
     cout<<endl;
     
