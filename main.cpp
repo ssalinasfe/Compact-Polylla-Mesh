@@ -5,20 +5,23 @@
 #include <vector>
 #include <string>
 
-#include <sdsl/bit_vectors.hpp>
-#include <sdsl/pemb.hpp>
-#include <complementary/Graph.hpp>
-#include <complementary/utils.hpp>
+#include <polylla.hpp>
 
-
-#include <io_void.hpp>
-#include <delfin.hpp>
-
+//#include <io_void.hpp>
+//#include <delfin.hpp>
+//
 
 using namespace sdsl;
 using namespace std;
 
 int main(int argc, char **argv) {
+
+	std::string node_file = std::string(argv[1]);
+	std::string graph_file = std::string(argv[2]);
+
+	polylla p(node_file, graph_file);
+	/*
+
 	// argv[1] is the path to a file with the planar embedding.
 	// To check the input format, visit https://users.dcc.uchile.cl/~jfuentess/datasets/graphs.php  
 	//read graph from file	
@@ -104,7 +107,7 @@ int main(int argc, char **argv) {
 		}
 	}
 
-
+*/
 
 	
 	return 0;

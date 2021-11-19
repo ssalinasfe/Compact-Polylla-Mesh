@@ -42,7 +42,6 @@ CMakeFiles/compressDelfin.dir/main.cpp.o: ../sdsl-lite/include/sdsl/uint256_t.hp
 CMakeFiles/compressDelfin.dir/main.cpp.o: ../sdsl-lite/include/sdsl/uintx_t.hpp
 CMakeFiles/compressDelfin.dir/main.cpp.o: ../sdsl-lite/include/sdsl/util.hpp
 CMakeFiles/compressDelfin.dir/main.cpp.o: ../sdsl-lite/include/sdsl/wt_helper.hpp
-CMakeFiles/compressDelfin.dir/main.cpp.o: ../src/delfin.hpp
-CMakeFiles/compressDelfin.dir/main.cpp.o: ../src/io_void.hpp
+CMakeFiles/compressDelfin.dir/main.cpp.o: ../src/polylla.hpp
 CMakeFiles/compressDelfin.dir/main.cpp.o: ../main.cpp
 

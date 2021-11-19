@@ -43,6 +43,5 @@ CMakeFiles/compressDelfin.dir/main.cpp.o
  ../sdsl-lite/include/sdsl/uintx_t.hpp
  ../sdsl-lite/include/sdsl/util.hpp
  ../sdsl-lite/include/sdsl/wt_helper.hpp
- ../src/delfin.hpp
- ../src/io_void.hpp
+ ../src/polylla.hpp
  /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/main.cpp

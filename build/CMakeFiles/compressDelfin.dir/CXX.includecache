@@ -564,11 +564,7 @@ utility
 array
 -
 
-../src/delfin.hpp
-
-../src/io_void.hpp
-
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/main.cpp
+../src/polylla.hpp
 algorithm
 -
 vector
@@ -583,8 +579,14 @@ complementary/Graph.hpp
 -
 complementary/utils.hpp
 -
-io_void.hpp
+
+/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/main.cpp
+algorithm
 -
-delfin.hpp
+vector
+-
+string
+-
+polylla.hpp
 -
 
