@@ -60,14 +60,17 @@ public:
         //Label frontier edges
         for (int e = 0; e < pe->size_bitvectorA(); e++){
             frontier_edges[e] = is_frontier_edge(e);
-            cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
+            //cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
         }
         cout<<"frontier_edges: "<<frontier_edges<<endl;
 
-        //Generate polygons
+        //Travel phase: Generate polygon mesh
+        std::vector<uint> polygon;
         for (int e = 0; e < triangles.size(); e++){
             if(triangles[e] == true){
-                generate_polygon(e);
+                polygon = generate_polygon_mesh(e);
+                cout<<polygon<<endl;
+
             }
         }
         
@@ -241,32 +244,36 @@ private:
         return nxt;
     }
 
-    void generate_polygon(const uint e)
+    std::vector<uint> generate_polygon_mesh(const uint e)
     {   
-        triangles[e] = false;
+        std::vector<uint> polygon;
+        //triangles[e] = false;
         //std::vector<uint> polygon;
         uint e_init = search_frontier_edge(e);
-        triangles[e_init] = false;
         uint v_init = pe->vertex(e_init);
-        cout<<"polygon "<<e<<": " <<v_init;
+        polygon.push_back(v_init);
         uint e_curr = pe->succ(e_init);
-        triangles[e_curr] = false;
         uint v_curr = pe->vertex(e_curr);
-        //uint e_curr = e_init;
-        //uint v_curr = v_init;
-        
+        triangles[e_curr] = false;
+        //cout<<"Polygon "<<e<<":";
         while(e_curr != e_init && v_curr != v_init)
         {
             
             e_curr = search_frontier_edge(e_curr);
             triangles[e_curr] = false;
             v_curr = pe->vertex(e_curr);
-            cout<<" "<<v_curr;
+            polygon.push_back(v_curr);
+            //cout<<"e_curr: "<<e_curr<<", v_curr: "<<v_curr<<", e_succ: "<<pe->succ(e_curr)<<endl;
             e_curr = pe->succ(e_curr);
             triangles[e_curr] = false;
+            v_curr = pe->vertex(e_curr);
         }
-        cout<<endl;
+        
+        //cout<<endl;
+        return polygon;
     }
+
+    
 
 };
 
