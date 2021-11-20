@@ -420,9 +420,15 @@ public:
     //Output: the next counterclockwise edge of v
     size_type CCW_edge_to_vertex(size_type e)
     {
-        return pemb::next(e);
+        size_type prev = e;
+        size_type nxt = pemb::next(e);
+        if (nxt >= m_total_edges)
+        {
+            nxt = pemb::first(pemb::vertex(prev));
+        }
+        return nxt;
     }    
-    
+
     //return a edge associate to the node v
     //Input: v is the node
     //Output: the edge associate to the node v

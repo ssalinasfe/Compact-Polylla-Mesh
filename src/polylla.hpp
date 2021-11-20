@@ -26,18 +26,19 @@ public:
         for (int e = 0; e < triangles.size(); e++)
             if(triangles[e] == true){
                 this->label_max_edge(e);
-                cout<<"Max edge: "<<e<<endl;
+              //  cout<<"Max edge: "<<e<<endl;
             }
 
         cout<<"max_edges: "<<max_edges<<endl;
 
-/*
+
         //Label frontier edges
         for (int e = 0; e < tr->halfEdges(); e++){
             frontier_edges[e] = is_frontier_edge(e);
-            //cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
+        //    cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
         }
         cout<<"frontier_edges: "<<frontier_edges<<endl;
+
 
         //Travel phase: Generate polygon mesh
         std::vector<uint> polygon;
@@ -57,7 +58,7 @@ public:
         //for(int v = 0; v < pe->vertices(); v++){
         //    cout<<"vertex "<<v<<" first: "<<pe->first(v)<<" last: "<<pe->last(v)<<endl;
         //  }
-*/
+
     }
 
     ~Polylla() {
@@ -108,6 +109,70 @@ private:
             nxt = tr->next(nxt);
             curr_vertex = tr->origin(nxt);
         }
+    }
+    
+    bool is_frontier_edge(const uint e)
+    {
+        uint twin = tr->twin(e);
+        if(tr->is_border_face(e) || tr->is_border_face(twin) || !(max_edges[e] || max_edges[twin]) )
+            return true;
+        else
+            return false;
+    }
+
+    uint search_frontier_edge(const uint e)
+    {
+        uint nxt = e;
+        //cout<<"searching for frontier edge "<<e<<endl;
+        while(!frontier_edges[nxt])
+        {
+            nxt = tr->CCW_edge_to_vertex(nxt);
+            triangles[nxt] = false;
+            
+        }
+        //cout<<"frontier edge founded in edge "<<nxt<<endl;
+        return nxt;
+    }
+
+    bool has_BarrierEdgeTip(vector<uint> polygon){
+        uint length_poly = polygon.size();
+        uint x, y, i;
+        for (i = 0; i < length_poly; i++)
+        {
+            x = i % length_poly;
+            y = (i+2) % length_poly;
+            if (polygon[x] == polygon[y])
+                return true;
+        }
+        return false;
+    }   
+
+    std::vector<uint> generate_polygon_mesh(const uint e)
+    {   
+        std::vector<uint> polygon;
+        //triangles[e] = false;
+        uint e_init = search_frontier_edge(e);
+        uint v_init = tr->origin(e_init);
+        polygon.push_back(v_init);
+        uint e_curr = tr->next(e_init);
+        uint v_curr = tr->origin(e_curr);
+        triangles[e_curr] = false;
+       // cout<<"edge "<<e<<" e_init "<<e_init<<" v_init "<<v_init<<" e_curr "<<e_curr<<" v_curr "<<v_curr<<" logic: "<<(e_curr != e_init)<<" "<<(v_curr != v_init)<<" "<<(e_curr != e_init && v_curr != v_init)<<endl;
+        //cout<<"Polygon "<<e<<":";
+        while(e_curr != e_init && v_curr != v_init)
+        {   
+           // cout<<"enre"<<endl;
+            e_curr = search_frontier_edge(e_curr);
+            triangles[e_curr] = false;
+            v_curr = tr->origin(e_curr);
+         //   cout<<"e_curr: "<<e_curr<<", v_curr: "<<v_curr<<", e_succ: "<<tr->CCW_edge_to_vertex(e_curr)<<endl;
+            polygon.push_back(v_curr);
+            e_curr = tr->next(e_curr);
+            triangles[e_curr] = false;
+            v_curr = tr->origin(e_curr);
+        }
+        //cout<<endl;
+        return polygon;
     }
 /*
     bool is_frontier_edge(const uint e)
