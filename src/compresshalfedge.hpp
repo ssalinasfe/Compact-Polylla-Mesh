@@ -1,5 +1,5 @@
 //https://jerryyin.info/geometry-processing-algorithms/half-edge/
-
+// https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2_1_1Halfedge.html
 #include <algorithm>
 
 #include <vector>
@@ -14,28 +14,13 @@ class Triangulation : public pemb<>
 {
 
 private:
-    typedef std::array<int,3> triangle;
-    std::vector<double> points; //vertices position
+    typedef std::array<int,3> triangle; 
+    std::vector<double> points; //nodes
     sdsl::bit_vector triangles; //indices of edges to a unique triangle
     size_type m_total_edges = 0; //indices of edges to a unique edge
 
-
-public:
-
-
-    Triangulation(std::string node_file, std::string graph_file) : pemb<>() {
-
-        Graph g = read_graph_from_file(graph_file.c_str());
-        construct_pemb(g);
-        //read nodes from file
-        read_nodes_from_file(node_file);
-        cout<<"vertices "<<m_vertices<<" edges "<<m_edges<<std::endl;
-        generate_list_of_triangles();
-
-        cout<<*triangles.begin()<<" "<<*(triangles.begin()+1)<<" "<<*(triangles.begin()+2)<<std::endl;
-        cout<<*begin()<<std::endl;
-    }
-
+    /* methods used to for the construct */
+    //Generate compress planar embedding graph
     void construct_pemb(Graph g)
     {
         m_vertices = g.vertices();
@@ -248,7 +233,7 @@ public:
                 face = this->incident_face(e);
                 for (int i = e + 1; i < m_total_edges; i++){
                     if(this->is_interior_face(i) && this->triangles[i] == true){
-                        face_aux = this->get_triangle(i);
+                        face_aux = this->incident_face(i);
                         if(i != e && this->triangles[i] == true){
                             bool is_index_1 = face[0] == face_aux[0] || face[0] == face_aux[1] || face[0] == face_aux[2];
                             bool is_index_2 = face[1] == face_aux[0] || face[1] == face_aux[1] || face[1] == face_aux[2];
@@ -261,6 +246,25 @@ public:
                 }
             }
         }
+    }
+
+public:
+
+    Triangulation(std::string node_file, std::string graph_file) : pemb<>() {
+        Graph g = read_graph_from_file(graph_file.c_str());
+        construct_pemb(g);
+        //read nodes from file
+        read_nodes_from_file(node_file);
+    //    cout<<"vertices "<<m_vertices<<" edges "<<m_edges<<std::endl;
+        generate_list_of_triangles();
+    }
+
+    size_type halfEdges(){
+        return m_total_edges;
+    }
+
+    size_type vertices(){
+        return m_vertices;
     }
 
     //Return triangle of the face incident to edge e
@@ -289,7 +293,7 @@ public:
                 face[i] = curr_vertex;
             }
             catch (int e) {
-                std::cout << "Error in get_triangle of edge "<<e<< std::endl;
+                std::cout << "Error in indicent_face of edge "<<e<< std::endl;
             }
             i++;
             nxt = next(mt);
@@ -348,7 +352,6 @@ public:
         return nxt;
     }
 
-
     //Calculates the tail vertex of the edge e
     //Input: e is the edge
     //Output: the tail vertex v of the edge e
@@ -380,7 +383,22 @@ public:
         return mate(e);
     }
 
+    //Given a edge with vertex origin v, return the next coutnerclockwise edge of v
+    //Input: e is the edge
+    //Output: the next counterclockwise edge of v
+    size_type CCW_edge_to_vertex(size_type e)
+    {
+        return pemb::next(e);
+    }    
     
+    //return a edge associate to the node v
+    //Input: v is the node
+    //Output: the edge associate to the node v
+    size_type edge_of_vertex(size_type v)
+    {
+        return pemb::first(v);
+    }
+
 
     /*Assuming indices start with 0 
     size_type prev(size_type i)
@@ -390,7 +408,17 @@ public:
         else if(i > 1 && m_A[i-1] == 1 && m_B[m_A_rank(i-1) == 1])
             return mate(i - 1);
         else
-            return -1;
+            return -
+    //Output: the twin edge of e
+    size_type twin(size_type e)
+    {
+        return mate(e);
+    }
+
+    //Given a edge with vertex origin v, return the next coutnerclockwise edge of v
+    //Input: e is the edge
+    //Output: the next counterclockwise edge of v
+    size_type next_1;
     }
     */
 
