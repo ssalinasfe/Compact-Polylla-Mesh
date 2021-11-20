@@ -1319,7 +1319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "DOXYGEN_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/doxygen"
 		},
 		{
 			"name" : "EXECUTABLE_OUTPUT_PATH",
@@ -1344,6 +1344,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[1][v()]"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Doxygen",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Doxygen"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/bin/doxygen][cfound components: doxygen missing components: dot][v1.9.1()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Git",

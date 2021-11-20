@@ -242,7 +242,7 @@ CODE_COVERAGE:BOOL=OFF
 DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
 
 //Doxygen documentation generation tool (http://www.doxygen.org)
-DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
 
 //Single output directory for building all executables.
 EXECUTABLE_OUTPUT_PATH:PATH=
@@ -493,6 +493,8 @@ DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Details about finding CxaDemangle
 FIND_PACKAGE_MESSAGE_DETAILS_CxaDemangle:INTERNAL=[1][v()]
+//Details about finding Doxygen
+FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound components: doxygen missing components: dot][v1.9.1()]
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.30.2()]
 //Details about finding PythonInterp
