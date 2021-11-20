@@ -6,14 +6,11 @@ CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/complementary/Gr
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/complementary/Tree.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/complementary/Vertex.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/complementary/utils.hpp
-CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/bit_vector_il.hpp
-CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/bit_vectors.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/bits.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/bp_support_algorithm.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/bp_support_sada.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/config.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/fast_cache.hpp
-CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/hyb_vector.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/int_vector.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/int_vector_buffer.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/io.hpp
@@ -26,10 +23,6 @@ CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/rank_suppor
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/rank_support_scan.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/rank_support_v.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/rank_support_v5.hpp
-CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/rrr_helper.hpp
-CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/rrr_vector.hpp
-CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/rrr_vector_15.hpp
-CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/sd_vector.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/sdsl_concepts.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/select_support.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/select_support_mcl.hpp
@@ -37,11 +30,10 @@ CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/select_supp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/sfstream.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/sorted_stack_support.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/structure_tree.hpp
-CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/uint128_t.hpp
-CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/uint256_t.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/uintx_t.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/util.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/wt_helper.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../src/compresshalfedge.hpp
+CMakeFiles/compressPolylla.dir/main.cpp.o: ../src/polylla.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../main.cpp
 

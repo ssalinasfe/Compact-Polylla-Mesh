@@ -1,24 +1,17 @@
 //https://jerryyin.info/geometry-processing-algorithms/half-edge/
 // https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2_1_1Halfedge.html
-#include <algorithm>
 
-#include <vector>
-#include <string>
 
-#include <sdsl/bit_vectors.hpp>
-#include <sdsl/pemb.hpp>
-#include <complementary/Graph.hpp>
-#include <complementary/utils.hpp>
-
-class Triangulation : public pemb<>
+class compressTriangulation : public pemb<>
 {
 
-private:
+public:
     typedef std::array<int,3> triangle; 
     std::vector<double> points; //nodes
     sdsl::bit_vector triangles; //indices of edges to a unique triangle
     size_type m_total_edges = 0; //indices of edges to a unique edge
 
+private:
     /* methods used to for the construct */
     //Generate compress planar embedding graph
     void construct_pemb(Graph g)
@@ -177,7 +170,7 @@ private:
             {
                 points[2*i + 0] = a2;
                 points[2*i + 1] = a3;
-                std::cout<<points[2*i+0]<<" "<<points[2*i+1]<<std::endl;
+                //std::cout<<points[2*i+0]<<" "<<points[2*i+1]<<std::endl;
                 i++;
                 
             }
@@ -227,7 +220,7 @@ private:
         triangle face;
         triangle face_aux;
         for (int e = 0; e < this->m_total_edges; e++){
-            if(!this->is_interior_face(e))
+            if(this->is_border_face(e))
                 this->triangles[e] = false;
             if(this->triangles[e] == true){
                 face = this->incident_face(e);
@@ -250,13 +243,42 @@ private:
 
 public:
 
-    Triangulation(std::string node_file, std::string graph_file) : pemb<>() {
+    //default constructor
+    compressTriangulation() {}
+
+    //Constructor from file
+    compressTriangulation(std::string node_file, std::string graph_file) : pemb<>() {
         Graph g = read_graph_from_file(graph_file.c_str());
         construct_pemb(g);
         //read nodes from file
         read_nodes_from_file(node_file);
-    //    cout<<"vertices "<<m_vertices<<" edges "<<m_edges<<std::endl;
+        m_total_edges = 2*m_edges;
+        this->triangles = sdsl::bit_vector(m_total_edges, true);
         generate_list_of_triangles();
+    }
+
+    //copy constructor
+    compressTriangulation(const compressTriangulation& ct) : pemb<>() {
+        cout<<"called copy constructor"<<endl;
+        m_vertices          = ct.m_vertices;
+        m_edges         = ct.m_edges;
+        m_A       = ct.m_A;
+        m_A_rank  = ct.m_A_rank;
+        m_A_select1     = ct.m_A_select1;
+        m_A_select0     = ct.m_A_select0;
+	    m_A_rank.set_vector(&m_A);
+	    m_A_select1.set_vector(&m_A);
+	    m_A_select0.set_vector(&m_A);
+	    m_B = ct.m_B;
+	    m_B_star = ct.m_B_star;
+	    m_B_st = ct.m_B_st;
+	    m_B_star_st = ct.m_B_star_st;
+	    m_B_st.set_vector(&m_B);
+	    m_B_star_st.set_vector(&m_B_star);   
+        points = ct.points;
+        triangles = ct.triangles;
+        m_total_edges = ct.m_total_edges;
+        
     }
 
     size_type halfEdges(){
@@ -265,6 +287,18 @@ public:
 
     size_type vertices(){
         return m_vertices;
+    }
+
+    bit_vector get_Triangles(){
+        return triangles;
+    }
+
+    double get_PointX(size_type i){
+        return points[2*i];
+    }
+
+    double get_PointY(size_type i){
+        return points[2*i+1];
     }
 
     //Return triangle of the face incident to edge e
@@ -283,12 +317,12 @@ public:
         {
             if (nxt >= 2 *m_edges)
             {
-                nxt = first(vertex(mt));
+                nxt = pemb::first(pemb::vertex(mt));
             }
 
             flag = 0;
-            mt = mate(nxt);
-            curr_vertex = vertex(mt);
+            mt = pemb::mate(nxt);
+            curr_vertex = pemb::vertex(mt);
             try {
                 face[i] = curr_vertex;
             }
@@ -296,7 +330,7 @@ public:
                 std::cout << "Error in indicent_face of edge "<<e<< std::endl;
             }
             i++;
-            nxt = next(mt);
+            nxt = pemb::next(mt);
         }
         return face;
     }
@@ -308,32 +342,30 @@ public:
         char flag = 1; 
         size_type nxt = e;
         size_type mt;
-        size_type init_vertex = vertex(nxt);
+        size_type init_vertex = pemb::vertex(nxt);
         size_type curr_vertex = -1;
         size_type i = 0;
         while (curr_vertex != init_vertex || flag)
         {
             if (nxt >= 2 *m_edges)
             {
-                nxt = first(vertex(mt));
+                nxt = pemb::first(pemb::vertex(mt));
             }
 
             flag = 0;
-            mt = mate(nxt);
-            curr_vertex = vertex(mt);
+            mt = pemb::mate(nxt);
+            curr_vertex = pemb::vertex(mt);
             i++;
             nxt = pemb::next(mt);
-            if (i > 3)
+           // cout<<"edge "<<e<<" curr_vertex "<<curr_vertex<<" i "<<i<<endl;
+            
+            if (i > 4)
                 return true;
         }
-        if(i<3){
-            std::cout<<"Graph is not a triangulation";
-            exit(0);
-        }
-        return i == 3;
+        return false;
     }
 
-    // Input: edge e of triangulation
+    // Input: edge e of compressTriangulation
     // Output: true if the edge is an interior face a
     //         false otherwise
      bool is_interior_face(size_type e)
@@ -345,10 +377,10 @@ public:
     //Input: e is the edge
     //Output: the next edge of the face incident to e
     size_type next(size_type e){
-        size_type mt = mate(e);
+        size_type mt = pemb::mate(e);
         size_type nxt = pemb::next(mt);
         while(nxt >= m_total_edges)
-            nxt = first(vertex(mt));
+            nxt = pemb::first(pemb::vertex(mt));
         return nxt;
     }
 
@@ -359,7 +391,7 @@ public:
     {
         if (e >= 2 *m_edges)
             return -1;
-        return vertex(e);
+        return pemb::vertex(e);
     }
 
 
@@ -369,9 +401,9 @@ public:
     size_type target(size_type e)
     {
         size_type nxt = e;
-        size_type init_vertex = vertex(nxt);
-        size_type mt = mate(nxt);
-        size_type curr_vertex = vertex(mt);
+        size_type init_vertex = pemb::vertex(nxt);
+        size_type mt = pemb::mate(nxt);
+        size_type curr_vertex = pemb::vertex(mt);
         return curr_vertex;
     }
 
@@ -380,7 +412,7 @@ public:
     //Output: the twin edge of e
     size_type twin(size_type e)
     {
-        return mate(e);
+        return pemb::mate(e);
     }
 
     //Given a edge with vertex origin v, return the next coutnerclockwise edge of v
@@ -422,5 +454,5 @@ public:
     }
     */
 
-    ~Triangulation() {};
+    ~compressTriangulation() {};
 };

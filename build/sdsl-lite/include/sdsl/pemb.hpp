@@ -91,8 +91,8 @@ protected:
 	    m_B_star = p.m_B_star;
 	    m_B_st = p.m_B_st;
 	    m_B_star_st = p.m_B_star_st;
-	    m_B_st.set_vector(m_B);
-	    m_B_star_st.set_vector(m_B_star);
+	    m_B_st.set_vector(&m_B);
+	    m_B_star_st.set_vector(&m_B_star);
         }
 
 
