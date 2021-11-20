@@ -47,7 +47,8 @@ planar_embedding=$2"/embedding"$num_vertices".emb"
 final_graph=$2"/planar_embedding"$num_vertices".pg"
 
 echo -n "Generating random coordinates ... "
-Rscript random_points.r $num_vertices > $random_pts
+#Rscript random_points.r $num_vertices > $random_pts
+python3 10000x10000RandomPoints.py $num_vertices > $random_pts
 echo "Done."
 
 echo -n "Generating Delaunay triangulation ... "

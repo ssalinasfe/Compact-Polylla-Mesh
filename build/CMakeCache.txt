@@ -171,7 +171,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=compressDelfin
+CMAKE_PROJECT_NAME:STATIC=compressPolylla
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -276,6 +276,12 @@ compressDelfin_BINARY_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/p
 
 //Value Computed by CMake
 compressDelfin_SOURCE_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+
+//Value Computed by CMake
+compressPolylla_BINARY_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+
+//Value Computed by CMake
+compressPolylla_SOURCE_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
 
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/googletest/googletest

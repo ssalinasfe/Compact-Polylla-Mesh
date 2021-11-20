@@ -198,17 +198,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named compressDelfin
+# Target rules for targets named compressPolylla
 
 # Build rule for target.
-compressDelfin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 compressDelfin
-.PHONY : compressDelfin
+compressPolylla: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 compressPolylla
+.PHONY : compressPolylla
 
 # fast build rule for target.
-compressDelfin/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressDelfin.dir/build.make CMakeFiles/compressDelfin.dir/build
-.PHONY : compressDelfin/fast
+compressPolylla/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressPolylla.dir/build.make CMakeFiles/compressPolylla.dir/build
+.PHONY : compressPolylla/fast
 
 #=============================================================================
 # Target rules for targets named uninstall-sdsl
@@ -3167,7 +3167,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressDelfin.dir/build.make CMakeFiles/compressDelfin.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressPolylla.dir/build.make CMakeFiles/compressPolylla.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -3176,7 +3176,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressDelfin.dir/build.make CMakeFiles/compressDelfin.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressPolylla.dir/build.make CMakeFiles/compressPolylla.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -3185,7 +3185,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressDelfin.dir/build.make CMakeFiles/compressDelfin.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressPolylla.dir/build.make CMakeFiles/compressPolylla.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -3398,7 +3398,7 @@ help:
 	@echo "... bits_test"
 	@echo "... coder_test"
 	@echo "... compile_test"
-	@echo "... compressDelfin"
+	@echo "... compressPolylla"
 	@echo "... csa_byte_test"
 	@echo "... csa_int_test"
 	@echo "... cst_byte_test"

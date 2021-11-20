@@ -69,11 +69,20 @@ public:
         for (int e = 0; e < triangles.size(); e++){
             if(triangles[e] == true){
                 polygon = generate_polygon_mesh(e);
-                cout<<polygon<<endl;
-
+                if(!has_BarrierEdgeTip(polygon))
+                    cout<<"Simple Polygon: "<<polygon<<endl;
+                else
+                    cout<<"Non-simple Polygon: "<<polygon<<endl;
             }
         }
         
+        //for(int e = 0; e < pe->size_bitvectorA(); e++){
+        //    cout<<"edge "<<e<<" next: "<<pe->next(e)<<" prev: "<<pe->prev(e)<<endl;
+        //}
+        //for(int v = 0; v < pe->vertices(); v++){
+        //    cout<<"vertex "<<v<<" first: "<<pe->first(v)<<" last: "<<pe->last(v)<<endl;
+        //  }
+
     }
 
     ~polylla() {
@@ -137,31 +146,6 @@ private:
         delete [] visited;
     }
 
-    void generate_list_of_faces(){
-        array<int, 3> face;
-        array<int, 3> face_aux;
-        for (int e = 0; e < pe->size_bitvectorA(); e++){
-            if(!pe->is_interior_face(e))
-                triangles[e] = false;
-            if(triangles[e] == true){
-                pe->get_face(e, face);
-                for (int i = e + 1; i < pe->size_bitvectorA(); i++){
-                    if(pe->is_interior_face(i) && triangles[i] == true){
-                        pe->get_face(i, face_aux);
-                        if(i != e && triangles[i] == true){
-                            bool is_index_1 = face[0] == face_aux[0] || face[0] == face_aux[1] || face[0] == face_aux[2];
-                            bool is_index_2 = face[1] == face_aux[0] || face[1] == face_aux[1] || face[1] == face_aux[2];
-                            bool is_index_3 = face[2] == face_aux[0] || face[2] == face_aux[1] || face[2] == face_aux[2];
-                            if(is_index_1 && is_index_2 && is_index_3 ){
-                                
-                                triangles[i] = false;
-                            }
-                        }
-                    }	
-                }
-            }
-        }
-    }
 
     double distance(double x1, double y1, double x2, double y2)
     {
@@ -244,6 +228,19 @@ private:
         return nxt;
     }
 
+    bool has_BarrierEdgeTip(vector<uint> polygon){
+        uint length_poly = polygon.size();
+        uint x, y, i;
+        for (i = 0; i < length_poly; i++)
+        {
+            x = i % length_poly;
+            y = (i+2) % length_poly;
+            if (polygon[x] == polygon[y])
+                return true;
+        }
+        return false;
+    }   
+
     std::vector<uint> generate_polygon_mesh(const uint e)
     {   
         std::vector<uint> polygon;
@@ -273,16 +270,9 @@ private:
         return polygon;
     }
 
-    
+    void remove_barrierEdgeTip(const uint e){
+
+    }
 
 };
 
-/*
-
-//function calculate the distance between two point
-
-
-
-
-//000010001010001010001010010001100011000000
-*/

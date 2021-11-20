@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/compressPolylla.dir/main.cpp.o -o compressPolylla  src/libvoidfiles.a sdsl-lite/lib/libsdsl.a 

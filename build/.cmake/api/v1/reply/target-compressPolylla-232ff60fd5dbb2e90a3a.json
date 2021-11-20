@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "compressDelfin"
+			"path" : "compressPolylla"
 		}
 	],
 	"backtrace" : 1,
@@ -75,7 +75,7 @@
 			"id" : "voidfiles::@145eef247bfb46b6828c"
 		}
 	],
-	"id" : "compressDelfin::@6890427a1f51a3e7e1df",
+	"id" : "compressPolylla::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -97,8 +97,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "compressDelfin",
-	"nameOnDisk" : "compressDelfin",
+	"name" : "compressPolylla",
+	"nameOnDisk" : "compressPolylla",
 	"paths" : 
 	{
 		"build" : ".",

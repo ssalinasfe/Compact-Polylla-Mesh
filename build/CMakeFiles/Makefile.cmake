@@ -358,7 +358,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/compressDelfin.dir/DependInfo.cmake"
+  "CMakeFiles/compressPolylla.dir/DependInfo.cmake"
   "sdsl-lite/CMakeFiles/uninstall-sdsl.dir/DependInfo.cmake"
   "sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/DependInfo.cmake"

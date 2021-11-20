@@ -6,7 +6,7 @@
 /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/list_install_components.dir
 /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/rebuild_cache.dir
 /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/package.dir
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/compressDelfin.dir
+/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/compressPolylla.dir
 /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/CMakeFiles/install/strip.dir
 /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/CMakeFiles/install/local.dir
 /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/CMakeFiles/edit_cache.dir

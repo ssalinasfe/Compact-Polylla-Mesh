@@ -76,45 +76,15 @@ include src/CMakeFiles/voidfiles.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/voidfiles.dir/flags.make
 
-src/CMakeFiles/voidfiles.dir/delfin.cpp.o: src/CMakeFiles/voidfiles.dir/flags.make
-src/CMakeFiles/voidfiles.dir/delfin.cpp.o: ../src/delfin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/voidfiles.dir/delfin.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/voidfiles.dir/delfin.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/src/delfin.cpp
-
-src/CMakeFiles/voidfiles.dir/delfin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/voidfiles.dir/delfin.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/src/delfin.cpp > CMakeFiles/voidfiles.dir/delfin.cpp.i
-
-src/CMakeFiles/voidfiles.dir/delfin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/voidfiles.dir/delfin.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/src/delfin.cpp -o CMakeFiles/voidfiles.dir/delfin.cpp.s
-
-src/CMakeFiles/voidfiles.dir/io_void.cpp.o: src/CMakeFiles/voidfiles.dir/flags.make
-src/CMakeFiles/voidfiles.dir/io_void.cpp.o: ../src/io_void.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/voidfiles.dir/io_void.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/voidfiles.dir/io_void.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/src/io_void.cpp
-
-src/CMakeFiles/voidfiles.dir/io_void.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/voidfiles.dir/io_void.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/src/io_void.cpp > CMakeFiles/voidfiles.dir/io_void.cpp.i
-
-src/CMakeFiles/voidfiles.dir/io_void.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/voidfiles.dir/io_void.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/src/io_void.cpp -o CMakeFiles/voidfiles.dir/io_void.cpp.s
-
 # Object files for target voidfiles
-voidfiles_OBJECTS = \
-"CMakeFiles/voidfiles.dir/delfin.cpp.o" \
-"CMakeFiles/voidfiles.dir/io_void.cpp.o"
+voidfiles_OBJECTS =
 
 # External object files for target voidfiles
 voidfiles_EXTERNAL_OBJECTS =
 
-src/libvoidfiles.a: src/CMakeFiles/voidfiles.dir/delfin.cpp.o
-src/libvoidfiles.a: src/CMakeFiles/voidfiles.dir/io_void.cpp.o
 src/libvoidfiles.a: src/CMakeFiles/voidfiles.dir/build.make
 src/libvoidfiles.a: src/CMakeFiles/voidfiles.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libvoidfiles.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX static library libvoidfiles.a"
 	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/src && $(CMAKE_COMMAND) -P CMakeFiles/voidfiles.dir/cmake_clean_target.cmake
 	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/voidfiles.dir/link.txt --verbose=$(VERBOSE)
 

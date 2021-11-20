@@ -995,7 +995,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "compressDelfin"
+			"value" : "compressPolylla"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1859,6 +1859,30 @@
 		},
 		{
 			"name" : "compressDelfin_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa"
+		},
+		{
+			"name" : "compressPolylla_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build"
+		},
+		{
+			"name" : "compressPolylla_SOURCE_DIR",
 			"properties" : 
 			[
 				{

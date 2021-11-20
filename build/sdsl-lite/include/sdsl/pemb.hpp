@@ -97,8 +97,8 @@ namespace sdsl
 
 			public:
 
-				//! Default constructor
-				pemb() {};
+			//! Default constructor
+			pemb() {};
 
 			pemb(Graph g)
 			{
@@ -448,6 +448,33 @@ namespace sdsl
 				return -1;
 			}
 
+			/*Assuming indices start with 0 */
+			size_type prev(size_type i)
+			{
+				if (i > 1 && m_A[i-1] == 0)
+					return i - 1;
+				else if(i > 1 && m_A[i-1] == 1 && m_B[m_A_rank(i-1) == 1])
+					return mate(i - 1);
+				else
+					return -1;
+			}
+
+			/*
+			size_type last(size_type v)
+			{
+				if(v>=0){
+					bit_vector::select_0_type b_sel(m_B);
+					size_type pos_in_B = b_sel(v-1);
+					size_type match_in_B;
+					if (m_B[pos_in_B] == 1)
+						match_in_B = m_B.find_close(pos_in_B);
+					else
+						match_in_B = m_B.find_open(pos_in_B);
+					return m_A_select1(match_in_B);
+				}else
+					return -1;
+			}
+			*/
 			size_type degree(size_type v)
 			{
 				if (v >= m_vertices)
@@ -554,57 +581,10 @@ namespace sdsl
 			}
 
 
-			// Return true if the face of the edge e is a triangle
-			bool is_interior_face(size_type e)
-			{
-				char flag = 1;
-				size_type nxt = e;
-				size_type mt;
-				size_type init_vertex = vertex(nxt);
-				size_type curr_vertex = -1;
-				size_type i = 0;
-				while (curr_vertex != init_vertex || flag)
-				{
-					if (nxt >= 2 *m_edges)
-					{
-						nxt = first(vertex(mt));
-					}
-
-					flag = 0;
-					mt = mate(nxt);
-					curr_vertex = vertex(mt);
-					i++;
-					nxt = next(mt);
-				}
-				return i == 3;
-			}
 
 
-			// Return index of interior face where edge e belongs
-			void get_face(size_type e, array<int, 3> &face)
-			{
-				char flag = 1;
-				size_type nxt = e;
-				size_type mt;
-				size_type init_vertex = vertex(nxt);
-				size_type curr_vertex = -1;
-				size_type i = 0;
-				while (curr_vertex != init_vertex || flag)
-				{
-					if (nxt >= 2 *m_edges)
-					{
-						nxt = first(vertex(mt));
-					}
 
-					flag = 0;
-					mt = mate(nxt);
-					curr_vertex = vertex(mt);
-					//std::cout<<curr_vertex<<" ";
-					face[i] = curr_vertex;
-					i++;
-					nxt = next(mt);
-				}
-			}
+
 
 			size_type succ(size_type e){
 				size_type mt = mate(e);
