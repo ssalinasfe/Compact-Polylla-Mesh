@@ -3,6 +3,8 @@
 class Polylla
 {
 private:
+    typedef std::array<uint,3> triangle; //triangle
+    typedef std::vector<uint> polygon; 
     compressTriangulation *tr;
     sdsl::bit_vector max_edges;
     sdsl::bit_vector frontier_edges;
@@ -41,17 +43,20 @@ public:
 
 
         //Travel phase: Generate polygon mesh
-        std::vector<uint> polygon;
+        polygon poly;
         for (int e = 0; e < triangles.size(); e++){
             if(triangles[e] == true){
-                polygon = generate_polygon_mesh(e);
-                if(!has_BarrierEdgeTip(polygon))
-                    cout<<"Simple Polygon: "<<polygon<<endl;
-                else
-                    cout<<"Non-simple Polygon: "<<polygon<<endl;
+                poly = generate_polygon_mesh(e);
+                if(!has_BarrierEdgeTip(poly)){
+                    cout<<"Simple Polygon: "<<poly<<endl;
+                    triangles[e] = true;
+                }else{
+                    cout<<"Non-simple Polygon: "<<poly<<endl;
+                    barrieredge_tip_reparation(e, poly);
+                }
             }
         }
-        
+        cout<<"Triangles: "<<this->triangles<<endl;
         //for(int e = 0; e < tr->halfEdges(); e++){
         //    cout<<"edge "<<e<<" next: "<<pe->next(e)<<" prev: "<<pe->prev(e)<<endl;
         //}
@@ -135,6 +140,7 @@ private:
             return false;
     }
 
+    //Travel in CCW order around the edges of vertex v from the edge e
     uint search_frontier_edge(const uint e)
     {
         uint nxt = e;
@@ -149,26 +155,25 @@ private:
         return nxt;
     }
 
-    bool has_BarrierEdgeTip(vector<uint> polygon){
-        uint length_poly = polygon.size();
+    bool has_BarrierEdgeTip(vector<uint> poly){
+        uint length_poly = poly.size();
         uint x, y, i;
         for (i = 0; i < length_poly; i++)
         {
             x = i % length_poly;
             y = (i+2) % length_poly;
-            if (polygon[x] == polygon[y])
+            if (poly[x] == poly[y])
                 return true;
         }
         return false;
     }   
 
-    std::vector<uint> generate_polygon_mesh(const uint e)
+    polygon generate_polygon_mesh(const uint e)
     {   
-        std::vector<uint> polygon;
-        //triangles[e] = false;
+        polygon poly;
         uint e_init = search_frontier_edge(e);
         uint v_init = tr->origin(e_init);
-        polygon.push_back(v_init);
+        poly.push_back(v_init);
         uint e_curr = tr->next(e_init);
         uint v_curr = tr->origin(e_curr);
         triangles[e_curr] = false;
@@ -181,90 +186,122 @@ private:
             triangles[e_curr] = false;
             v_curr = tr->origin(e_curr);
          //   cout<<"e_curr: "<<e_curr<<", v_curr: "<<v_curr<<", e_succ: "<<tr->CCW_edge_to_vertex(e_curr)<<endl;
-            polygon.push_back(v_curr);
+            poly.push_back(v_curr);
             e_curr = tr->next(e_curr);
             triangles[e_curr] = false;
             v_curr = tr->origin(e_curr);
         }
-        //cout<<endl;
-        return polygon;
+        
+        return poly;
     }
-/*
-    bool is_frontier_edge(const uint e)
+
+    uint search_middle_edge(const uint v_bet)
     {
-        uint mate = pe->mate(e);
-        if(!pe->is_interior_face(e) || !pe->is_interior_face(pe->mate(e)) || !(max_edges[e] || max_edges[mate]) )
-            return true;
-        else
-            return false;
-    }
-    
-    uint search_frontier_edge(const uint e)
-    {
-        uint prev;
-        uint nxt = e;
-        //cout<<" searching for frontier edge "<<e<<endl;
-        while(!frontier_edges[nxt])
+        uint frontieredge_with_bet = this->search_frontier_edge(tr->edge_of_vertex(v_bet));
+        uint nxt = tr->CCW_edge_to_vertex(frontieredge_with_bet);
+        uint adv = 1;
+        while (nxt != frontieredge_with_bet)
         {
-            prev = nxt;
-            nxt = pe->next(nxt);
-            if (nxt >= tr->halfEdges())
-            {
-                nxt = pe->first(pe->vertex(prev));
-            }
-            triangles[nxt] = false;
-        //  cout<<" next: "<<nxt<<endl;
+            nxt = tr->CCW_edge_to_vertex(nxt);
+            adv++;
         }
-        //cout<<",found "<<nxt<<".";
+        cout<<"frontieredge: "<<frontieredge_with_bet<<", nxtedge: "<<nxt<<", adv: "<<adv<<endl;
+        if(adv%2 == 0){ //if the triangles surrounding the BET are even 
+            adv = adv/2 - 1;
+        }else{   
+            //if the triangles surrounding the BET are odd, edges are even
+            //Choose any edge of the triangle in the middle; prov is choose due to this always exists
+            adv = adv/2;
+        }   
+        nxt = tr->CCW_edge_to_vertex(frontieredge_with_bet);
+        adv--;
+        while (adv != 0)
+        {
+            nxt = tr->CCW_edge_to_vertex(nxt);
+            adv--;
+        }
+        cout<<"middle edge: "<<nxt<<", adv: "<<adv<<endl;
         return nxt;
     }
 
-    bool has_BarrierEdgeTip(vector<uint> polygon){
-        uint length_poly = polygon.size();
-        uint x, y, i;
-        for (i = 0; i < length_poly; i++)
-        {
-            x = i % length_poly;
-            y = (i+2) % length_poly;
-            if (polygon[x] == polygon[y])
-                return true;
-        }
-        return false;
-    }   
-
-    std::vector<uint> generate_polygon_mesh(const uint e)
+    void generate_repaired_polygon(const uint e, bit_vector &seed_list)
     {   
-        std::vector<uint> polygon;
-        //triangles[e] = false;
-        //std::vector<uint> polygon;
-        uint e_init = search_frontier_edge(e);
-        uint v_init = pe->vertex(e_init);
-        polygon.push_back(v_init);
-        uint e_curr = pe->succ(e_init);
-        uint v_curr = pe->vertex(e_curr);
-        triangles[e_curr] = false;
+        uint e_init = e;
+        while(!frontier_edges[e_init])
+        {
+            e_init = tr->CCW_edge_to_vertex(e_init);
+            seed_list[e_init] = false;            
+        }
+        uint v_init = tr->origin(e_init);
+        uint e_curr = tr->next(e_init);
+        uint v_curr = tr->origin(e_curr);
+        seed_list[e_curr] = false;
+       // cout<<"edge "<<e<<" e_init "<<e_init<<" v_init "<<v_init<<" e_curr "<<e_curr<<" v_curr "<<v_curr<<" logic: "<<(e_curr != e_init)<<" "<<(v_curr != v_init)<<" "<<(e_curr != e_init && v_curr != v_init)<<endl;
         //cout<<"Polygon "<<e<<":";
         while(e_curr != e_init && v_curr != v_init)
-        {
-            
-            e_curr = search_frontier_edge(e_curr);
-            triangles[e_curr] = false;
-            v_curr = pe->vertex(e_curr);
-            polygon.push_back(v_curr);
-            //cout<<"e_curr: "<<e_curr<<", v_curr: "<<v_curr<<", e_succ: "<<pe->succ(e_curr)<<endl;
-            e_curr = pe->succ(e_curr);
-            triangles[e_curr] = false;
-            v_curr = pe->vertex(e_curr);
+        {   
+           // cout<<"enre"<<endl;
+            while(!frontier_edges[e_curr])
+            {
+                e_curr = tr->CCW_edge_to_vertex(e_curr);
+                seed_list[e_curr] = false;
+                
+            }
+            seed_list[e_curr] = false;
+            v_curr = tr->origin(e_curr);
+            e_curr = tr->next(e_curr);
+            seed_list[e_curr] = false;
+            v_curr = tr->origin(e_curr);
         }
-        
-        //cout<<endl;
-        return polygon;
     }
 
-    void remove_barrierEdgeTip(const uint e){
+    void barrieredge_tip_reparation(const uint e, vector<uint> &poly)
+    {
+        //se elimina el generador del polígono
+        this->triangles[e] = false;
+        uint x, y, i;
+        int v_bet;
+        uint t1, t2;
 
+        //list is initialize
+        std::vector<uint> triangle_list;
+        bit_vector seed_bet_mark(triangles.size(), false);
+
+        for (i = 0; i < poly.size(); i++)
+        {
+            uint middle_edge, v_bet;
+            for (i = 0; i < poly.size(); i++)
+            {
+                x = i;
+                y = (i+2) % poly.size();
+                if (poly[x] == poly[y]){
+                    v_bet= poly[(i+1) % poly.size()];
+                    middle_edge = search_middle_edge(v_bet);
+                    cout<<"bet: "<<v_bet<<", edge_with_fe: "<<middle_edge<<endl;
+                    t1 = middle_edge;
+                    t2 = tr->twin(middle_edge);
+                    cout<<"t1: "<<t1<<", t2: "<<t2<<endl;
+                    //edge is labeled as frontier-edge
+                    this->frontier_edges[t1] = true;
+                    this->frontier_edges[t2] = true;
+                    triangle_list.push_back(t1);
+                    triangle_list.push_back(t2);
+                    seed_bet_mark[t1] = true;
+                    seed_bet_mark[t2] = true;
+                }
+            }
+        }
+        uint t_curr;
+        while (!triangle_list.empty())
+        {
+            t_curr = triangle_list.back();
+            triangle_list.pop_back();
+            if(seed_bet_mark[t_curr]){
+                seed_bet_mark[t_curr] = false;
+                generate_repaired_polygon(t_curr, seed_bet_mark);
+                triangles[t_curr] = true;
+            }
+        }
     }
-    */
-
 };
 
