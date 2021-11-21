@@ -23,11 +23,11 @@ public:
         cout<<"Triangles: "<<triangles.size()<<endl;
 
         //Label max edges
-        for (int e = 0; e < triangles.size(); e++)
+        for (int e = 0; e < triangles.size(); e++){
             if(triangles[e] == true){
-                this->label_max_edge(e);
-              //  cout<<"Max edge: "<<e<<endl;
+                max_edges[this->label_max_edge(e)] = true;   
             }
+        }
 
         cout<<"max_edges: "<<max_edges<<endl;
 
@@ -35,7 +35,7 @@ public:
         //Label frontier edges
         for (int e = 0; e < tr->halfEdges(); e++){
             frontier_edges[e] = is_frontier_edge(e);
-        //    cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
+            cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
         }
         cout<<"frontier_edges: "<<frontier_edges<<endl;
 
@@ -76,13 +76,20 @@ private:
     //Label max edges of all triangles in the triangulation
     //input: edge e indicent to a triangle t
     //output: position of edge e in max_edges[e] is labeled as true
-    void label_max_edge(const uint e)
+    uint label_max_edge(const uint e)
     {
-        array<int, 3> face;
+        
+        std::array<int, 3> face;
         face = tr->incident_face(e);
+        cout<<endl<<"calculating max of edge "<<e<<endl;
+        //cout<<" pont "<<face[0]<<": "<<tr->get_PointX(face[0])<<" "<<tr->get_PointY(face[0])<<endl;
+        //cout<<" pont "<<face[1]<<": "<<tr->get_PointX(face[1])<<" "<<tr->get_PointY(face[1])<<endl;
+        //cout<<" pont "<<face[2]<<": "<<tr->get_PointX(face[2])<<" "<<tr->get_PointY(face[2])<<endl;
+
         double dist0 = distance(tr->get_PointX(face[0]), tr->get_PointY(face[0]), tr->get_PointX(face[1]), tr->get_PointY(face[1]));
         double dist1 = distance(tr->get_PointX(face[1]), tr->get_PointY(face[1]), tr->get_PointX(face[2]), tr->get_PointY(face[2]));
         double dist2 = distance(tr->get_PointX(face[0]), tr->get_PointY(face[0]), tr->get_PointX(face[2]), tr->get_PointY(face[2]));
+        cout<<"dist0: "<<dist0<<" dist1: "<<dist1<<" dist2: "<<dist2<<" ";
         int max;
         if((dist0 >= dist1 && dist1 >= dist2) || (dist0 >= dist2 && dist2 >= dist1)){
             max = 0; //edge face[0]-face[1] is max
@@ -94,27 +101,35 @@ private:
             cout<<"ERROR: max edge not found"<<endl;
             exit(0);
         }
-    
+        cout<<"max: "<<max;
         uint init_vertex = tr->origin(e);
         uint curr_vertex = -1;
         uint nxt = e;
+        cout<<", face "<<face[0]<<" "<<face[1]<<" "<<face[2]<<", init_Vertex: "<<init_vertex<<endl;
         while (curr_vertex != init_vertex){
-            if(max == 0 && curr_vertex == face[0]){
-                max_edges[nxt] = true;
-            }else if(max == 1 && curr_vertex == face[1]){
-                max_edges[nxt] = true;
-            }else if(max == 2 && curr_vertex == face[2]){
-                max_edges[nxt] = true;
-            }          
             nxt = tr->next(nxt);
             curr_vertex = tr->origin(nxt);
+            cout<<"curr_Vertex: "<<curr_vertex<<", next: "<<nxt<<endl;
+            if(max == 0 && curr_vertex == face[0]){
+                cout<<", edge "<<nxt<<endl;
+                return nxt;
+            }else if(max == 1 && curr_vertex == face[1]){
+                cout<<", edge "<<nxt<<endl;
+                return nxt;
+            }else if(max == 2 && curr_vertex == face[2]){
+                cout<<", edge "<<nxt<<endl;
+                return nxt;
+            }          
         }
+        return nxt;
     }
     
     bool is_frontier_edge(const uint e)
     {
         uint twin = tr->twin(e);
-        if(tr->is_border_face(e) || tr->is_border_face(twin) || !(max_edges[e] || max_edges[twin]) )
+        bool border_edge = tr->is_border_face(e) || tr->is_border_face(twin);
+        cout<<"edge: "<<e<<", twin: "<<twin<<", border_edge: "<<border_edge<<", max e: "<<max_edges[e]<<", max twin: "<<max_edges[twin]<<", max total: "<<!(max_edges[e] || max_edges[twin])<<" total: "<<(border_edge || !(max_edges[e] || max_edges[twin]))<<endl;
+        if(border_edge || !(max_edges[e] || max_edges[twin]) )
             return true;
         else
             return false;

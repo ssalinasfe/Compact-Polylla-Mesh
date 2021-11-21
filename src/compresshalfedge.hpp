@@ -252,9 +252,14 @@ public:
         construct_pemb(g);
         //read nodes from file
         read_nodes_from_file(node_file);
+        change_index_vertices_using_dfs_tree(g);
         m_total_edges = 2*m_edges;
         this->triangles = sdsl::bit_vector(m_total_edges, true);
         generate_list_of_triangles();
+        cout<<"points:"<<endl;
+        for(int i = 0; i < m_vertices; i++){
+            std::cout<<"point "<<i<<": "<<points[2*i+0]<<" "<<points[2*i+1]<<std::endl;
+        }
     }
 
     //copy constructor
@@ -306,7 +311,7 @@ public:
     //output: array with the vertices of the triangle
     triangle incident_face(size_type e)
     {   
-        triangle face;
+        triangle face;  
         char flag = 1;
         size_type nxt = e;
         size_type mt;
