@@ -2,14 +2,30 @@
 // https://doc.cgal.org/latest/Arrangement_on_surface_2/classCGAL_1_1Arrangement__2_1_1Halfedge.html
 
 
+//Compress half-edge using pemb has graph
+/*
+Basic operations
+    incident_face(e): return the face incident to e
+    twin(e): return the twin halfedge of e
+    next(e): return the next halfedge of e
+    prev(e): return the previous halfedge of e
+    origin(e): return the first vertex of halfedge e
+    target(e): return the second vertex of halfedge e
+Others
+    CCW_edge_to_vertex(e): return the next CCW edge incident to v after e
+    is_border(e): return true if e is a border edge
+    is_interior(e): return true if e is an interior edge}
+    edge_of_vertex(v): return A edge incident to v
+*/
 class compressTriangulation : public pemb<>
 {
 
 public:
-    typedef std::array<int,3> triangle; 
+    typedef std::array<uint,3> triangle; 
     std::vector<double> points; //nodes
     sdsl::bit_vector triangles; //indices of edges to a unique triangle
     size_type m_total_edges = 0; //indices of edges to a unique edge
+    
 
 private:
     /* methods used to for the construct */
@@ -294,6 +310,10 @@ public:
         return m_vertices;
     }
 
+    size_type edges(){
+        return m_edges;
+    }
+
     bit_vector get_Triangles(){
         return triangles;
     }
@@ -452,16 +472,6 @@ public:
             return mate(i - 1);
         else
             return -
-    //Output: the twin edge of e
-    size_type twin(size_type e)
-    {
-        return mate(e);
-    }
-
-    //Given a edge with vertex origin v, return the next coutnerclockwise edge of v
-    //Input: e is the edge
-    //Output: the next counterclockwise edge of v
-    size_type next_1;
     }
     */
 

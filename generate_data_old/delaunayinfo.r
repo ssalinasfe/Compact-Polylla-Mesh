@@ -1,6 +1,6 @@
 setwd(system("pwd", intern = T) )
 
-data = read.table("points100.node", header = FALSE, sep = " ", dec = ".", skip=1)
+data = read.table("points50.node", header = FALSE, sep = " ", dec = ".", skip=1)
 
 library(deldir)
 dxy <- deldir(data[,2], data[,3])

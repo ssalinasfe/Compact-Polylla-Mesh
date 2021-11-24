@@ -10,6 +10,7 @@ private:
     sdsl::bit_vector frontier_edges;
     sdsl::bit_vector terminal_edges;
     sdsl::bit_vector triangles;    
+    uint m_polygons = 0;
 
 public:
 
@@ -24,6 +25,15 @@ public:
 
         cout<<"Triangles: "<<triangles.size()<<endl;
 
+        triangle face;
+        for (int e = 0; e < tr->halfEdges(); e++){
+            if(tr->is_interior_face(e)){
+                face = tr->incident_face(e);
+                cout<<"face "<<e<<": "<<face[0]<<" "<<face[1]<<" "<<face[2]<<endl;
+            }
+         //   cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
+        }
+
         //Label max edges
         for (int e = 0; e < triangles.size(); e++){
             if(triangles[e] == true){
@@ -31,32 +41,36 @@ public:
             }
         }
 
-        cout<<"max_edges: "<<max_edges<<endl;
+        //cout<<"max_edges: "<<max_edges<<endl;
 
 
         //Label frontier edges
         for (int e = 0; e < tr->halfEdges(); e++){
             frontier_edges[e] = is_frontier_edge(e);
-            cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
+         //   cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
         }
-        cout<<"frontier_edges: "<<frontier_edges<<endl;
+        //cout<<"frontier_edges: "<<frontier_edges<<endl;
 
 
         //Travel phase: Generate polygon mesh
         polygon poly;
         for (int e = 0; e < triangles.size(); e++){
             if(triangles[e] == true){
-                poly = generate_polygon_mesh(e);
+                poly = travel_triangles(e);
+                triangles[e] = true;
+                m_polygons++;
                 if(!has_BarrierEdgeTip(poly)){
-                    cout<<"Simple Polygon: "<<poly<<endl;
-                    triangles[e] = true;
+                    cout<<"Simple Polygon "<<poly.size()<<": "<<poly<<endl;
+                    //triangles[e] = true;
+                    //m_polygons++;
                 }else{
                     cout<<"Non-simple Polygon: "<<poly<<endl;
-                    barrieredge_tip_reparation(e, poly);
+                    //barrieredge_tip_reparation(e, poly);
+                    //m_polygons = m_polygons + 2;
                 }
             }
         }
-        cout<<"Triangles: "<<this->triangles<<endl;
+        //cout<<"Triangles: "<<this->triangles<<endl;
         //for(int e = 0; e < tr->halfEdges(); e++){
         //    cout<<"edge "<<e<<" next: "<<pe->next(e)<<" prev: "<<pe->prev(e)<<endl;
         //}
@@ -64,10 +78,56 @@ public:
         //    cout<<"vertex "<<v<<" first: "<<pe->first(v)<<" last: "<<pe->last(v)<<endl;
         //  }
 
+        
+
     }
 
     ~Polylla() {
         delete tr;
+    }
+
+    //Print off file
+    void print_OFF(std::string filename){
+        std::ofstream out(filename);
+        polygon poly;
+        out<<"{ appearance  {+edge +face linewidth 2} LIST\n";
+        out<<"OFF"<<endl;
+        //num_vertices num_polygons 0
+        out<<tr->vertices()<<" "<<m_polygons<<" 0"<<endl;
+        //print nodes
+        for(int v = 0; v < tr->vertices(); v++)
+            out<<tr->get_PointX(v)<<" "<<tr->get_PointY(v)<<" 0"<<endl; 
+        //print polygons
+        for (int e = 0; e < triangles.size(); e++){
+            if(triangles[e] == true){
+                poly = generate_polygon(e);
+                out<<poly.size()<<" ";
+                for(int i = 0; i < poly.size(); i++){
+                    out<<poly[i]<<" ";
+                }
+                out<<endl; 
+            }
+        }
+        out<<"}"<<endl;
+        out.close();
+    }
+
+    polygon generate_polygon(int e){
+        polygon poly;
+        uint e_init = search_frontier_edge(e);
+        uint v_init = tr->origin(e_init);
+        poly.push_back(v_init);
+        uint e_curr = tr->next(e_init);
+        uint v_curr = tr->origin(e_curr);
+        while(e_curr != e_init && v_curr != v_init)
+        {   
+            e_curr = search_frontier_edge(e_curr);
+            v_curr = tr->origin(e_curr);
+            poly.push_back(v_curr);
+            e_curr = tr->next(e_curr);
+            v_curr = tr->origin(e_curr);
+        }
+        return poly;
     }
 
 private:
@@ -84,9 +144,9 @@ private:
     uint label_max_edge(const uint e)
     {
         
-        std::array<int, 3> face;
+        triangle face;
         face = tr->incident_face(e);
-        cout<<endl<<"calculating max of edge "<<e<<endl;
+        //cout<<endl<<"calculating max of edge "<<e<<endl;
         //cout<<" pont "<<face[0]<<": "<<tr->get_PointX(face[0])<<" "<<tr->get_PointY(face[0])<<endl;
         //cout<<" pont "<<face[1]<<": "<<tr->get_PointX(face[1])<<" "<<tr->get_PointY(face[1])<<endl;
         //cout<<" pont "<<face[2]<<": "<<tr->get_PointX(face[2])<<" "<<tr->get_PointY(face[2])<<endl;
@@ -94,7 +154,7 @@ private:
         double dist0 = distance(tr->get_PointX(face[0]), tr->get_PointY(face[0]), tr->get_PointX(face[1]), tr->get_PointY(face[1]));
         double dist1 = distance(tr->get_PointX(face[1]), tr->get_PointY(face[1]), tr->get_PointX(face[2]), tr->get_PointY(face[2]));
         double dist2 = distance(tr->get_PointX(face[0]), tr->get_PointY(face[0]), tr->get_PointX(face[2]), tr->get_PointY(face[2]));
-        cout<<"dist0: "<<dist0<<" dist1: "<<dist1<<" dist2: "<<dist2<<" ";
+        //cout<<"dist0: "<<dist0<<" dist1: "<<dist1<<" dist2: "<<dist2<<" ";
         int max;
         if((dist0 >= dist1 && dist1 >= dist2) || (dist0 >= dist2 && dist2 >= dist1)){
             max = 0; //edge face[0]-face[1] is max
@@ -106,23 +166,23 @@ private:
             cout<<"ERROR: max edge not found"<<endl;
             exit(0);
         }
-        cout<<"max: "<<max;
+        //cout<<"max: "<<max;
         uint init_vertex = tr->origin(e);
         uint curr_vertex = -1;
         uint nxt = e;
-        cout<<", face "<<face[0]<<" "<<face[1]<<" "<<face[2]<<", init_Vertex: "<<init_vertex<<endl;
+        //cout<<", face "<<face[0]<<" "<<face[1]<<" "<<face[2]<<", init_Vertex: "<<init_vertex<<endl;
         while (curr_vertex != init_vertex){
             nxt = tr->next(nxt);
             curr_vertex = tr->origin(nxt);
-            cout<<"curr_Vertex: "<<curr_vertex<<", next: "<<nxt<<endl;
+            //cout<<"curr_Vertex: "<<curr_vertex<<", next: "<<nxt<<endl;
             if(max == 0 && curr_vertex == face[0]){
-                cout<<", edge "<<nxt<<endl;
+              //  cout<<", edge "<<nxt<<endl;
                 return nxt;
             }else if(max == 1 && curr_vertex == face[1]){
-                cout<<", edge "<<nxt<<endl;
+                //cout<<", edge "<<nxt<<endl;
                 return nxt;
             }else if(max == 2 && curr_vertex == face[2]){
-                cout<<", edge "<<nxt<<endl;
+                //cout<<", edge "<<nxt<<endl;
                 return nxt;
             }          
         }
@@ -132,9 +192,10 @@ private:
     bool is_frontier_edge(const uint e)
     {
         uint twin = tr->twin(e);
-        bool border_edge = tr->is_border_face(e) || tr->is_border_face(twin);
-        cout<<"edge: "<<e<<", twin: "<<twin<<", border_edge: "<<border_edge<<", max e: "<<max_edges[e]<<", max twin: "<<max_edges[twin]<<", max total: "<<!(max_edges[e] || max_edges[twin])<<" total: "<<(border_edge || !(max_edges[e] || max_edges[twin]))<<endl;
-        if(border_edge || !(max_edges[e] || max_edges[twin]) )
+        bool is_border_edge = tr->is_border_face(e) || tr->is_border_face(twin);
+        bool is_not_max_edge = !(max_edges[e] || max_edges[twin]);
+        //cout<<"edge: "<<e<<", twin: "<<twin<<", border_edge: "<<border_edge<<", max e: "<<max_edges[e]<<", max twin: "<<max_edges[twin]<<", max total: "<<!(max_edges[e] || max_edges[twin])<<" total: "<<(border_edge || !(max_edges[e] || max_edges[twin]))<<endl;
+        if(is_border_edge || is_not_max_edge)
             return true;
         else
             return false;
@@ -148,8 +209,7 @@ private:
         while(!frontier_edges[nxt])
         {
             nxt = tr->CCW_edge_to_vertex(nxt);
-            triangles[nxt] = false;
-            
+            triangles[nxt] = false;   
         }
         //cout<<"frontier edge founded in edge "<<nxt<<endl;
         return nxt;
@@ -168,16 +228,18 @@ private:
         return false;
     }   
 
-    polygon generate_polygon_mesh(const uint e)
+    polygon travel_triangles(const uint e)
     {   
+        triangles[e] = false;
         polygon poly;
         uint e_init = search_frontier_edge(e);
+        triangles[e_init] = false;
         uint v_init = tr->origin(e_init);
         poly.push_back(v_init);
         uint e_curr = tr->next(e_init);
         uint v_curr = tr->origin(e_curr);
         triangles[e_curr] = false;
-       // cout<<"edge "<<e<<" e_init "<<e_init<<" v_init "<<v_init<<" e_curr "<<e_curr<<" v_curr "<<v_curr<<" logic: "<<(e_curr != e_init)<<" "<<(v_curr != v_init)<<" "<<(e_curr != e_init && v_curr != v_init)<<endl;
+        cout<<"edge "<<e<<" e_init "<<e_init<<" v_init "<<v_init<<" e_curr "<<e_curr<<" v_curr "<<v_curr<<" logic: "<<(e_curr != e_init)<<" "<<(v_curr != v_init)<<" "<<(e_curr != e_init && v_curr != v_init)<<endl;
         //cout<<"Polygon "<<e<<":";
         while(e_curr != e_init && v_curr != v_init)
         {   
@@ -185,7 +247,7 @@ private:
             e_curr = search_frontier_edge(e_curr);
             triangles[e_curr] = false;
             v_curr = tr->origin(e_curr);
-         //   cout<<"e_curr: "<<e_curr<<", v_curr: "<<v_curr<<", e_succ: "<<tr->CCW_edge_to_vertex(e_curr)<<endl;
+            cout<<"e_curr: "<<e_curr<<", v_curr: "<<v_curr<<", e_succ: "<<tr->CCW_edge_to_vertex(e_curr)<<endl;
             poly.push_back(v_curr);
             e_curr = tr->next(e_curr);
             triangles[e_curr] = false;
@@ -265,7 +327,7 @@ private:
 
         //list is initialize
         std::vector<uint> triangle_list;
-        bit_vector seed_bet_mark(triangles.size(), false);
+        bit_vector seed_bet_mark(this->triangles.size(), false);
 
         for (i = 0; i < poly.size(); i++)
         {
@@ -299,7 +361,7 @@ private:
             if(seed_bet_mark[t_curr]){
                 seed_bet_mark[t_curr] = false;
                 generate_repaired_polygon(t_curr, seed_bet_mark);
-                triangles[t_curr] = true;
+                this->triangles[t_curr] = true;
             }
         }
     }
