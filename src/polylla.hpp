@@ -81,33 +81,33 @@ public:
         }
 
         ////Travel phase: Generate polygon mesh
-        polygon poly;
-        for (int e = 0; e < tr->halfEdges(); e++){
-            //for each seed edge
-            if(seed_edges[e] == true){
-                poly = travel_triangles(e);
-                std::cout<<"polygon "<<poly.size()<<": ";
-                for(auto ve : poly){
-                    std::cout<<ve<<" ";
-                }
-                std::cout<<std::endl;
-            }
-        }
-
-        //Travel phase: Generate polygon mesh
         //polygon poly;
         //for (int e = 0; e < tr->halfEdges(); e++){
         //    //for each seed edge
         //    if(seed_edges[e] == true){
         //        poly = travel_triangles(e);
-        //        if(!has_BarrierEdgeTip(poly)){ //If the polygon is a simple polygon then is part of the mesh
-        //            this->seed_edges[e] = true;
-        //            m_polygons++; 
-        //        }else{ //Else, the polygon is send to reparation phase
-        //            barrieredge_tip_reparation(e, poly);
-        //        }         
+        //        std::cout<<"polygon "<<poly.size()<<": ";
+        //        for(auto ve : poly){
+        //            std::cout<<ve<<" ";
+        //        }
+        //        std::cout<<std::endl;
         //    }
-        //}    
+        //}
+
+        //Travel phase: Generate polygon mesh
+        polygon poly;
+        for (int e = 0; e < tr->halfEdges(); e++){
+            //for each seed edge
+            if(seed_edges[e] == true){
+                poly = travel_triangles(e);
+                if(!has_BarrierEdgeTip(poly)){ //If the polygon is a simple polygon then is part of the mesh
+                    this->seed_edges[e] = true;
+                    m_polygons++; 
+                }else{ //Else, the polygon is send to reparation phase
+                    barrieredge_tip_reparation(e, poly);
+                }         
+            }
+        }    
 
     }
 
@@ -131,6 +131,7 @@ public:
         for (int e = 0; e < tr->halfEdges(); e++){
             if(seed_edges[e] == true){
                 poly = generate_polygon(e);
+                std::reverse(poly.begin(), poly.end());
                 out<<poly.size()<<" ";
                 for(int i = 0; i < poly.size(); i++){
                     out<<poly[i]<<" ";
