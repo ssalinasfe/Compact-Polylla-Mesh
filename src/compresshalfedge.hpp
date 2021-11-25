@@ -16,6 +16,11 @@ Others
     is_border(e): return true if e is a border edge
     is_interior(e): return true if e is an interior edge}
     edge_of_vertex(v): return A edge incident to v
+
+TODO: 
+    - Implementar función next, actualment next hace prev dos veces
+    - Implementar función face con prev and last
+    - Implementar CW función con next
 */
 class compressTriangulation : public pemb<>
 {
@@ -326,38 +331,47 @@ public:
         return points[2*i+1];
     }
 
-    //Return triangle of the face incident to edge e
-    //Input: e is the edge
-    //output: array with the vertices of the triangle
-    triangle incident_face(size_type e)
-    {   
-        triangle face;  
-        char flag = 1;
-        size_type nxt = e;
-        size_type mt;
-        size_type init_vertex = vertex(nxt);
-        size_type curr_vertex = -1;
-        size_type i = 0;
-        while (curr_vertex != init_vertex || flag)
-        {
-            if (nxt >= 2 *m_edges)
-            {
-                nxt = pemb::first(pemb::vertex(mt));
-            }
 
-            flag = 0;
-            mt = pemb::mate(nxt);
-            curr_vertex = pemb::vertex(mt);
-            try {
-                face[i] = curr_vertex;
-            }
-            catch (int e) {
-                std::cout << "Error in indicent_face of edge "<<e<< std::endl;
-            }
-            i++;
-            nxt = pemb::next(mt);
-        }
-        return face;
+
+    //Calculates the head vertex of the edge e
+    //Input: e is the edge
+    //Output: the head vertex v of the edge e
+    size_type target(size_type e)
+    {
+        if (e >= 2 *m_edges)
+            return -1;
+        return pemb::vertex(e);
+    }
+
+    //Calculates the tail vertex of the edge e
+    //Input: e is the edge
+    //Output: the tail vertex v of the edge e
+    size_type origin(size_type e)
+
+    {
+        size_type nxt = e;
+        size_type init_vertex = pemb::vertex(nxt);
+        size_type mt = pemb::mate(nxt);
+        size_type curr_vertex = pemb::vertex(mt);
+        return curr_vertex;
+    }
+
+
+    //Return the twin edge of the edge e
+    //Input: e is the edge
+    //Output: the twin edge of e
+    size_type twin(size_type e)
+    {
+        return pemb::mate(e);
+    }
+
+
+    //return a edge associate to the node v
+    //Input: v is the node
+    //Output: the edge associate to the node v
+    size_type edge_of_vertex(size_type v)
+    {
+        return pemb::first(v);
     }
 
     //Input: edge e
@@ -398,47 +412,40 @@ public:
        return !this->is_border_face(e);
     }    
 
-    //Calculates the next edge of the face incident to edge e
+    //Given a edge with vertex origin v, return the prev clockwise edge of v with v as origin
     //Input: e is the edge
-    //Output: the next edge of the face incident to e
-    size_type next(size_type e){
-        size_type mt = pemb::mate(e);
-        size_type nxt = pemb::next(mt);
-        while(nxt >= m_total_edges)
-            nxt = pemb::first(pemb::vertex(mt));
+    //Output: the prev clockwise edge of v
+    uint CW_edge_to_vertex(uint e)
+    {
+        uint twn, prv, nxt;
+        twn = twin(e);
+        nxt = next(twn);
         return nxt;
     }
 
-    //Calculates the tail vertex of the edge e
+    //Return triangle of the face incident to edge e
     //Input: e is the edge
-    //Output: the tail vertex v of the edge e
-    size_type origin(size_type e)
-    {
-        if (e >= 2 *m_edges)
-            return -1;
-        return pemb::vertex(e);
+    //output: array with the vertices of the triangle
+    triangle incident_face(uint e)
+    {   
+        triangle face;  
+        uint nxt = e;
+        uint init_vertex = origin(nxt);
+        uint curr_vertex = -1;
+        uint i = 2;
+        while ( i != -1  )
+        {
+            curr_vertex = origin(nxt);
+            //std::cout<<"curr "<<curr_vertex<<std::endl;
+            face[i] = curr_vertex;
+            i--;
+            nxt = next(nxt);            
+           // std::cout<<"init: "<<init_vertex<<", curr: "<<curr_vertex<<", nxt: "<<origin(nxt)<<std::endl;
+        }
+        return face;
     }
 
 
-    //Calculates the head vertex of the edge e
-    //Input: e is the edge
-    //Output: the head vertex v of the edge e
-    size_type target(size_type e)
-    {
-        size_type nxt = e;
-        size_type init_vertex = pemb::vertex(nxt);
-        size_type mt = pemb::mate(nxt);
-        size_type curr_vertex = pemb::vertex(mt);
-        return curr_vertex;
-    }
-
-    //Return the twin edge of the edge e
-    //Input: e is the edge
-    //Output: the twin edge of e
-    size_type twin(size_type e)
-    {
-        return pemb::mate(e);
-    }
 
     //Given a edge with vertex origin v, return the next coutnerclockwise edge of v
     //Input: e is the edge
@@ -452,28 +459,117 @@ public:
             nxt = pemb::first(pemb::vertex(prev));
         }
         return nxt;
-    }    
+    } 
 
-    //return a edge associate to the node v
-    //Input: v is the node
-    //Output: the edge associate to the node v
-    size_type edge_of_vertex(size_type v)
-    {
-        return pemb::first(v);
+    //Calculates the prev edge of the face incident to edge e
+    //Input: e is the edge
+    //Output: the prev edge of the face incident to e
+    size_type prev(size_type e){
+        size_type mt = pemb::mate(e);
+        size_type nxt = pemb::next(mt);
+        while(nxt >= m_total_edges)
+            nxt = pemb::first(pemb::vertex(mt));
+        return nxt;
     }
 
 
-    /*Assuming indices start with 0 
-    size_type prev(size_type i)
+    //Calculates the next edge of the face incident to edge e
+    //Input: e is the edge
+    //Output: the next edge of the face incident to e
+    size_type next(size_type e){
+        size_type prv = pemb_prev(e);
+        if(prv >= m_total_edges){
+            prv = pemb_last(pemb::vertex(e));
+        }
+        size_type mt = pemb::mate(prv);
+        return mt;
+    }
+
+    size_type pemb_prev(size_type i)
     {
-        if (i > 1 && m_A[i-1] == 0)
+        if(i < 1){ //if fist edge then return last edge as prev
+            return mate(m_total_edges - 1);
+        }
+        size_type pos_in_B = m_A_rank(i - 1);	// rank1
+        if (m_A[i-1] == 0){
+            std::cout<<" (case 1) ";
             return i - 1;
-        else if(i > 1 && m_A[i-1] == 1 && m_B[m_A_rank(i-1) == 1])
-            return mate(i - 1);
-        else
-            return -
+        }else if(m_A[i-1] == 1 && m_B[pos_in_B]  == 1){
+            std::cout<<" (case 2) ";
+            return pemb::mate(i - 1);
+        }else{
+            std::cout<<" (case 3 vertex "<<pemb::vertex(i)<<" last "<<pemb_last(pemb::vertex(i))<<") ";
+            size_type last_edge = pemb_last(pemb::vertex(i));
+            if(last_edge == i)
+                return mate(i - 1);
+            else
+                return last_edge;
+        }
     }
-    */
+
+    size_type pemb_next(size_type i)
+    {
+        if (i > m_A.size()) 
+            return -1;
+        if (m_A[i] == 0) //root edge
+        {
+            return i + 1;
+        }
+        else
+        {
+            size_type pos_in_B = m_A_rank(i + 1);	// rank1
+            if (m_B[pos_in_B] == 1)
+            {
+                return mate(i) + 1;
+            }
+        }
+        return pemb::first(pemb::vertex(i));
+    }
+
+    //last(v): return i such that the last edge we process while visiting v is the ith we process during our traversal;
+    size_type pemb_last(size_type v)
+    {
+        if(v >= 0){
+            size_type match_in_B;
+            size_type pos_in_B = m_B_st.select(v + 1);	// B.select0
+            if (m_B[pos_in_B] == 1)
+                match_in_B = m_B_st.find_close(pos_in_B);
+            else
+                match_in_B = m_B_st.find_open(pos_in_B);
+
+            size_type pos = match_in_B;
+            size_type edge = 0;
+            if (pos)
+                edge = m_A_select1(pos);
+            if (v == 0)	// The root of the spanning tree
+                return m_total_edges - 1;
+            else
+                return edge ; //border edge
+        }
+        return -1;
+    }
+
+    /*
+    size_type first(size_type v)
+    {
+        if (v >= 0)
+        {
+            size_type pos = m_B_st.select(v + 1);
+            size_type edge = 0;
+            if (pos)
+                edge = m_A_select1(pos);
+            if (v == 0)	// The root of the spanning tree
+                return edge;
+            else
+                return edge + 1;
+        }
+        else
+            return -1;
+    }*/
+    
+
+    
+
 
     ~compressTriangulation() {};
 };
