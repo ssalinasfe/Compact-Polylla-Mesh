@@ -10,6 +10,7 @@
 #include <complementary/utils.hpp>
 
 
+#include <compressHalfEdge.hpp>
 #include <polylla.hpp>
 
 //#include <compresshalfedge.hpp>

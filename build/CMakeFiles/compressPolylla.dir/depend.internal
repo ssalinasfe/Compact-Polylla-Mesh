@@ -34,6 +34,6 @@ CMakeFiles/compressPolylla.dir/main.cpp.o
  ../sdsl-lite/include/sdsl/uintx_t.hpp
  ../sdsl-lite/include/sdsl/util.hpp
  ../sdsl-lite/include/sdsl/wt_helper.hpp
- ../src/compresshalfedge.hpp
+ ../src/compressHalfEdge.hpp
  ../src/polylla.hpp
  /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/main.cpp

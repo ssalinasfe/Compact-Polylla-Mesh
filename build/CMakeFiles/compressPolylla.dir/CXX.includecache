@@ -452,7 +452,7 @@ utility
 array
 -
 
-../src/compresshalfedge.hpp
+../src/compressHalfEdge.hpp
 
 ../src/polylla.hpp
 array
@@ -467,7 +467,7 @@ fstream
 -
 cmath
 -
-compresshalfedge.hpp
+compressHalfEdge.hpp
 -
 
 /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/main.cpp
@@ -482,6 +482,8 @@ sdsl/pemb.hpp
 complementary/Graph.hpp
 -
 complementary/utils.hpp
+-
+compressHalfEdge.hpp
 -
 polylla.hpp
 -

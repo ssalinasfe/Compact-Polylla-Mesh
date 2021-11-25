@@ -26,6 +26,10 @@ BUGs:
     - La función prev da problemas con las últimas aristas, se retorna mate(i-1) cuando prev(i) retorna i
     - la función prev retorna mate(m_half_edges - 1) para prev(0) 
 */
+
+#ifndef COMPRESSHALFEDGE_HPP
+#define COMPRESSHALFEDGE_HPP
+
 class compressTriangulation : public pemb<>
 {
 
@@ -573,3 +577,6 @@ public:
 
     ~compressTriangulation() {};
 };
+
+#endif
+
