@@ -421,11 +421,9 @@ public:
     //Output: the prev clockwise edge of v
     uint CW_edge_to_vertex(uint e)
     {
-        uint twn, prv, nxt;
-        twn = twin(e);
-        nxt = next(twn);
-        return nxt;
+        return pemb_prev(e);
     }
+
 
     //Return triangle of the face incident to edge e
     //Input: e is the edge
@@ -511,6 +509,8 @@ public:
         }
     }
 
+
+
     size_type pemb_next(size_type i)
     {
         if (i > m_A.size()) 
@@ -555,26 +555,6 @@ public:
         return -1;
     }
 
-    /*
-    size_type first(size_type v)
-    {
-        if (v >= 0)
-        {
-            size_type pos = m_B_st.select(v + 1);
-            size_type edge = 0;
-            if (pos)
-                edge = m_A_select1(pos);
-            if (v == 0)	// The root of the spanning tree
-                return edge;
-            else
-                return edge + 1;
-        }
-        else
-            return -1;
-    }*/
-    
-
-    
 
 
     ~compressTriangulation() {};
