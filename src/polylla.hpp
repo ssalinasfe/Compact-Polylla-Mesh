@@ -34,15 +34,15 @@ public:
        //  //   cout<<"frontier_edges["<<e<<"]: "<<frontier_edges[e]<<endl;
        // }
         
-        for(int v = 0; v < tr->halfEdges();v++ ){
-            std::cout<<"edge "<<v<<" prev "<<tr->pemb_prev(v)<<", next "<<tr->pemb_next(v)<<std::endl;
-        }
-        
-        //for (int e = 0; e < tr->halfEdges(); e++){
-        ////    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->pemb_prev(e)<<", first "<<tr->pemb_next(e)<<", last "<<tr->pemb_last(e)<<std::endl;
-        //    //std::cout<<"edge "<<e<<": next "<<tr->pemb_next(e)<<", prev "<<tr->pemb_prev(e)<<std::endl;
-        //    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<std::endl;
+        //for(int v = 0; v < tr->halfEdges();v++ ){
+        //    std::cout<<"edge "<<v<<" prev "<<tr->pemb_prev(v)<<", next "<<tr->pemb_next(v)<<std::endl;
         //}
+        
+        for (int e = 0; e < tr->halfEdges(); e++){
+        //    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->pemb_prev(e)<<", first "<<tr->pemb_next(e)<<", last "<<tr->pemb_last(e)<<std::endl;
+            //std::cout<<"edge "<<e<<": next "<<tr->pemb_next(e)<<", prev "<<tr->pemb_prev(e)<<std::endl;
+            std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<std::endl;
+        }
 
     }
 

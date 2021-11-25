@@ -21,6 +21,10 @@ TODO:
     - Implementar función next, actualment next hace prev dos veces
     - Implementar función face con prev and last
     - Implementar CW función con next
+
+BUGs:
+    - La función prev da problemas con las últimas aristas, se retorna mate(i-1) cuando prev(i) retorna i
+    - la función prev retorna mate(m_half_edges - 1) para prev(0) 
 */
 class compressTriangulation : public pemb<>
 {
@@ -492,15 +496,15 @@ public:
         }
         size_type pos_in_B = m_A_rank(i - 1);	// rank1
         if (m_A[i-1] == 0){
-            std::cout<<" (case 1) ";
+            //std::cout<<" (case 1) ";
             return i - 1;
         }else if(m_A[i-1] == 1 && m_B[pos_in_B]  == 1){
-            std::cout<<" (case 2) ";
+            //std::cout<<" (case 2) ";
             return pemb::mate(i - 1);
         }else{
-            std::cout<<" (case 3 vertex "<<pemb::vertex(i)<<" last "<<pemb_last(pemb::vertex(i))<<") ";
+            //std::cout<<" (case 3 vertex "<<pemb::vertex(i)<<" last "<<pemb_last(pemb::vertex(i))<<") ";
             size_type last_edge = pemb_last(pemb::vertex(i));
-            if(last_edge == i)
+            if(last_edge == i) //Especial case only detected in border edges
                 return mate(i - 1);
             else
                 return last_edge;
@@ -525,6 +529,8 @@ public:
         }
         return pemb::first(pemb::vertex(i));
     }
+
+    
 
     //last(v): return i such that the last edge we process while visiting v is the ith we process during our traversal;
     size_type pemb_last(size_type v)
