@@ -39,6 +39,7 @@ public:
         //}
         
         for (int e = 0; e < tr->halfEdges(); e++){
+        //    std::cout<<"edge "<<e<<": next "<<tr->CCW_edge_to_vertex(e)<<", prev "<<tr->CW_edge_to_vertex(e)<<std::endl;
         //    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->pemb_prev(e)<<", first "<<tr->pemb_next(e)<<", last "<<tr->pemb_last(e)<<std::endl;
             //std::cout<<"edge "<<e<<": next "<<tr->pemb_next(e)<<", prev "<<tr->pemb_prev(e)<<std::endl;
             std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<", origin: "<<tr->origin(e)<<", target:"<<tr->target(e)<<", "<<tr->twin(e)<<", CW_edge: "<<tr->CW_edge_to_vertex(e)<<", CCW_edge: "<<tr->CCW_edge_to_vertex(e)<<std::endl;
