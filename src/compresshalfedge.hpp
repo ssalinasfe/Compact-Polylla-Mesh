@@ -349,22 +349,21 @@ public:
     //Output: the head vertex v of the edge e
     size_type target(size_type e)
     {
-        if (e >= 2 *m_edges)
-            return -1;
-        return pemb::vertex(e);
+        size_type nxt = e;
+        size_type init_vertex = pemb::vertex(nxt);
+        size_type mt = pemb::mate(nxt);
+        size_type curr_vertex = pemb::vertex(mt);
+        return curr_vertex;
     }
 
     //Calculates the tail vertex of the edge e
     //Input: e is the edge
     //Output: the tail vertex v of the edge e
     size_type origin(size_type e)
-
     {
-        size_type nxt = e;
-        size_type init_vertex = pemb::vertex(nxt);
-        size_type mt = pemb::mate(nxt);
-        size_type curr_vertex = pemb::vertex(mt);
-        return curr_vertex;
+        if (e >= 2 *m_edges)
+            return -1;
+        return pemb::vertex(e);
     }
 
 
@@ -446,9 +445,9 @@ public:
     //Input: e is the edge
     //Output: the prev edge of the face incident to e
     size_type prev(size_type e){
-        size_type mt = pemb::mate(e);
-        size_type nxt = CCW_edge_to_vertex(mt);
-        return nxt;
+        size_type prv = CW_edge_to_vertex(e);
+        size_type mt = pemb::mate(prv);
+        return mt;
     }
 
 
@@ -456,9 +455,10 @@ public:
     //Input: e is the edge
     //Output: the next edge of the face incident to e
     size_type next(size_type e){
-        size_type prv = CW_edge_to_vertex(e);
-        size_type mt = pemb::mate(prv);
-        return mt;
+
+        size_type mt = pemb::mate(e);
+        size_type nxt = CCW_edge_to_vertex(mt);
+        return nxt;
     }
 
 

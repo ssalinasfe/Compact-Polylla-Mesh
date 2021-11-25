@@ -72,28 +72,42 @@ public:
             std::cout<<"edge "<<e<<": max "<<max_edges[e]<<", frontier "<<frontier_edges[e]<<", seed "<<seed_edges[e]<<" , border "<<tr->is_border_face(e)<<std::endl;
         }
 
+        for (int e = 0; e < tr->halfEdges(); e++){
+        //    std::cout<<"edge "<<e<<": next "<<tr->CCW_edge_to_vertex(e)<<", prev "<<tr->CW_edge_to_vertex(e)<<std::endl;
+        //    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->pemb_prev(e)<<", first "<<tr->pemb_next(e)<<", last "<<tr->pemb_last(e)<<std::endl;
+            //std::cout<<"edge "<<e<<": next "<<tr->pemb_next(e)<<", prev "<<tr->pemb_prev(e)<<std::endl;
+            std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<", origin: "<<tr->origin(e)<<", target:"<<tr->target(e)<<", "<<tr->twin(e)<<", CW_edge: "<<tr->CW_edge_to_vertex(e)<<", CCW_edge: "<<tr->CCW_edge_to_vertex(e)<<std::endl;
+            
+        }
+
         ////Travel phase: Generate polygon mesh
-        //polygon poly;
-        //for (int e = 0; e < tr->halfEdges(); e++){
-        //    //for each seed edge
-        //    if(seed_edges[e] == true){
-        //        poly = travel_triangles(e);
-        //    }
-        //}
-        //Travel phase: Generate polygon mesh
         polygon poly;
         for (int e = 0; e < tr->halfEdges(); e++){
             //for each seed edge
             if(seed_edges[e] == true){
                 poly = travel_triangles(e);
-                if(!has_BarrierEdgeTip(poly)){ //If the polygon is a simple polygon then is part of the mesh
-                    this->seed_edges[e] = true;
-                    m_polygons++; 
-                }else{ //Else, the polygon is send to reparation phase
-                    barrieredge_tip_reparation(e, poly);
-                }         
+                std::cout<<"polygon "<<poly.size()<<": ";
+                for(auto ve : poly){
+                    std::cout<<ve<<" ";
+                }
+                std::cout<<std::endl;
             }
-        }    
+        }
+
+        //Travel phase: Generate polygon mesh
+        //polygon poly;
+        //for (int e = 0; e < tr->halfEdges(); e++){
+        //    //for each seed edge
+        //    if(seed_edges[e] == true){
+        //        poly = travel_triangles(e);
+        //        if(!has_BarrierEdgeTip(poly)){ //If the polygon is a simple polygon then is part of the mesh
+        //            this->seed_edges[e] = true;
+        //            m_polygons++; 
+        //        }else{ //Else, the polygon is send to reparation phase
+        //            barrieredge_tip_reparation(e, poly);
+        //        }         
+        //    }
+        //}    
 
     }
 
@@ -234,9 +248,12 @@ private:
         uint nxt = e;
         while(!frontier_edges[nxt])
         {
-            nxt = tr->CW_edge_to_vertex(nxt);
+            nxt = tr->CCW_edge_to_vertex(nxt);
+            std::cout<<"e_nxt: "<<nxt<<" ("<<tr->origin(nxt)<<"-"<<tr->target(nxt)<<"), e_succ: "<<tr->CW_edge_to_vertex(nxt)<<std::endl;
+
+
         }  
-        return nxt;
+            return nxt;
     }
 
     //return true if the polygon is not simple
@@ -255,7 +272,7 @@ private:
 
     //generate a polygon from a seed edge
     polygon travel_triangles(const uint e)
-    {   
+    {    
         polygon poly;
         //search next frontier-edge
         uint e_init = search_frontier_edge(e);
@@ -263,10 +280,14 @@ private:
         uint e_curr = tr->next(e_init);
         uint v_curr = tr->origin(e_curr);
         poly.push_back(v_curr);
+        std::cout<<"edge "<<e<<"("<<tr->origin(e)<<"-"<<tr->target(e)<<"), "<<" e_init "<<e_init<<" v_init "<<v_init<<" e_curr "<<e_curr<<" ("<<tr->origin(e_curr)<<"-"<<tr->target(e_curr)<<") v_curr "<<v_curr<<std::endl;
+        //cout<<"Polygon "<<e<<":";
         //travel inside frontier-edges of polygon
         while(e_curr != e_init && v_curr != v_init)
         {   
-            e_curr = search_frontier_edge(e_curr);  
+            e_curr = search_frontier_edge(e_curr); 
+            std::cout<<"e_curr: "<<e_curr<<" ("<<tr->origin(e_curr)<<"-"<<tr->target(e_curr)<<")"<<", v_curr: "<<v_curr<<", e_succ: "<<tr->CW_edge_to_vertex(e_curr)<<std::endl;
+
             //select edge that contains v_curr as origin
             e_curr = tr->next(e_curr);
             v_curr = tr->origin(e_curr);
