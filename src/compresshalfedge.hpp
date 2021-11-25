@@ -423,29 +423,24 @@ public:
        return !this->is_border_face(e);
     }    
 
-
-    //Return triangle of the face incident to edge e
-    //Input: e is the edge
-    //output: array with the vertices of the triangle
     triangle incident_face(uint e)
     {   
         triangle face;  
         uint nxt = e;
         uint init_vertex = origin(nxt);
         uint curr_vertex = -1;
-        uint i = 2;
-        while ( i != -1  )
+        uint i = 0;
+        while ( i < 3 )
         {
             curr_vertex = origin(nxt);
             //std::cout<<"curr "<<curr_vertex<<std::endl;
             face[i] = curr_vertex;
-            i--;
+            i++;
             nxt = next(nxt);            
            // std::cout<<"init: "<<init_vertex<<", curr: "<<curr_vertex<<", nxt: "<<origin(nxt)<<std::endl;
         }
         return face;
     }
-
 
     //Calculates the prev edge of the face incident to edge e
     //Input: e is the edge

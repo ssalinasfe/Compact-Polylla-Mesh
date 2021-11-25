@@ -455,6 +455,18 @@ array
 ../src/compresshalfedge.hpp
 
 ../src/polylla.hpp
+array
+-
+vector
+-
+string
+-
+iostream
+-
+fstream
+-
+cmath
+-
 compresshalfedge.hpp
 -
 
