@@ -495,24 +495,17 @@ public:
     //Given a edge with vertex origin v, return the next coutnerclockwise edge of v
     //Input: e is the edge
     //Output: the next counterclockwise edge of v
-    //This is a custom implementation of the function next of pemb
-    size_type CCW_edge_to_vertex(size_type i){
-        if (i > m_A.size()) 
-            return -1;
-        if (m_A[i] == 0) //root edge
+    //this is he same as next of pemb, but added a special case for border edges
+    size_type CCW_edge_to_vertex(size_type e)
+    {
+        size_type prev = e;
+        size_type nxt = pemb::next(e);
+        if (nxt >= n_halfedges)
         {
-            return i + 1;
+            nxt = pemb::first(pemb::vertex(prev));
         }
-        else
-        {
-            size_type pos_in_B = m_A_rank(i + 1);	// rank1
-            if (m_B[pos_in_B] == 1)
-            {
-                return mate(i) + 1;
-            }
-        }
-        return pemb::first(pemb::vertex(i));
-    }
+        return nxt;
+    } 
     
 
     //last(v): return i such that the last edge we process while visiting v is the ith we process during our traversal;
