@@ -2,8 +2,12 @@
 
 This repository is a compress version of the algorithm Polylla using as data structure a compress halfedge generated with pemb de José Fuentes.
 
-To see the no compress Polylla version: https://github.com/ssalinasfe/Polylla-Mesh-DCEL
-To see the original code of pemb: 
+- To see the no compress Polylla with POO: https://github.com/ssalinasfe/Polylla-Mesh-DCEL
+- To see the original code of pemb:  https://github.com/jfuentess/pemb
+- To see the POO version of pemb: https://github.com/jfuentess/sdsl-lite
+
+# Compress Polylla: Compress Polygonal meshing algorithm based on terminal-edge regions
+
 
 <p align="center">
  <img src="https://github.com/ssalinasfe/Polylla-Mesh-DCEL/blob/main/images/polyllalogo2.png" width="80%">
@@ -29,22 +33,17 @@ The algorithm needs a initial triangulation as input, any triangulations will wo
 </p>
 
 
-This triangulation is represented as a [.node file](https://www.cs.cmu.edu/~quake/triangle.node.html) with the nodes of the triangulations and the [boundary marker](https://www.cs.cmu.edu/~quake/triangle.markers.html), [.ele file](https://www.cs.cmu.edu/~quake/triangle.ele.html) with the triangles of the triangulations and a [.neigh file ](https://www.cs.cmu.edu/~quake/triangle.neigh.html) with the adjacencies of each triangle. 
+This triangulation is represented as a [.node file](https://www.cs.cmu.edu/~quake/triangle.node.html) with the nodes of the triangulations and a plannar graph file (WIP)
 
 
-Input commands of polylla are:
+Input commands of compress polylla are:
 
 ```
-./Polylla <input .node> <input .ele> <input .neigh> <output .off> <output .hedges>
+./compressPolylla 	<node_file .og> <graph_file .pg> <output_off.off> <output_hedge_polylla .hedge> < output_hedge_triangulation .hedge << <output_new_node .node> << std::endl;
+
 ```
 
-Note shape of the polygon depend on the initital triangulation, in the folowing Figure there is a example of a disk generate with a Delaunay Triangulation with random points (left image) vs a refined Delaunay triangulation with semi uniform points (right image).
-
-<p align="center">
- <img src="https://github.com/ssalinasfe/Polylla-Mesh-DCEL/blob/main/images/2x2RPDisk_3000_poly_1000.png" width="40%" hspace="10px">
- <img src="https://github.com/ssalinasfe/Polylla-Mesh-DCEL/blob/main/images/disk2x2_1574_poly1012.png" width="40%">
-</p>
-
+Hedge files are necessary to plot the mesh in matplotlib.
 
 ## Scripts
 
