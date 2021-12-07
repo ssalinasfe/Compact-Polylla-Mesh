@@ -38,64 +38,89 @@ private:
     sdsl::bit_vector frontier_edges;
     sdsl::bit_vector triangles;    
     sdsl::bit_vector seed_edges;
+    sdsl::bit_vector mesh;
     uint m_polygons = 0;
 
 public:
 
     Polylla(std::string node_file, std::string graph_file){
-    
-        this->tr = new compressTriangulation(node_file, graph_file);
         
+        
+        this->tr = new compressTriangulation(node_file, graph_file);
+        std::cout<<"Compress Triangulation Generated"<<std::endl;
         max_edges = bit_vector(tr->halfEdges(), false);
         frontier_edges = bit_vector(tr->halfEdges(), false);
         seed_edges = bit_vector(tr->halfEdges(), false);
         triangles = tr->get_Triangles();
-    
+        mesh = bit_vector(tr->halfEdges(), false);
+        for (int e = 0; e < tr->halfEdges(); e++){
+        //    std::cout<<"edge "<<e<<": next "<<tr->CCW_edge_to_vertex(e)<<", prev "<<tr->CW_edge_to_vertex(e)<<std::endl;
+        //    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->pemb_prev(e)<<", first "<<tr->pemb_next(e)<<", last "<<tr->pemb_last(e)<<std::endl;
+            //std::cout<<"edge "<<e<<": next "<<tr->pemb_next(e)<<", prev "<<tr->pemb_prev(e)<<std::endl;
+            std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<", origin: "<<tr->origin(e)<<", target:"<<tr->target(e)<<", "<<tr->twin(e)<<", CW_edge: "<<tr->CW_edge_to_vertex(e)<<", CCW_edge: "<<tr->CCW_edge_to_vertex(e)<<std::endl;
+            
+        }
+
+        std::cout<<"Labeling edges"<<std::endl;
+        std::cout<<"Labeling max edges"<<std::endl;
         //Label max edges
         for (int e = 0; e < tr->halfEdges(); e++){
             if(triangles[e] == true){
+                //std::cout<<"Labeling edge "<<e<<std::endl;
                 max_edges[this->label_max_edge(e)] = true;   
             }
             
         }
+
+        std::cout<<"Labeling frontier edges"<<std::endl;
         //Label frontier edges
         for (int e = 0; e < tr->halfEdges(); e++){
+            //std::cout<<"Labeling edge "<<e<<std::endl;
             frontier_edges[e] = is_frontier_edge(e);
         }
 
+        std::cout<<"Labeling seed edges"<<std::endl;
         //label seeds edges,
         for (int e = 0; e < tr->halfEdges(); e++){
             if(tr->is_interior_face(e)){
+              //  std::cout<<"Labeling edge "<<e<<std::endl;
                 seed_edges[e] = is_seed_edge(e);
             }
         }
         
-        //for (int e = 0; e < tr->halfEdges(); e++){
-        //    std::cout<<"edge "<<e<<": max "<<max_edges[e]<<", frontier "<<frontier_edges[e]<<", seed "<<seed_edges[e]<<" , border "<<tr->is_border_face(e)<<std::endl;
-        //}
-
-        //for (int e = 0; e < tr->halfEdges(); e++){
-        ////    std::cout<<"edge "<<e<<": next "<<tr->CCW_edge_to_vertex(e)<<", prev "<<tr->CW_edge_to_vertex(e)<<std::endl;
-        ////    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->pemb_prev(e)<<", first "<<tr->pemb_next(e)<<", last "<<tr->pemb_last(e)<<std::endl;
-        //    //std::cout<<"edge "<<e<<": next "<<tr->pemb_next(e)<<", prev "<<tr->pemb_prev(e)<<std::endl;
-        //    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<", origin: "<<tr->origin(e)<<", target:"<<tr->target(e)<<", "<<tr->twin(e)<<", CW_edge: "<<tr->CW_edge_to_vertex(e)<<", CCW_edge: "<<tr->CCW_edge_to_vertex(e)<<std::endl;
-        //    
-        //}
-
-        //Travel phase: Generate polygon mesh
+        std::cout<<"Label done"<<std::endl;
+        std::cout<<"Travel phase"<<std::endl;
         polygon poly;
         for (int e = 0; e < tr->halfEdges(); e++){
             //for each seed edge
             if(seed_edges[e] == true){
                 poly = travel_triangles(e);
-                if(!has_BarrierEdgeTip(poly)){ //If the polygon is a simple polygon then is part of the mesh
-                    this->seed_edges[e] = true;
-                    m_polygons++; 
-                }else{ //Else, the polygon is send to reparation phase
-                    barrieredge_tip_reparation(e, poly);
-                }         
+                this->mesh[e] = true;
+                m_polygons++; 
+                print_vector(poly);
             }
-        }    
+        }        
+
+
+        //for (int e = 0; e < tr->halfEdges(); e++){
+        //    std::cout<<"edge "<<e<<": max "<<max_edges[e]<<", frontier "<<frontier_edges[e]<<", seed "<<seed_edges[e]<<" , border "<<tr->is_border_face(e)<<std::endl;
+        //}
+
+        //Travel phase: Generate polygon mesh
+        //polygon poly;
+        //for (int e = 0; e < tr->halfEdges(); e++){
+        //    //for each seed edge
+        //    if(seed_edges[e] == true){
+        //        poly = travel_triangles(e);
+        //        if(!has_BarrierEdgeTip(poly)){ //If the polygon is a simple polygon then is part of the mesh
+        //            this->seed_edges[e] = true;
+        //            m_polygons++; 
+        //        }else{ //Else, the polygon is send to reparation phase
+        //            barrieredge_tip_reparation(e, poly);
+        //        }         
+        //    }
+        //}
+
 
     }
 
@@ -103,6 +128,53 @@ public:
         delete tr;
     }
 
+    void print_new_nodes(std::string file_name){
+        std::ofstream out(file_name);
+        out<<tr->vertices()<<" 2 0 1"<<std::endl;
+        for (int e = 0; e < tr->vertices(); e++){
+            out<<e<<" "<<tr->get_PointX(e)<<" "<<tr->get_PointY(e)<<std::endl;
+        }
+        out.close();
+    }
+
+    void print_hedge_triangulation(std::string file_name){
+        std::cout<<"Print halfedges"<<std::endl;
+        std::ofstream file;
+        file.open(file_name);
+        file<<tr->halfEdges()<<std::endl;
+        for(uint i = 0; i < tr->halfEdges(); i++){
+                file<<tr->origin(i)<<" "<<tr->target(i)<<"\n";
+        }
+        file.close();
+    }
+
+    void print_hedge(std::string file_name){
+        std::cout<<"Print halfedges"<<std::endl;
+        std::ofstream file;
+        file.open(file_name);
+        uint n_frontier_edges = 0;
+        for(uint i = 0; i < frontier_edges.size(); i++){
+            if(frontier_edges[i] == true){
+                n_frontier_edges++;
+            }
+        }
+        file<<n_frontier_edges<<std::endl;
+        for(uint i = 0; i < tr->halfEdges(); i++){
+            if(frontier_edges[i] == true){
+                file<<tr->origin(i)<<" "<<tr->target(i)<<"\n";
+            }
+        }
+        file.close();
+    }
+
+    //function whose input is a vector and print the elements of the vector
+    void print_vector(std::vector<uint> &v){
+        std::cout<<v.size()<<" ";
+        for (int i = 0; i < v.size(); i++){
+            std::cout << v[i] << " ";
+        }
+        std::cout << std::endl;
+    }
 
     //Print off file
     void print_OFF(std::string filename){
@@ -117,7 +189,7 @@ public:
             out<<tr->get_PointX(v)<<" "<<tr->get_PointY(v)<<" 0"<<std::endl; 
         //print polygons
         for (int e = 0; e < tr->halfEdges(); e++){
-            if(seed_edges[e] == true){
+            if(mesh[e] == true){
                 poly = generate_polygon(e);
                 std::reverse(poly.begin(), poly.end());
                 out<<poly.size()<<" ";

@@ -47,6 +47,7 @@ private:
     //Generate compress planar embedding graph
     void construct_pemb(Graph g)
     {
+        
         m_vertices = g.vertices();
         m_edges = g.edges();
 
@@ -187,6 +188,7 @@ private:
         m_B_star_st.set_vector(&m_B_star);
     }
 
+/*
     //Read node file in .node format and nodes in point vector
     void read_nodes_from_file(std::string name){
         std::string line;
@@ -209,6 +211,33 @@ private:
         else 
             std::cout << "Unable to open"<<name<<"file"<<std::endl; 
 
+        nodefile.close();
+    }
+    */
+
+    //Read node file in .node format and nodes in point vector
+    void read_nodes_from_file(std::string name){
+        std::string line;
+        std::ifstream nodefile(name);
+        double a1, a2, a3, a4;
+        
+        //std::cout<<"Node file"<<std::endl;
+        if (nodefile.is_open())
+        {
+            nodefile >> n_vertices;
+            //std::cout<<pnumber<<std::endl;
+            points.resize(2*n_vertices);
+            std::getline(nodefile, line); 
+            int i = 0;
+            while (nodefile >> a1 >> a2 >> a3 >> a4)
+            {
+                points[2*i + 0] = a2;
+                points[2*i + 1] = a3;
+                i++;
+            }
+        }
+        else 
+            std::cout << "Unable to open node file"; 
         nodefile.close();
     }
 
@@ -279,16 +308,27 @@ public:
 
     //Constructor from file
     compressTriangulation(std::string node_file, std::string graph_file) : pemb<>() {
+        
         Graph g = read_graph_from_file(graph_file.c_str());
+        std::cout << "Graph done" << std::endl;
         construct_pemb(g);
+        std::cout << "pemb graph done" << std::endl;
         //read nodes from file
         read_nodes_from_file(node_file);
+        std::cout << "reading nodes done" << std::endl;
         change_index_vertices_using_dfs_tree(g);
+        std::cout << "changing index done" << std::endl;
         n_halfedges = 2*m_edges;
         n_vertices = m_vertices;
-        n_faces = n_faces;
+        std::cout<<"n_halfedges "<<n_halfedges<<std::endl;
         this->triangles = sdsl::bit_vector(n_halfedges, true);
         generate_list_of_triangles();
+        for(int i = 0; i < n_halfedges; i++){
+            if(this->triangles[i] == true){
+                n_faces++;
+            }
+        }
+        std::cout << "generating triangle list done" << std::endl;
         //cout<<"points:"<<endl;
         //for(int i = 0; i < m_vertices; i++){
         //    std::cout<<"point "<<i<<": "<<points[2*i+0]<<" "<<points[2*i+1]<<std::endl;
