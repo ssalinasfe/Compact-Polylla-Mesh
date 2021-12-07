@@ -39,7 +39,7 @@ This triangulation is represented as a [.node file](https://www.cs.cmu.edu/~quak
 Input commands of compress polylla are:
 
 ```
-./compressPolylla 	<node_file .og> <graph_file .pg> <output_off.off> <output_hedge_polylla .hedge> < output_hedge_triangulation .hedge << <output_new_node .node> << std::endl;
+./compressPolylla <node_file .og> <graph_file .pg> <output_off.off> <output_hedge_polylla .hedge> < output_hedge_triangulation .hedge << <output_new_node .node>;
 
 ```
 
