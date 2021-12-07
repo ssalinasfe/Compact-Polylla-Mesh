@@ -188,32 +188,6 @@ private:
         m_B_star_st.set_vector(&m_B_star);
     }
 
-/*
-    //Read node file in .node format and nodes in point vector
-    void read_nodes_from_file(std::string name){
-        std::string line;
-        std::ifstream nodefile(name);
-        double a1, a2, a3;
-        int i = 0;
-        points.resize(2*m_vertices);
-        if (nodefile.is_open())
-        {
-            std::getline(nodefile, line); // skip the first line
-            while (nodefile >> a1 >> a2 >> a3)
-            {
-                points[2*i + 0] = a2;
-                points[2*i + 1] = a3;
-                //std::cout<<points[2*i+0]<<" "<<points[2*i+1]<<std::endl;
-                i++;
-                
-            }
-        }
-        else 
-            std::cout << "Unable to open"<<name<<"file"<<std::endl; 
-
-        nodefile.close();
-    }
-    */
 
     //Read node file in .node format and nodes in point vector
     void read_nodes_from_file(std::string name){
@@ -387,10 +361,37 @@ public:
         return points[2*i+1];
     }
 
+    //Given a edge with vertex origin v, return the next coutnerclockwise edge of v
+    //Input: e is the edge
+    //Output: the next counterclockwise edge of v
+    //Equivalent to pemb:next, but added a special case for border edges
+    size_type CCW_edge_to_vertex(size_type e)
+    {
+        size_type prev = e;
+        size_type nxt = pemb::next(e);
+        if (nxt >= n_halfedges)
+        {
+            nxt = pemb::first(pemb::vertex(prev));
+        }
+        return nxt;
+    } 
+
+
+    //Calculates the tail vertex of the edge e
+    //Input: e is the edge
+    //Output: the tail vertex v of the edge e
+    //Equivalent to pemb::vertex(e)
+    size_type origin(size_type e)
+    {
+        if (e >= 2 *m_edges)
+            return -1;
+        return pemb::vertex(e);
+    }
 
     //Calculates the head vertex of the edge e
     //Input: e is the edge
     //Output: the head vertex v of the edge e
+    //Equivalent to pemb::vertex(mate(e))
     size_type target(size_type e)
     {
         size_type nxt = e;
@@ -400,20 +401,10 @@ public:
         return curr_vertex;
     }
 
-    //Calculates the tail vertex of the edge e
-    //Input: e is the edge
-    //Output: the tail vertex v of the edge e
-    size_type origin(size_type e)
-    {
-        if (e >= 2 *m_edges)
-            return -1;
-        return pemb::vertex(e);
-    }
-
-
     //Return the twin edge of the edge e
     //Input: e is the edge
     //Output: the twin edge of e
+    //Equivalent to pemb::mate(e)
     size_type twin(size_type e)
     {
         return pemb::mate(e);
@@ -426,6 +417,22 @@ public:
     size_type edge_of_vertex(size_type v)
     {
         return pemb::first(v);
+    }
+    //return the triangle incent to edge e
+    triangle incident_face(uint e)
+    {   
+        triangle face;  
+        uint nxt = e;
+        uint init_vertex = origin(nxt);
+        uint curr_vertex = -1;
+        uint i = 0;
+        while ( i < 3 ){
+            curr_vertex = origin(nxt);
+            face[i] = curr_vertex;
+            i++;
+            nxt = next(nxt);            
+        }
+        return face;
     }
 
     //Input: edge e
@@ -466,24 +473,7 @@ public:
        return !this->is_border_face(e);
     }    
 
-    triangle incident_face(uint e)
-    {   
-        triangle face;  
-        uint nxt = e;
-        uint init_vertex = origin(nxt);
-        uint curr_vertex = -1;
-        uint i = 0;
-        while ( i < 3 )
-        {
-            curr_vertex = origin(nxt);
-            //std::cout<<"curr "<<curr_vertex<<std::endl;
-            face[i] = curr_vertex;
-            i++;
-            nxt = next(nxt);            
-           // std::cout<<"init: "<<init_vertex<<", curr: "<<curr_vertex<<", nxt: "<<origin(nxt)<<std::endl;
-        }
-        return face;
-    }
+
 
     //Calculates the prev edge of the face incident to edge e
     //Input: e is the edge
@@ -532,20 +522,6 @@ public:
         }
     }
 
-    //Given a edge with vertex origin v, return the next coutnerclockwise edge of v
-    //Input: e is the edge
-    //Output: the next counterclockwise edge of v
-    //this is he same as next of pemb, but added a special case for border edges
-    size_type CCW_edge_to_vertex(size_type e)
-    {
-        size_type prev = e;
-        size_type nxt = pemb::next(e);
-        if (nxt >= n_halfedges)
-        {
-            nxt = pemb::first(pemb::vertex(prev));
-        }
-        return nxt;
-    } 
     
 
     //last(v): return i such that the last edge we process while visiting v is the ith we process during our traversal;
