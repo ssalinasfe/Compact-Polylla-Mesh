@@ -236,7 +236,8 @@ private:
                 if (visited[tgt] == 0) { // Not visited	
                     visited[tgt] = 1;
                     s.push(tgt);
-                   // std::cout << "moving vertex " << k  << " to pos "<< tgt << std::endl;
+                    std::cout << "Pushing " << tgt << std::endl;
+                    std::cout << "moving vertex " << k  << " to pos "<< tgt << std::endl;
                     aux[2*k] = points[2*tgt];
                     aux[2*k+1] = points[2*tgt+1];
                     k++;

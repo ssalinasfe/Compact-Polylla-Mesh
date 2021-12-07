@@ -164,12 +164,12 @@ class Graph {
         if (visited[tgt] == 0) { // Not visited	
           visited[tgt] = 1;
           s.push(tgt);
-          //std::cout << "Pushing " << tgt << std::endl;
+          std::cout << "Pushing " << tgt << std::endl;
           parent[tgt] = this -> E[i].getCmp(); // Edge child-to-parent
         }
       }
     }
-
+    
     // Marking the edges of G that are in T
     for (unsigned int i = 0; i < init; i++) {
       edges[(unsigned int) parent[i]] = 1;
