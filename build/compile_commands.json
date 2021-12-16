@@ -1,0 +1,347 @@
+[
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/src -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include -g -o CMakeFiles/compressPolylla.dir/main.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/main.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/main.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib",
+  "command": "/bin/x86_64-linux-gnu-gcc-10 -DHAVE_CONFIG_H=1 -DMODE_TI -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/../include  -Wall -O3 -DNDEBUG -fomit-frame-pointer -DBUILD_DIVSUFSORT64 -o CMakeFiles/divsufsort64.dir/divsufsort.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/divsufsort.c",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/divsufsort.c"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib",
+  "command": "/bin/x86_64-linux-gnu-gcc-10 -DHAVE_CONFIG_H=1 -DMODE_TI -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/../include  -Wall -O3 -DNDEBUG -fomit-frame-pointer -DBUILD_DIVSUFSORT64 -o CMakeFiles/divsufsort64.dir/sssort.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/sssort.c",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/sssort.c"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib",
+  "command": "/bin/x86_64-linux-gnu-gcc-10 -DHAVE_CONFIG_H=1 -DMODE_TI -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/../include  -Wall -O3 -DNDEBUG -fomit-frame-pointer -DBUILD_DIVSUFSORT64 -o CMakeFiles/divsufsort64.dir/trsort.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/trsort.c",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/trsort.c"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib",
+  "command": "/bin/x86_64-linux-gnu-gcc-10 -DHAVE_CONFIG_H=1 -DMODE_TI -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/../include  -Wall -O3 -DNDEBUG -fomit-frame-pointer -DBUILD_DIVSUFSORT64 -o CMakeFiles/divsufsort64.dir/utils.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/utils.c",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/utils.c"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib",
+  "command": "/bin/x86_64-linux-gnu-gcc-10 -DHAVE_CONFIG_H=1 -DMODE_TI -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/../include  -Wall -O3 -DNDEBUG -fomit-frame-pointer -o CMakeFiles/divsufsort.dir/divsufsort.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/divsufsort.c",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/divsufsort.c"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib",
+  "command": "/bin/x86_64-linux-gnu-gcc-10 -DHAVE_CONFIG_H=1 -DMODE_TI -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/../include  -Wall -O3 -DNDEBUG -fomit-frame-pointer -o CMakeFiles/divsufsort.dir/sssort.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/sssort.c",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/sssort.c"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib",
+  "command": "/bin/x86_64-linux-gnu-gcc-10 -DHAVE_CONFIG_H=1 -DMODE_TI -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/../include  -Wall -O3 -DNDEBUG -fomit-frame-pointer -o CMakeFiles/divsufsort.dir/trsort.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/trsort.c",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/trsort.c"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib",
+  "command": "/bin/x86_64-linux-gnu-gcc-10 -DHAVE_CONFIG_H=1 -DMODE_TI -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/../include  -Wall -O3 -DNDEBUG -fomit-frame-pointer -o CMakeFiles/divsufsort.dir/utils.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/utils.c",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/utils.c"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/googletest/googletest",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/gtest_main.cc",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/googletest/googletest",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/gtest-all.cc",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/bits.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bits.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bits.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bp_support_algorithm.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bp_support_algorithm.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_delta.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_delta.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_gamma.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_gamma.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/coder_fibonacci.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_fibonacci.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_fibonacci.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/config.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/config.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/config.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/construct_config.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_config.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_config.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/construct_isa.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_isa.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_isa.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/construct_lcp.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp_helper.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp_helper.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/construct_sa.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/construct_sa_se.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa_se.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa_se.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/csa_alphabet_strategy.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/csa_alphabet_strategy.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/io.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/io.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/io.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/lcp_support_tree.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/lcp_support_tree.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/lcp_support_tree.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/louds_tree.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/louds_tree.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/louds_tree.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/memory_management.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/memory_management.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/memory_management.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/nn_dict_dynamic.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/nn_dict_dynamic.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/ram_filebuf.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_filebuf.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_filebuf.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/ram_fs.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_fs.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_fs.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/rrr_vector_15.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/rrr_vector_15.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/rrr_vector_15.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/sd_vector.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sd_vector.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sd_vector.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/sfstream.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sfstream.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sfstream.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/structure_tree.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/structure_tree.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/structure_tree.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/uint128_t.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint128_t.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint128_t.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/uint256_t.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint256_t.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint256_t.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/util.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/util.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/util.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sdsl.dir/wt_helper.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/wt_helper.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/wt_helper.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/wt_byte_test.dir/wt_byte_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/wt_byte_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/wt_byte_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sorted_stack_support_test.dir/sorted_stack_support_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/sorted_stack_support_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/sorted_stack_support_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sorted_int_stack_test.dir/sorted_int_stack_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/sorted_int_stack_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/sorted_int_stack_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/select_support_test.dir/select_support_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/select_support_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/select_support_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/search_bidirectional_test.dir/search_bidirectional_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/search_bidirectional_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/search_bidirectional_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/wt_int_test.dir/wt_int_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/wt_int_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/wt_int_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/rmq_test.dir/rmq_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/rmq_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/rmq_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/k2_tree_test.dir/k2_tree_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/k2_tree_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/k2_tree_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/csa_byte_test.dir/csa_byte_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/csa_byte_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/csa_byte_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/compile_test.dir/compile_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/compile_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/compile_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/bits_test.dir/bits_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/bits_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/bits_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/cst_byte_test.dir/cst_byte_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/cst_byte_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/cst_byte_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sa_construct_test.dir/sa_construct_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/sa_construct_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/sa_construct_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/dac_vector_test.dir/dac_vector_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/dac_vector_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/dac_vector_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/replace_int_vector_value.dir/replace_int_vector_value.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/replace_int_vector_value.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/replace_int_vector_value.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/coder_test.dir/coder_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/coder_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/coder_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/inv_perm_support_test.dir/inv_perm_support_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/inv_perm_support_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/inv_perm_support_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/bit_vector_generator.dir/bit_vector_generator.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/bit_vector_generator.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/bit_vector_generator.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/sd_vector_test.dir/sd_vector_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/sd_vector_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/sd_vector_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/int_vector_test.dir/int_vector_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/int_vector_generator.dir/int_vector_generator.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_generator.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_generator.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/csa_int_test.dir/csa_int_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/csa_int_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/csa_int_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/k2_treap_test.dir/k2_treap_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/k2_treap_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/k2_treap_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/cst_int_test.dir/cst_int_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/cst_int_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/cst_int_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/bit_vector_test.dir/bit_vector_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/bit_vector_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/bit_vector_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/int_vector_buffer_test.dir/int_vector_buffer_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_buffer_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_buffer_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/int_vector_mapper_test.dir/int_vector_mapper_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_mapper_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_mapper_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/lcp_construct_test.dir/lcp_construct_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/lcp_construct_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/lcp_construct_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/nn_dict_dynamic_test.dir/nn_dict_dynamic_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/nn_dict_dynamic_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/nn_dict_dynamic_test.cpp"
+},
+{
+  "directory": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DMODE_TI -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/../external/libdivsufsort/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include -I/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include  -std=c++11 -march=native -Wall -Wextra -DNDEBUG -O3 -DNDEBUG -o CMakeFiles/rank_support_test.dir/rank_support_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/rank_support_test.cpp",
+  "file": "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/rank_support_test.cpp"
+}
+]

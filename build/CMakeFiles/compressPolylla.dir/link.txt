@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/compressPolylla.dir/main.cpp.o -o compressPolylla  src/libvoidfiles.a sdsl-lite/lib/libsdsl.a 
+/bin/x86_64-linux-gnu-g++-10 -g CMakeFiles/compressPolylla.dir/main.cpp.o -o compressPolylla  src/libvoidfiles.a sdsl-lite/lib/libsdsl.a 

@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 # Utility rule file for k2-100.16.r.42100.16.r.23100.8.r.81.
 
@@ -78,16 +78,16 @@ sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81: ../sdsl-lite/test
 
 
 ../sdsl-lite/test/test_cases/k2-100.16.r.42100.16.r.23100.8.r.81.x: sdsl-lite/test/int_vector_generator
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating test case k2-100.16.r.42100.16.r.23100.8.r.81."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/int_vector_generator /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/k2-100.16.r.42100.16.r.23100.8.r.81.x 100 16 r 42
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating test case k2-100.16.r.42100.16.r.23100.8.r.81."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/int_vector_generator /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/k2-100.16.r.42100.16.r.23100.8.r.81.x 100 16 r 42
 
 ../sdsl-lite/test/test_cases/k2-100.16.r.42100.16.r.23100.8.r.81.y: sdsl-lite/test/int_vector_generator
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating test case k2-100.16.r.42100.16.r.23100.8.r.81."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/int_vector_generator /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/k2-100.16.r.42100.16.r.23100.8.r.81.y 100 16 r 23
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating test case k2-100.16.r.42100.16.r.23100.8.r.81."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/int_vector_generator /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/k2-100.16.r.42100.16.r.23100.8.r.81.y 100 16 r 23
 
 ../sdsl-lite/test/test_cases/k2-100.16.r.42100.16.r.23100.8.r.81.w: sdsl-lite/test/int_vector_generator
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating test case k2-100.16.r.42100.16.r.23100.8.r.81."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/int_vector_generator /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/k2-100.16.r.42100.16.r.23100.8.r.81.w 100 8 r 81
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating test case k2-100.16.r.42100.16.r.23100.8.r.81."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/int_vector_generator /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/k2-100.16.r.42100.16.r.23100.8.r.81.w 100 8 r 81
 
 k2-100.16.r.42100.16.r.23100.8.r.81: sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81
 k2-100.16.r.42100.16.r.23100.8.r.81: ../sdsl-lite/test/test_cases/k2-100.16.r.42100.16.r.23100.8.r.81.x
@@ -103,10 +103,10 @@ sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/build: k2-100.
 .PHONY : sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/build
 
 sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/cmake_clean.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/clean
 
 sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/depend
 

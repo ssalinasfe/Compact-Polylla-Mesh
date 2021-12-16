@@ -128,13 +128,14 @@ def plot_with_halfedges(node_file, hedge_file, output):
         plt.annotate(label,  # this is the text (put lab here to use tlab as string)
                     xy = (midpoints[i][0], midpoints[i][1]),  # this is the point to label
                     textcoords="offset points",  # how to position the text
-                    xytext=(offsetlabel[i][0], offsetlabel[i][1]),  # distance from text to points (x,y)
+                    xytext=(-1*offsetlabel[i][0], -1*offsetlabel[i][1]),  # distance from text to points (x,y)
                     ha='center', 
                     color='b',
                     size=3)
 
     plt.axis("off")   # turns off axes
     plt.axis("tight")  # gets rid of white border
+    plt.box(False)
     plt.axis("image")  # square up the image instead of filling the "figure" space
 
     ##Add legends
@@ -149,7 +150,7 @@ def plot_with_halfedges(node_file, hedge_file, output):
     #        fancybox=True, shadow=True, ncol=5)
 
     print("[Plotting]  Saving figure in " + output)
-    plt.savefig(output, dpi=1200)
+    plt.savefig(output, dpi=1200, bbox_inches='tight')
     #plt.show()
 
 

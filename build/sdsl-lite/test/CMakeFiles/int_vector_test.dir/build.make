@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 # Include any dependencies generated for this target.
 include sdsl-lite/test/CMakeFiles/int_vector_test.dir/depend.make
@@ -78,16 +78,16 @@ include sdsl-lite/test/CMakeFiles/int_vector_test.dir/flags.make
 
 sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.o: sdsl-lite/test/CMakeFiles/int_vector_test.dir/flags.make
 sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.o: ../sdsl-lite/test/int_vector_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/int_vector_test.dir/int_vector_test.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/int_vector_test.dir/int_vector_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_test.cpp
 
 sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/int_vector_test.dir/int_vector_test.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_test.cpp > CMakeFiles/int_vector_test.dir/int_vector_test.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_test.cpp > CMakeFiles/int_vector_test.dir/int_vector_test.cpp.i
 
 sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/int_vector_test.dir/int_vector_test.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_test.cpp -o CMakeFiles/int_vector_test.dir/int_vector_test.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/int_vector_test.cpp -o CMakeFiles/int_vector_test.dir/int_vector_test.cpp.s
 
 # Object files for target int_vector_test
 int_vector_test_OBJECTS = \
@@ -103,8 +103,8 @@ sdsl-lite/test/int_vector_test: sdsl-lite/external/googletest/googletest/libgtes
 sdsl-lite/test/int_vector_test: sdsl-lite/external/libdivsufsort/lib/libdivsufsort.a
 sdsl-lite/test/int_vector_test: sdsl-lite/external/libdivsufsort/lib/libdivsufsort64.a
 sdsl-lite/test/int_vector_test: sdsl-lite/test/CMakeFiles/int_vector_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable int_vector_test"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/int_vector_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable int_vector_test"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/int_vector_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sdsl-lite/test/CMakeFiles/int_vector_test.dir/build: sdsl-lite/test/int_vector_test
@@ -112,10 +112,10 @@ sdsl-lite/test/CMakeFiles/int_vector_test.dir/build: sdsl-lite/test/int_vector_t
 .PHONY : sdsl-lite/test/CMakeFiles/int_vector_test.dir/build
 
 sdsl-lite/test/CMakeFiles/int_vector_test.dir/clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/int_vector_test.dir/cmake_clean.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/int_vector_test.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/int_vector_test.dir/clean
 
 sdsl-lite/test/CMakeFiles/int_vector_test.dir/depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/int_vector_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/int_vector_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/int_vector_test.dir/depend
 

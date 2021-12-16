@@ -22,7 +22,8 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
-#include <compressHalfEdge.hpp>
+#include <inversedHalfEdge.hpp>
+//#include <compressHalfEdge.hpp>
 
 #define print_e(eddddge) eddddge<<" ( "<<tr->origin(eddddge)<<" - "<<tr->target(eddddge)<<") "
 
@@ -57,7 +58,9 @@ public:
         //    std::cout<<"edge "<<e<<": next "<<tr->CCW_edge_to_vertex(e)<<", prev "<<tr->CW_edge_to_vertex(e)<<std::endl;
         //    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->pemb_prev(e)<<", first "<<tr->pemb_next(e)<<", last "<<tr->pemb_last(e)<<std::endl;
             //std::cout<<"edge "<<e<<": next "<<tr->pemb_next(e)<<", prev "<<tr->pemb_prev(e)<<std::endl;
-            std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<", origin: "<<tr->origin(e)<<", target:"<<tr->target(e)<<", "<<tr->twin(e)<<", CW_edge: "<<tr->CW_edge_to_vertex(e)<<", CCW_edge: "<<tr->CCW_edge_to_vertex(e)<<std::endl;
+            std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<", origin: "<<tr->origin(e)<<", target:"<<tr->target(e)<<", "<<tr->twin(e)<<", CW_edge: "<<tr->CW_edge_to_vertex(e)<<", CCW_edge: "<<tr->CCW_edge_to_vertex(e)<<", face: ";
+            tr->face(e);
+            std::cout<<std::endl;
             
         }
 
@@ -309,7 +312,7 @@ private:
         uint nxt = e;
         while(!frontier_edges[nxt])
         {
-            nxt = tr->CCW_edge_to_vertex(nxt);
+            nxt = tr->CW_edge_to_vertex(nxt);
             //std::cout<<"e_nxt: "<<nxt<<" ("<<tr->origin(nxt)<<"-"<<tr->target(nxt)<<"), e_succ: "<<tr->CW_edge_to_vertex(nxt)<<std::endl;
         }  
             return nxt;
@@ -330,23 +333,19 @@ private:
     }   
 
     //generate a polygon from a seed edge
-    polygon travel_triangles(const uint e)
-    {    
+    polygon travel_triangles(const std::size_t e)
+    {   
         polygon poly;
         //search next frontier-edge
-        uint e_init = search_frontier_edge(e);
-        uint v_init = tr->origin(e_init);
-        uint e_curr = tr->next(e_init);
-        uint v_curr = tr->origin(e_curr);
+        std::size_t e_init = search_frontier_edge(e);
+        std::size_t v_init = tr->origin(e_init);
+        std::size_t e_curr = tr->next(e_init);
+        std::size_t v_curr = tr->origin(e_curr);
         poly.push_back(v_curr);
-        //std::cout<<"edge "<<e<<"("<<tr->origin(e)<<"-"<<tr->target(e)<<"), "<<" e_init "<<e_init<<" v_init "<<v_init<<" e_curr "<<e_curr<<" ("<<tr->origin(e_curr)<<"-"<<tr->target(e_curr)<<") v_curr "<<v_curr<<std::endl;
-        //cout<<"Polygon "<<e<<":";
         //travel inside frontier-edges of polygon
         while(e_curr != e_init && v_curr != v_init)
         {   
-            e_curr = search_frontier_edge(e_curr); 
-           // std::cout<<"e_curr: "<<e_curr<<" ("<<tr->origin(e_curr)<<"-"<<tr->target(e_curr)<<")"<<", v_curr: "<<v_curr<<", e_succ: "<<tr->CW_edge_to_vertex(e_curr)<<std::endl;
-
+            e_curr = search_frontier_edge(e_curr);  
             //select edge that contains v_curr as origin
             e_curr = tr->next(e_curr);
             v_curr = tr->origin(e_curr);
@@ -355,6 +354,33 @@ private:
         }
         return poly;
     }
+
+    ////generate a polygon from a seed edge
+    //polygon travel_triangles(const uint e)
+    //{    
+    //    polygon poly;
+    //    //search next frontier-edge
+    //    uint e_init = search_frontier_edge(e);
+    //    uint v_init = tr->origin(e_init);
+    //    uint e_curr = tr->next(e_init);
+    //    uint v_curr = tr->origin(e_curr);
+    //    poly.push_back(v_curr);
+    //    //std::cout<<"edge "<<e<<"("<<tr->origin(e)<<"-"<<tr->target(e)<<"), "<<" e_init "<<e_init<<" v_init "<<v_init<<" e_curr "<<e_curr<<" ("<<tr->origin(e_curr)<<"-"<<tr->target(e_curr)<<") v_curr "<<v_curr<<std::endl;
+    //    //cout<<"Polygon "<<e<<":";
+    //    //travel inside frontier-edges of polygon
+    //    while(e_curr != e_init && v_curr != v_init)
+    //    {   
+    //        e_curr = search_frontier_edge(e_curr); 
+    //       // std::cout<<"e_curr: "<<e_curr<<" ("<<tr->origin(e_curr)<<"-"<<tr->target(e_curr)<<")"<<", v_curr: "<<v_curr<<", e_succ: "<<tr->CW_edge_to_vertex(e_curr)<<std::endl;
+//
+    //        //select edge that contains v_curr as origin
+    //        e_curr = tr->next(e_curr);
+    //        v_curr = tr->origin(e_curr);
+    //        //v_curr is part of the polygon
+    //        poly.push_back(v_curr);
+    //    }
+    //    return poly;
+    //}
 
     uint search_middle_edge(const uint v_bet)
     {

@@ -39,6 +39,15 @@ class Graph {
     this -> E = new Edge[2 * m];
   }
 
+  void printgraph(){
+    std::cout<<"n: "<<n<<", m: "<<m<<std::endl;
+    for (size_t i = 0; i < 2*m; i++)
+    {
+      std::cout<<E[i].getSrc()<<" "<<E[i].getTgt()<<std::endl;
+    }
+    
+  }
+
   unsigned int vertices() {
     return n;
   }
@@ -164,7 +173,7 @@ class Graph {
         if (visited[tgt] == 0) { // Not visited	
           visited[tgt] = 1;
           s.push(tgt);
-          std::cout << "Pushing " << tgt << std::endl;
+          //std::cout << "Pushing " << tgt << std::endl;
           parent[tgt] = this -> E[i].getCmp(); // Edge child-to-parent
         }
       }

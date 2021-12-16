@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 # Utility rule file for nn-dict-dynamic-test.
 
@@ -74,8 +74,8 @@ include sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/progress.make
 
 sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test: sdsl-lite/test/nn_dict_dynamic_test
 sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test: sdsl-lite/test/nn_dict_dynamic_test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute nn-dict-dynamic-test."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/nn_dict_dynamic_test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute nn-dict-dynamic-test."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/nn_dict_dynamic_test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
 
 nn-dict-dynamic-test: sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test
 nn-dict-dynamic-test: sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/build.make
@@ -88,10 +88,10 @@ sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/build: nn-dict-dynamic-test
 .PHONY : sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/build
 
 sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/nn-dict-dynamic-test.dir/cmake_clean.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/nn-dict-dynamic-test.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/clean
 
 sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/depend
 

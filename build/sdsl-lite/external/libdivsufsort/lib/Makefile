@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -102,7 +102,7 @@ install/local/fast: preinstall/fast
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CPackSourceConfig.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -146,7 +146,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -156,8 +156,8 @@ package/fast: package
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -167,14 +167,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib//CMakeFiles/progress.marks
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles 0
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib//CMakeFiles/progress.marks
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/clean
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -184,22 +184,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/preinstall
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/preinstall
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/rule:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/rule
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/rule
 .PHONY : sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ divsufsort64: sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/r
 
 # fast build rule for target.
 divsufsort64/fast:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build
 .PHONY : divsufsort64/fast
 
 # Convenience name for target.
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/rule:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/rule
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/rule
 .PHONY : sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/rule
 
 # Convenience name for target.
@@ -224,79 +224,79 @@ divsufsort: sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/rule
 
 # fast build rule for target.
 divsufsort/fast:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build
 .PHONY : divsufsort/fast
 
 # target to build an object file
 divsufsort.o:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/divsufsort.o
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/divsufsort.o
 .PHONY : divsufsort.o
 
 # target to preprocess a source file
 divsufsort.i:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.i
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/divsufsort.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/divsufsort.i
 .PHONY : divsufsort.i
 
 # target to generate assembly for a file
 divsufsort.s:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.s
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/divsufsort.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/divsufsort.s
 .PHONY : divsufsort.s
 
 # target to build an object file
 sssort.o:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/sssort.o
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/sssort.o
 .PHONY : sssort.o
 
 # target to preprocess a source file
 sssort.i:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.i
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/sssort.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/sssort.i
 .PHONY : sssort.i
 
 # target to generate assembly for a file
 sssort.s:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.s
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/sssort.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/sssort.s
 .PHONY : sssort.s
 
 # target to build an object file
 trsort.o:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/trsort.o
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/trsort.o
 .PHONY : trsort.o
 
 # target to preprocess a source file
 trsort.i:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.i
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/trsort.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/trsort.i
 .PHONY : trsort.i
 
 # target to generate assembly for a file
 trsort.s:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.s
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/trsort.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/trsort.s
 .PHONY : trsort.s
 
 # target to build an object file
 utils.o:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/utils.o
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/utils.o
 .PHONY : utils.o
 
 # target to preprocess a source file
 utils.i:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.i
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/utils.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/utils.i
 .PHONY : utils.i
 
 # target to generate assembly for a file
 utils.s:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.s
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/utils.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/build.make sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/utils.s
 .PHONY : utils.s
 
 # Help Target
@@ -338,6 +338,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

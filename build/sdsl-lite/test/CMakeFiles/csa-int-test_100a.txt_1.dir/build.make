@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 # Utility rule file for csa-int-test_100a.txt_1.
 
@@ -75,8 +75,8 @@ include sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/progress.make
 sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1: ../sdsl-lite/test/test_cases/100a.txt
 sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1: ../sdsl-lite/test/tmp
 sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1: sdsl-lite/test/csa_int_test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute csa-int-test on 100a.txt."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/csa_int_test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/100a.txt 1 /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/csa_int_test__1 /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute csa-int-test on 100a.txt."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/csa_int_test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/100a.txt 1 /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/csa_int_test__1 /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
 
 csa-int-test_100a.txt_1: sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1
 csa-int-test_100a.txt_1: sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/build.make
@@ -89,10 +89,10 @@ sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/build: csa-int-test_100a.t
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/build
 
 sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/csa-int-test_100a.txt_1.dir/cmake_clean.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/csa-int-test_100a.txt_1.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/clean
 
 sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/depend
 

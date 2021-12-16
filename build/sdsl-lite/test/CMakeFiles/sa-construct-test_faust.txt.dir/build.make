@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 # Utility rule file for sa-construct-test_faust.txt.
 
@@ -75,12 +75,12 @@ include sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/progress.make
 sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt: ../sdsl-lite/test/test_cases/faust.txt
 sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt: ../sdsl-lite/test/tmp
 sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt: sdsl-lite/test/sa_construct_test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute sa-construct-test on faust.txt."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/sa_construct_test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/faust.txt /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/sa_construct_test_faust.txt /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute sa-construct-test on faust.txt."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/sa_construct_test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/faust.txt /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/sa_construct_test_faust.txt /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
 
 ../sdsl-lite/test/test_cases/faust.txt:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking or downloading test case faust.txt."
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test && /usr/bin/cmake -Ddownload_url=http://algo2.iti.kit.edu/gog/sdsl/faust.txt.tar.gz -Dtest_case_dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases -P /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/download.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking or downloading test case faust.txt."
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test && /usr/bin/cmake -Ddownload_url=http://algo2.iti.kit.edu/gog/sdsl/faust.txt.tar.gz -Dtest_case_dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases -P /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/download.cmake
 
 sa-construct-test_faust.txt: sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt
 sa-construct-test_faust.txt: ../sdsl-lite/test/test_cases/faust.txt
@@ -94,10 +94,10 @@ sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/build: sa-construct-te
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/build
 
 sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/sa-construct-test_faust.txt.dir/cmake_clean.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/sa-construct-test_faust.txt.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/clean
 
 sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/depend
 

@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 # Utility rule file for rmq-test_int-vec.1000000.64.i.
 
@@ -75,12 +75,12 @@ include sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/progress.mak
 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i: ../sdsl-lite/test/test_cases/int-vec.1000000.64.i
 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i: ../sdsl-lite/test/tmp
 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i: sdsl-lite/test/rmq_test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute rmq-test on int-vec.1000000.64.i."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/rmq_test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/int-vec.1000000.64.i /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/rmq_test_int-vec.1000000.64.i /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute rmq-test on int-vec.1000000.64.i."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/rmq_test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/int-vec.1000000.64.i /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/rmq_test_int-vec.1000000.64.i /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
 
 ../sdsl-lite/test/test_cases/int-vec.1000000.64.i: sdsl-lite/test/int_vector_generator
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating test case int-vec.1000000.64.i."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/int_vector_generator /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/int-vec.1000000.64.i 1000000 64 i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating test case int-vec.1000000.64.i."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/int_vector_generator /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/int-vec.1000000.64.i 1000000 64 i
 
 rmq-test_int-vec.1000000.64.i: sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i
 rmq-test_int-vec.1000000.64.i: ../sdsl-lite/test/test_cases/int-vec.1000000.64.i
@@ -94,10 +94,10 @@ sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/build: rmq-test_int-
 .PHONY : sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/build
 
 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/cmake_clean.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/clean
 
 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest
+# Install script for directory: /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,18 +39,18 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/bin/x86_64-linux-gnu-objdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/googletest/googletest/libgtest.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/googletest/googletest/libgtest.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/googletest/googletest/libgtest_main.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/googletest/googletest/libgtest_main.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include/gtest")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/include/gtest")
 endif()
 

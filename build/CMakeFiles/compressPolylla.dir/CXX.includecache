@@ -452,7 +452,7 @@ utility
 array
 -
 
-../src/compressHalfEdge.hpp
+../src/inversedHalfEdge.hpp
 
 ../src/polylla.hpp
 array
@@ -467,10 +467,10 @@ fstream
 -
 cmath
 -
-compressHalfEdge.hpp
+inversedHalfEdge.hpp
 -
 
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/main.cpp
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/main.cpp
 algorithm
 -
 vector
@@ -482,8 +482,6 @@ sdsl/pemb.hpp
 complementary/Graph.hpp
 -
 complementary/utils.hpp
--
-compressHalfEdge.hpp
 -
 polylla.hpp
 -

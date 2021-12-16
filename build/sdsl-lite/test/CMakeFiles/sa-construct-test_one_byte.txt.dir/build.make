@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 # Utility rule file for sa-construct-test_one_byte.txt.
 
@@ -75,8 +75,8 @@ include sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/progress.ma
 sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt: ../sdsl-lite/test/test_cases/one_byte.txt
 sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt: ../sdsl-lite/test/tmp
 sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt: sdsl-lite/test/sa_construct_test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute sa-construct-test on one_byte.txt."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/sa_construct_test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/one_byte.txt /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/sa_construct_test_one_byte.txt /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute sa-construct-test on one_byte.txt."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/sa_construct_test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/one_byte.txt /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/sa_construct_test_one_byte.txt /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
 
 sa-construct-test_one_byte.txt: sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt
 sa-construct-test_one_byte.txt: sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/build.make
@@ -89,10 +89,10 @@ sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/build: sa-construct
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/build
 
 sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/sa-construct-test_one_byte.txt.dir/cmake_clean.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/sa-construct-test_one_byte.txt.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/clean
 
 sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/depend
 

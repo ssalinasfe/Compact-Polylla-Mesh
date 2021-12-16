@@ -1,4 +1,4 @@
-# Install script for directory: /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort
+# Install script for directory: /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,14 +39,14 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/bin/x86_64-linux-gnu-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/pkgconfig/cmake_install.cmake")
-  include("/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/include/cmake_install.cmake")
-  include("/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/cmake_install.cmake")
+  include("/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/pkgconfig/cmake_install.cmake")
+  include("/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/include/cmake_install.cmake")
+  include("/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/cmake_install.cmake")
 
 endif()
 

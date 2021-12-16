@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/main.cpp" "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/compressPolylla.dir/main.cpp.o"
+  "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/main.cpp" "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/compressPolylla.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,8 +16,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/src/CMakeFiles/voidfiles.dir/DependInfo.cmake"
-  "/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/CMakeFiles/sdsl.dir/DependInfo.cmake"
+  "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/src/CMakeFiles/voidfiles.dir/DependInfo.cmake"
+  "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/CMakeFiles/sdsl.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

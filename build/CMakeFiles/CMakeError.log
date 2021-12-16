@@ -1,132 +1,72 @@
 Performing C SOURCE FILE Test HAVE___DECLSPEC_DLLEXPORT_ failed with the following output:
-Change Dir: /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_027d8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_027d8.dir/build.make CMakeFiles/cmTC_027d8.dir/build
-gmake[1]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_027d8.dir/src.c.o
-/usr/bin/cc   -Wall -DHAVE___DECLSPEC_DLLEXPORT_ -o CMakeFiles/cmTC_027d8.dir/src.c.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+Run Build Command(s):/usr/bin/gmake cmTC_695a6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_695a6.dir/build.make CMakeFiles/cmTC_695a6.dir/build
+gmake[1]: Entering directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_695a6.dir/src.c.o
+/bin/x86_64-linux-gnu-gcc-10   -Wall -DHAVE___DECLSPEC_DLLEXPORT_ -o CMakeFiles/cmTC_695a6.dir/src.c.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
     1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
       | ^~~~~~~~~~
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c: In function ‘__declspec’:
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:48: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c: In function ‘__declspec’:
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:48: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
     1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
       |                                                ^
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:63: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:63: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
     1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
       |                                                               ^
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:1: warning: type of ‘dllexport’ defaults to ‘int’ [-Wimplicit-int]
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:1: warning: type of ‘dllexport’ defaults to ‘int’ [-Wimplicit-int]
     1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
       | ^~~~~~~~~~
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:28: error: declaration for parameter ‘func’ but no such parameter
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:28: error: declaration for parameter ‘func’ but no such parameter
     1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
       |                            ^~~~
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1: error: expected ‘{’ at end of input
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1: error: expected ‘{’ at end of input
     1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
       | 
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1: warning: control reaches end of non-void function [-Wreturn-type]
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1: warning: control reaches end of non-void function [-Wreturn-type]
     1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
       | 
-gmake[1]: *** [CMakeFiles/cmTC_027d8.dir/build.make:85: CMakeFiles/cmTC_027d8.dir/src.c.o] Error 1
-gmake[1]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:140: cmTC_027d8/fast] Error 2
+gmake[1]: *** [CMakeFiles/cmTC_695a6.dir/build.make:85: CMakeFiles/cmTC_695a6.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:140: cmTC_695a6/fast] Error 2
 
 
 Source file was:
 __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
 Performing C SOURCE FILE Test HAVE___DECLSPEC_DLLIMPORT_ failed with the following output:
-Change Dir: /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
+Change Dir: /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_00f6f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_00f6f.dir/build.make CMakeFiles/cmTC_00f6f.dir/build
-gmake[1]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_00f6f.dir/src.c.o
-/usr/bin/cc   -Wall -DHAVE___DECLSPEC_DLLIMPORT_ -o CMakeFiles/cmTC_00f6f.dir/src.c.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+Run Build Command(s):/usr/bin/gmake cmTC_b79f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b79f5.dir/build.make CMakeFiles/cmTC_b79f5.dir/build
+gmake[1]: Entering directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b79f5.dir/src.c.o
+/bin/x86_64-linux-gnu-gcc-10   -Wall -DHAVE___DECLSPEC_DLLIMPORT_ -o CMakeFiles/cmTC_b79f5.dir/src.c.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
     1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
       | ^~~~~~~~~~
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c: In function ‘__declspec’:
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:48: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c: In function ‘__declspec’:
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:48: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
     1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
       |                                                ^
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:63: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:63: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
     1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
       |                                                               ^
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:1: warning: type of ‘dllimport’ defaults to ‘int’ [-Wimplicit-int]
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:1: warning: type of ‘dllimport’ defaults to ‘int’ [-Wimplicit-int]
     1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
       | ^~~~~~~~~~
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:28: error: declaration for parameter ‘func’ but no such parameter
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1:28: error: declaration for parameter ‘func’ but no such parameter
     1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
       |                            ^~~~
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1: error: expected ‘{’ at end of input
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1: error: expected ‘{’ at end of input
     1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
       | 
-/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1: warning: control reaches end of non-void function [-Wreturn-type]
+/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c:1: warning: control reaches end of non-void function [-Wreturn-type]
     1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
       | 
-gmake[1]: *** [CMakeFiles/cmTC_00f6f.dir/build.make:85: CMakeFiles/cmTC_00f6f.dir/src.c.o] Error 1
-gmake[1]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:140: cmTC_00f6f/fast] Error 2
+gmake[1]: *** [CMakeFiles/cmTC_b79f5.dir/build.make:85: CMakeFiles/cmTC_b79f5.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:140: cmTC_b79f5/fast] Error 2
 
 
 Source file was:
 __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
-Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake cmTC_bace4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bace4.dir/build.make CMakeFiles/cmTC_bace4.dir/build
-gmake[1]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bace4.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD -o CMakeFiles/cmTC_bace4.dir/src.c.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_bace4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bace4.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD -rdynamic CMakeFiles/cmTC_bace4.dir/src.c.o -o cmTC_bace4 
-/usr/bin/ld: CMakeFiles/cmTC_bace4.dir/src.c.o: in function `main':
-src.c:(.text+0x46): undefined reference to `pthread_create'
-/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
-/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
-/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
-collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_bace4.dir/build.make:106: cmTC_bace4] Error 1
-gmake[1]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:140: cmTC_bace4/fast] Error 2
-
-
-Source file was:
-#include <pthread.h>
-
-void* test_func(void* data)
-{
-  return data;
-}
-
-int main(void)
-{
-  pthread_t thread;
-  pthread_create(&thread, NULL, test_func, NULL);
-  pthread_detach(thread);
-  pthread_cancel(thread);
-  pthread_join(thread, NULL);
-  pthread_atfork(NULL, NULL, NULL);
-  pthread_exit(NULL);
-
-  return 0;
-}
-
-Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/gmake cmTC_8920c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8920c.dir/build.make CMakeFiles/cmTC_8920c.dir/build
-gmake[1]: Entering directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8920c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_8920c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
-Linking C executable cmTC_8920c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8920c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_8920c.dir/CheckFunctionExists.c.o -o cmTC_8920c  -lpthreads 
-/usr/bin/ld: cannot find -lpthreads
-collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_8920c.dir/build.make:106: cmTC_8920c] Error 1
-gmake[1]: Leaving directory '/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:140: cmTC_8920c/fast] Error 2
-
-
-

@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 # Utility rule file for wt-byte-test_all_symbols.txt.
 
@@ -75,8 +75,8 @@ include sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/progress.make
 sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt: ../sdsl-lite/test/test_cases/all_symbols.txt
 sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt: ../sdsl-lite/test/tmp
 sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt: sdsl-lite/test/wt_byte_test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute wt-byte-test on all_symbols.txt."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/wt_byte_test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/all_symbols.txt /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/wt_byte_test_all_symbols.txt /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute wt-byte-test on all_symbols.txt."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/wt_byte_test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/all_symbols.txt /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/wt_byte_test_all_symbols.txt /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
 
 wt-byte-test_all_symbols.txt: sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt
 wt-byte-test_all_symbols.txt: sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/build.make
@@ -89,10 +89,10 @@ sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/build: wt-byte-test_a
 .PHONY : sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/build
 
 sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/wt-byte-test_all_symbols.txt.dir/cmake_clean.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/wt-byte-test_all_symbols.txt.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/clean
 
 sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/depend
 

@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 # Include any dependencies generated for this target.
 include sdsl-lite/lib/CMakeFiles/sdsl.dir/depend.make
@@ -78,367 +78,367 @@ include sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/bits.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/bits.cpp.o: ../sdsl-lite/lib/bits.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/bits.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/bits.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bits.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/bits.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/bits.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bits.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/bits.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/bits.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bits.cpp > CMakeFiles/sdsl.dir/bits.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bits.cpp > CMakeFiles/sdsl.dir/bits.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/bits.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/bits.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bits.cpp -o CMakeFiles/sdsl.dir/bits.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bits.cpp -o CMakeFiles/sdsl.dir/bits.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o: ../sdsl-lite/lib/bp_support_algorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bp_support_algorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bp_support_algorithm.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bp_support_algorithm.cpp > CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bp_support_algorithm.cpp > CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bp_support_algorithm.cpp -o CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/bp_support_algorithm.cpp -o CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o: ../sdsl-lite/lib/coder_elias_delta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_delta.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_delta.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_delta.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/coder_elias_delta.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_delta.cpp > CMakeFiles/sdsl.dir/coder_elias_delta.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_delta.cpp > CMakeFiles/sdsl.dir/coder_elias_delta.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_delta.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/coder_elias_delta.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_delta.cpp -o CMakeFiles/sdsl.dir/coder_elias_delta.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_delta.cpp -o CMakeFiles/sdsl.dir/coder_elias_delta.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.o: ../sdsl-lite/lib/coder_elias_gamma.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_gamma.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_gamma.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_gamma.cpp > CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_gamma.cpp > CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_gamma.cpp -o CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_elias_gamma.cpp -o CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_fibonacci.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_fibonacci.cpp.o: ../sdsl-lite/lib/coder_fibonacci.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_fibonacci.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/coder_fibonacci.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_fibonacci.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_fibonacci.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/coder_fibonacci.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_fibonacci.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_fibonacci.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/coder_fibonacci.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_fibonacci.cpp > CMakeFiles/sdsl.dir/coder_fibonacci.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_fibonacci.cpp > CMakeFiles/sdsl.dir/coder_fibonacci.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/coder_fibonacci.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/coder_fibonacci.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_fibonacci.cpp -o CMakeFiles/sdsl.dir/coder_fibonacci.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/coder_fibonacci.cpp -o CMakeFiles/sdsl.dir/coder_fibonacci.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/config.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/config.cpp.o: ../sdsl-lite/lib/config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/config.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/config.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/config.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/config.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/config.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/config.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/config.cpp > CMakeFiles/sdsl.dir/config.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/config.cpp > CMakeFiles/sdsl.dir/config.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/config.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/config.cpp -o CMakeFiles/sdsl.dir/config.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/config.cpp -o CMakeFiles/sdsl.dir/config.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_config.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_config.cpp.o: ../sdsl-lite/lib/construct_config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_config.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_config.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_config.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_config.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_config.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/construct_config.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_config.cpp > CMakeFiles/sdsl.dir/construct_config.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_config.cpp > CMakeFiles/sdsl.dir/construct_config.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/construct_config.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_config.cpp -o CMakeFiles/sdsl.dir/construct_config.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_config.cpp -o CMakeFiles/sdsl.dir/construct_config.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_isa.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_isa.cpp.o: ../sdsl-lite/lib/construct_isa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_isa.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_isa.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_isa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_isa.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_isa.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_isa.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_isa.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/construct_isa.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_isa.cpp > CMakeFiles/sdsl.dir/construct_isa.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_isa.cpp > CMakeFiles/sdsl.dir/construct_isa.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_isa.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/construct_isa.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_isa.cpp -o CMakeFiles/sdsl.dir/construct_isa.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_isa.cpp -o CMakeFiles/sdsl.dir/construct_isa.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp.cpp.o: ../sdsl-lite/lib/construct_lcp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_lcp.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_lcp.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/construct_lcp.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp.cpp > CMakeFiles/sdsl.dir/construct_lcp.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp.cpp > CMakeFiles/sdsl.dir/construct_lcp.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/construct_lcp.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp.cpp -o CMakeFiles/sdsl.dir/construct_lcp.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp.cpp -o CMakeFiles/sdsl.dir/construct_lcp.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.o: ../sdsl-lite/lib/construct_lcp_helper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp_helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp_helper.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp_helper.cpp > CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp_helper.cpp > CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp_helper.cpp -o CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_lcp_helper.cpp -o CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa.cpp.o: ../sdsl-lite/lib/construct_sa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_sa.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_sa.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/construct_sa.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa.cpp > CMakeFiles/sdsl.dir/construct_sa.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa.cpp > CMakeFiles/sdsl.dir/construct_sa.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/construct_sa.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa.cpp -o CMakeFiles/sdsl.dir/construct_sa.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa.cpp -o CMakeFiles/sdsl.dir/construct_sa.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa_se.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa_se.cpp.o: ../sdsl-lite/lib/construct_sa_se.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa_se.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_sa_se.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa_se.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa_se.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/construct_sa_se.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa_se.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa_se.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/construct_sa_se.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa_se.cpp > CMakeFiles/sdsl.dir/construct_sa_se.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa_se.cpp > CMakeFiles/sdsl.dir/construct_sa_se.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/construct_sa_se.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/construct_sa_se.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa_se.cpp -o CMakeFiles/sdsl.dir/construct_sa_se.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/construct_sa_se.cpp -o CMakeFiles/sdsl.dir/construct_sa_se.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.o: ../sdsl-lite/lib/csa_alphabet_strategy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/csa_alphabet_strategy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/csa_alphabet_strategy.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/csa_alphabet_strategy.cpp > CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/csa_alphabet_strategy.cpp > CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/csa_alphabet_strategy.cpp -o CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/csa_alphabet_strategy.cpp -o CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/io.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/io.cpp.o: ../sdsl-lite/lib/io.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/io.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/io.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/io.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/io.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/io.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/io.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/io.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/io.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/io.cpp > CMakeFiles/sdsl.dir/io.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/io.cpp > CMakeFiles/sdsl.dir/io.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/io.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/io.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/io.cpp -o CMakeFiles/sdsl.dir/io.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/io.cpp -o CMakeFiles/sdsl.dir/io.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/lcp_support_tree.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/lcp_support_tree.cpp.o: ../sdsl-lite/lib/lcp_support_tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/lcp_support_tree.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/lcp_support_tree.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/lcp_support_tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/lcp_support_tree.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/lcp_support_tree.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/lcp_support_tree.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/lcp_support_tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/lcp_support_tree.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/lcp_support_tree.cpp > CMakeFiles/sdsl.dir/lcp_support_tree.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/lcp_support_tree.cpp > CMakeFiles/sdsl.dir/lcp_support_tree.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/lcp_support_tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/lcp_support_tree.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/lcp_support_tree.cpp -o CMakeFiles/sdsl.dir/lcp_support_tree.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/lcp_support_tree.cpp -o CMakeFiles/sdsl.dir/lcp_support_tree.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/louds_tree.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/louds_tree.cpp.o: ../sdsl-lite/lib/louds_tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/louds_tree.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/louds_tree.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/louds_tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/louds_tree.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/louds_tree.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/louds_tree.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/louds_tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/louds_tree.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/louds_tree.cpp > CMakeFiles/sdsl.dir/louds_tree.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/louds_tree.cpp > CMakeFiles/sdsl.dir/louds_tree.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/louds_tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/louds_tree.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/louds_tree.cpp -o CMakeFiles/sdsl.dir/louds_tree.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/louds_tree.cpp -o CMakeFiles/sdsl.dir/louds_tree.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/memory_management.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/memory_management.cpp.o: ../sdsl-lite/lib/memory_management.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/memory_management.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/memory_management.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/memory_management.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/memory_management.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/memory_management.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/memory_management.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/memory_management.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/memory_management.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/memory_management.cpp > CMakeFiles/sdsl.dir/memory_management.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/memory_management.cpp > CMakeFiles/sdsl.dir/memory_management.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/memory_management.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/memory_management.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/memory_management.cpp -o CMakeFiles/sdsl.dir/memory_management.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/memory_management.cpp -o CMakeFiles/sdsl.dir/memory_management.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.o: ../sdsl-lite/lib/nn_dict_dynamic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/nn_dict_dynamic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/nn_dict_dynamic.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/nn_dict_dynamic.cpp > CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/nn_dict_dynamic.cpp > CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/nn_dict_dynamic.cpp -o CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/nn_dict_dynamic.cpp -o CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_filebuf.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_filebuf.cpp.o: ../sdsl-lite/lib/ram_filebuf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_filebuf.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/ram_filebuf.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_filebuf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_filebuf.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/ram_filebuf.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_filebuf.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_filebuf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/ram_filebuf.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_filebuf.cpp > CMakeFiles/sdsl.dir/ram_filebuf.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_filebuf.cpp > CMakeFiles/sdsl.dir/ram_filebuf.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_filebuf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/ram_filebuf.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_filebuf.cpp -o CMakeFiles/sdsl.dir/ram_filebuf.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_filebuf.cpp -o CMakeFiles/sdsl.dir/ram_filebuf.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_fs.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_fs.cpp.o: ../sdsl-lite/lib/ram_fs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_fs.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/ram_fs.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_fs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_fs.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/ram_fs.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_fs.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_fs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/ram_fs.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_fs.cpp > CMakeFiles/sdsl.dir/ram_fs.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_fs.cpp > CMakeFiles/sdsl.dir/ram_fs.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/ram_fs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/ram_fs.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_fs.cpp -o CMakeFiles/sdsl.dir/ram_fs.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/ram_fs.cpp -o CMakeFiles/sdsl.dir/ram_fs.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/rrr_vector_15.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/rrr_vector_15.cpp.o: ../sdsl-lite/lib/rrr_vector_15.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/rrr_vector_15.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/rrr_vector_15.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/rrr_vector_15.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/rrr_vector_15.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/rrr_vector_15.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/rrr_vector_15.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/rrr_vector_15.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/rrr_vector_15.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/rrr_vector_15.cpp > CMakeFiles/sdsl.dir/rrr_vector_15.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/rrr_vector_15.cpp > CMakeFiles/sdsl.dir/rrr_vector_15.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/rrr_vector_15.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/rrr_vector_15.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/rrr_vector_15.cpp -o CMakeFiles/sdsl.dir/rrr_vector_15.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/rrr_vector_15.cpp -o CMakeFiles/sdsl.dir/rrr_vector_15.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/sd_vector.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/sd_vector.cpp.o: ../sdsl-lite/lib/sd_vector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/sd_vector.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/sd_vector.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sd_vector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/sd_vector.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/sd_vector.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sd_vector.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/sd_vector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/sd_vector.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sd_vector.cpp > CMakeFiles/sdsl.dir/sd_vector.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sd_vector.cpp > CMakeFiles/sdsl.dir/sd_vector.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/sd_vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/sd_vector.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sd_vector.cpp -o CMakeFiles/sdsl.dir/sd_vector.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sd_vector.cpp -o CMakeFiles/sdsl.dir/sd_vector.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/sfstream.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/sfstream.cpp.o: ../sdsl-lite/lib/sfstream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/sfstream.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/sfstream.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sfstream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/sfstream.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/sfstream.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sfstream.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/sfstream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/sfstream.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sfstream.cpp > CMakeFiles/sdsl.dir/sfstream.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sfstream.cpp > CMakeFiles/sdsl.dir/sfstream.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/sfstream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/sfstream.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sfstream.cpp -o CMakeFiles/sdsl.dir/sfstream.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/sfstream.cpp -o CMakeFiles/sdsl.dir/sfstream.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/structure_tree.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/structure_tree.cpp.o: ../sdsl-lite/lib/structure_tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/structure_tree.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/structure_tree.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/structure_tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/structure_tree.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/structure_tree.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/structure_tree.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/structure_tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/structure_tree.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/structure_tree.cpp > CMakeFiles/sdsl.dir/structure_tree.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/structure_tree.cpp > CMakeFiles/sdsl.dir/structure_tree.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/structure_tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/structure_tree.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/structure_tree.cpp -o CMakeFiles/sdsl.dir/structure_tree.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/structure_tree.cpp -o CMakeFiles/sdsl.dir/structure_tree.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/uint128_t.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/uint128_t.cpp.o: ../sdsl-lite/lib/uint128_t.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/uint128_t.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/uint128_t.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint128_t.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/uint128_t.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/uint128_t.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint128_t.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/uint128_t.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/uint128_t.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint128_t.cpp > CMakeFiles/sdsl.dir/uint128_t.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint128_t.cpp > CMakeFiles/sdsl.dir/uint128_t.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/uint128_t.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/uint128_t.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint128_t.cpp -o CMakeFiles/sdsl.dir/uint128_t.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint128_t.cpp -o CMakeFiles/sdsl.dir/uint128_t.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/uint256_t.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/uint256_t.cpp.o: ../sdsl-lite/lib/uint256_t.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/uint256_t.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/uint256_t.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint256_t.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/uint256_t.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/uint256_t.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint256_t.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/uint256_t.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/uint256_t.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint256_t.cpp > CMakeFiles/sdsl.dir/uint256_t.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint256_t.cpp > CMakeFiles/sdsl.dir/uint256_t.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/uint256_t.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/uint256_t.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint256_t.cpp -o CMakeFiles/sdsl.dir/uint256_t.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/uint256_t.cpp -o CMakeFiles/sdsl.dir/uint256_t.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/util.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/util.cpp.o: ../sdsl-lite/lib/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/util.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/util.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/util.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/util.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/util.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/util.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/util.cpp > CMakeFiles/sdsl.dir/util.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/util.cpp > CMakeFiles/sdsl.dir/util.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/util.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/util.cpp -o CMakeFiles/sdsl.dir/util.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/util.cpp -o CMakeFiles/sdsl.dir/util.cpp.s
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/wt_helper.cpp.o: sdsl-lite/lib/CMakeFiles/sdsl.dir/flags.make
 sdsl-lite/lib/CMakeFiles/sdsl.dir/wt_helper.cpp.o: ../sdsl-lite/lib/wt_helper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/wt_helper.cpp.o"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/wt_helper.cpp.o -c /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/wt_helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object sdsl-lite/lib/CMakeFiles/sdsl.dir/wt_helper.cpp.o"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdsl.dir/wt_helper.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/wt_helper.cpp
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/wt_helper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdsl.dir/wt_helper.cpp.i"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/wt_helper.cpp > CMakeFiles/sdsl.dir/wt_helper.cpp.i
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/wt_helper.cpp > CMakeFiles/sdsl.dir/wt_helper.cpp.i
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/wt_helper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdsl.dir/wt_helper.cpp.s"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/wt_helper.cpp -o CMakeFiles/sdsl.dir/wt_helper.cpp.s
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib/wt_helper.cpp -o CMakeFiles/sdsl.dir/wt_helper.cpp.s
 
 # Object files for target sdsl
 sdsl_OBJECTS = \
@@ -504,9 +504,9 @@ sdsl-lite/lib/libsdsl.a: sdsl-lite/lib/CMakeFiles/sdsl.dir/util.cpp.o
 sdsl-lite/lib/libsdsl.a: sdsl-lite/lib/CMakeFiles/sdsl.dir/wt_helper.cpp.o
 sdsl-lite/lib/libsdsl.a: sdsl-lite/lib/CMakeFiles/sdsl.dir/build.make
 sdsl-lite/lib/libsdsl.a: sdsl-lite/lib/CMakeFiles/sdsl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX static library libsdsl.a"
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && $(CMAKE_COMMAND) -P CMakeFiles/sdsl.dir/cmake_clean_target.cmake
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sdsl.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX static library libsdsl.a"
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && $(CMAKE_COMMAND) -P CMakeFiles/sdsl.dir/cmake_clean_target.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sdsl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sdsl-lite/lib/CMakeFiles/sdsl.dir/build: sdsl-lite/lib/libsdsl.a
@@ -514,10 +514,10 @@ sdsl-lite/lib/CMakeFiles/sdsl.dir/build: sdsl-lite/lib/libsdsl.a
 .PHONY : sdsl-lite/lib/CMakeFiles/sdsl.dir/build
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && $(CMAKE_COMMAND) -P CMakeFiles/sdsl.dir/cmake_clean.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib && $(CMAKE_COMMAND) -P CMakeFiles/sdsl.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/lib/CMakeFiles/sdsl.dir/clean
 
 sdsl-lite/lib/CMakeFiles/sdsl.dir/depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/CMakeFiles/sdsl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/lib /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/CMakeFiles/sdsl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/lib/CMakeFiles/sdsl.dir/depend
 

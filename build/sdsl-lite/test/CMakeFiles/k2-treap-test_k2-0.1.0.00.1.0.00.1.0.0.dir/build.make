@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 
 # Utility rule file for k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.
 
@@ -74,8 +74,8 @@ include sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/pro
 
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0: ../sdsl-lite/test/tmp
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0: sdsl-lite/test/k2_treap_test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute k2-treap-test on k2-0.1.0.00.1.0.00.1.0.0."
-	/home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/k2_treap_test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/k2-0.1.0.00.1.0.00.1.0.0 /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/k2_treap_test_k2-0.1.0.00.1.0.00.1.0.0
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute k2-treap-test on k2-0.1.0.00.1.0.00.1.0.0."
+	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/k2_treap_test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/k2-0.1.0.00.1.0.00.1.0.0 /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/k2_treap_test_k2-0.1.0.00.1.0.00.1.0.0
 
 k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0: sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0
 k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0: sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/build.make
@@ -88,10 +88,10 @@ sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/build: k2-t
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/build
 
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/clean:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/cmake_clean.cmake
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/clean
 
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/depend:
-	cd /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyigoldo/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/depend
 
