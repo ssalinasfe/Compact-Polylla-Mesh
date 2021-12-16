@@ -257,12 +257,14 @@ private:
     uint label_max_edge(const uint e)
     {
         //Calculates the size of each edge of a triangle 
-        triangle face;
-        face = tr->incident_face(e);
+        triangle face = {tr->origin(e), tr->origin(tr->next(e)), tr->origin(tr->next(tr->next(e))) };
+        std::cout<<e<<" "<<face[0]<<" "<<face[1]<<" "<<face[2]<<std::endl;
+        //face = tr->incident_face(e);
         double dist0 = distance(tr->get_PointX(face[0]), tr->get_PointY(face[0]), tr->get_PointX(face[1]), tr->get_PointY(face[1]));
         double dist1 = distance(tr->get_PointX(face[1]), tr->get_PointY(face[1]), tr->get_PointX(face[2]), tr->get_PointY(face[2]));
         double dist2 = distance(tr->get_PointX(face[0]), tr->get_PointY(face[0]), tr->get_PointX(face[2]), tr->get_PointY(face[2]));
         int max;
+        
         //Find the longest edge of the triangle
         if((dist0 >= dist1 && dist1 >= dist2) || (dist0 >= dist2 && dist2 >= dist1)){
             max = 0; //edge face[0]-face[1] is max
@@ -274,6 +276,7 @@ private:
             std::cout<<"ERROR: max edge not found"<<std::endl;
             exit(0);
         }
+        std::cout<<max<<std::endl;
         uint init_vertex = tr->origin(e);
         uint curr_vertex = -1;
         uint nxt = e;
@@ -306,6 +309,7 @@ private:
             return false;
     }
 
+
     //Travel in CCW order around the edges of vertex v from the edge e looking for the next frontier edge
     uint search_frontier_edge(const uint e)
     {
@@ -318,19 +322,6 @@ private:
             return nxt;
     }
 
-    //return true if the polygon is not simple
-    bool has_BarrierEdgeTip(std::vector<uint> poly){
-        uint length_poly = poly.size();
-        uint x, y, i;
-        for (i = 0; i < length_poly; i++)
-        {
-            x = i % length_poly;
-            y = (i+2) % length_poly;
-            if (poly[x] == poly[y])
-                return true;
-        }
-        return false;
-    }   
 
     //generate a polygon from a seed edge
     polygon travel_triangles(const std::size_t e)
@@ -354,6 +345,22 @@ private:
         }
         return poly;
     }
+
+    //return true if the polygon is not simple
+    bool has_BarrierEdgeTip(std::vector<uint> poly){
+        uint length_poly = poly.size();
+        uint x, y, i;
+        for (i = 0; i < length_poly; i++)
+        {
+            x = i % length_poly;
+            y = (i+2) % length_poly;
+            if (poly[x] == poly[y])
+                return true;
+        }
+        return false;
+    }   
+
+
 
     ////generate a polygon from a seed edge
     //polygon travel_triangles(const uint e)

@@ -385,16 +385,16 @@ public:
     size_type CW_edge_to_vertex(size_type e)
     {
         e = pemb::mate(e);
-        size_type prev = pemb_prev(e);
-        if (prev >= n_halfedges)
+        size_type prv = pemb_prev(e);
+        if (prv >= n_halfedges)
         {
             size_type last_edge = pemb_last(pemb::vertex(e));
             if(last_edge == e) //Especial case only detected in border edges
-                prev = pemb::mate(e - 1);
+                prv = pemb::mate(e - 1);
             else
-                prev = last_edge;
+                prv = last_edge;
         }
-        return  pemb::mate(prev);
+        return  pemb::mate(prv);
     }
 
 
