@@ -33,7 +33,7 @@ CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/structure_t
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/uintx_t.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/util.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../sdsl-lite/include/sdsl/wt_helper.hpp
-CMakeFiles/compressPolylla.dir/main.cpp.o: ../src/inversedHalfEdge.hpp
+CMakeFiles/compressPolylla.dir/main.cpp.o: ../src/compressHalfEdgeJose.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../src/polylla.hpp
 CMakeFiles/compressPolylla.dir/main.cpp.o: ../main.cpp
 

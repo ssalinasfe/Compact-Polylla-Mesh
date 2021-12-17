@@ -46,19 +46,16 @@ public:
   void setNode(int i, unsigned int first, unsigned int last) {
     this->V[i].setFirst(first);
     this->V[i].setLast(last);
-    //this->V[i].setIndex(i);
   }
 
   // V[i].first = first
   void setNodeFirst(int i, unsigned int first) {
     this->V[i].setFirst(first);
-    //this->V[i].setIndex(i);
   }
 
   // V[i].last = last
   void setNodeLast(int i, unsigned int last) {
     this->V[i].setLast(last);
-   // this->V[i].setIndex(i);
   }
 
   void setEdgeCmp(int i, int c) {
@@ -151,6 +148,37 @@ public:
     }
     
     return 0;
+  }
+
+  void get_DFS(Tree t, int *parent, int *dfs_order) {
+    unsigned int n = this->nodes();
+    int cnt=0;
+    
+    cout << "Edges: ";
+    for(int i=0; i < 2*(n-1); i++) {
+      cout << "(" << this->getEdgeSrc(i) << ",";
+      cout << this->getEdgeTgt(i) << ") ";
+    }
+    cout << endl;
+
+    stack <unsigned int> s;
+    s.push(0); // Root      
+    cout << "DFS: ";
+    while(!s.empty()) {
+      int curr = s.top(); s.pop();
+      dfs_order[cnt++] = curr;
+      cerr << curr << " ";
+      
+      int first = this->V[curr].getFirst();
+      int last = this->V[curr].getLast();
+      
+      for(int i = last; i >= first; i--) {
+    	unsigned int tgt = this->getEdgeTgt(i);
+    	if(i != parent[curr])
+    	  s.push(this->getEdgeTgt(i));	
+      }
+    }
+    cout << endl;
   }
   
 };
