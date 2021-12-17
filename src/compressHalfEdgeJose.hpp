@@ -45,7 +45,7 @@ public:
 private:
     /* methods used to for the construct */
     //Generate compress planar embedding graph
-    void construct_pemb(Graph g)
+  void construct_pemb(Graph g, int *dfs_order)
     {
         
         m_vertices = g.vertices();
@@ -59,6 +59,7 @@ private:
 
         Tree t = g.dfs_spanning_tree(init, parent, count_edges, references);
 
+	    t.get_DFS(t, parent, dfs_order);
         //for (size_t i = 0; i < m_vertices; i++)
         //{
         //	std::cout<<t.getNode(i).getFirst()<<" ";
@@ -207,9 +208,7 @@ private:
             {
                 points[2*i + 0] = a2;
                 points[2*i + 1] = a3;
-                std::cout<<"node "<<i<<": "<<points[2*i + 0]<<" "<<points[2*i + 1]<<std::endl;
                 i++;
-                
             }
         }
         else 
@@ -217,38 +216,22 @@ private:
         nodefile.close();
     }
 
-    //Change the position of the nodes in points vector to the position of the nodes in the tree
-    void change_index_vertices_using_dfs_tree(Graph g){
-        unsigned int n = g.vertices();
-        unsigned int m = g.edges();
+
+  void change_index_vertices_using_dfs_tree(int n, int *dfs_order) {
         std::vector<double> aux(points.size());
         
-        char * visited = new char[n](); // TODO: Change to a boolean array
-        unsigned int init = 0;
-        stack < unsigned int > s;
-        visited[init] = 1;
-        s.push(init);
-        unsigned int k = 1;
         double x,y;
-        while (!s.empty()) {
-            unsigned int curr = s.top();
-            s.pop();
-            for (unsigned int i = g.getVertex(curr).getFirst(); i <= g.getVertex(curr).getLast(); i++) {
-                unsigned int tgt = g.getEdge(i).getTgt();
-                if (visited[tgt] == 0) { // Not visited	
-                    visited[tgt] = 1;
-                    s.push(tgt);
-                    //std::cout << "Pushing " << tgt << std::endl;
-                    std::cout << "moving vertex " <<tgt << " to pos "<< k << std::endl;
-                    aux[2*k] = points[2*tgt];
-                    aux[2*k+1] = points[2*tgt+1];
-                    k++;
-                }
-            }
+
+        for(int i=0, k=1; i < n; i++, k++) {
+            aux[2*i] = points[2*dfs_order[i]];
+            aux[2*i+1] = points[2*dfs_order[i]+1];	
+            std::cout<<"point "<<i<<": "<<aux[2*i]<<" "<<aux[2*i+1]<<", moving "<<dfs_order[i]<<" -> "<<i<<std::endl;
         }
+        
         points = aux;
-        delete [] visited;
+
     }
+
 
     //Generate list of uniques faces
     //The output is a bitvector triangles that containts the edges that generate the triangles
@@ -287,14 +270,14 @@ public:
     compressTriangulation(std::string node_file, std::string graph_file) : pemb<>() {
         
         Graph g = read_graph_from_file(graph_file.c_str());
-        g.printgraph();
         std::cout << "Graph done" << std::endl;
-        construct_pemb(g);
+	    int *dfs_order = new int[g.vertices()];
+        construct_pemb(g, dfs_order);
         std::cout << "pemb graph done" << std::endl;
         //read nodes from file
         read_nodes_from_file(node_file);
         std::cout << "reading nodes done" << std::endl;
-        change_index_vertices_using_dfs_tree(g);
+        change_index_vertices_using_dfs_tree(g.vertices(), dfs_order);
         std::cout << "changing index done" << std::endl;
         n_halfedges = 2*m_edges;
         n_vertices = m_vertices;
@@ -364,63 +347,32 @@ public:
     double get_PointY(size_type i){
         return points[2*i+1];
     }
+
     //Given a edge with vertex origin v, return the next coutnerclockwise edge of v
     //Input: e is the edge
     //Output: the next counterclockwise edge of v
     //Equivalent to pemb:next, but added a special case for border edges
     size_type CCW_edge_to_vertex(size_type e)
-    {   
-        e = pemb::mate(e);
-        size_type prv = e;
+    {
+        size_type prev = e;
         size_type nxt = pemb::next(e);
         if (nxt >= n_halfedges)
         {
-            nxt = pemb::first(pemb::vertex(prv));
+            nxt = pemb::first(pemb::vertex(prev));
         }
-        return pemb::mate(nxt);
+        return nxt;
     } 
 
-    //Given a edge with vertex origin v, return the prev clockwise edge of v with v as origin
+
+    //Calculates the tail vertex of the edge e
     //Input: e is the edge
-    //Output: the prev clockwise edge of v
-    //This is a custom implementation of the function prev of pemb
-    size_type CW_edge_to_vertex(size_type e)
+    //Output: the tail vertex v of the edge e
+    //Equivalent to pemb::vertex(e)
+    size_type origin(size_type e)
     {
-        e = pemb::mate(e);
-        size_type prv = pemb_prev(e);
-        if (prv >= n_halfedges)
-        {
-            size_type last_edge = pemb_last(pemb::vertex(e));
-            if(last_edge == e) //Especial case only detected in border edges
-                prv = pemb::mate(e - 1);
-            else
-                prv = last_edge;
-        }
-        return  pemb::mate(prv);
-    }
-
-
-
-    //Calculates the next edge of the face incident to edge e
-    //Input: e is the edge
-    //Output: the next edge of the face incident to e
-    size_type next(size_type e){
-        //e = pemb::mate(e);
-        //size_type prv = CW_edge_to_vertex(e);
-        //size_type mt = pemb::mate(prv);
-        //return pemb::mate(CCW_edge_to_vertex(pemb::mate(CCW_edge_to_vertex(e))));
-        return CW_edge_to_vertex(pemb::mate(e));
-    }
-
-    //Calculates the prev edge of the face incident to edge e
-    //Input: e is the edge
-    //Output: the prev edge of the face incident to e
-    size_type prev(size_type e){
-        //e = pemb::mate(e);
-        //size_type mt = pemb::mate(e);
-        //size_type nxt = CCW_edge_to_vertex(mt);
-        //return nxt;
-        return pemb::mate(CCW_edge_to_vertex(e));
+        if (e >= 2 *m_edges)
+            return -1;
+        return pemb::vertex(e);
     }
 
     //Calculates the head vertex of the edge e
@@ -429,18 +381,8 @@ public:
     //Equivalent to pemb::vertex(mate(e))
     size_type target(size_type e)
     {
-        if (e >= 2 *m_edges)
-            return -1;
-        return pemb::vertex(e);
-    }
-    //Calculates the tail vertex of the edge e
-    //Input: e is the edge
-    //Output: the tail vertex v of the edge e
-    //Equivalent to pemb::vertex(e)
-    size_type origin(size_type e)
-
-    {
         size_type nxt = e;
+        size_type init_vertex = pemb::vertex(nxt);
         size_type mt = pemb::mate(nxt);
         size_type curr_vertex = pemb::vertex(mt);
         return curr_vertex;
@@ -519,47 +461,28 @@ public:
     }    
 
 
-    //last(v): return i such that the last edge we process while visiting v is the ith we process during our traversal;
-    size_type pemb_last(size_type v)
-    {
-        if(v >= 0){
-            size_type match_in_B;
-            size_type pos_in_B = m_B_st.select(v + 1);	// B.select0
-            if (m_B[pos_in_B] == 1)
-                match_in_B = m_B_st.find_close(pos_in_B);
-            else
-                match_in_B = m_B_st.find_open(pos_in_B);
 
-            size_type pos = match_in_B;
-            size_type edge = 0;
-            if (pos)
-                edge = m_A_select1(pos);
-            if (v == 0)	// The root of the spanning tree
-                return n_halfedges - 1;
-            else
-                return edge ; //border edge
-        }
-        return -1;
+    //Calculates the prev edge of the face incident to edge e
+    //Input: e is the edge
+    //Output: the prev edge of the face incident to e
+    size_type prev(size_type e){
+        size_type prv = CW_edge_to_vertex(e);
+        size_type mt = pemb::mate(prv);
+        return mt;
     }
 
-    size_type pemb_prev(size_type i)
-    {
-        if(i < 1){ //if fist edge then return last edge as prev
-            return mate(n_halfedges - 1);
-        }
-        size_type pos_in_B = m_A_rank(i - 1);	// rank1
-        if (m_A[i-1] == 0){
-            //std::cout<<" (case 1) ";
-            return i - 1;
-        }else if(m_A[i-1] == 1 && m_B[pos_in_B]  == 1){
-            //std::cout<<" (case 2) ";
-            return pemb::mate(i - 1);
-        }else{
-            return -1;
-        }
+
+    //Calculates the next edge of the face incident to edge e
+    //Input: e is the edge
+    //Output: the next edge of the face incident to e
+    size_type next(size_type e){
+
+        size_type mt = pemb::mate(e);
+        size_type nxt = CCW_edge_to_vertex(mt);
+        return nxt;
     }
 
-    /*
+
     //Given a edge with vertex origin v, return the prev clockwise edge of v with v as origin
     //Input: e is the edge
     //Output: the prev clockwise edge of v
@@ -588,6 +511,30 @@ public:
 
     
 
+    //last(v): return i such that the last edge we process while visiting v is the ith we process during our traversal;
+    size_type pemb_last(size_type v)
+    {
+        if(v >= 0){
+            size_type match_in_B;
+            size_type pos_in_B = m_B_st.select(v + 1);	// B.select0
+            if (m_B[pos_in_B] == 1)
+                match_in_B = m_B_st.find_close(pos_in_B);
+            else
+                match_in_B = m_B_st.find_open(pos_in_B);
+
+            size_type pos = match_in_B;
+            size_type edge = 0;
+            if (pos)
+                edge = m_A_select1(pos);
+            if (v == 0)	// The root of the spanning tree
+                return n_halfedges - 1;
+            else
+                return edge ; //border edge
+        }
+        return -1;
+    }
+
+    /*
     size_type pemb_prev(size_type i)
     {
         if(i < 1){ //if fist edge then return last edge as prev
