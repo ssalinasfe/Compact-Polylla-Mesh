@@ -452,7 +452,7 @@ utility
 array
 -
 
-../src/compressHalfEdgeJose.hpp
+../src/inversedHalfEdge.hpp
 
 ../src/polylla.hpp
 array
@@ -467,7 +467,9 @@ fstream
 -
 cmath
 -
-compressHalfEdgeJose.hpp
+inversedHalfEdge.hpp
+-
+chrono
 -
 
 /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/main.cpp

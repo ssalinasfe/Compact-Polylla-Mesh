@@ -128,7 +128,7 @@ def plot_with_halfedges(node_file, hedge_file, output):
         plt.annotate(label,  # this is the text (put lab here to use tlab as string)
                     xy = (midpoints[i][0], midpoints[i][1]),  # this is the point to label
                     textcoords="offset points",  # how to position the text
-                    xytext=(-1*offsetlabel[i][0], -1*offsetlabel[i][1]),  # distance from text to points (x,y)
+                    xytext=(offsetlabel[i][0], offsetlabel[i][1]),  # distance from text to points (x,y)
                     ha='center', 
                     color='b',
                     size=3)

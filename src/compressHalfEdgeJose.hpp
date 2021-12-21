@@ -222,7 +222,7 @@ private:
         
         double x,y;
 
-        for(int i=0, k=1; i < n; i++, k++) {
+        for(int i=0; i < n; i++) {
             aux[2*i] = points[2*dfs_order[i]];
             aux[2*i+1] = points[2*dfs_order[i]+1];	
             std::cout<<"point "<<i<<": "<<aux[2*i]<<" "<<aux[2*i+1]<<", moving "<<dfs_order[i]<<" -> "<<i<<std::endl;
@@ -281,7 +281,7 @@ public:
         std::cout << "changing index done" << std::endl;
         n_halfedges = 2*m_edges;
         n_vertices = m_vertices;
-        std::cout<<"n_halfedges "<<n_halfedges<<std::endl;
+        std::cout<<"Halfeges: "<<n_halfedges<<std::endl;
         this->triangles = sdsl::bit_vector(n_halfedges, true);
         generate_list_of_triangles();
         for(int i = 0; i < n_halfedges; i++){
@@ -289,7 +289,7 @@ public:
                 n_faces++;
             }
         }
-        std::cout << "generating triangle list done" << std::endl;
+        std::cout << "Generating triangle list done" << std::endl;
         //cout<<"points:"<<endl;
         //for(int i = 0; i < m_vertices; i++){
         //    std::cout<<"point "<<i<<": "<<points[2*i+0]<<" "<<points[2*i+1]<<std::endl;

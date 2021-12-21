@@ -1024,3 +1024,50 @@ gmake[1]: Leaving directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/prog
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG succeeded with the following output:
+Change Dir: /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_11928/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_11928.dir/build.make CMakeFiles/cmTC_11928.dir/build
+gmake[1]: Entering directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_11928.dir/src.cxx.o
+/bin/x86_64-linux-gnu-g++-10   -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -o CMakeFiles/cmTC_11928.dir/src.cxx.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_11928
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11928.dir/link.txt --verbose=1
+/bin/x86_64-linux-gnu-g++-10  -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -rdynamic CMakeFiles/cmTC_11928.dir/src.cxx.o -o cmTC_11928 
+gmake[1]: Leaving directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG succeeded with the following output:
+Change Dir: /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_288a4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_288a4.dir/build.make CMakeFiles/cmTC_288a4.dir/build
+gmake[1]: Entering directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_288a4.dir/src.cxx.o
+/bin/x86_64-linux-gnu-g++-10   -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -o CMakeFiles/cmTC_288a4.dir/src.cxx.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_288a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_288a4.dir/link.txt --verbose=1
+/bin/x86_64-linux-gnu-g++-10  -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -rdynamic CMakeFiles/cmTC_288a4.dir/src.cxx.o -o cmTC_288a4 
+gmake[1]: Leaving directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG succeeded with the following output:
+Change Dir: /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c05d5/fast && gmake[1]: Entering directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_c05d5.dir/build.make CMakeFiles/cmTC_c05d5.dir/build
+gmake[2]: Entering directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c05d5.dir/src.cxx.o
+/bin/x86_64-linux-gnu-g++-10   -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -o CMakeFiles/cmTC_c05d5.dir/src.cxx.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c05d5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c05d5.dir/link.txt --verbose=1
+/bin/x86_64-linux-gnu-g++-10  -DHAVE_GCC_STD=C__11__MARCH=NATIVE__WALL__WEXTRA__DNDEBUG -std=c++11 -march=native -Wall -Wextra -DNDEBUG -rdynamic CMakeFiles/cmTC_c05d5.dir/src.cxx.o -o cmTC_c05d5 
+gmake[2]: Leaving directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

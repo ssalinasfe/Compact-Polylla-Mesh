@@ -154,12 +154,12 @@ public:
     unsigned int n = this->nodes();
     int cnt=0;
     
-    cout << "Edges: ";
-    for(int i=0; i < 2*(n-1); i++) {
-      cout << "(" << this->getEdgeSrc(i) << ",";
-      cout << this->getEdgeTgt(i) << ") ";
-    }
-    cout << endl;
+    //cout << "Edges: ";
+    //for(int i=0; i < 2*(n-1); i++) {
+    //  cout << "(" << this->getEdgeSrc(i) << ",";
+    //  cout << this->getEdgeTgt(i) << ") ";
+    //}
+    //cout << endl;
 
     stack <unsigned int> s;
     s.push(0); // Root      
@@ -167,7 +167,7 @@ public:
     while(!s.empty()) {
       int curr = s.top(); s.pop();
       dfs_order[cnt++] = curr;
-      cerr << curr << " ";
+      //cerr << curr << " ";
       
       int first = this->V[curr].getFirst();
       int last = this->V[curr].getLast();
@@ -178,7 +178,7 @@ public:
     	  s.push(this->getEdgeTgt(i));	
       }
     }
-    cout << endl;
+    //cout << endl;
   }
   
 };
