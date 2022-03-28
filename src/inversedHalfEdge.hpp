@@ -27,8 +27,11 @@ BUGs:
     - la función prev retorna mate(m_half_edges - 1) para prev(0) 
 */
 
+
 #ifndef COMPRESSHALFEDGE_HPP
 #define COMPRESSHALFEDGE_HPP
+
+#include <chrono>
 
 class compressTriangulation : public pemb<>
 {
@@ -281,13 +284,17 @@ public:
         n_vertices = m_vertices;
         //std::cout<<"Halfeges: "<<n_halfedges<<std::endl;
         this->triangles = sdsl::bit_vector(n_halfedges, true);
+
+        auto t_start = std::chrono::high_resolution_clock::now();
         generate_list_of_triangles();
         for(int i = 0; i < n_halfedges; i++){
             if(this->triangles[i] == true){
                 n_faces++;
             }
         }
-        std::cout << "Generating triangle list done" << std::endl;
+        auto t_end = std::chrono::high_resolution_clock::now();
+        double elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
+        std::cout << "Generating triangle list done in "<<elapsed_time_ms<<" ms."<<std::endl;
         delete dfs_order;
     }
 
