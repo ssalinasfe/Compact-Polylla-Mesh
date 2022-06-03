@@ -1,5 +1,5 @@
 //g++ -std=c++11 -O3 -DNDEBUG -I ~/include -Iinclude -L ~/lib  main.cpp -o main -lsdsl -ldivsufsort -ldivsufsort64 
-
+//falla con 34
 #include <algorithm>
 
 #include <vector>
