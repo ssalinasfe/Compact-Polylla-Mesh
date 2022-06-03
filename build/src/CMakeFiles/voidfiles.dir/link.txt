@@ -1,2 +1,2 @@
-/bin/x86_64-linux-gnu-ar qc libvoidfiles.a 
-/bin/x86_64-linux-gnu-ranlib libvoidfiles.a
+/usr/bin/ar qc libvoidfiles.a 
+/usr/bin/ranlib libvoidfiles.a

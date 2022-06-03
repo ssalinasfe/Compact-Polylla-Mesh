@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build
 
 # Utility rule file for uninstall.
 
@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 include sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/progress.make
 
 sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort && /usr/bin/cmake -P /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/CMakeModules/cmake_uninstall.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort && /usr/bin/cmake -P /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/CMakeModules/cmake_uninstall.cmake
 
 uninstall: sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall
 uninstall: sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/build.make
@@ -86,10 +86,10 @@ sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/build
 
 sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/clean:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/clean
 
 sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/depend:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/external/libdivsufsort/CMakeFiles/uninstall.dir/depend
 

@@ -540,21 +540,21 @@ sys/types.h
 src/gtest-internal-inl.h
 ../sdsl-lite/external/googletest/googletest/src/src/gtest-internal-inl.h
 
-/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/gtest-all.cc
+/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/googletest/googletest/src/gtest-all.cc
 gtest/gtest.h
-/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/gtest/gtest.h
+/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/googletest/googletest/src/gtest/gtest.h
 src/gtest.cc
-/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/src/gtest.cc
+/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/googletest/googletest/src/src/gtest.cc
 src/gtest-death-test.cc
-/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/src/gtest-death-test.cc
+/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/googletest/googletest/src/src/gtest-death-test.cc
 src/gtest-filepath.cc
-/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/src/gtest-filepath.cc
+/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/googletest/googletest/src/src/gtest-filepath.cc
 src/gtest-port.cc
-/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/src/gtest-port.cc
+/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/googletest/googletest/src/src/gtest-port.cc
 src/gtest-printers.cc
-/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/src/gtest-printers.cc
+/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/googletest/googletest/src/src/gtest-printers.cc
 src/gtest-test-part.cc
-/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/src/gtest-test-part.cc
+/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/googletest/googletest/src/src/gtest-test-part.cc
 src/gtest-typed-test.cc
-/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/src/gtest-typed-test.cc
+/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/googletest/googletest/src/src/gtest-typed-test.cc
 

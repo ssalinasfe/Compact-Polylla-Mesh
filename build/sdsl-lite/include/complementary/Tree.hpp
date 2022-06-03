@@ -150,7 +150,7 @@ public:
     return 0;
   }
 
-  void get_DFS(Tree t, int *parent, int *dfs_order) {
+  void get_DFS(int *parent, int *dfs_order) {
     unsigned int n = this->nodes();
     int cnt=0;
     

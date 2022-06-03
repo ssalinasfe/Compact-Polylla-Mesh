@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build
 
 # Utility rule file for csa-int-test_example01.txt_1.
 
@@ -75,8 +75,8 @@ include sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/progress.make
 sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1: ../sdsl-lite/test/test_cases/example01.txt
 sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1: ../sdsl-lite/test/tmp
 sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1: sdsl-lite/test/csa_int_test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute csa-int-test on example01.txt."
-	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/csa_int_test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/example01.txt 1 /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/csa_int_test__1 /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute csa-int-test on example01.txt."
+	/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test/csa_int_test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/test_cases/example01.txt 1 /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/tmp/csa_int_test__1 /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/tmp
 
 csa-int-test_example01.txt_1: sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1
 csa-int-test_example01.txt_1: sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/build.make
@@ -89,10 +89,10 @@ sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/build: csa-int-test_e
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/build
 
 sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/clean:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/csa-int-test_example01.txt_1.dir/cmake_clean.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/csa-int-test_example01.txt_1.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/clean
 
 sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/depend:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/depend
 

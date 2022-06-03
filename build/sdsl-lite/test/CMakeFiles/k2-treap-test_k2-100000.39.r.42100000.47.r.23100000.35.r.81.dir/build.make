@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build
 
 # Utility rule file for k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.
 
@@ -74,8 +74,8 @@ include sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.231
 
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81: ../sdsl-lite/test/tmp
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81: sdsl-lite/test/k2_treap_test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute k2-treap-test on k2-100000.39.r.42100000.47.r.23100000.35.r.81."
-	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/k2_treap_test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/k2-100000.39.r.42100000.47.r.23100000.35.r.81 /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/k2_treap_test_k2-100000.39.r.42100000.47.r.23100000.35.r.81
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute k2-treap-test on k2-100000.39.r.42100000.47.r.23100000.35.r.81."
+	/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test/k2_treap_test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/test_cases/k2-100000.39.r.42100000.47.r.23100000.35.r.81 /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/tmp/k2_treap_test_k2-100000.39.r.42100000.47.r.23100000.35.r.81
 
 k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81: sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81
 k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81: sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/build.make
@@ -88,10 +88,10 @@ sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/build
 
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/clean:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/cmake_clean.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/clean
 
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/depend:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/depend
 

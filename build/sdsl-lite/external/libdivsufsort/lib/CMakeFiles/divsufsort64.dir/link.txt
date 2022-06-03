@@ -1,2 +1,2 @@
-/bin/x86_64-linux-gnu-ar qc libdivsufsort64.a CMakeFiles/divsufsort64.dir/divsufsort.o CMakeFiles/divsufsort64.dir/sssort.o CMakeFiles/divsufsort64.dir/trsort.o CMakeFiles/divsufsort64.dir/utils.o
-/bin/x86_64-linux-gnu-ranlib libdivsufsort64.a
+/usr/bin/ar qc libdivsufsort64.a CMakeFiles/divsufsort64.dir/divsufsort.o CMakeFiles/divsufsort64.dir/sssort.o CMakeFiles/divsufsort64.dir/trsort.o CMakeFiles/divsufsort64.dir/utils.o
+/usr/bin/ranlib libdivsufsort64.a

@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build
 
 # Utility rule file for search-bidirectional-test_empty.txt.
 
@@ -75,8 +75,8 @@ include sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/progre
 sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt: ../sdsl-lite/test/test_cases/empty.txt
 sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt: ../sdsl-lite/test/tmp
 sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt: sdsl-lite/test/search_bidirectional_test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute search-bidirectional-test on empty.txt."
-	/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/search_bidirectional_test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/test_cases/empty.txt /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp/search_bidirectional_test_empty.txt /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/tmp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Execute search-bidirectional-test on empty.txt."
+	/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test/search_bidirectional_test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/test_cases/empty.txt /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/tmp/search_bidirectional_test_empty.txt /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/tmp
 
 search-bidirectional-test_empty.txt: sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt
 search-bidirectional-test_empty.txt: sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/build.make
@@ -89,10 +89,10 @@ sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/build: search-
 .PHONY : sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/build
 
 sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/clean:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/search-bidirectional-test_empty.txt.dir/cmake_clean.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/search-bidirectional-test_empty.txt.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/clean
 
 sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/depend:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/depend
 

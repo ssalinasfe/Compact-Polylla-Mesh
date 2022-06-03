@@ -1,4 +1,4 @@
-# Install script for directory: /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/include/complementary
+# Install script for directory: /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/include/complementary
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,26 +39,26 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/bin/x86_64-linux-gnu-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/complementary" TYPE FILE FILES "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/include/complementary/Edge.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/complementary" TYPE FILE FILES "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/include/complementary/Edge.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/complementary" TYPE FILE FILES "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/include/complementary/Graph.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/complementary" TYPE FILE FILES "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/include/complementary/Graph.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/complementary" TYPE FILE FILES "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/include/complementary/Tree.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/complementary" TYPE FILE FILES "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/include/complementary/Tree.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/complementary" TYPE FILE FILES "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/include/complementary/Vertex.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/complementary" TYPE FILE FILES "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/include/complementary/Vertex.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/complementary" TYPE FILE FILES "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/include/complementary/utils.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/complementary" TYPE FILE FILES "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/include/complementary/utils.hpp")
 endif()
 

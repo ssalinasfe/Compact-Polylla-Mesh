@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build
 
 # Utility rule file for uninstall-sdsl.
 
@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
 include sdsl-lite/CMakeFiles/uninstall-sdsl.dir/progress.make
 
 sdsl-lite/CMakeFiles/uninstall-sdsl:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite && /usr/bin/cmake -P /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/CMakeModules/cmake_uninstall.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite && /usr/bin/cmake -P /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/CMakeModules/cmake_uninstall.cmake
 
 uninstall-sdsl: sdsl-lite/CMakeFiles/uninstall-sdsl
 uninstall-sdsl: sdsl-lite/CMakeFiles/uninstall-sdsl.dir/build.make
@@ -86,10 +86,10 @@ sdsl-lite/CMakeFiles/uninstall-sdsl.dir/build: uninstall-sdsl
 .PHONY : sdsl-lite/CMakeFiles/uninstall-sdsl.dir/build
 
 sdsl-lite/CMakeFiles/uninstall-sdsl.dir/clean:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite && $(CMAKE_COMMAND) -P CMakeFiles/uninstall-sdsl.dir/cmake_clean.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite && $(CMAKE_COMMAND) -P CMakeFiles/uninstall-sdsl.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/CMakeFiles/uninstall-sdsl.dir/clean
 
 sdsl-lite/CMakeFiles/uninstall-sdsl.dir/depend:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/CMakeFiles/uninstall-sdsl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/CMakeFiles/uninstall-sdsl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/CMakeFiles/uninstall-sdsl.dir/depend
 

@@ -27,11 +27,8 @@ BUGs:
     - la función prev retorna mate(m_half_edges - 1) para prev(0) 
 */
 
-
 #ifndef COMPRESSHALFEDGE_HPP
 #define COMPRESSHALFEDGE_HPP
-
-#include <chrono>
 
 class compressTriangulation : public pemb<>
 {
@@ -40,6 +37,7 @@ public:
     typedef std::array<uint,3> triangle; 
     std::vector<double> points; //nodes
     sdsl::bit_vector triangles; //indices of edges to a unique triangle
+    sdsl::bit_vector triangles2; //indices of edges to a unique triangle
     size_type n_halfedges = 0; //number of halfedges
     size_type n_faces = 0; //number of faces
     size_type n_vertices = 0; //number of vertices
@@ -61,7 +59,7 @@ private:
 
             Tree t = g.dfs_spanning_tree(init, parent, count_edges, references);
 
-            t.get_DFS(t, parent, dfs_order);
+            t.get_DFS(parent, dfs_order);
             //for (size_t i = 0; i < m_vertices; i++)
             //{
             //	std::cout<<t.getNode(i).getFirst()<<" ";
@@ -271,6 +269,8 @@ public:
     compressTriangulation(std::string node_file, std::string graph_file) : pemb<>() {
         
         Graph g = read_graph_from_file(graph_file.c_str());
+
+	
         std::cout << "Graph done" << std::endl;
 	    int *dfs_order = new int[g.vertices()];
         construct_pemb(g, dfs_order);
@@ -284,17 +284,18 @@ public:
         n_vertices = m_vertices;
         //std::cout<<"Halfeges: "<<n_halfedges<<std::endl;
         this->triangles = sdsl::bit_vector(n_halfedges, true);
-
-        auto t_start = std::chrono::high_resolution_clock::now();
         generate_list_of_triangles();
         for(int i = 0; i < n_halfedges; i++){
             if(this->triangles[i] == true){
                 n_faces++;
             }
         }
-        auto t_end = std::chrono::high_resolution_clock::now();
-        double elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
-        std::cout << "Generating triangle list done in "<<elapsed_time_ms<<" ms."<<std::endl;
+        std::cout << "Generating triangle list done" << std::endl;
+
+//       std::cout << std::endl << "\tDFS" << std::endl;
+//        for(int i = 0; i < g.vertices(); i++)
+//            std::cout << "\t" << i << ": " << dfs_order[i] << std::endl;
+
         delete dfs_order;
     }
 
@@ -521,6 +522,94 @@ public:
     }
 
     ~compressTriangulation() {};
+
+
+
+
+  /******************************/
+
+  /*** Notation ***/
+  
+  // A[i]=1 means i-th half-edge belongs to the spanning tree of the primal
+  // m_B[i] = 1 means the i-th parenthesis is open
+  // m_B[i] = 0 means the i-th parenthesis is closed
+  // m_B_star[i] = 1 means the i-th bracket is open
+  // m_B_star[i] = 0 means the i-th bracket is closed
+
+  // !Return the id of the origin node of the half-edge e
+  size_type get_node(size_type e) {
+    size_type pos_in_A = m_A_rank(e+1); // rank1
+    
+    if(m_A[e] == 1) { // e is a half-edge of the primal spanning tree
+      if(m_B[pos_in_A] == 0) { // e is a close parenthesis
+	size_type match_pos;
+	match_pos = m_B_st.find_open(pos_in_A);
+	
+	return m_B_st.rank(match_pos) - 1;
+      }
+      else {  // e is an open parenthesis
+	size_type par = m_B_st.parent_t(pos_in_A);
+	return m_B_st.rank(par) - 1;
+      }
+    }
+    else { // e is a half-edge of the dual spanning tree
+      if(m_B[pos_in_A] == 1) { // The preceding parenthesis of e is an open parenthesis
+	return m_B_st.rank(pos_in_A) - 1;
+      }
+      else {
+	size_type match_pos;
+	match_pos = m_B_st.find_open(pos_in_A);
+	
+	size_type par = m_B_st.parent_t(match_pos);
+	return m_B_st.rank(par) - 1;
+      }
+    }
+  }
+
+
+  // !Return the id of the incident face to the half-edge e
+  size_type get_face(size_type e) {
+    size_type pos_in_A = e + 1 - m_A_rank(e+1); // rank0
+
+    if(m_A[e] == 0) { // e is a half-edge of the dual spanning tree
+      if(m_B_star[pos_in_A] == 0) { // e is a close bracket
+	size_type match_pos;
+	match_pos = m_B_star_st.find_open(pos_in_A);
+	
+	return m_B_star_st.rank(match_pos) - 1;
+      }
+      else {  // e is an open bracket
+	size_type par = m_B_star_st.parent_t(pos_in_A);
+	return m_B_star_st.rank(par) - 1;
+      }
+    }
+    else { // e is a half-edge of the primal spanning tree
+      if(m_B_star[pos_in_A] == 1) { // The preceding parenthesis of e is an open bracket
+	return m_B_star_st.rank(pos_in_A) - 1;
+      }
+      else {
+	size_type match_pos;
+	match_pos = m_B_star_st.find_open(pos_in_A);
+	
+	size_type par = m_B_star_st.parent_t(match_pos);
+	return m_B_star_st.rank(par) - 1;
+      }
+    }
+  }
+
+  bool is_border(size_type e) {
+    size_type f = get_face(e);
+
+    // The external face has id 0
+    return f==0;
+  }
+
+  void triangle_list() {
+    this->triangles2 = sdsl::bit_vector(n_halfedges, false);
+    for(size_type i=0; i < pemb_faces(); i++)
+      triangles2[first_dual(i)] = true;    
+  }
+
 };
 
 #endif

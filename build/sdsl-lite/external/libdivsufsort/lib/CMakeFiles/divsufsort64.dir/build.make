@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build
 
 # Include any dependencies generated for this target.
 include sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/depend.make
@@ -78,55 +78,55 @@ include sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/flags.m
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o: sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/flags.make
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o: ../sdsl-lite/external/libdivsufsort/lib/divsufsort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/divsufsort.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/divsufsort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o"
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/divsufsort.o -c /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/divsufsort.c
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/divsufsort64.dir/divsufsort.i"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/divsufsort.c > CMakeFiles/divsufsort64.dir/divsufsort.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/divsufsort.c > CMakeFiles/divsufsort64.dir/divsufsort.i
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/divsufsort64.dir/divsufsort.s"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/divsufsort.c -o CMakeFiles/divsufsort64.dir/divsufsort.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/divsufsort.c -o CMakeFiles/divsufsort64.dir/divsufsort.s
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o: sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/flags.make
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o: ../sdsl-lite/external/libdivsufsort/lib/sssort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/sssort.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/sssort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o"
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/sssort.o -c /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/sssort.c
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/divsufsort64.dir/sssort.i"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/sssort.c > CMakeFiles/divsufsort64.dir/sssort.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/sssort.c > CMakeFiles/divsufsort64.dir/sssort.i
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/divsufsort64.dir/sssort.s"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/sssort.c -o CMakeFiles/divsufsort64.dir/sssort.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/sssort.c -o CMakeFiles/divsufsort64.dir/sssort.s
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o: sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/flags.make
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o: ../sdsl-lite/external/libdivsufsort/lib/trsort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/trsort.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/trsort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o"
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/trsort.o -c /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/trsort.c
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/divsufsort64.dir/trsort.i"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/trsort.c > CMakeFiles/divsufsort64.dir/trsort.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/trsort.c > CMakeFiles/divsufsort64.dir/trsort.i
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/divsufsort64.dir/trsort.s"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/trsort.c -o CMakeFiles/divsufsort64.dir/trsort.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/trsort.c -o CMakeFiles/divsufsort64.dir/trsort.s
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o: sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/flags.make
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o: ../sdsl-lite/external/libdivsufsort/lib/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/utils.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o"
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/utils.o -c /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/utils.c
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/divsufsort64.dir/utils.i"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/utils.c > CMakeFiles/divsufsort64.dir/utils.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/utils.c > CMakeFiles/divsufsort64.dir/utils.i
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/divsufsort64.dir/utils.s"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && /bin/x86_64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/utils.c -o CMakeFiles/divsufsort64.dir/utils.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/utils.c -o CMakeFiles/divsufsort64.dir/utils.s
 
 # Object files for target divsufsort64
 divsufsort64_OBJECTS = \
@@ -144,9 +144,9 @@ sdsl-lite/external/libdivsufsort/lib/libdivsufsort64.a: sdsl-lite/external/libdi
 sdsl-lite/external/libdivsufsort/lib/libdivsufsort64.a: sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o
 sdsl-lite/external/libdivsufsort/lib/libdivsufsort64.a: sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make
 sdsl-lite/external/libdivsufsort/lib/libdivsufsort64.a: sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libdivsufsort64.a"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && $(CMAKE_COMMAND) -P CMakeFiles/divsufsort64.dir/cmake_clean_target.cmake
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/divsufsort64.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libdivsufsort64.a"
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && $(CMAKE_COMMAND) -P CMakeFiles/divsufsort64.dir/cmake_clean_target.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/divsufsort64.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build: sdsl-lite/external/libdivsufsort/lib/libdivsufsort64.a
@@ -154,10 +154,10 @@ sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build: sdsl-lit
 .PHONY : sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/clean:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib && $(CMAKE_COMMAND) -P CMakeFiles/divsufsort64.dir/cmake_clean.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib && $(CMAKE_COMMAND) -P CMakeFiles/divsufsort64.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/clean
 
 sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/depend:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/depend
 

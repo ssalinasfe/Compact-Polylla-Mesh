@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/divsufsort.c" "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o"
-  "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/sssort.c" "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o"
-  "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/trsort.c" "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o"
-  "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/libdivsufsort/lib/utils.c" "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o"
+  "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/divsufsort.c" "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o"
+  "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/sssort.c" "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o"
+  "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/trsort.c" "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o"
+  "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/libdivsufsort/lib/utils.c" "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/external/googletest/googletest/src/gtest_main.cc" "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+  "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/external/googletest/googletest/src/gtest_main.cc" "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,7 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/external/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/external/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

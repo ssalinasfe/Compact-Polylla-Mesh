@@ -26,11 +26,11 @@ make && ./compressPolylla ${file_folder}${node_file} ${file_folder}${pg_file} ${
 echo "done"
 
 
-#echo -n "plotting polyllamesh\n"
-#cd ../data
-#python3 plot_triangulation.py ${new_node_file} ${output_hedge} ${output_pdf}
-#python3 plot_triangulation.py ${new_node_file} ${output_hedge_polylla} ${output_pdf_polylla}
-#cd ../build
-#echo -n "Done.\n"
+echo -n "plotting polyllamesh\n"
+cd ../data
+python3 plot_triangulation.py ${new_node_file} ${output_hedge} ${output_pdf}
+python3 plot_triangulation.py ${new_node_file} ${output_hedge_polylla} ${output_pdf_polylla}
+cd ../build
+echo -n "Done.\n"
 
-#rm ${file_folder}${output_hedge} ${file_folder}${output_hedge_polylla}
+rm ${file_folder}${output_hedge} ${file_folder}${output_hedge_polylla}

@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/lib/CMakeFiles/sdsl.dir/DependInfo.cmake"
+  "/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/lib/CMakeFiles/sdsl.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

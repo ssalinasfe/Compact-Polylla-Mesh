@@ -1,2 +1,2 @@
-/bin/x86_64-linux-gnu-ar qc libgtest.a CMakeFiles/gtest.dir/src/gtest-all.cc.o
-/bin/x86_64-linux-gnu-ranlib libgtest.a
+/usr/bin/ar qc libgtest.a CMakeFiles/gtest.dir/src/gtest-all.cc.o
+/usr/bin/ranlib libgtest.a

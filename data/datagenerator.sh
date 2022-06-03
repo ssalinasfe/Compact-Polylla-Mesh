@@ -26,11 +26,11 @@ g++ generateplannar.cpp -o generateplannar
 ./generateplannar ${node_file} ${ele_file} ${neigh_file} ${pg_file} ${output_hedge_file}
 echo -n "Done.\n"
 
-#echo -n "plotting triangle original mesh\n"
-#python3 plot_triangulation.py ${node_file} ${output_hedge_file} ${output_pdf_original}
-#echo -n "Done.\n"
+echo -n "plotting triangle original mesh\n"
+python3 plot_triangulation.py ${node_file} ${output_hedge_file} ${output_pdf_original}
+echo -n "Done.\n"
 
 rm ${output_hedge_file}
 rm ${random_pts}
-rm ${ele_file}
-rm ${neigh_file}
+# rm ${ele_file}
+# rm ${neigh_file}

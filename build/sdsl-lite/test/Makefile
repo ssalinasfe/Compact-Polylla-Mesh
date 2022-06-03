@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +101,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CPackSourceConfig.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -134,7 +134,7 @@ install/fast: preinstall/fast
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -167,14 +167,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test//CMakeFiles/progress.marks
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles 0
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test//CMakeFiles/progress.marks
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/clean
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -184,22 +184,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/preinstall
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/preinstall
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/clean-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/clean-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/clean-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/clean-test.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ clean-test: sdsl-lite/test/CMakeFiles/clean-test.dir/rule
 
 # fast build rule for target.
 clean-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/clean-test.dir/build.make sdsl-lite/test/CMakeFiles/clean-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/clean-test.dir/build.make sdsl-lite/test/CMakeFiles/clean-test.dir/build
 .PHONY : clean-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/test-sdsl.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/test-sdsl.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/test-sdsl.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/test-sdsl.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ test-sdsl: sdsl-lite/test/CMakeFiles/test-sdsl.dir/rule
 
 # fast build rule for target.
 test-sdsl/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/test-sdsl.dir/build.make sdsl-lite/test/CMakeFiles/test-sdsl.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/test-sdsl.dir/build.make sdsl-lite/test/CMakeFiles/test-sdsl.dir/build
 .PHONY : test-sdsl/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.64.2.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.64.2.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.64.2.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.64.2.0.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ wt-int-test_int-vec.64.2.0: sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.64.2.0
 
 # fast build rule for target.
 wt-int-test_int-vec.64.2.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.64.2.0.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.64.2.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.64.2.0.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.64.2.0.dir/build
 .PHONY : wt-int-test_int-vec.64.2.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.1023.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.1023.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.1023.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.1023.1.0.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ wt-int-test_int-vec.1023.1.0: sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.1023
 
 # fast build rule for target.
 wt-int-test_int-vec.1023.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.1023.1.0.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.1023.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.1023.1.0.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.1023.1.0.dir/build
 .PHONY : wt-int-test_int-vec.1023.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-byte-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-byte-test.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ wt-byte-test: sdsl-lite/test/CMakeFiles/wt-byte-test.dir/rule
 
 # fast build rule for target.
 wt-byte-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test.dir/build
 .PHONY : wt-byte-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-byte-test_faust.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test_faust.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test_faust.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-byte-test_faust.txt.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ wt-byte-test_faust.txt: sdsl-lite/test/CMakeFiles/wt-byte-test_faust.txt.dir/rul
 
 # fast build rule for target.
 wt-byte-test_faust.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test_faust.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test_faust.txt.dir/build
 .PHONY : wt-byte-test_faust.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ wt-byte-test_all_symbols.txt: sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols
 
 # fast build rule for target.
 wt-byte-test_all_symbols.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test_all_symbols.txt.dir/build
 .PHONY : wt-byte-test_all_symbols.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-byte-test_100a.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test_100a.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test_100a.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-byte-test_100a.txt.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ wt-byte-test_100a.txt: sdsl-lite/test/CMakeFiles/wt-byte-test_100a.txt.dir/rule
 
 # fast build rule for target.
 wt-byte-test_100a.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test_100a.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test_100a.txt.dir/build
 .PHONY : wt-byte-test_100a.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt_byte_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt_byte_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt_byte_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt_byte_test.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ wt_byte_test: sdsl-lite/test/CMakeFiles/wt_byte_test.dir/rule
 
 # fast build rule for target.
 wt_byte_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_byte_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_byte_test.dir/build
 .PHONY : wt_byte_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sorted-stack-support-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sorted-stack-support-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sorted-stack-support-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sorted-stack-support-test.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ sorted-stack-support-test: sdsl-lite/test/CMakeFiles/sorted-stack-support-test.d
 
 # fast build rule for target.
 sorted-stack-support-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted-stack-support-test.dir/build.make sdsl-lite/test/CMakeFiles/sorted-stack-support-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted-stack-support-test.dir/build.make sdsl-lite/test/CMakeFiles/sorted-stack-support-test.dir/build
 .PHONY : sorted-stack-support-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ sorted_stack_support_test: sdsl-lite/test/CMakeFiles/sorted_stack_support_test.d
 
 # fast build rule for target.
 sorted_stack_support_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/build
 .PHONY : sorted_stack_support_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sorted-int-stack-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sorted-int-stack-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sorted-int-stack-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sorted-int-stack-test.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ sorted-int-stack-test: sdsl-lite/test/CMakeFiles/sorted-int-stack-test.dir/rule
 
 # fast build rule for target.
 sorted-int-stack-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted-int-stack-test.dir/build.make sdsl-lite/test/CMakeFiles/sorted-int-stack-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted-int-stack-test.dir/build.make sdsl-lite/test/CMakeFiles/sorted-int-stack-test.dir/build
 .PHONY : sorted-int-stack-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ sorted_int_stack_test: sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/rule
 
 # fast build rule for target.
 sorted_int_stack_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/build
 .PHONY : sorted_int_stack_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-1.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ select-support-test_bit-vec.CRAFTED-BLOCK-1: sdsl-lite/test/CMakeFiles/select-su
 
 # fast build rule for target.
 select-support-test_bit-vec.CRAFTED-BLOCK-1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-1.dir/build
 .PHONY : select-support-test_bit-vec.CRAFTED-BLOCK-1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-0.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ select-support-test_bit-vec.CRAFTED-BLOCK-0: sdsl-lite/test/CMakeFiles/select-su
 
 # fast build rule for target.
 select-support-test_bit-vec.CRAFTED-BLOCK-0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-BLOCK-0.dir/build
 .PHONY : select-support-test_bit-vec.CRAFTED-BLOCK-0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-0.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ select-support-test_bit-vec.CRAFTED-SPARSE-0: sdsl-lite/test/CMakeFiles/select-s
 
 # fast build rule for target.
 select-support-test_bit-vec.CRAFTED-SPARSE-0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-0.dir/build
 .PHONY : select-support-test_bit-vec.CRAFTED-SPARSE-0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.r.815.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.r.815.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.r.815.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.r.815.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ select-support-test_int-vec.1000000.1.r.815: sdsl-lite/test/CMakeFiles/select-su
 
 # fast build rule for target.
 select-support-test_int-vec.1000000.1.r.815/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.r.815.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.r.815.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.r.815.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.r.815.dir/build
 .PHONY : select-support-test_int-vec.1000000.1.r.815/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-int-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-int-test.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ wt-int-test: sdsl-lite/test/CMakeFiles/wt-int-test.dir/rule
 
 # fast build rule for target.
 wt-int-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test.dir/build
 .PHONY : wt-int-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8192.1.r.1043.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8192.1.r.1043.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8192.1.r.1043.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8192.1.r.1043.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ select-support-test_int-vec.8192.1.r.1043: sdsl-lite/test/CMakeFiles/select-supp
 
 # fast build rule for target.
 select-support-test_int-vec.8192.1.r.1043/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8192.1.r.1043.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8192.1.r.1043.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8192.1.r.1043.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8192.1.r.1043.dir/build
 .PHONY : select-support-test_int-vec.8192.1.r.1043/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.4096.1.r.793.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.4096.1.r.793.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.4096.1.r.793.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.4096.1.r.793.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ select-support-test_int-vec.4096.1.r.793: sdsl-lite/test/CMakeFiles/select-suppo
 
 # fast build rule for target.
 select-support-test_int-vec.4096.1.r.793/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.4096.1.r.793.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.4096.1.r.793.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.4096.1.r.793.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.4096.1.r.793.dir/build
 .PHONY : select-support-test_int-vec.4096.1.r.793/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.2048.1.r.5432.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.2048.1.r.5432.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.2048.1.r.5432.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.2048.1.r.5432.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ select-support-test_int-vec.2048.1.r.5432: sdsl-lite/test/CMakeFiles/select-supp
 
 # fast build rule for target.
 select-support-test_int-vec.2048.1.r.5432/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.2048.1.r.5432.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.2048.1.r.5432.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.2048.1.r.5432.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.2048.1.r.5432.dir/build
 .PHONY : select-support-test_int-vec.2048.1.r.5432/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1024.1.r.898.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1024.1.r.898.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1024.1.r.898.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1024.1.r.898.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ select-support-test_int-vec.1024.1.r.898: sdsl-lite/test/CMakeFiles/select-suppo
 
 # fast build rule for target.
 select-support-test_int-vec.1024.1.r.898/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1024.1.r.898.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1024.1.r.898.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1024.1.r.898.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1024.1.r.898.dir/build
 .PHONY : select-support-test_int-vec.1024.1.r.898/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.512.1.r.432.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.512.1.r.432.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.512.1.r.432.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.512.1.r.432.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ select-support-test_int-vec.512.1.r.432: sdsl-lite/test/CMakeFiles/select-suppor
 
 # fast build rule for target.
 select-support-test_int-vec.512.1.r.432/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.512.1.r.432.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.512.1.r.432.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.512.1.r.432.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.512.1.r.432.dir/build
 .PHONY : select-support-test_int-vec.512.1.r.432/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.32.1.r.111.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.32.1.r.111.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.32.1.r.111.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.32.1.r.111.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ select-support-test_int-vec.32.1.r.111: sdsl-lite/test/CMakeFiles/select-support
 
 # fast build rule for target.
 select-support-test_int-vec.32.1.r.111/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.32.1.r.111.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.32.1.r.111.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.32.1.r.111.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.32.1.r.111.dir/build
 .PHONY : select-support-test_int-vec.32.1.r.111/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.16.1.r.42.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.16.1.r.42.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.16.1.r.42.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.16.1.r.42.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ select-support-test_int-vec.16.1.r.42: sdsl-lite/test/CMakeFiles/select-support-
 
 # fast build rule for target.
 select-support-test_int-vec.16.1.r.42/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.16.1.r.42.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.16.1.r.42.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.16.1.r.42.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.16.1.r.42.dir/build
 .PHONY : select-support-test_int-vec.16.1.r.42/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.13.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.13.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.13.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.13.1.1.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ select-support-test_int-vec.13.1.1: sdsl-lite/test/CMakeFiles/select-support-tes
 
 # fast build rule for target.
 select-support-test_int-vec.13.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.13.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.13.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.13.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.13.1.1.dir/build
 .PHONY : select-support-test_int-vec.13.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.10.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.10.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.10.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.10.1.0.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ select-support-test_int-vec.10.1.0: sdsl-lite/test/CMakeFiles/select-support-tes
 
 # fast build rule for target.
 select-support-test_int-vec.10.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.10.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.10.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.10.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.10.1.0.dir/build
 .PHONY : select-support-test_int-vec.10.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.0.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ select-support-test_int-vec.8.1.0: sdsl-lite/test/CMakeFiles/select-support-test
 
 # fast build rule for target.
 select-support-test_int-vec.8.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.0.dir/build
 .PHONY : select-support-test_int-vec.8.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.7.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.7.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.7.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.7.1.1.dir/rule
 
 # Convenience name for target.
@@ -629,12 +629,12 @@ select-support-test_int-vec.7.1.1: sdsl-lite/test/CMakeFiles/select-support-test
 
 # fast build rule for target.
 select-support-test_int-vec.7.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.7.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.7.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.7.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.7.1.1.dir/build
 .PHONY : select-support-test_int-vec.7.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.1.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ select-support-test_int-vec.1000000.1.1: sdsl-lite/test/CMakeFiles/select-suppor
 
 # fast build rule for target.
 select-support-test_int-vec.1000000.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.1.dir/build
 .PHONY : select-support-test_int-vec.1000000.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.0.dir/rule
 
 # Convenience name for target.
@@ -659,12 +659,12 @@ select-support-test_int-vec.1000000.1.0: sdsl-lite/test/CMakeFiles/select-suppor
 
 # fast build rule for target.
 select-support-test_int-vec.1000000.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1000000.1.0.dir/build
 .PHONY : select-support-test_int-vec.1000000.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select_support_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select_support_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select_support_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select_support_test.dir/rule
 
 # Convenience name for target.
@@ -674,12 +674,12 @@ select_support_test: sdsl-lite/test/CMakeFiles/select_support_test.dir/rule
 
 # fast build rule for target.
 select_support_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select_support_test.dir/build.make sdsl-lite/test/CMakeFiles/select_support_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select_support_test.dir/build.make sdsl-lite/test/CMakeFiles/select_support_test.dir/build
 .PHONY : select_support_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/search-bidirectional-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/search-bidirectional-test.dir/rule
 
 # Convenience name for target.
@@ -689,12 +689,12 @@ search-bidirectional-test: sdsl-lite/test/CMakeFiles/search-bidirectional-test.d
 
 # fast build rule for target.
 search-bidirectional-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test.dir/build
 .PHONY : search-bidirectional-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/search-bidirectional-test_100a.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test_100a.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test_100a.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/search-bidirectional-test_100a.txt.dir/rule
 
 # Convenience name for target.
@@ -704,12 +704,12 @@ search-bidirectional-test_100a.txt: sdsl-lite/test/CMakeFiles/search-bidirection
 
 # fast build rule for target.
 search-bidirectional-test_100a.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test_100a.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test_100a.txt.dir/build
 .PHONY : search-bidirectional-test_100a.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100023.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100023.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100023.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100023.1.0.dir/rule
 
 # Convenience name for target.
@@ -719,12 +719,12 @@ wt-int-test_int-vec.100023.1.0: sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.10
 
 # fast build rule for target.
 wt-int-test_int-vec.100023.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100023.1.0.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100023.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100023.1.0.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100023.1.0.dir/build
 .PHONY : wt-int-test_int-vec.100023.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/search-bidirectional-test_example01.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test_example01.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test_example01.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/search-bidirectional-test_example01.txt.dir/rule
 
 # Convenience name for target.
@@ -734,12 +734,12 @@ search-bidirectional-test_example01.txt: sdsl-lite/test/CMakeFiles/search-bidire
 
 # fast build rule for target.
 search-bidirectional-test_example01.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test_example01.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test_example01.txt.dir/build
 .PHONY : search-bidirectional-test_example01.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/rule
 
 # Convenience name for target.
@@ -749,12 +749,12 @@ search-bidirectional-test_empty.txt: sdsl-lite/test/CMakeFiles/search-bidirectio
 
 # fast build rule for target.
 search-bidirectional-test_empty.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test_empty.txt.dir/build
 .PHONY : search-bidirectional-test_empty.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/rule
 
 # Convenience name for target.
@@ -764,12 +764,12 @@ search_bidirectional_test: sdsl-lite/test/CMakeFiles/search_bidirectional_test.d
 
 # fast build rule for target.
 search_bidirectional_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/build.make sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/build.make sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/build
 .PHONY : search_bidirectional_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.14.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.14.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.14.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.14.1.0.dir/rule
 
 # Convenience name for target.
@@ -779,12 +779,12 @@ select-support-test_int-vec.14.1.0: sdsl-lite/test/CMakeFiles/select-support-tes
 
 # fast build rule for target.
 select-support-test_int-vec.14.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.14.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.14.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.14.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.14.1.0.dir/build
 .PHONY : select-support-test_int-vec.14.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sa-construct-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test.dir/rule
 
 # Convenience name for target.
@@ -794,12 +794,12 @@ sa-construct-test: sdsl-lite/test/CMakeFiles/sa-construct-test.dir/rule
 
 # fast build rule for target.
 sa-construct-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test.dir/build
 .PHONY : sa-construct-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sa-construct-test_zarathustra.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_zarathustra.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_zarathustra.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_zarathustra.txt.dir/rule
 
 # Convenience name for target.
@@ -809,12 +809,12 @@ sa-construct-test_zarathustra.txt: sdsl-lite/test/CMakeFiles/sa-construct-test_z
 
 # fast build rule for target.
 sa-construct-test_zarathustra.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_zarathustra.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_zarathustra.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_zarathustra.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_zarathustra.txt.dir/build
 .PHONY : sa-construct-test_zarathustra.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/rule
 
 # Convenience name for target.
@@ -824,12 +824,12 @@ sa-construct-test_faust.txt: sdsl-lite/test/CMakeFiles/sa-construct-test_faust.t
 
 # fast build rule for target.
 sa-construct-test_faust.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_faust.txt.dir/build
 .PHONY : sa-construct-test_faust.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt_int_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt_int_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt_int_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt_int_test.dir/rule
 
 # Convenience name for target.
@@ -839,12 +839,12 @@ wt_int_test: sdsl-lite/test/CMakeFiles/wt_int_test.dir/rule
 
 # fast build rule for target.
 wt_int_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_int_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_int_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_int_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_int_test.dir/build
 .PHONY : wt_int_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sa-construct-test_example01.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_example01.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_example01.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_example01.txt.dir/rule
 
 # Convenience name for target.
@@ -854,12 +854,12 @@ sa-construct-test_example01.txt: sdsl-lite/test/CMakeFiles/sa-construct-test_exa
 
 # fast build rule for target.
 sa-construct-test_example01.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_example01.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_example01.txt.dir/build
 .PHONY : sa-construct-test_example01.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/rule
 
 # Convenience name for target.
@@ -869,12 +869,12 @@ sa-construct-test_one_byte.txt: sdsl-lite/test/CMakeFiles/sa-construct-test_one_
 
 # fast build rule for target.
 sa-construct-test_one_byte.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_one_byte.txt.dir/build
 .PHONY : sa-construct-test_one_byte.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sa-construct-test_empty.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_empty.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_empty.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_empty.txt.dir/rule
 
 # Convenience name for target.
@@ -884,12 +884,12 @@ sa-construct-test_empty.txt: sdsl-lite/test/CMakeFiles/sa-construct-test_empty.t
 
 # fast build rule for target.
 sa-construct-test_empty.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_empty.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_empty.txt.dir/build
 .PHONY : sa-construct-test_empty.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rmq-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rmq-test.dir/rule
 
 # Convenience name for target.
@@ -899,12 +899,12 @@ rmq-test: sdsl-lite/test/CMakeFiles/rmq-test.dir/rule
 
 # fast build rule for target.
 rmq-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test.dir/build
 .PHONY : rmq-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.17.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.17.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.17.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.17.dir/rule
 
 # Convenience name for target.
@@ -914,12 +914,12 @@ rmq-test_int-vec.1000000.64.i.17: sdsl-lite/test/CMakeFiles/rmq-test_int-vec.100
 
 # fast build rule for target.
 rmq-test_int-vec.1000000.64.i.17/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.17.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.17.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.17.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.17.dir/build
 .PHONY : rmq-test_int-vec.1000000.64.i.17/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.32.i.42.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.32.i.42.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.32.i.42.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.32.i.42.dir/rule
 
 # Convenience name for target.
@@ -929,12 +929,12 @@ rmq-test_int-vec.1000000.32.i.42: sdsl-lite/test/CMakeFiles/rmq-test_int-vec.100
 
 # fast build rule for target.
 rmq-test_int-vec.1000000.32.i.42/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.32.i.42.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.32.i.42.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.32.i.42.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.32.i.42.dir/build
 .PHONY : rmq-test_int-vec.1000000.32.i.42/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/rule
 
 # Convenience name for target.
@@ -944,12 +944,12 @@ rmq-test_int-vec.1000000.64.i: sdsl-lite/test/CMakeFiles/rmq-test_int-vec.100000
 
 # fast build rule for target.
 rmq-test_int-vec.1000000.64.i/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1000000.64.i.dir/build
 .PHONY : rmq-test_int-vec.1000000.64.i/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.0.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.0.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.0.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rmq-test_int-vec.0.1.0.dir/rule
 
 # Convenience name for target.
@@ -959,12 +959,12 @@ rmq-test_int-vec.0.1.0: sdsl-lite/test/CMakeFiles/rmq-test_int-vec.0.1.0.dir/rul
 
 # fast build rule for target.
 rmq-test_int-vec.0.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test_int-vec.0.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test_int-vec.0.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test_int-vec.0.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test_int-vec.0.1.0.dir/build
 .PHONY : rmq-test_int-vec.0.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rmq_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rmq_test.dir/rule
 
 # Convenience name for target.
@@ -974,12 +974,12 @@ rmq_test: sdsl-lite/test/CMakeFiles/rmq_test.dir/rule
 
 # fast build rule for target.
 rmq_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq_test.dir/build.make sdsl-lite/test/CMakeFiles/rmq_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq_test.dir/build.make sdsl-lite/test/CMakeFiles/rmq_test.dir/build
 .PHONY : rmq_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/search-bidirectional-test_faust.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test_faust.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test_faust.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/search-bidirectional-test_faust.txt.dir/rule
 
 # Convenience name for target.
@@ -989,12 +989,12 @@ search-bidirectional-test_faust.txt: sdsl-lite/test/CMakeFiles/search-bidirectio
 
 # fast build rule for target.
 search-bidirectional-test_faust.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test_faust.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test_faust.txt.dir/build
 .PHONY : search-bidirectional-test_faust.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule
 
 # Convenience name for target.
@@ -1004,12 +1004,12 @@ rank-support-test_bit-vec.CRAFTED-MAT-SELECT: sdsl-lite/test/CMakeFiles/rank-sup
 
 # fast build rule for target.
 rank-support-test_bit-vec.CRAFTED-MAT-SELECT/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/build
 .PHONY : rank-support-test_bit-vec.CRAFTED-MAT-SELECT/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-32.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-32.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-32.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-32.dir/rule
 
 # Convenience name for target.
@@ -1019,12 +1019,12 @@ rank-support-test_bit-vec.CRAFTED-32: sdsl-lite/test/CMakeFiles/rank-support-tes
 
 # fast build rule for target.
 rank-support-test_bit-vec.CRAFTED-32/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-32.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-32.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-32.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-32.dir/build
 .PHONY : rank-support-test_bit-vec.CRAFTED-32/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.r.815.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.r.815.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.r.815.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.r.815.dir/rule
 
 # Convenience name for target.
@@ -1034,12 +1034,12 @@ rank-support-test_int-vec.1000000.1.r.815: sdsl-lite/test/CMakeFiles/rank-suppor
 
 # fast build rule for target.
 rank-support-test_int-vec.1000000.1.r.815/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.r.815.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.r.815.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.r.815.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.r.815.dir/build
 .PHONY : rank-support-test_int-vec.1000000.1.r.815/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8192.1.r.1043.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8192.1.r.1043.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8192.1.r.1043.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8192.1.r.1043.dir/rule
 
 # Convenience name for target.
@@ -1049,12 +1049,12 @@ rank-support-test_int-vec.8192.1.r.1043: sdsl-lite/test/CMakeFiles/rank-support-
 
 # fast build rule for target.
 rank-support-test_int-vec.8192.1.r.1043/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8192.1.r.1043.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8192.1.r.1043.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8192.1.r.1043.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8192.1.r.1043.dir/build
 .PHONY : rank-support-test_int-vec.8192.1.r.1043/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.2048.1.r.5432.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.2048.1.r.5432.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.2048.1.r.5432.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.2048.1.r.5432.dir/rule
 
 # Convenience name for target.
@@ -1064,12 +1064,12 @@ rank-support-test_int-vec.2048.1.r.5432: sdsl-lite/test/CMakeFiles/rank-support-
 
 # fast build rule for target.
 rank-support-test_int-vec.2048.1.r.5432/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.2048.1.r.5432.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.2048.1.r.5432.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.2048.1.r.5432.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.2048.1.r.5432.dir/build
 .PHONY : rank-support-test_int-vec.2048.1.r.5432/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.512.1.r.432.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.512.1.r.432.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.512.1.r.432.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.512.1.r.432.dir/rule
 
 # Convenience name for target.
@@ -1079,12 +1079,12 @@ rank-support-test_int-vec.512.1.r.432: sdsl-lite/test/CMakeFiles/rank-support-te
 
 # fast build rule for target.
 rank-support-test_int-vec.512.1.r.432/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.512.1.r.432.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.512.1.r.432.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.512.1.r.432.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.512.1.r.432.dir/build
 .PHONY : rank-support-test_int-vec.512.1.r.432/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.256.1.r.4887.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.256.1.r.4887.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.256.1.r.4887.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.256.1.r.4887.dir/rule
 
 # Convenience name for target.
@@ -1094,12 +1094,12 @@ rank-support-test_int-vec.256.1.r.4887: sdsl-lite/test/CMakeFiles/rank-support-t
 
 # fast build rule for target.
 rank-support-test_int-vec.256.1.r.4887/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.256.1.r.4887.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.256.1.r.4887.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.256.1.r.4887.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.256.1.r.4887.dir/build
 .PHONY : rank-support-test_int-vec.256.1.r.4887/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-byte-test_faust.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test_faust.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test_faust.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-byte-test_faust.txt.dir/rule
 
 # Convenience name for target.
@@ -1109,12 +1109,12 @@ csa-byte-test_faust.txt: sdsl-lite/test/CMakeFiles/csa-byte-test_faust.txt.dir/r
 
 # fast build rule for target.
 csa-byte-test_faust.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test_faust.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test_faust.txt.dir/build
 .PHONY : csa-byte-test_faust.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-byte-test_empty.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test_empty.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test_empty.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-byte-test_empty.txt.dir/rule
 
 # Convenience name for target.
@@ -1124,12 +1124,12 @@ csa-byte-test_empty.txt: sdsl-lite/test/CMakeFiles/csa-byte-test_empty.txt.dir/r
 
 # fast build rule for target.
 csa-byte-test_empty.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test_empty.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test_empty.txt.dir/build
 .PHONY : csa-byte-test_empty.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2_tree_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2_tree_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2_tree_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2_tree_test.dir/rule
 
 # Convenience name for target.
@@ -1139,12 +1139,12 @@ k2_tree_test: sdsl-lite/test/CMakeFiles/k2_tree_test.dir/rule
 
 # fast build rule for target.
 k2_tree_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_tree_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_tree_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_tree_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_tree_test.dir/build
 .PHONY : k2_tree_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa_byte_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa_byte_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa_byte_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa_byte_test.dir/rule
 
 # Convenience name for target.
@@ -1154,12 +1154,12 @@ csa_byte_test: sdsl-lite/test/CMakeFiles/csa_byte_test.dir/rule
 
 # fast build rule for target.
 csa_byte_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_byte_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_byte_test.dir/build
 .PHONY : csa_byte_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-int-test_100a.txt_1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_100a.txt_1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_100a.txt_1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-int-test_100a.txt_1.dir/rule
 
 # Convenience name for target.
@@ -1169,12 +1169,12 @@ cst-int-test_100a.txt_1: sdsl-lite/test/CMakeFiles/cst-int-test_100a.txt_1.dir/r
 
 # fast build rule for target.
 cst-int-test_100a.txt_1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_100a.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_100a.txt_1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_100a.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_100a.txt_1.dir/build
 .PHONY : cst-int-test_100a.txt_1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/compile_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/compile_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/compile_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/compile_test.dir/rule
 
 # Convenience name for target.
@@ -1184,12 +1184,12 @@ compile_test: sdsl-lite/test/CMakeFiles/compile_test.dir/rule
 
 # fast build rule for target.
 compile_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/compile_test.dir/build.make sdsl-lite/test/CMakeFiles/compile_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/compile_test.dir/build.make sdsl-lite/test/CMakeFiles/compile_test.dir/build
 .PHONY : compile_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bits_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bits_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bits_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bits_test.dir/rule
 
 # Convenience name for target.
@@ -1199,12 +1199,12 @@ bits_test: sdsl-lite/test/CMakeFiles/bits_test.dir/rule
 
 # fast build rule for target.
 bits_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bits_test.dir/build.make sdsl-lite/test/CMakeFiles/bits_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bits_test.dir/build.make sdsl-lite/test/CMakeFiles/bits_test.dir/build
 .PHONY : bits_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-32.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-32.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-32.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-32.dir/rule
 
 # Convenience name for target.
@@ -1214,12 +1214,12 @@ bit-vector-test_bit-vec.CRAFTED-32: sdsl-lite/test/CMakeFiles/bit-vector-test_bi
 
 # fast build rule for target.
 bit-vector-test_bit-vec.CRAFTED-32/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-32.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-32.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-32.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-32.dir/build
 .PHONY : bit-vector-test_bit-vec.CRAFTED-32/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/rule
 
 # Convenience name for target.
@@ -1229,12 +1229,12 @@ k2-1000000.52.r.421000000.57.r.231000000.45.r.81: sdsl-lite/test/CMakeFiles/k2-1
 
 # fast build rule for target.
 k2-1000000.52.r.421000000.57.r.231000000.45.r.81/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/build
 .PHONY : k2-1000000.52.r.421000000.57.r.231000000.45.r.81/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-int-test_keeper.int_8.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_keeper.int_8.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_keeper.int_8.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_keeper.int_8.dir/rule
 
 # Convenience name for target.
@@ -1244,12 +1244,12 @@ csa-int-test_keeper.int_8: sdsl-lite/test/CMakeFiles/csa-int-test_keeper.int_8.d
 
 # fast build rule for target.
 csa-int-test_keeper.int_8/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_keeper.int_8.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_keeper.int_8.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_keeper.int_8.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_keeper.int_8.dir/build
 .PHONY : csa-int-test_keeper.int_8/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst_byte_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst_byte_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst_byte_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst_byte_test.dir/rule
 
 # Convenience name for target.
@@ -1259,12 +1259,12 @@ cst_byte_test: sdsl-lite/test/CMakeFiles/cst_byte_test.dir/rule
 
 # fast build rule for target.
 cst_byte_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_byte_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_byte_test.dir/build
 .PHONY : cst_byte_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sa_construct_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa_construct_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa_construct_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sa_construct_test.dir/rule
 
 # Convenience name for target.
@@ -1274,12 +1274,12 @@ sa_construct_test: sdsl-lite/test/CMakeFiles/sa_construct_test.dir/rule
 
 # fast build rule for target.
 sa_construct_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/sa_construct_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/sa_construct_test.dir/build
 .PHONY : sa_construct_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-0.dir/rule
 
 # Convenience name for target.
@@ -1289,12 +1289,12 @@ rank-support-test_bit-vec.CRAFTED-SPARSE-0: sdsl-lite/test/CMakeFiles/rank-suppo
 
 # fast build rule for target.
 rank-support-test_bit-vec.CRAFTED-SPARSE-0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-0.dir/build
 .PHONY : rank-support-test_bit-vec.CRAFTED-SPARSE-0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.12.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.12.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.12.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.12.1.0.dir/rule
 
 # Convenience name for target.
@@ -1304,12 +1304,12 @@ bit-vector-test_int-vec.12.1.0: sdsl-lite/test/CMakeFiles/bit-vector-test_int-ve
 
 # fast build rule for target.
 bit-vector-test_int-vec.12.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.12.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.12.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.12.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.12.1.0.dir/build
 .PHONY : bit-vector-test_int-vec.12.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-1.dir/rule
 
 # Convenience name for target.
@@ -1319,12 +1319,12 @@ rank-support-test_bit-vec.CRAFTED-BLOCK-1: sdsl-lite/test/CMakeFiles/rank-suppor
 
 # fast build rule for target.
 rank-support-test_bit-vec.CRAFTED-BLOCK-1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-1.dir/build
 .PHONY : rank-support-test_bit-vec.CRAFTED-BLOCK-1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/dac_vector_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/dac_vector_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/dac_vector_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/dac_vector_test.dir/rule
 
 # Convenience name for target.
@@ -1334,12 +1334,12 @@ dac_vector_test: sdsl-lite/test/CMakeFiles/dac_vector_test.dir/rule
 
 # fast build rule for target.
 dac_vector_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/dac_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/dac_vector_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/dac_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/dac_vector_test.dir/build
 .PHONY : dac_vector_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-byte-test_empty.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test_empty.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test_empty.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-byte-test_empty.txt.dir/rule
 
 # Convenience name for target.
@@ -1349,12 +1349,12 @@ wt-byte-test_empty.txt: sdsl-lite/test/CMakeFiles/wt-byte-test_empty.txt.dir/rul
 
 # fast build rule for target.
 wt-byte-test_empty.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test_empty.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test_empty.txt.dir/build
 .PHONY : wt-byte-test_empty.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.10.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.10.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.10.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.10.1.0.dir/rule
 
 # Convenience name for target.
@@ -1364,12 +1364,12 @@ bit-vector-test_int-vec.10.1.0: sdsl-lite/test/CMakeFiles/bit-vector-test_int-ve
 
 # fast build rule for target.
 bit-vector-test_int-vec.10.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.10.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.10.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.10.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.10.1.0.dir/build
 .PHONY : bit-vector-test_int-vec.10.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.13.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.13.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.13.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.13.1.1.dir/rule
 
 # Convenience name for target.
@@ -1379,12 +1379,12 @@ bit-vector-test_int-vec.13.1.1: sdsl-lite/test/CMakeFiles/bit-vector-test_int-ve
 
 # fast build rule for target.
 bit-vector-test_int-vec.13.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.13.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.13.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.13.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.13.1.1.dir/build
 .PHONY : bit-vector-test_int-vec.13.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-byte-test_100a.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test_100a.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test_100a.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-byte-test_100a.txt.dir/rule
 
 # Convenience name for target.
@@ -1394,12 +1394,12 @@ csa-byte-test_100a.txt: sdsl-lite/test/CMakeFiles/csa-byte-test_100a.txt.dir/rul
 
 # fast build rule for target.
 csa-byte-test_100a.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test_100a.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test_100a.txt.dir/build
 .PHONY : csa-byte-test_100a.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/int-vector-mapper-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int-vector-mapper-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int-vector-mapper-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/int-vector-mapper-test.dir/rule
 
 # Convenience name for target.
@@ -1409,12 +1409,12 @@ int-vector-mapper-test: sdsl-lite/test/CMakeFiles/int-vector-mapper-test.dir/rul
 
 # fast build rule for target.
 int-vector-mapper-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int-vector-mapper-test.dir/build.make sdsl-lite/test/CMakeFiles/int-vector-mapper-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int-vector-mapper-test.dir/build.make sdsl-lite/test/CMakeFiles/int-vector-mapper-test.dir/build
 .PHONY : int-vector-mapper-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/moby.int.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/moby.int.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/moby.int.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/moby.int.dir/rule
 
 # Convenience name for target.
@@ -1424,12 +1424,12 @@ moby.int: sdsl-lite/test/CMakeFiles/moby.int.dir/rule
 
 # fast build rule for target.
 moby.int/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/moby.int.dir/build.make sdsl-lite/test/CMakeFiles/moby.int.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/moby.int.dir/build.make sdsl-lite/test/CMakeFiles/moby.int.dir/build
 .PHONY : moby.int/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-byte-test_empty.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-byte-test_empty.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-byte-test_empty.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-byte-test_empty.txt.dir/rule
 
 # Convenience name for target.
@@ -1439,12 +1439,12 @@ cst-byte-test_empty.txt: sdsl-lite/test/CMakeFiles/cst-byte-test_empty.txt.dir/r
 
 # fast build rule for target.
 cst-byte-test_empty.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-byte-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/cst-byte-test_empty.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-byte-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/cst-byte-test_empty.txt.dir/build
 .PHONY : cst-byte-test_empty.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/rule
 
 # Convenience name for target.
@@ -1454,12 +1454,12 @@ k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0: sdsl-lite/test/CMakeFiles/k2-treap-test_
 
 # fast build rule for target.
 k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0.dir/build
 .PHONY : k2-treap-test_k2-0.1.0.00.1.0.00.1.0.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.128.1.r.73.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.128.1.r.73.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.128.1.r.73.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.128.1.r.73.dir/rule
 
 # Convenience name for target.
@@ -1469,12 +1469,12 @@ bit-vector-test_int-vec.128.1.r.73: sdsl-lite/test/CMakeFiles/bit-vector-test_in
 
 # fast build rule for target.
 bit-vector-test_int-vec.128.1.r.73/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.128.1.r.73.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.128.1.r.73.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.128.1.r.73.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.128.1.r.73.dir/build
 .PHONY : bit-vector-test_int-vec.128.1.r.73/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.0.dir/rule
 
 # Convenience name for target.
@@ -1484,12 +1484,12 @@ bit-vector-test_int-vec.8.1.0: sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec
 
 # fast build rule for target.
 bit-vector-test_int-vec.8.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.0.dir/build
 .PHONY : bit-vector-test_int-vec.8.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-int-test_moby.int_8.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_moby.int_8.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_moby.int_8.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_moby.int_8.dir/rule
 
 # Convenience name for target.
@@ -1499,12 +1499,12 @@ csa-int-test_moby.int_8: sdsl-lite/test/CMakeFiles/csa-int-test_moby.int_8.dir/r
 
 # fast build rule for target.
 csa-int-test_moby.int_8/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_moby.int_8.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_moby.int_8.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_moby.int_8.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_moby.int_8.dir/build
 .PHONY : csa-int-test_moby.int_8/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.1.dir/rule
 
 # Convenience name for target.
@@ -1514,12 +1514,12 @@ bit-vector-test_int-vec.1000000.1.1: sdsl-lite/test/CMakeFiles/bit-vector-test_i
 
 # fast build rule for target.
 bit-vector-test_int-vec.1000000.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.1.dir/build
 .PHONY : bit-vector-test_int-vec.1000000.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-1.dir/rule
 
 # Convenience name for target.
@@ -1529,12 +1529,12 @@ rank-support-test_bit-vec.CRAFTED-SPARSE-1: sdsl-lite/test/CMakeFiles/rank-suppo
 
 # fast build rule for target.
 rank-support-test_bit-vec.CRAFTED-SPARSE-1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-SPARSE-1.dir/build
 .PHONY : rank-support-test_bit-vec.CRAFTED-SPARSE-1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bits-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bits-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bits-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bits-test.dir/rule
 
 # Convenience name for target.
@@ -1544,12 +1544,12 @@ bits-test: sdsl-lite/test/CMakeFiles/bits-test.dir/rule
 
 # fast build rule for target.
 bits-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bits-test.dir/build.make sdsl-lite/test/CMakeFiles/bits-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bits-test.dir/build.make sdsl-lite/test/CMakeFiles/bits-test.dir/build
 .PHONY : bits-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/lcp-construct-test_faust.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test_faust.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test_faust.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/lcp-construct-test_faust.txt.dir/rule
 
 # Convenience name for target.
@@ -1559,12 +1559,12 @@ lcp-construct-test_faust.txt: sdsl-lite/test/CMakeFiles/lcp-construct-test_faust
 
 # fast build rule for target.
 lcp-construct-test_faust.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test_faust.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test_faust.txt.dir/build
 .PHONY : lcp-construct-test_faust.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/rule
 
 # Convenience name for target.
@@ -1574,12 +1574,12 @@ replace_int_vector_value: sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir
 
 # fast build rule for target.
 replace_int_vector_value/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/build.make sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/build.make sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/build
 .PHONY : replace_int_vector_value/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.1.dir/rule
 
 # Convenience name for target.
@@ -1589,12 +1589,12 @@ rank-support-test_int-vec.1000000.1.1: sdsl-lite/test/CMakeFiles/rank-support-te
 
 # fast build rule for target.
 rank-support-test_int-vec.1000000.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.1.dir/build
 .PHONY : rank-support-test_int-vec.1000000.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-int-test_empty.txt_1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_empty.txt_1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_empty.txt_1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_empty.txt_1.dir/rule
 
 # Convenience name for target.
@@ -1604,12 +1604,12 @@ csa-int-test_empty.txt_1: sdsl-lite/test/CMakeFiles/csa-int-test_empty.txt_1.dir
 
 # fast build rule for target.
 csa-int-test_empty.txt_1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_empty.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_empty.txt_1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_empty.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_empty.txt_1.dir/build
 .PHONY : csa-int-test_empty.txt_1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sd-vector-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sd-vector-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sd-vector-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sd-vector-test.dir/rule
 
 # Convenience name for target.
@@ -1619,12 +1619,12 @@ sd-vector-test: sdsl-lite/test/CMakeFiles/sd-vector-test.dir/rule
 
 # fast build rule for target.
 sd-vector-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sd-vector-test.dir/build.make sdsl-lite/test/CMakeFiles/sd-vector-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sd-vector-test.dir/build.make sdsl-lite/test/CMakeFiles/sd-vector-test.dir/build
 .PHONY : sd-vector-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-byte-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-byte-test.dir/rule
 
 # Convenience name for target.
@@ -1634,12 +1634,12 @@ csa-byte-test: sdsl-lite/test/CMakeFiles/csa-byte-test.dir/rule
 
 # fast build rule for target.
 csa-byte-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test.dir/build
 .PHONY : csa-byte-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.64.1.r.222.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.64.1.r.222.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.64.1.r.222.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.64.1.r.222.dir/rule
 
 # Convenience name for target.
@@ -1649,12 +1649,12 @@ select-support-test_int-vec.64.1.r.222: sdsl-lite/test/CMakeFiles/select-support
 
 # fast build rule for target.
 select-support-test_int-vec.64.1.r.222/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.64.1.r.222.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.64.1.r.222.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.64.1.r.222.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.64.1.r.222.dir/build
 .PHONY : select-support-test_int-vec.64.1.r.222/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.0.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.0.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.0.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.0.1.0.dir/rule
 
 # Convenience name for target.
@@ -1664,12 +1664,12 @@ select-support-test_int-vec.0.1.0: sdsl-lite/test/CMakeFiles/select-support-test
 
 # fast build rule for target.
 select-support-test_int-vec.0.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.0.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.0.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.0.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.0.1.0.dir/build
 .PHONY : select-support-test_int-vec.0.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1.1.0.dir/rule
 
 # Convenience name for target.
@@ -1679,12 +1679,12 @@ bit-vector-test_int-vec.1.1.0: sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec
 
 # fast build rule for target.
 bit-vector-test_int-vec.1.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1.1.0.dir/build
 .PHONY : bit-vector-test_int-vec.1.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1.1.0.dir/rule
 
 # Convenience name for target.
@@ -1694,12 +1694,12 @@ select-support-test_int-vec.1.1.0: sdsl-lite/test/CMakeFiles/select-support-test
 
 # fast build rule for target.
 select-support-test_int-vec.1.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.1.1.0.dir/build
 .PHONY : select-support-test_int-vec.1.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/coder_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/coder_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/coder_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/coder_test.dir/rule
 
 # Convenience name for target.
@@ -1709,12 +1709,12 @@ coder_test: sdsl-lite/test/CMakeFiles/coder_test.dir/rule
 
 # fast build rule for target.
 coder_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/coder_test.dir/build.make sdsl-lite/test/CMakeFiles/coder_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/coder_test.dir/build.make sdsl-lite/test/CMakeFiles/coder_test.dir/build
 .PHONY : coder_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-1.dir/rule
 
 # Convenience name for target.
@@ -1724,12 +1724,12 @@ bit-vector-test_bit-vec.CRAFTED-BLOCK-1: sdsl-lite/test/CMakeFiles/bit-vector-te
 
 # fast build rule for target.
 bit-vector-test_bit-vec.CRAFTED-BLOCK-1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-1.dir/build
 .PHONY : bit-vector-test_bit-vec.CRAFTED-BLOCK-1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.12.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.12.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.12.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.12.1.0.dir/rule
 
 # Convenience name for target.
@@ -1739,12 +1739,12 @@ select-support-test_int-vec.12.1.0: sdsl-lite/test/CMakeFiles/select-support-tes
 
 # fast build rule for target.
 select-support-test_int-vec.12.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.12.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.12.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.12.1.0.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.12.1.0.dir/build
 .PHONY : select-support-test_int-vec.12.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1024.1.r.898.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1024.1.r.898.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1024.1.r.898.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1024.1.r.898.dir/rule
 
 # Convenience name for target.
@@ -1754,12 +1754,12 @@ rank-support-test_int-vec.1024.1.r.898: sdsl-lite/test/CMakeFiles/rank-support-t
 
 # fast build rule for target.
 rank-support-test_int-vec.1024.1.r.898/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1024.1.r.898.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1024.1.r.898.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1024.1.r.898.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1024.1.r.898.dir/build
 .PHONY : rank-support-test_int-vec.1024.1.r.898/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-byte-test_faust.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-byte-test_faust.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-byte-test_faust.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-byte-test_faust.txt.dir/rule
 
 # Convenience name for target.
@@ -1769,12 +1769,12 @@ cst-byte-test_faust.txt: sdsl-lite/test/CMakeFiles/cst-byte-test_faust.txt.dir/r
 
 # fast build rule for target.
 cst-byte-test_faust.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-byte-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/cst-byte-test_faust.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-byte-test_faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/cst-byte-test_faust.txt.dir/build
 .PHONY : cst-byte-test_faust.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/rule
 
 # Convenience name for target.
@@ -1784,12 +1784,12 @@ inv_perm_support_test: sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/rule
 
 # fast build rule for target.
 inv_perm_support_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/build.make sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/build.make sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/build
 .PHONY : inv_perm_support_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.16.1.r.42.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.16.1.r.42.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.16.1.r.42.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.16.1.r.42.dir/rule
 
 # Convenience name for target.
@@ -1799,12 +1799,12 @@ bit-vector-test_int-vec.16.1.r.42: sdsl-lite/test/CMakeFiles/bit-vector-test_int
 
 # fast build rule for target.
 bit-vector-test_int-vec.16.1.r.42/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.16.1.r.42.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.16.1.r.42.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.16.1.r.42.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.16.1.r.42.dir/build
 .PHONY : bit-vector-test_int-vec.16.1.r.42/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.32.1.r.111.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.32.1.r.111.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.32.1.r.111.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.32.1.r.111.dir/rule
 
 # Convenience name for target.
@@ -1814,12 +1814,12 @@ rank-support-test_int-vec.32.1.r.111: sdsl-lite/test/CMakeFiles/rank-support-tes
 
 # fast build rule for target.
 rank-support-test_int-vec.32.1.r.111/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.32.1.r.111.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.32.1.r.111.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.32.1.r.111.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.32.1.r.111.dir/build
 .PHONY : rank-support-test_int-vec.32.1.r.111/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.256.1.r.4887.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.256.1.r.4887.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.256.1.r.4887.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.256.1.r.4887.dir/rule
 
 # Convenience name for target.
@@ -1829,12 +1829,12 @@ bit-vector-test_int-vec.256.1.r.4887: sdsl-lite/test/CMakeFiles/bit-vector-test_
 
 # fast build rule for target.
 bit-vector-test_int-vec.256.1.r.4887/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.256.1.r.4887.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.256.1.r.4887.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.256.1.r.4887.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.256.1.r.4887.dir/build
 .PHONY : bit-vector-test_int-vec.256.1.r.4887/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test.dir/rule
 
 # Convenience name for target.
@@ -1844,12 +1844,12 @@ select-support-test: sdsl-lite/test/CMakeFiles/select-support-test.dir/rule
 
 # fast build rule for target.
 select-support-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test.dir/build
 .PHONY : select-support-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.15.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.15.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.15.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.15.1.1.dir/rule
 
 # Convenience name for target.
@@ -1859,12 +1859,12 @@ select-support-test_int-vec.15.1.1: sdsl-lite/test/CMakeFiles/select-support-tes
 
 # fast build rule for target.
 select-support-test_int-vec.15.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.15.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.15.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.15.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.15.1.1.dir/build
 .PHONY : select-support-test_int-vec.15.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/rule
 
 # Convenience name for target.
@@ -1874,12 +1874,12 @@ csa-int-test_100a.txt_1: sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/r
 
 # fast build rule for target.
 csa-int-test_100a.txt_1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_100a.txt_1.dir/build
 .PHONY : csa-int-test_100a.txt_1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/compile-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/compile-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/compile-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/compile-test.dir/rule
 
 # Convenience name for target.
@@ -1889,12 +1889,12 @@ compile-test: sdsl-lite/test/CMakeFiles/compile-test.dir/rule
 
 # fast build rule for target.
 compile-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/compile-test.dir/build.make sdsl-lite/test/CMakeFiles/compile-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/compile-test.dir/build.make sdsl-lite/test/CMakeFiles/compile-test.dir/build
 .PHONY : compile-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/rule
 
 # Convenience name for target.
@@ -1904,12 +1904,12 @@ bit_vector_generator: sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/rule
 
 # fast build rule for target.
 bit_vector_generator/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/build
 .PHONY : bit_vector_generator/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/zarathustra.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/zarathustra.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/zarathustra.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/zarathustra.txt.dir/rule
 
 # Convenience name for target.
@@ -1919,12 +1919,12 @@ zarathustra.txt: sdsl-lite/test/CMakeFiles/zarathustra.txt.dir/rule
 
 # fast build rule for target.
 zarathustra.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/zarathustra.txt.dir/build.make sdsl-lite/test/CMakeFiles/zarathustra.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/zarathustra.txt.dir/build.make sdsl-lite/test/CMakeFiles/zarathustra.txt.dir/build
 .PHONY : zarathustra.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/faust.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/faust.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/faust.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/faust.txt.dir/rule
 
 # Convenience name for target.
@@ -1934,12 +1934,12 @@ faust.txt: sdsl-lite/test/CMakeFiles/faust.txt.dir/rule
 
 # fast build rule for target.
 faust.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/faust.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/faust.txt.dir/build.make sdsl-lite/test/CMakeFiles/faust.txt.dir/build
 .PHONY : faust.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.9.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.9.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.9.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.9.1.1.dir/rule
 
 # Convenience name for target.
@@ -1949,12 +1949,12 @@ bit-vector-test_int-vec.9.1.1: sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec
 
 # fast build rule for target.
 bit-vector-test_int-vec.9.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.9.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.9.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.9.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.9.1.1.dir/build
 .PHONY : bit-vector-test_int-vec.9.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-32.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-32.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-32.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-32.dir/rule
 
 # Convenience name for target.
@@ -1964,12 +1964,12 @@ select-support-test_bit-vec.CRAFTED-32: sdsl-lite/test/CMakeFiles/select-support
 
 # fast build rule for target.
 select-support-test_bit-vec.CRAFTED-32/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-32.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-32.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-32.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-32.dir/build
 .PHONY : select-support-test_bit-vec.CRAFTED-32/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-1.dir/rule
 
 # Convenience name for target.
@@ -1979,12 +1979,12 @@ bit-vector-test_bit-vec.CRAFTED-SPARSE-1: sdsl-lite/test/CMakeFiles/bit-vector-t
 
 # fast build rule for target.
 bit-vector-test_bit-vec.CRAFTED-SPARSE-1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-1.dir/build
 .PHONY : bit-vector-test_bit-vec.CRAFTED-SPARSE-1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8192.1.r.1043.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8192.1.r.1043.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8192.1.r.1043.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8192.1.r.1043.dir/rule
 
 # Convenience name for target.
@@ -1994,12 +1994,12 @@ bit-vector-test_int-vec.8192.1.r.1043: sdsl-lite/test/CMakeFiles/bit-vector-test
 
 # fast build rule for target.
 bit-vector-test_int-vec.8192.1.r.1043/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8192.1.r.1043.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8192.1.r.1043.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8192.1.r.1043.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8192.1.r.1043.dir/build
 .PHONY : bit-vector-test_int-vec.8192.1.r.1043/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-0.dir/rule
 
 # Convenience name for target.
@@ -2009,12 +2009,12 @@ bit-vector-test_bit-vec.CRAFTED-BLOCK-0: sdsl-lite/test/CMakeFiles/bit-vector-te
 
 # fast build rule for target.
 bit-vector-test_bit-vec.CRAFTED-BLOCK-0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-BLOCK-0.dir/build
 .PHONY : bit-vector-test_bit-vec.CRAFTED-BLOCK-0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sd_vector_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sd_vector_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sd_vector_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sd_vector_test.dir/rule
 
 # Convenience name for target.
@@ -2024,12 +2024,12 @@ sd_vector_test: sdsl-lite/test/CMakeFiles/sd_vector_test.dir/rule
 
 # fast build rule for target.
 sd_vector_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sd_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/sd_vector_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sd_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/sd_vector_test.dir/build
 .PHONY : sd_vector_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/int_vector_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int_vector_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int_vector_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/int_vector_test.dir/rule
 
 # Convenience name for target.
@@ -2039,12 +2039,12 @@ int_vector_test: sdsl-lite/test/CMakeFiles/int_vector_test.dir/rule
 
 # fast build rule for target.
 int_vector_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_test.dir/build
 .PHONY : int_vector_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-1.dir/rule
 
 # Convenience name for target.
@@ -2054,12 +2054,12 @@ select-support-test_bit-vec.CRAFTED-SPARSE-1: sdsl-lite/test/CMakeFiles/select-s
 
 # fast build rule for target.
 select-support-test_bit-vec.CRAFTED-SPARSE-1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-SPARSE-1.dir/build
 .PHONY : select-support-test_bit-vec.CRAFTED-SPARSE-1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test.dir/rule
 
 # Convenience name for target.
@@ -2069,12 +2069,12 @@ bit-vector-test: sdsl-lite/test/CMakeFiles/bit-vector-test.dir/rule
 
 # fast build rule for target.
 bit-vector-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test.dir/build
 .PHONY : bit-vector-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.9.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.9.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.9.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.9.1.1.dir/rule
 
 # Convenience name for target.
@@ -2084,12 +2084,12 @@ select-support-test_int-vec.9.1.1: sdsl-lite/test/CMakeFiles/select-support-test
 
 # fast build rule for target.
 select-support-test_int-vec.9.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.9.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.9.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.9.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.9.1.1.dir/build
 .PHONY : select-support-test_int-vec.9.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/rule
 
 # Convenience name for target.
@@ -2099,12 +2099,12 @@ k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81: sdsl-lite/test/CMak
 
 # fast build rule for target.
 k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/build
 .PHONY : k2-treap-test_k2-100000.39.r.42100000.47.r.23100000.35.r.81/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.4096.1.r.793.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.4096.1.r.793.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.4096.1.r.793.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.4096.1.r.793.dir/rule
 
 # Convenience name for target.
@@ -2114,12 +2114,12 @@ bit-vector-test_int-vec.4096.1.r.793: sdsl-lite/test/CMakeFiles/bit-vector-test_
 
 # fast build rule for target.
 bit-vector-test_int-vec.4096.1.r.793/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.4096.1.r.793.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.4096.1.r.793.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.4096.1.r.793.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.4096.1.r.793.dir/build
 .PHONY : bit-vector-test_int-vec.4096.1.r.793/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.0.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.0.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.0.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.0.1.0.dir/rule
 
 # Convenience name for target.
@@ -2129,12 +2129,12 @@ bit-vector-test_int-vec.0.1.0: sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec
 
 # fast build rule for target.
 bit-vector-test_int-vec.0.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.0.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.0.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.0.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.0.1.0.dir/build
 .PHONY : bit-vector-test_int-vec.0.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/rule
 
 # Convenience name for target.
@@ -2144,12 +2144,12 @@ nn-dict-dynamic-test: sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/rule
 
 # fast build rule for target.
 nn-dict-dynamic-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/build.make sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/build.make sdsl-lite/test/CMakeFiles/nn-dict-dynamic-test.dir/build
 .PHONY : nn-dict-dynamic-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.11.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.11.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.11.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.11.1.1.dir/rule
 
 # Convenience name for target.
@@ -2159,12 +2159,12 @@ bit-vector-test_int-vec.11.1.1: sdsl-lite/test/CMakeFiles/bit-vector-test_int-ve
 
 # fast build rule for target.
 bit-vector-test_int-vec.11.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.11.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.11.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.11.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.11.1.1.dir/build
 .PHONY : bit-vector-test_int-vec.11.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.32.1.r.111.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.32.1.r.111.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.32.1.r.111.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.32.1.r.111.dir/rule
 
 # Convenience name for target.
@@ -2174,12 +2174,12 @@ bit-vector-test_int-vec.32.1.r.111: sdsl-lite/test/CMakeFiles/bit-vector-test_in
 
 # fast build rule for target.
 bit-vector-test_int-vec.32.1.r.111/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.32.1.r.111.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.32.1.r.111.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.32.1.r.111.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.32.1.r.111.dir/build
 .PHONY : bit-vector-test_int-vec.32.1.r.111/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.0.dir/rule
 
 # Convenience name for target.
@@ -2189,12 +2189,12 @@ bit-vector-test_int-vec.1000000.1.0: sdsl-lite/test/CMakeFiles/bit-vector-test_i
 
 # fast build rule for target.
 bit-vector-test_int-vec.1000000.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.0.dir/build
 .PHONY : bit-vector-test_int-vec.1000000.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/lcp-construct-test_empty.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test_empty.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test_empty.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/lcp-construct-test_empty.txt.dir/rule
 
 # Convenience name for target.
@@ -2204,12 +2204,12 @@ lcp-construct-test_empty.txt: sdsl-lite/test/CMakeFiles/lcp-construct-test_empty
 
 # fast build rule for target.
 lcp-construct-test_empty.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test_empty.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test_empty.txt.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test_empty.txt.dir/build
 .PHONY : lcp-construct-test_empty.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/int_vector_generator.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int_vector_generator.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int_vector_generator.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/int_vector_generator.dir/rule
 
 # Convenience name for target.
@@ -2219,12 +2219,12 @@ int_vector_generator: sdsl-lite/test/CMakeFiles/int_vector_generator.dir/rule
 
 # fast build rule for target.
 int_vector_generator/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_generator.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_generator.dir/build
 .PHONY : int_vector_generator/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/lcp-construct-test_100a.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test_100a.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test_100a.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/lcp-construct-test_100a.txt.dir/rule
 
 # Convenience name for target.
@@ -2234,12 +2234,12 @@ lcp-construct-test_100a.txt: sdsl-lite/test/CMakeFiles/lcp-construct-test_100a.t
 
 # fast build rule for target.
 lcp-construct-test_100a.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test_100a.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test_100a.txt.dir/build
 .PHONY : lcp-construct-test_100a.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1024.1.r.898.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1024.1.r.898.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1024.1.r.898.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1024.1.r.898.dir/rule
 
 # Convenience name for target.
@@ -2249,12 +2249,12 @@ bit-vector-test_int-vec.1024.1.r.898: sdsl-lite/test/CMakeFiles/bit-vector-test_
 
 # fast build rule for target.
 bit-vector-test_int-vec.1024.1.r.898/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1024.1.r.898.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1024.1.r.898.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1024.1.r.898.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1024.1.r.898.dir/build
 .PHONY : bit-vector-test_int-vec.1024.1.r.898/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.0.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.0.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.0.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.0.1.0.dir/rule
 
 # Convenience name for target.
@@ -2264,12 +2264,12 @@ wt-int-test_int-vec.0.1.0: sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.0.1.0.d
 
 # fast build rule for target.
 wt-int-test_int-vec.0.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.0.1.0.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.0.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.0.1.0.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.0.1.0.dir/build
 .PHONY : wt-int-test_int-vec.0.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-int-test_faust.txt_1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_faust.txt_1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_faust.txt_1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_faust.txt_1.dir/rule
 
 # Convenience name for target.
@@ -2279,12 +2279,12 @@ csa-int-test_faust.txt_1: sdsl-lite/test/CMakeFiles/csa-int-test_faust.txt_1.dir
 
 # fast build rule for target.
 csa-int-test_faust.txt_1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_faust.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_faust.txt_1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_faust.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_faust.txt_1.dir/build
 .PHONY : csa-int-test_faust.txt_1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.14.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.14.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.14.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.14.1.0.dir/rule
 
 # Convenience name for target.
@@ -2294,12 +2294,12 @@ bit-vector-test_int-vec.14.1.0: sdsl-lite/test/CMakeFiles/bit-vector-test_int-ve
 
 # fast build rule for target.
 bit-vector-test_int-vec.14.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.14.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.14.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.14.1.0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.14.1.0.dir/build
 .PHONY : bit-vector-test_int-vec.14.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/int-vector-buffer-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int-vector-buffer-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int-vector-buffer-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/int-vector-buffer-test.dir/rule
 
 # Convenience name for target.
@@ -2309,12 +2309,12 @@ int-vector-buffer-test: sdsl-lite/test/CMakeFiles/int-vector-buffer-test.dir/rul
 
 # fast build rule for target.
 int-vector-buffer-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int-vector-buffer-test.dir/build.make sdsl-lite/test/CMakeFiles/int-vector-buffer-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int-vector-buffer-test.dir/build.make sdsl-lite/test/CMakeFiles/int-vector-buffer-test.dir/build
 .PHONY : int-vector-buffer-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.r.815.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.r.815.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.r.815.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.r.815.dir/rule
 
 # Convenience name for target.
@@ -2324,12 +2324,12 @@ bit-vector-test_int-vec.1000000.1.r.815: sdsl-lite/test/CMakeFiles/bit-vector-te
 
 # fast build rule for target.
 bit-vector-test_int-vec.1000000.1.r.815/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.r.815.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.r.815.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.r.815.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.1000000.1.r.815.dir/build
 .PHONY : bit-vector-test_int-vec.1000000.1.r.815/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.2048.1.r.5432.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.2048.1.r.5432.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.2048.1.r.5432.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.2048.1.r.5432.dir/rule
 
 # Convenience name for target.
@@ -2339,12 +2339,12 @@ bit-vector-test_int-vec.2048.1.r.5432: sdsl-lite/test/CMakeFiles/bit-vector-test
 
 # fast build rule for target.
 bit-vector-test_int-vec.2048.1.r.5432/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.2048.1.r.5432.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.2048.1.r.5432.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.2048.1.r.5432.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.2048.1.r.5432.dir/build
 .PHONY : bit-vector-test_int-vec.2048.1.r.5432/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.13.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.13.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.13.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.13.1.1.dir/rule
 
 # Convenience name for target.
@@ -2354,12 +2354,12 @@ rank-support-test_int-vec.13.1.1: sdsl-lite/test/CMakeFiles/rank-support-test_in
 
 # fast build rule for target.
 rank-support-test_int-vec.13.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.13.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.13.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.13.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.13.1.1.dir/build
 .PHONY : rank-support-test_int-vec.13.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.15.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.15.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.15.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.15.1.1.dir/rule
 
 # Convenience name for target.
@@ -2369,12 +2369,12 @@ rank-support-test_int-vec.15.1.1: sdsl-lite/test/CMakeFiles/rank-support-test_in
 
 # fast build rule for target.
 rank-support-test_int-vec.15.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.15.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.15.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.15.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.15.1.1.dir/build
 .PHONY : rank-support-test_int-vec.15.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.4096.1.r.793.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.4096.1.r.793.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.4096.1.r.793.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.4096.1.r.793.dir/rule
 
 # Convenience name for target.
@@ -2384,12 +2384,12 @@ rank-support-test_int-vec.4096.1.r.793: sdsl-lite/test/CMakeFiles/rank-support-t
 
 # fast build rule for target.
 rank-support-test_int-vec.4096.1.r.793/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.4096.1.r.793.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.4096.1.r.793.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.4096.1.r.793.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.4096.1.r.793.dir/build
 .PHONY : rank-support-test_int-vec.4096.1.r.793/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa_int_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa_int_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa_int_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa_int_test.dir/rule
 
 # Convenience name for target.
@@ -2399,12 +2399,12 @@ csa_int_test: sdsl-lite/test/CMakeFiles/csa_int_test.dir/rule
 
 # fast build rule for target.
 csa_int_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_int_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_int_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_int_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_int_test.dir/build
 .PHONY : csa_int_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-byte-test_example01.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test_example01.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-byte-test_example01.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-byte-test_example01.txt.dir/rule
 
 # Convenience name for target.
@@ -2414,12 +2414,12 @@ wt-byte-test_example01.txt: sdsl-lite/test/CMakeFiles/wt-byte-test_example01.txt
 
 # fast build rule for target.
 wt-byte-test_example01.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test_example01.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-byte-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/wt-byte-test_example01.txt.dir/build
 .PHONY : wt-byte-test_example01.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-int-test_zarathustra.txt_1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_zarathustra.txt_1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_zarathustra.txt_1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_zarathustra.txt_1.dir/rule
 
 # Convenience name for target.
@@ -2429,12 +2429,12 @@ csa-int-test_zarathustra.txt_1: sdsl-lite/test/CMakeFiles/csa-int-test_zarathust
 
 # fast build rule for target.
 csa-int-test_zarathustra.txt_1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_zarathustra.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_zarathustra.txt_1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_zarathustra.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_zarathustra.txt_1.dir/build
 .PHONY : csa-int-test_zarathustra.txt_1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.11.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.11.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.11.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.11.1.1.dir/rule
 
 # Convenience name for target.
@@ -2444,12 +2444,12 @@ rank-support-test_int-vec.11.1.1: sdsl-lite/test/CMakeFiles/rank-support-test_in
 
 # fast build rule for target.
 rank-support-test_int-vec.11.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.11.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.11.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.11.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.11.1.1.dir/build
 .PHONY : rank-support-test_int-vec.11.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.512.1.r.432.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.512.1.r.432.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.512.1.r.432.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.512.1.r.432.dir/rule
 
 # Convenience name for target.
@@ -2459,12 +2459,12 @@ bit-vector-test_int-vec.512.1.r.432: sdsl-lite/test/CMakeFiles/bit-vector-test_i
 
 # fast build rule for target.
 bit-vector-test_int-vec.512.1.r.432/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.512.1.r.432.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.512.1.r.432.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.512.1.r.432.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.512.1.r.432.dir/build
 .PHONY : bit-vector-test_int-vec.512.1.r.432/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/sa-construct-test_100a.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_100a.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/sa-construct-test_100a.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/sa-construct-test_100a.txt.dir/rule
 
 # Convenience name for target.
@@ -2474,12 +2474,12 @@ sa-construct-test_100a.txt: sdsl-lite/test/CMakeFiles/sa-construct-test_100a.txt
 
 # fast build rule for target.
 sa-construct-test_100a.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_100a.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa-construct-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/sa-construct-test_100a.txt.dir/build
 .PHONY : sa-construct-test_100a.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1.64.42.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1.64.42.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1.64.42.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1.64.42.dir/rule
 
 # Convenience name for target.
@@ -2489,12 +2489,12 @@ rmq-test_int-vec.1.64.42: sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1.64.42.dir
 
 # fast build rule for target.
 rmq-test_int-vec.1.64.42/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1.64.42.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1.64.42.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1.64.42.dir/build.make sdsl-lite/test/CMakeFiles/rmq-test_int-vec.1.64.42.dir/build
 .PHONY : rmq-test_int-vec.1.64.42/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2_treap_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2_treap_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2_treap_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2_treap_test.dir/rule
 
 # Convenience name for target.
@@ -2504,12 +2504,12 @@ k2_treap_test: sdsl-lite/test/CMakeFiles/k2_treap_test.dir/rule
 
 # fast build rule for target.
 k2_treap_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_treap_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_treap_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_treap_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_treap_test.dir/build
 .PHONY : k2_treap_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-int-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test.dir/rule
 
 # Convenience name for target.
@@ -2519,12 +2519,12 @@ csa-int-test: sdsl-lite/test/CMakeFiles/csa-int-test.dir/rule
 
 # fast build rule for target.
 csa-int-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test.dir/build
 .PHONY : csa-int-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-byte-test_example01.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-byte-test_example01.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-byte-test_example01.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-byte-test_example01.txt.dir/rule
 
 # Convenience name for target.
@@ -2534,12 +2534,12 @@ cst-byte-test_example01.txt: sdsl-lite/test/CMakeFiles/cst-byte-test_example01.t
 
 # fast build rule for target.
 cst-byte-test_example01.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-byte-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/cst-byte-test_example01.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-byte-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/cst-byte-test_example01.txt.dir/build
 .PHONY : cst-byte-test_example01.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-0.dir/rule
 
 # Convenience name for target.
@@ -2549,12 +2549,12 @@ bit-vector-test_bit-vec.CRAFTED-SPARSE-0: sdsl-lite/test/CMakeFiles/bit-vector-t
 
 # fast build rule for target.
 bit-vector-test_bit-vec.CRAFTED-SPARSE-0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-0.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-SPARSE-0.dir/build
 .PHONY : bit-vector-test_bit-vec.CRAFTED-SPARSE-0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-byte-test_zarathustra.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test_zarathustra.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test_zarathustra.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-byte-test_zarathustra.txt.dir/rule
 
 # Convenience name for target.
@@ -2564,12 +2564,12 @@ csa-byte-test_zarathustra.txt: sdsl-lite/test/CMakeFiles/csa-byte-test_zarathust
 
 # fast build rule for target.
 csa-byte-test_zarathustra.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test_zarathustra.txt.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test_zarathustra.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test_zarathustra.txt.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test_zarathustra.txt.dir/build
 .PHONY : csa-byte-test_zarathustra.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.15.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.15.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.15.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.15.1.1.dir/rule
 
 # Convenience name for target.
@@ -2579,12 +2579,12 @@ bit-vector-test_int-vec.15.1.1: sdsl-lite/test/CMakeFiles/bit-vector-test_int-ve
 
 # fast build rule for target.
 bit-vector-test_int-vec.15.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.15.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.15.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.15.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.15.1.1.dir/build
 .PHONY : bit-vector-test_int-vec.15.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-int-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-int-test.dir/rule
 
 # Convenience name for target.
@@ -2594,12 +2594,12 @@ cst-int-test: sdsl-lite/test/CMakeFiles/cst-int-test.dir/rule
 
 # fast build rule for target.
 cst-int-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test.dir/build
 .PHONY : cst-int-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-0.dir/rule
 
 # Convenience name for target.
@@ -2609,12 +2609,12 @@ rank-support-test_bit-vec.CRAFTED-BLOCK-0: sdsl-lite/test/CMakeFiles/rank-suppor
 
 # fast build rule for target.
 rank-support-test_bit-vec.CRAFTED-BLOCK-0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-BLOCK-0.dir/build
 .PHONY : rank-support-test_bit-vec.CRAFTED-BLOCK-0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.9.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.9.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.9.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.9.1.1.dir/rule
 
 # Convenience name for target.
@@ -2624,12 +2624,12 @@ rank-support-test_int-vec.9.1.1: sdsl-lite/test/CMakeFiles/rank-support-test_int
 
 # fast build rule for target.
 rank-support-test_int-vec.9.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.9.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.9.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.9.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.9.1.1.dir/build
 .PHONY : rank-support-test_int-vec.9.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.7.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.7.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.7.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.7.1.1.dir/rule
 
 # Convenience name for target.
@@ -2639,12 +2639,12 @@ bit-vector-test_int-vec.7.1.1: sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec
 
 # fast build rule for target.
 bit-vector-test_int-vec.7.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.7.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.7.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.7.1.1.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.7.1.1.dir/build
 .PHONY : bit-vector-test_int-vec.7.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1.1.0.dir/rule
 
 # Convenience name for target.
@@ -2654,12 +2654,12 @@ rank-support-test_int-vec.1.1.0: sdsl-lite/test/CMakeFiles/rank-support-test_int
 
 # fast build rule for target.
 rank-support-test_int-vec.1.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1.1.0.dir/build
 .PHONY : rank-support-test_int-vec.1.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.256.1.r.4887.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.256.1.r.4887.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.256.1.r.4887.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.256.1.r.4887.dir/rule
 
 # Convenience name for target.
@@ -2669,12 +2669,12 @@ select-support-test_int-vec.256.1.r.4887: sdsl-lite/test/CMakeFiles/select-suppo
 
 # fast build rule for target.
 select-support-test_int-vec.256.1.r.4887/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.256.1.r.4887.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.256.1.r.4887.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.256.1.r.4887.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.256.1.r.4887.dir/build
 .PHONY : select-support-test_int-vec.256.1.r.4887/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst_int_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst_int_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst_int_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst_int_test.dir/rule
 
 # Convenience name for target.
@@ -2684,12 +2684,12 @@ cst_int_test: sdsl-lite/test/CMakeFiles/cst_int_test.dir/rule
 
 # fast build rule for target.
 cst_int_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_int_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_int_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_int_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_int_test.dir/build
 .PHONY : cst_int_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit_vector_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit_vector_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit_vector_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit_vector_test.dir/rule
 
 # Convenience name for target.
@@ -2699,12 +2699,12 @@ bit_vector_test: sdsl-lite/test/CMakeFiles/bit_vector_test.dir/rule
 
 # fast build rule for target.
 bit_vector_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_test.dir/build
 .PHONY : bit_vector_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-int-test_example01.txt_1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_example01.txt_1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_example01.txt_1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-int-test_example01.txt_1.dir/rule
 
 # Convenience name for target.
@@ -2714,12 +2714,12 @@ cst-int-test_example01.txt_1: sdsl-lite/test/CMakeFiles/cst-int-test_example01.t
 
 # fast build rule for target.
 cst-int-test_example01.txt_1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_example01.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_example01.txt_1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_example01.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_example01.txt_1.dir/build
 .PHONY : cst-int-test_example01.txt_1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/rule
 
 # Convenience name for target.
@@ -2729,12 +2729,12 @@ csa-int-test_example01.txt_1: sdsl-lite/test/CMakeFiles/csa-int-test_example01.t
 
 # fast build rule for target.
 csa-int-test_example01.txt_1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/csa-int-test_example01.txt_1.dir/build
 .PHONY : csa-int-test_example01.txt_1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/csa-byte-test_example01.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test_example01.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/csa-byte-test_example01.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/csa-byte-test_example01.txt.dir/rule
 
 # Convenience name for target.
@@ -2744,12 +2744,12 @@ csa-byte-test_example01.txt: sdsl-lite/test/CMakeFiles/csa-byte-test_example01.t
 
 # fast build rule for target.
 csa-byte-test_example01.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test_example01.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa-byte-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/csa-byte-test_example01.txt.dir/build
 .PHONY : csa-byte-test_example01.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.64.1.r.222.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.64.1.r.222.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.64.1.r.222.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.64.1.r.222.dir/rule
 
 # Convenience name for target.
@@ -2759,12 +2759,12 @@ rank-support-test_int-vec.64.1.r.222: sdsl-lite/test/CMakeFiles/rank-support-tes
 
 # fast build rule for target.
 rank-support-test_int-vec.64.1.r.222/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.64.1.r.222.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.64.1.r.222.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.64.1.r.222.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.64.1.r.222.dir/build
 .PHONY : rank-support-test_int-vec.64.1.r.222/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.128.1.r.73.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.128.1.r.73.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.128.1.r.73.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.128.1.r.73.dir/rule
 
 # Convenience name for target.
@@ -2774,12 +2774,12 @@ rank-support-test_int-vec.128.1.r.73: sdsl-lite/test/CMakeFiles/rank-support-tes
 
 # fast build rule for target.
 rank-support-test_int-vec.128.1.r.73/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.128.1.r.73.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.128.1.r.73.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.128.1.r.73.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.128.1.r.73.dir/build
 .PHONY : rank-support-test_int-vec.128.1.r.73/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.r.17.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.r.17.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.r.17.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.r.17.dir/rule
 
 # Convenience name for target.
@@ -2789,12 +2789,12 @@ bit-vector-test_int-vec.8.1.r.17: sdsl-lite/test/CMakeFiles/bit-vector-test_int-
 
 # fast build rule for target.
 bit-vector-test_int-vec.8.1.r.17/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.r.17.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.r.17.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.r.17.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.8.1.r.17.dir/build
 .PHONY : bit-vector-test_int-vec.8.1.r.17/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-int-test_faust.txt_1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_faust.txt_1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_faust.txt_1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-int-test_faust.txt_1.dir/rule
 
 # Convenience name for target.
@@ -2804,12 +2804,12 @@ cst-int-test_faust.txt_1: sdsl-lite/test/CMakeFiles/cst-int-test_faust.txt_1.dir
 
 # fast build rule for target.
 cst-int-test_faust.txt_1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_faust.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_faust.txt_1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_faust.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_faust.txt_1.dir/build
 .PHONY : cst-int-test_faust.txt_1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100000.18.r.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100000.18.r.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100000.18.r.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100000.18.r.dir/rule
 
 # Convenience name for target.
@@ -2819,12 +2819,12 @@ wt-int-test_int-vec.100000.18.r: sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.1
 
 # fast build rule for target.
 wt-int-test_int-vec.100000.18.r/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100000.18.r.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100000.18.r.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100000.18.r.dir/build.make sdsl-lite/test/CMakeFiles/wt-int-test_int-vec.100000.18.r.dir/build
 .PHONY : wt-int-test_int-vec.100000.18.r/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.11.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.11.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.11.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.11.1.1.dir/rule
 
 # Convenience name for target.
@@ -2834,12 +2834,12 @@ select-support-test_int-vec.11.1.1: sdsl-lite/test/CMakeFiles/select-support-tes
 
 # fast build rule for target.
 select-support-test_int-vec.11.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.11.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.11.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.11.1.1.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.11.1.1.dir/build
 .PHONY : select-support-test_int-vec.11.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/search-bidirectional-test_zarathustra.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test_zarathustra.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/search-bidirectional-test_zarathustra.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/search-bidirectional-test_zarathustra.txt.dir/rule
 
 # Convenience name for target.
@@ -2849,12 +2849,12 @@ search-bidirectional-test_zarathustra.txt: sdsl-lite/test/CMakeFiles/search-bidi
 
 # fast build rule for target.
 search-bidirectional-test_zarathustra.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test_zarathustra.txt.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test_zarathustra.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search-bidirectional-test_zarathustra.txt.dir/build.make sdsl-lite/test/CMakeFiles/search-bidirectional-test_zarathustra.txt.dir/build
 .PHONY : search-bidirectional-test_zarathustra.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-int-test_empty.txt_1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_empty.txt_1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_empty.txt_1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-int-test_empty.txt_1.dir/rule
 
 # Convenience name for target.
@@ -2864,12 +2864,12 @@ cst-int-test_empty.txt_1: sdsl-lite/test/CMakeFiles/cst-int-test_empty.txt_1.dir
 
 # fast build rule for target.
 cst-int-test_empty.txt_1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_empty.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_empty.txt_1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_empty.txt_1.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_empty.txt_1.dir/build
 .PHONY : cst-int-test_empty.txt_1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/dac-vector-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/dac-vector-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/dac-vector-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/dac-vector-test.dir/rule
 
 # Convenience name for target.
@@ -2879,12 +2879,12 @@ dac-vector-test: sdsl-lite/test/CMakeFiles/dac-vector-test.dir/rule
 
 # fast build rule for target.
 dac-vector-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/dac-vector-test.dir/build.make sdsl-lite/test/CMakeFiles/dac-vector-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/dac-vector-test.dir/build.make sdsl-lite/test/CMakeFiles/dac-vector-test.dir/build
 .PHONY : dac-vector-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/rule
 
 # Convenience name for target.
@@ -2894,12 +2894,12 @@ int_vector_buffer_test: sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/rul
 
 # fast build rule for target.
 int_vector_buffer_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/build
 .PHONY : int_vector_buffer_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.r.17.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.r.17.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.r.17.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.r.17.dir/rule
 
 # Convenience name for target.
@@ -2909,12 +2909,12 @@ select-support-test_int-vec.8.1.r.17: sdsl-lite/test/CMakeFiles/select-support-t
 
 # fast build rule for target.
 select-support-test_int-vec.8.1.r.17/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.r.17.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.r.17.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.r.17.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.8.1.r.17.dir/build
 .PHONY : select-support-test_int-vec.8.1.r.17/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.64.1.r.222.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.64.1.r.222.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.64.1.r.222.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.64.1.r.222.dir/rule
 
 # Convenience name for target.
@@ -2924,12 +2924,12 @@ bit-vector-test_int-vec.64.1.r.222: sdsl-lite/test/CMakeFiles/bit-vector-test_in
 
 # fast build rule for target.
 bit-vector-test_int-vec.64.1.r.222/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.64.1.r.222.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.64.1.r.222.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.64.1.r.222.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_int-vec.64.1.r.222.dir/build
 .PHONY : bit-vector-test_int-vec.64.1.r.222/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81.dir/rule
 
 # Convenience name for target.
@@ -2939,12 +2939,12 @@ k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81: sdsl-lite/test/CMakeFiles/k2-
 
 # fast build rule for target.
 k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81.dir/build
 .PHONY : k2-treap-test_k2-100.16.r.42100.16.r.23100.8.r.81/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-int-test_moby.int_8.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_moby.int_8.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_moby.int_8.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-int-test_moby.int_8.dir/rule
 
 # Convenience name for target.
@@ -2954,12 +2954,12 @@ cst-int-test_moby.int_8: sdsl-lite/test/CMakeFiles/cst-int-test_moby.int_8.dir/r
 
 # fast build rule for target.
 cst-int-test_moby.int_8/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_moby.int_8.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_moby.int_8.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_moby.int_8.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_moby.int_8.dir/build
 .PHONY : cst-int-test_moby.int_8/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.128.1.r.73.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.128.1.r.73.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_int-vec.128.1.r.73.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_int-vec.128.1.r.73.dir/rule
 
 # Convenience name for target.
@@ -2969,12 +2969,12 @@ select-support-test_int-vec.128.1.r.73: sdsl-lite/test/CMakeFiles/select-support
 
 # fast build rule for target.
 select-support-test_int-vec.128.1.r.73/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.128.1.r.73.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.128.1.r.73.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_int-vec.128.1.r.73.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_int-vec.128.1.r.73.dir/build
 .PHONY : select-support-test_int-vec.128.1.r.73/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-int-test_int-vec-sa.100000.18.r_0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_int-vec-sa.100000.18.r_0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_int-vec-sa.100000.18.r_0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-int-test_int-vec-sa.100000.18.r_0.dir/rule
 
 # Convenience name for target.
@@ -2984,12 +2984,12 @@ cst-int-test_int-vec-sa.100000.18.r_0: sdsl-lite/test/CMakeFiles/cst-int-test_in
 
 # fast build rule for target.
 cst-int-test_int-vec-sa.100000.18.r_0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_int-vec-sa.100000.18.r_0.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_int-vec-sa.100000.18.r_0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_int-vec-sa.100000.18.r_0.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_int-vec-sa.100000.18.r_0.dir/build
 .PHONY : cst-int-test_int-vec-sa.100000.18.r_0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/rule
 
 # Convenience name for target.
@@ -2999,12 +2999,12 @@ int_vector_mapper_test: sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/rul
 
 # fast build rule for target.
 int_vector_mapper_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/build
 .PHONY : int_vector_mapper_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule
 
 # Convenience name for target.
@@ -3014,12 +3014,12 @@ select-support-test_bit-vec.CRAFTED-MAT-SELECT: sdsl-lite/test/CMakeFiles/select
 
 # fast build rule for target.
 select-support-test_bit-vec.CRAFTED-MAT-SELECT/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/build.make sdsl-lite/test/CMakeFiles/select-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/build
 .PHONY : select-support-test_bit-vec.CRAFTED-MAT-SELECT/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/rule
 
 # Convenience name for target.
@@ -3029,12 +3029,12 @@ lcp_construct_test: sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/rule
 
 # fast build rule for target.
 lcp_construct_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/build
 .PHONY : lcp_construct_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/int-vector-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int-vector-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/int-vector-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/int-vector-test.dir/rule
 
 # Convenience name for target.
@@ -3044,12 +3044,12 @@ int-vector-test: sdsl-lite/test/CMakeFiles/int-vector-test.dir/rule
 
 # fast build rule for target.
 int-vector-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int-vector-test.dir/build.make sdsl-lite/test/CMakeFiles/int-vector-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int-vector-test.dir/build.make sdsl-lite/test/CMakeFiles/int-vector-test.dir/build
 .PHONY : int-vector-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/inv-perm-support-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/inv-perm-support-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/inv-perm-support-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/inv-perm-support-test.dir/rule
 
 # Convenience name for target.
@@ -3059,12 +3059,12 @@ inv-perm-support-test: sdsl-lite/test/CMakeFiles/inv-perm-support-test.dir/rule
 
 # fast build rule for target.
 inv-perm-support-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/inv-perm-support-test.dir/build.make sdsl-lite/test/CMakeFiles/inv-perm-support-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/inv-perm-support-test.dir/build.make sdsl-lite/test/CMakeFiles/inv-perm-support-test.dir/build
 .PHONY : inv-perm-support-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test.dir/rule
 
 # Convenience name for target.
@@ -3074,12 +3074,12 @@ rank-support-test: sdsl-lite/test/CMakeFiles/rank-support-test.dir/rule
 
 # fast build rule for target.
 rank-support-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test.dir/build
 .PHONY : rank-support-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.r.17.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.r.17.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.r.17.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.r.17.dir/rule
 
 # Convenience name for target.
@@ -3089,12 +3089,12 @@ rank-support-test_int-vec.8.1.r.17: sdsl-lite/test/CMakeFiles/rank-support-test_
 
 # fast build rule for target.
 rank-support-test_int-vec.8.1.r.17/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.r.17.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.r.17.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.r.17.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.r.17.dir/build
 .PHONY : rank-support-test_int-vec.8.1.r.17/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/rule
 
 # Convenience name for target.
@@ -3104,12 +3104,12 @@ k2-100.16.r.42100.16.r.23100.8.r.81: sdsl-lite/test/CMakeFiles/k2-100.16.r.42100
 
 # fast build rule for target.
 k2-100.16.r.42100.16.r.23100.8.r.81/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-100.16.r.42100.16.r.23100.8.r.81.dir/build
 .PHONY : k2-100.16.r.42100.16.r.23100.8.r.81/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/rule
 
 # Convenience name for target.
@@ -3119,12 +3119,12 @@ k2-10000.16.r.4210000.16.r.2310000.8.r.81: sdsl-lite/test/CMakeFiles/k2-10000.16
 
 # fast build rule for target.
 k2-10000.16.r.4210000.16.r.2310000.8.r.81/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/build
 .PHONY : k2-10000.16.r.4210000.16.r.2310000.8.r.81/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/rule
 
 # Convenience name for target.
@@ -3134,12 +3134,12 @@ k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81: sdsl-lite/test/CMakeFil
 
 # fast build rule for target.
 k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81.dir/build
 .PHONY : k2-treap-test_k2-10000.16.r.4210000.16.r.2310000.8.r.81/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/rule
 
 # Convenience name for target.
@@ -3149,12 +3149,12 @@ k2-100000.39.r.42100000.47.r.23100000.35.r.81: sdsl-lite/test/CMakeFiles/k2-1000
 
 # fast build rule for target.
 k2-100000.39.r.42100000.47.r.23100000.35.r.81/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-100000.39.r.42100000.47.r.23100000.35.r.81.dir/build
 .PHONY : k2-100000.39.r.42100000.47.r.23100000.35.r.81/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/rule
 
 # Convenience name for target.
@@ -3164,12 +3164,12 @@ k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81: sdsl-lite/test/C
 
 # fast build rule for target.
 k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81.dir/build
 .PHONY : k2-treap-test_k2-1000000.52.r.421000000.57.r.231000000.45.r.81/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-treap-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-treap-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-treap-test.dir/rule
 
 # Convenience name for target.
@@ -3179,12 +3179,12 @@ k2-treap-test: sdsl-lite/test/CMakeFiles/k2-treap-test.dir/rule
 
 # fast build rule for target.
 k2-treap-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-treap-test.dir/build.make sdsl-lite/test/CMakeFiles/k2-treap-test.dir/build
 .PHONY : k2-treap-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-byte-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-byte-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-byte-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-byte-test.dir/rule
 
 # Convenience name for target.
@@ -3194,12 +3194,12 @@ cst-byte-test: sdsl-lite/test/CMakeFiles/cst-byte-test.dir/rule
 
 # fast build rule for target.
 cst-byte-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-byte-test.dir/build.make sdsl-lite/test/CMakeFiles/cst-byte-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-byte-test.dir/build.make sdsl-lite/test/CMakeFiles/cst-byte-test.dir/build
 .PHONY : cst-byte-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-tree-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-tree-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-tree-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-tree-test.dir/rule
 
 # Convenience name for target.
@@ -3209,12 +3209,12 @@ k2-tree-test: sdsl-lite/test/CMakeFiles/k2-tree-test.dir/rule
 
 # fast build rule for target.
 k2-tree-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-tree-test.dir/build.make sdsl-lite/test/CMakeFiles/k2-tree-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-tree-test.dir/build.make sdsl-lite/test/CMakeFiles/k2-tree-test.dir/build
 .PHONY : k2-tree-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/lcp-construct-test_example01.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test_example01.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test_example01.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/lcp-construct-test_example01.txt.dir/rule
 
 # Convenience name for target.
@@ -3224,12 +3224,12 @@ lcp-construct-test_example01.txt: sdsl-lite/test/CMakeFiles/lcp-construct-test_e
 
 # fast build rule for target.
 lcp-construct-test_example01.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test_example01.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test_example01.txt.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test_example01.txt.dir/build
 .PHONY : lcp-construct-test_example01.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/lcp-construct-test_zarathustra.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test_zarathustra.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test_zarathustra.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/lcp-construct-test_zarathustra.txt.dir/rule
 
 # Convenience name for target.
@@ -3239,12 +3239,12 @@ lcp-construct-test_zarathustra.txt: sdsl-lite/test/CMakeFiles/lcp-construct-test
 
 # fast build rule for target.
 lcp-construct-test_zarathustra.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test_zarathustra.txt.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test_zarathustra.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test_zarathustra.txt.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test_zarathustra.txt.dir/build
 .PHONY : lcp-construct-test_zarathustra.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/lcp-construct-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/lcp-construct-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/lcp-construct-test.dir/rule
 
 # Convenience name for target.
@@ -3254,12 +3254,12 @@ lcp-construct-test: sdsl-lite/test/CMakeFiles/lcp-construct-test.dir/rule
 
 # fast build rule for target.
 lcp-construct-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp-construct-test.dir/build.make sdsl-lite/test/CMakeFiles/lcp-construct-test.dir/build
 .PHONY : lcp-construct-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.0.dir/rule
 
 # Convenience name for target.
@@ -3269,12 +3269,12 @@ rank-support-test_int-vec.1000000.1.0: sdsl-lite/test/CMakeFiles/rank-support-te
 
 # fast build rule for target.
 rank-support-test_int-vec.1000000.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.0.dir/build
 .PHONY : rank-support-test_int-vec.1000000.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/rule
 
 # Convenience name for target.
@@ -3284,12 +3284,12 @@ nn_dict_dynamic_test: sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/rule
 
 # fast build rule for target.
 nn_dict_dynamic_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/build.make sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/build.make sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/build
 .PHONY : nn_dict_dynamic_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/k2-0.1.0.00.1.0.00.1.0.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-0.1.0.00.1.0.00.1.0.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/k2-0.1.0.00.1.0.00.1.0.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/k2-0.1.0.00.1.0.00.1.0.0.dir/rule
 
 # Convenience name for target.
@@ -3299,12 +3299,12 @@ k2-0.1.0.00.1.0.00.1.0.0: sdsl-lite/test/CMakeFiles/k2-0.1.0.00.1.0.00.1.0.0.dir
 
 # fast build rule for target.
 k2-0.1.0.00.1.0.00.1.0.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-0.1.0.00.1.0.00.1.0.0.dir/build.make sdsl-lite/test/CMakeFiles/k2-0.1.0.00.1.0.00.1.0.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2-0.1.0.00.1.0.00.1.0.0.dir/build.make sdsl-lite/test/CMakeFiles/k2-0.1.0.00.1.0.00.1.0.0.dir/build
 .PHONY : k2-0.1.0.00.1.0.00.1.0.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank_support_test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank_support_test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank_support_test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank_support_test.dir/rule
 
 # Convenience name for target.
@@ -3314,12 +3314,12 @@ rank_support_test: sdsl-lite/test/CMakeFiles/rank_support_test.dir/rule
 
 # fast build rule for target.
 rank_support_test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank_support_test.dir/build.make sdsl-lite/test/CMakeFiles/rank_support_test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank_support_test.dir/build.make sdsl-lite/test/CMakeFiles/rank_support_test.dir/build
 .PHONY : rank_support_test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.0.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.0.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.0.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.0.1.0.dir/rule
 
 # Convenience name for target.
@@ -3329,12 +3329,12 @@ rank-support-test_int-vec.0.1.0: sdsl-lite/test/CMakeFiles/rank-support-test_int
 
 # fast build rule for target.
 rank-support-test_int-vec.0.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.0.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.0.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.0.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.0.1.0.dir/build
 .PHONY : rank-support-test_int-vec.0.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.7.1.1.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.7.1.1.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.7.1.1.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.7.1.1.dir/rule
 
 # Convenience name for target.
@@ -3344,12 +3344,12 @@ rank-support-test_int-vec.7.1.1: sdsl-lite/test/CMakeFiles/rank-support-test_int
 
 # fast build rule for target.
 rank-support-test_int-vec.7.1.1/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.7.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.7.1.1.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.7.1.1.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.7.1.1.dir/build
 .PHONY : rank-support-test_int-vec.7.1.1/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/coder-test.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/coder-test.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/coder-test.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/coder-test.dir/rule
 
 # Convenience name for target.
@@ -3359,12 +3359,12 @@ coder-test: sdsl-lite/test/CMakeFiles/coder-test.dir/rule
 
 # fast build rule for target.
 coder-test/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/coder-test.dir/build.make sdsl-lite/test/CMakeFiles/coder-test.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/coder-test.dir/build.make sdsl-lite/test/CMakeFiles/coder-test.dir/build
 .PHONY : coder-test/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.0.dir/rule
 
 # Convenience name for target.
@@ -3374,12 +3374,12 @@ rank-support-test_int-vec.8.1.0: sdsl-lite/test/CMakeFiles/rank-support-test_int
 
 # fast build rule for target.
 rank-support-test_int-vec.8.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8.1.0.dir/build
 .PHONY : rank-support-test_int-vec.8.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.12.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.12.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.12.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.12.1.0.dir/rule
 
 # Convenience name for target.
@@ -3389,12 +3389,12 @@ rank-support-test_int-vec.12.1.0: sdsl-lite/test/CMakeFiles/rank-support-test_in
 
 # fast build rule for target.
 rank-support-test_int-vec.12.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.12.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.12.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.12.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.12.1.0.dir/build
 .PHONY : rank-support-test_int-vec.12.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-byte-test_100a.txt.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-byte-test_100a.txt.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-byte-test_100a.txt.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-byte-test_100a.txt.dir/rule
 
 # Convenience name for target.
@@ -3404,12 +3404,12 @@ cst-byte-test_100a.txt: sdsl-lite/test/CMakeFiles/cst-byte-test_100a.txt.dir/rul
 
 # fast build rule for target.
 cst-byte-test_100a.txt/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-byte-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/cst-byte-test_100a.txt.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-byte-test_100a.txt.dir/build.make sdsl-lite/test/CMakeFiles/cst-byte-test_100a.txt.dir/build
 .PHONY : cst-byte-test_100a.txt/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.10.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.10.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.10.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.10.1.0.dir/rule
 
 # Convenience name for target.
@@ -3419,12 +3419,12 @@ rank-support-test_int-vec.10.1.0: sdsl-lite/test/CMakeFiles/rank-support-test_in
 
 # fast build rule for target.
 rank-support-test_int-vec.10.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.10.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.10.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.10.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.10.1.0.dir/build
 .PHONY : rank-support-test_int-vec.10.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/cst-int-test_keeper.int_8.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_keeper.int_8.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/cst-int-test_keeper.int_8.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/cst-int-test_keeper.int_8.dir/rule
 
 # Convenience name for target.
@@ -3434,12 +3434,12 @@ cst-int-test_keeper.int_8: sdsl-lite/test/CMakeFiles/cst-int-test_keeper.int_8.d
 
 # fast build rule for target.
 cst-int-test_keeper.int_8/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_keeper.int_8.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_keeper.int_8.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst-int-test_keeper.int_8.dir/build.make sdsl-lite/test/CMakeFiles/cst-int-test_keeper.int_8.dir/build
 .PHONY : cst-int-test_keeper.int_8/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.14.1.0.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.14.1.0.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.14.1.0.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.14.1.0.dir/rule
 
 # Convenience name for target.
@@ -3449,12 +3449,12 @@ rank-support-test_int-vec.14.1.0: sdsl-lite/test/CMakeFiles/rank-support-test_in
 
 # fast build rule for target.
 rank-support-test_int-vec.14.1.0/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.14.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.14.1.0.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.14.1.0.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.14.1.0.dir/build
 .PHONY : rank-support-test_int-vec.14.1.0/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-MAT-SELECT.dir/rule
 
 # Convenience name for target.
@@ -3464,12 +3464,12 @@ bit-vector-test_bit-vec.CRAFTED-MAT-SELECT: sdsl-lite/test/CMakeFiles/bit-vector
 
 # fast build rule for target.
 bit-vector-test_bit-vec.CRAFTED-MAT-SELECT/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-MAT-SELECT.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-MAT-SELECT.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-MAT-SELECT.dir/build.make sdsl-lite/test/CMakeFiles/bit-vector-test_bit-vec.CRAFTED-MAT-SELECT.dir/build
 .PHONY : bit-vector-test_bit-vec.CRAFTED-MAT-SELECT/fast
 
 # Convenience name for target.
 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/rule:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/rule
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/rule
 .PHONY : sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/rule
 
 # Convenience name for target.
@@ -3479,7 +3479,7 @@ rank-support-test_int-vec.16.1.r.42: sdsl-lite/test/CMakeFiles/rank-support-test
 
 # fast build rule for target.
 rank-support-test_int-vec.16.1.r.42/fast:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/build
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/build.make sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.16.1.r.42.dir/build
 .PHONY : rank-support-test_int-vec.16.1.r.42/fast
 
 bit_vector_generator.o: bit_vector_generator.cpp.o
@@ -3488,7 +3488,7 @@ bit_vector_generator.o: bit_vector_generator.cpp.o
 
 # target to build an object file
 bit_vector_generator.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/bit_vector_generator.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/bit_vector_generator.cpp.o
 .PHONY : bit_vector_generator.cpp.o
 
 bit_vector_generator.i: bit_vector_generator.cpp.i
@@ -3497,7 +3497,7 @@ bit_vector_generator.i: bit_vector_generator.cpp.i
 
 # target to preprocess a source file
 bit_vector_generator.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/bit_vector_generator.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/bit_vector_generator.cpp.i
 .PHONY : bit_vector_generator.cpp.i
 
 bit_vector_generator.s: bit_vector_generator.cpp.s
@@ -3506,7 +3506,7 @@ bit_vector_generator.s: bit_vector_generator.cpp.s
 
 # target to generate assembly for a file
 bit_vector_generator.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/bit_vector_generator.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_generator.dir/bit_vector_generator.cpp.s
 .PHONY : bit_vector_generator.cpp.s
 
 bit_vector_test.o: bit_vector_test.cpp.o
@@ -3515,7 +3515,7 @@ bit_vector_test.o: bit_vector_test.cpp.o
 
 # target to build an object file
 bit_vector_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_test.dir/bit_vector_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_test.dir/bit_vector_test.cpp.o
 .PHONY : bit_vector_test.cpp.o
 
 bit_vector_test.i: bit_vector_test.cpp.i
@@ -3524,7 +3524,7 @@ bit_vector_test.i: bit_vector_test.cpp.i
 
 # target to preprocess a source file
 bit_vector_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_test.dir/bit_vector_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_test.dir/bit_vector_test.cpp.i
 .PHONY : bit_vector_test.cpp.i
 
 bit_vector_test.s: bit_vector_test.cpp.s
@@ -3533,7 +3533,7 @@ bit_vector_test.s: bit_vector_test.cpp.s
 
 # target to generate assembly for a file
 bit_vector_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_test.dir/bit_vector_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bit_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/bit_vector_test.dir/bit_vector_test.cpp.s
 .PHONY : bit_vector_test.cpp.s
 
 bits_test.o: bits_test.cpp.o
@@ -3542,7 +3542,7 @@ bits_test.o: bits_test.cpp.o
 
 # target to build an object file
 bits_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bits_test.dir/build.make sdsl-lite/test/CMakeFiles/bits_test.dir/bits_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bits_test.dir/build.make sdsl-lite/test/CMakeFiles/bits_test.dir/bits_test.cpp.o
 .PHONY : bits_test.cpp.o
 
 bits_test.i: bits_test.cpp.i
@@ -3551,7 +3551,7 @@ bits_test.i: bits_test.cpp.i
 
 # target to preprocess a source file
 bits_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bits_test.dir/build.make sdsl-lite/test/CMakeFiles/bits_test.dir/bits_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bits_test.dir/build.make sdsl-lite/test/CMakeFiles/bits_test.dir/bits_test.cpp.i
 .PHONY : bits_test.cpp.i
 
 bits_test.s: bits_test.cpp.s
@@ -3560,7 +3560,7 @@ bits_test.s: bits_test.cpp.s
 
 # target to generate assembly for a file
 bits_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bits_test.dir/build.make sdsl-lite/test/CMakeFiles/bits_test.dir/bits_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/bits_test.dir/build.make sdsl-lite/test/CMakeFiles/bits_test.dir/bits_test.cpp.s
 .PHONY : bits_test.cpp.s
 
 coder_test.o: coder_test.cpp.o
@@ -3569,7 +3569,7 @@ coder_test.o: coder_test.cpp.o
 
 # target to build an object file
 coder_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/coder_test.dir/build.make sdsl-lite/test/CMakeFiles/coder_test.dir/coder_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/coder_test.dir/build.make sdsl-lite/test/CMakeFiles/coder_test.dir/coder_test.cpp.o
 .PHONY : coder_test.cpp.o
 
 coder_test.i: coder_test.cpp.i
@@ -3578,7 +3578,7 @@ coder_test.i: coder_test.cpp.i
 
 # target to preprocess a source file
 coder_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/coder_test.dir/build.make sdsl-lite/test/CMakeFiles/coder_test.dir/coder_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/coder_test.dir/build.make sdsl-lite/test/CMakeFiles/coder_test.dir/coder_test.cpp.i
 .PHONY : coder_test.cpp.i
 
 coder_test.s: coder_test.cpp.s
@@ -3587,7 +3587,7 @@ coder_test.s: coder_test.cpp.s
 
 # target to generate assembly for a file
 coder_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/coder_test.dir/build.make sdsl-lite/test/CMakeFiles/coder_test.dir/coder_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/coder_test.dir/build.make sdsl-lite/test/CMakeFiles/coder_test.dir/coder_test.cpp.s
 .PHONY : coder_test.cpp.s
 
 compile_test.o: compile_test.cpp.o
@@ -3596,7 +3596,7 @@ compile_test.o: compile_test.cpp.o
 
 # target to build an object file
 compile_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/compile_test.dir/build.make sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/compile_test.dir/build.make sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.o
 .PHONY : compile_test.cpp.o
 
 compile_test.i: compile_test.cpp.i
@@ -3605,7 +3605,7 @@ compile_test.i: compile_test.cpp.i
 
 # target to preprocess a source file
 compile_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/compile_test.dir/build.make sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/compile_test.dir/build.make sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.i
 .PHONY : compile_test.cpp.i
 
 compile_test.s: compile_test.cpp.s
@@ -3614,7 +3614,7 @@ compile_test.s: compile_test.cpp.s
 
 # target to generate assembly for a file
 compile_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/compile_test.dir/build.make sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/compile_test.dir/build.make sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.s
 .PHONY : compile_test.cpp.s
 
 csa_byte_test.o: csa_byte_test.cpp.o
@@ -3623,7 +3623,7 @@ csa_byte_test.o: csa_byte_test.cpp.o
 
 # target to build an object file
 csa_byte_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_byte_test.dir/csa_byte_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_byte_test.dir/csa_byte_test.cpp.o
 .PHONY : csa_byte_test.cpp.o
 
 csa_byte_test.i: csa_byte_test.cpp.i
@@ -3632,7 +3632,7 @@ csa_byte_test.i: csa_byte_test.cpp.i
 
 # target to preprocess a source file
 csa_byte_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_byte_test.dir/csa_byte_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_byte_test.dir/csa_byte_test.cpp.i
 .PHONY : csa_byte_test.cpp.i
 
 csa_byte_test.s: csa_byte_test.cpp.s
@@ -3641,7 +3641,7 @@ csa_byte_test.s: csa_byte_test.cpp.s
 
 # target to generate assembly for a file
 csa_byte_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_byte_test.dir/csa_byte_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_byte_test.dir/csa_byte_test.cpp.s
 .PHONY : csa_byte_test.cpp.s
 
 csa_int_test.o: csa_int_test.cpp.o
@@ -3650,7 +3650,7 @@ csa_int_test.o: csa_int_test.cpp.o
 
 # target to build an object file
 csa_int_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_int_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_int_test.dir/csa_int_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_int_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_int_test.dir/csa_int_test.cpp.o
 .PHONY : csa_int_test.cpp.o
 
 csa_int_test.i: csa_int_test.cpp.i
@@ -3659,7 +3659,7 @@ csa_int_test.i: csa_int_test.cpp.i
 
 # target to preprocess a source file
 csa_int_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_int_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_int_test.dir/csa_int_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_int_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_int_test.dir/csa_int_test.cpp.i
 .PHONY : csa_int_test.cpp.i
 
 csa_int_test.s: csa_int_test.cpp.s
@@ -3668,7 +3668,7 @@ csa_int_test.s: csa_int_test.cpp.s
 
 # target to generate assembly for a file
 csa_int_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_int_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_int_test.dir/csa_int_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/csa_int_test.dir/build.make sdsl-lite/test/CMakeFiles/csa_int_test.dir/csa_int_test.cpp.s
 .PHONY : csa_int_test.cpp.s
 
 cst_byte_test.o: cst_byte_test.cpp.o
@@ -3677,7 +3677,7 @@ cst_byte_test.o: cst_byte_test.cpp.o
 
 # target to build an object file
 cst_byte_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_byte_test.dir/cst_byte_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_byte_test.dir/cst_byte_test.cpp.o
 .PHONY : cst_byte_test.cpp.o
 
 cst_byte_test.i: cst_byte_test.cpp.i
@@ -3686,7 +3686,7 @@ cst_byte_test.i: cst_byte_test.cpp.i
 
 # target to preprocess a source file
 cst_byte_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_byte_test.dir/cst_byte_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_byte_test.dir/cst_byte_test.cpp.i
 .PHONY : cst_byte_test.cpp.i
 
 cst_byte_test.s: cst_byte_test.cpp.s
@@ -3695,7 +3695,7 @@ cst_byte_test.s: cst_byte_test.cpp.s
 
 # target to generate assembly for a file
 cst_byte_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_byte_test.dir/cst_byte_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_byte_test.dir/cst_byte_test.cpp.s
 .PHONY : cst_byte_test.cpp.s
 
 cst_int_test.o: cst_int_test.cpp.o
@@ -3704,7 +3704,7 @@ cst_int_test.o: cst_int_test.cpp.o
 
 # target to build an object file
 cst_int_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_int_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_int_test.dir/cst_int_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_int_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_int_test.dir/cst_int_test.cpp.o
 .PHONY : cst_int_test.cpp.o
 
 cst_int_test.i: cst_int_test.cpp.i
@@ -3713,7 +3713,7 @@ cst_int_test.i: cst_int_test.cpp.i
 
 # target to preprocess a source file
 cst_int_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_int_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_int_test.dir/cst_int_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_int_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_int_test.dir/cst_int_test.cpp.i
 .PHONY : cst_int_test.cpp.i
 
 cst_int_test.s: cst_int_test.cpp.s
@@ -3722,7 +3722,7 @@ cst_int_test.s: cst_int_test.cpp.s
 
 # target to generate assembly for a file
 cst_int_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_int_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_int_test.dir/cst_int_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/cst_int_test.dir/build.make sdsl-lite/test/CMakeFiles/cst_int_test.dir/cst_int_test.cpp.s
 .PHONY : cst_int_test.cpp.s
 
 dac_vector_test.o: dac_vector_test.cpp.o
@@ -3731,7 +3731,7 @@ dac_vector_test.o: dac_vector_test.cpp.o
 
 # target to build an object file
 dac_vector_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/dac_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/dac_vector_test.dir/dac_vector_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/dac_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/dac_vector_test.dir/dac_vector_test.cpp.o
 .PHONY : dac_vector_test.cpp.o
 
 dac_vector_test.i: dac_vector_test.cpp.i
@@ -3740,7 +3740,7 @@ dac_vector_test.i: dac_vector_test.cpp.i
 
 # target to preprocess a source file
 dac_vector_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/dac_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/dac_vector_test.dir/dac_vector_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/dac_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/dac_vector_test.dir/dac_vector_test.cpp.i
 .PHONY : dac_vector_test.cpp.i
 
 dac_vector_test.s: dac_vector_test.cpp.s
@@ -3749,7 +3749,7 @@ dac_vector_test.s: dac_vector_test.cpp.s
 
 # target to generate assembly for a file
 dac_vector_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/dac_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/dac_vector_test.dir/dac_vector_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/dac_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/dac_vector_test.dir/dac_vector_test.cpp.s
 .PHONY : dac_vector_test.cpp.s
 
 int_vector_buffer_test.o: int_vector_buffer_test.cpp.o
@@ -3758,7 +3758,7 @@ int_vector_buffer_test.o: int_vector_buffer_test.cpp.o
 
 # target to build an object file
 int_vector_buffer_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/int_vector_buffer_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/int_vector_buffer_test.cpp.o
 .PHONY : int_vector_buffer_test.cpp.o
 
 int_vector_buffer_test.i: int_vector_buffer_test.cpp.i
@@ -3767,7 +3767,7 @@ int_vector_buffer_test.i: int_vector_buffer_test.cpp.i
 
 # target to preprocess a source file
 int_vector_buffer_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/int_vector_buffer_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/int_vector_buffer_test.cpp.i
 .PHONY : int_vector_buffer_test.cpp.i
 
 int_vector_buffer_test.s: int_vector_buffer_test.cpp.s
@@ -3776,7 +3776,7 @@ int_vector_buffer_test.s: int_vector_buffer_test.cpp.s
 
 # target to generate assembly for a file
 int_vector_buffer_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/int_vector_buffer_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_buffer_test.dir/int_vector_buffer_test.cpp.s
 .PHONY : int_vector_buffer_test.cpp.s
 
 int_vector_generator.o: int_vector_generator.cpp.o
@@ -3785,7 +3785,7 @@ int_vector_generator.o: int_vector_generator.cpp.o
 
 # target to build an object file
 int_vector_generator.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_generator.dir/int_vector_generator.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_generator.dir/int_vector_generator.cpp.o
 .PHONY : int_vector_generator.cpp.o
 
 int_vector_generator.i: int_vector_generator.cpp.i
@@ -3794,7 +3794,7 @@ int_vector_generator.i: int_vector_generator.cpp.i
 
 # target to preprocess a source file
 int_vector_generator.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_generator.dir/int_vector_generator.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_generator.dir/int_vector_generator.cpp.i
 .PHONY : int_vector_generator.cpp.i
 
 int_vector_generator.s: int_vector_generator.cpp.s
@@ -3803,7 +3803,7 @@ int_vector_generator.s: int_vector_generator.cpp.s
 
 # target to generate assembly for a file
 int_vector_generator.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_generator.dir/int_vector_generator.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_generator.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_generator.dir/int_vector_generator.cpp.s
 .PHONY : int_vector_generator.cpp.s
 
 int_vector_mapper_test.o: int_vector_mapper_test.cpp.o
@@ -3812,7 +3812,7 @@ int_vector_mapper_test.o: int_vector_mapper_test.cpp.o
 
 # target to build an object file
 int_vector_mapper_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/int_vector_mapper_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/int_vector_mapper_test.cpp.o
 .PHONY : int_vector_mapper_test.cpp.o
 
 int_vector_mapper_test.i: int_vector_mapper_test.cpp.i
@@ -3821,7 +3821,7 @@ int_vector_mapper_test.i: int_vector_mapper_test.cpp.i
 
 # target to preprocess a source file
 int_vector_mapper_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/int_vector_mapper_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/int_vector_mapper_test.cpp.i
 .PHONY : int_vector_mapper_test.cpp.i
 
 int_vector_mapper_test.s: int_vector_mapper_test.cpp.s
@@ -3830,7 +3830,7 @@ int_vector_mapper_test.s: int_vector_mapper_test.cpp.s
 
 # target to generate assembly for a file
 int_vector_mapper_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/int_vector_mapper_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_mapper_test.dir/int_vector_mapper_test.cpp.s
 .PHONY : int_vector_mapper_test.cpp.s
 
 int_vector_test.o: int_vector_test.cpp.o
@@ -3839,7 +3839,7 @@ int_vector_test.o: int_vector_test.cpp.o
 
 # target to build an object file
 int_vector_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.o
 .PHONY : int_vector_test.cpp.o
 
 int_vector_test.i: int_vector_test.cpp.i
@@ -3848,7 +3848,7 @@ int_vector_test.i: int_vector_test.cpp.i
 
 # target to preprocess a source file
 int_vector_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.i
 .PHONY : int_vector_test.cpp.i
 
 int_vector_test.s: int_vector_test.cpp.s
@@ -3857,7 +3857,7 @@ int_vector_test.s: int_vector_test.cpp.s
 
 # target to generate assembly for a file
 int_vector_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/int_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/int_vector_test.dir/int_vector_test.cpp.s
 .PHONY : int_vector_test.cpp.s
 
 inv_perm_support_test.o: inv_perm_support_test.cpp.o
@@ -3866,7 +3866,7 @@ inv_perm_support_test.o: inv_perm_support_test.cpp.o
 
 # target to build an object file
 inv_perm_support_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/build.make sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/inv_perm_support_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/build.make sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/inv_perm_support_test.cpp.o
 .PHONY : inv_perm_support_test.cpp.o
 
 inv_perm_support_test.i: inv_perm_support_test.cpp.i
@@ -3875,7 +3875,7 @@ inv_perm_support_test.i: inv_perm_support_test.cpp.i
 
 # target to preprocess a source file
 inv_perm_support_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/build.make sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/inv_perm_support_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/build.make sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/inv_perm_support_test.cpp.i
 .PHONY : inv_perm_support_test.cpp.i
 
 inv_perm_support_test.s: inv_perm_support_test.cpp.s
@@ -3884,7 +3884,7 @@ inv_perm_support_test.s: inv_perm_support_test.cpp.s
 
 # target to generate assembly for a file
 inv_perm_support_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/build.make sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/inv_perm_support_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/build.make sdsl-lite/test/CMakeFiles/inv_perm_support_test.dir/inv_perm_support_test.cpp.s
 .PHONY : inv_perm_support_test.cpp.s
 
 k2_treap_test.o: k2_treap_test.cpp.o
@@ -3893,7 +3893,7 @@ k2_treap_test.o: k2_treap_test.cpp.o
 
 # target to build an object file
 k2_treap_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_treap_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_treap_test.dir/k2_treap_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_treap_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_treap_test.dir/k2_treap_test.cpp.o
 .PHONY : k2_treap_test.cpp.o
 
 k2_treap_test.i: k2_treap_test.cpp.i
@@ -3902,7 +3902,7 @@ k2_treap_test.i: k2_treap_test.cpp.i
 
 # target to preprocess a source file
 k2_treap_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_treap_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_treap_test.dir/k2_treap_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_treap_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_treap_test.dir/k2_treap_test.cpp.i
 .PHONY : k2_treap_test.cpp.i
 
 k2_treap_test.s: k2_treap_test.cpp.s
@@ -3911,7 +3911,7 @@ k2_treap_test.s: k2_treap_test.cpp.s
 
 # target to generate assembly for a file
 k2_treap_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_treap_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_treap_test.dir/k2_treap_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_treap_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_treap_test.dir/k2_treap_test.cpp.s
 .PHONY : k2_treap_test.cpp.s
 
 k2_tree_test.o: k2_tree_test.cpp.o
@@ -3920,7 +3920,7 @@ k2_tree_test.o: k2_tree_test.cpp.o
 
 # target to build an object file
 k2_tree_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_tree_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_tree_test.dir/k2_tree_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_tree_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_tree_test.dir/k2_tree_test.cpp.o
 .PHONY : k2_tree_test.cpp.o
 
 k2_tree_test.i: k2_tree_test.cpp.i
@@ -3929,7 +3929,7 @@ k2_tree_test.i: k2_tree_test.cpp.i
 
 # target to preprocess a source file
 k2_tree_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_tree_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_tree_test.dir/k2_tree_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_tree_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_tree_test.dir/k2_tree_test.cpp.i
 .PHONY : k2_tree_test.cpp.i
 
 k2_tree_test.s: k2_tree_test.cpp.s
@@ -3938,7 +3938,7 @@ k2_tree_test.s: k2_tree_test.cpp.s
 
 # target to generate assembly for a file
 k2_tree_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_tree_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_tree_test.dir/k2_tree_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/k2_tree_test.dir/build.make sdsl-lite/test/CMakeFiles/k2_tree_test.dir/k2_tree_test.cpp.s
 .PHONY : k2_tree_test.cpp.s
 
 lcp_construct_test.o: lcp_construct_test.cpp.o
@@ -3947,7 +3947,7 @@ lcp_construct_test.o: lcp_construct_test.cpp.o
 
 # target to build an object file
 lcp_construct_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/lcp_construct_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/lcp_construct_test.cpp.o
 .PHONY : lcp_construct_test.cpp.o
 
 lcp_construct_test.i: lcp_construct_test.cpp.i
@@ -3956,7 +3956,7 @@ lcp_construct_test.i: lcp_construct_test.cpp.i
 
 # target to preprocess a source file
 lcp_construct_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/lcp_construct_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/lcp_construct_test.cpp.i
 .PHONY : lcp_construct_test.cpp.i
 
 lcp_construct_test.s: lcp_construct_test.cpp.s
@@ -3965,7 +3965,7 @@ lcp_construct_test.s: lcp_construct_test.cpp.s
 
 # target to generate assembly for a file
 lcp_construct_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/lcp_construct_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/lcp_construct_test.dir/lcp_construct_test.cpp.s
 .PHONY : lcp_construct_test.cpp.s
 
 nn_dict_dynamic_test.o: nn_dict_dynamic_test.cpp.o
@@ -3974,7 +3974,7 @@ nn_dict_dynamic_test.o: nn_dict_dynamic_test.cpp.o
 
 # target to build an object file
 nn_dict_dynamic_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/build.make sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/nn_dict_dynamic_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/build.make sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/nn_dict_dynamic_test.cpp.o
 .PHONY : nn_dict_dynamic_test.cpp.o
 
 nn_dict_dynamic_test.i: nn_dict_dynamic_test.cpp.i
@@ -3983,7 +3983,7 @@ nn_dict_dynamic_test.i: nn_dict_dynamic_test.cpp.i
 
 # target to preprocess a source file
 nn_dict_dynamic_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/build.make sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/nn_dict_dynamic_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/build.make sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/nn_dict_dynamic_test.cpp.i
 .PHONY : nn_dict_dynamic_test.cpp.i
 
 nn_dict_dynamic_test.s: nn_dict_dynamic_test.cpp.s
@@ -3992,7 +3992,7 @@ nn_dict_dynamic_test.s: nn_dict_dynamic_test.cpp.s
 
 # target to generate assembly for a file
 nn_dict_dynamic_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/build.make sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/nn_dict_dynamic_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/build.make sdsl-lite/test/CMakeFiles/nn_dict_dynamic_test.dir/nn_dict_dynamic_test.cpp.s
 .PHONY : nn_dict_dynamic_test.cpp.s
 
 rank_support_test.o: rank_support_test.cpp.o
@@ -4001,7 +4001,7 @@ rank_support_test.o: rank_support_test.cpp.o
 
 # target to build an object file
 rank_support_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank_support_test.dir/build.make sdsl-lite/test/CMakeFiles/rank_support_test.dir/rank_support_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank_support_test.dir/build.make sdsl-lite/test/CMakeFiles/rank_support_test.dir/rank_support_test.cpp.o
 .PHONY : rank_support_test.cpp.o
 
 rank_support_test.i: rank_support_test.cpp.i
@@ -4010,7 +4010,7 @@ rank_support_test.i: rank_support_test.cpp.i
 
 # target to preprocess a source file
 rank_support_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank_support_test.dir/build.make sdsl-lite/test/CMakeFiles/rank_support_test.dir/rank_support_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank_support_test.dir/build.make sdsl-lite/test/CMakeFiles/rank_support_test.dir/rank_support_test.cpp.i
 .PHONY : rank_support_test.cpp.i
 
 rank_support_test.s: rank_support_test.cpp.s
@@ -4019,7 +4019,7 @@ rank_support_test.s: rank_support_test.cpp.s
 
 # target to generate assembly for a file
 rank_support_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank_support_test.dir/build.make sdsl-lite/test/CMakeFiles/rank_support_test.dir/rank_support_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rank_support_test.dir/build.make sdsl-lite/test/CMakeFiles/rank_support_test.dir/rank_support_test.cpp.s
 .PHONY : rank_support_test.cpp.s
 
 replace_int_vector_value.o: replace_int_vector_value.cpp.o
@@ -4028,7 +4028,7 @@ replace_int_vector_value.o: replace_int_vector_value.cpp.o
 
 # target to build an object file
 replace_int_vector_value.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/build.make sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/replace_int_vector_value.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/build.make sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/replace_int_vector_value.cpp.o
 .PHONY : replace_int_vector_value.cpp.o
 
 replace_int_vector_value.i: replace_int_vector_value.cpp.i
@@ -4037,7 +4037,7 @@ replace_int_vector_value.i: replace_int_vector_value.cpp.i
 
 # target to preprocess a source file
 replace_int_vector_value.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/build.make sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/replace_int_vector_value.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/build.make sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/replace_int_vector_value.cpp.i
 .PHONY : replace_int_vector_value.cpp.i
 
 replace_int_vector_value.s: replace_int_vector_value.cpp.s
@@ -4046,7 +4046,7 @@ replace_int_vector_value.s: replace_int_vector_value.cpp.s
 
 # target to generate assembly for a file
 replace_int_vector_value.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/build.make sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/replace_int_vector_value.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/build.make sdsl-lite/test/CMakeFiles/replace_int_vector_value.dir/replace_int_vector_value.cpp.s
 .PHONY : replace_int_vector_value.cpp.s
 
 rmq_test.o: rmq_test.cpp.o
@@ -4055,7 +4055,7 @@ rmq_test.o: rmq_test.cpp.o
 
 # target to build an object file
 rmq_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq_test.dir/build.make sdsl-lite/test/CMakeFiles/rmq_test.dir/rmq_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq_test.dir/build.make sdsl-lite/test/CMakeFiles/rmq_test.dir/rmq_test.cpp.o
 .PHONY : rmq_test.cpp.o
 
 rmq_test.i: rmq_test.cpp.i
@@ -4064,7 +4064,7 @@ rmq_test.i: rmq_test.cpp.i
 
 # target to preprocess a source file
 rmq_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq_test.dir/build.make sdsl-lite/test/CMakeFiles/rmq_test.dir/rmq_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq_test.dir/build.make sdsl-lite/test/CMakeFiles/rmq_test.dir/rmq_test.cpp.i
 .PHONY : rmq_test.cpp.i
 
 rmq_test.s: rmq_test.cpp.s
@@ -4073,7 +4073,7 @@ rmq_test.s: rmq_test.cpp.s
 
 # target to generate assembly for a file
 rmq_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq_test.dir/build.make sdsl-lite/test/CMakeFiles/rmq_test.dir/rmq_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/rmq_test.dir/build.make sdsl-lite/test/CMakeFiles/rmq_test.dir/rmq_test.cpp.s
 .PHONY : rmq_test.cpp.s
 
 sa_construct_test.o: sa_construct_test.cpp.o
@@ -4082,7 +4082,7 @@ sa_construct_test.o: sa_construct_test.cpp.o
 
 # target to build an object file
 sa_construct_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/sa_construct_test.dir/sa_construct_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/sa_construct_test.dir/sa_construct_test.cpp.o
 .PHONY : sa_construct_test.cpp.o
 
 sa_construct_test.i: sa_construct_test.cpp.i
@@ -4091,7 +4091,7 @@ sa_construct_test.i: sa_construct_test.cpp.i
 
 # target to preprocess a source file
 sa_construct_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/sa_construct_test.dir/sa_construct_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/sa_construct_test.dir/sa_construct_test.cpp.i
 .PHONY : sa_construct_test.cpp.i
 
 sa_construct_test.s: sa_construct_test.cpp.s
@@ -4100,7 +4100,7 @@ sa_construct_test.s: sa_construct_test.cpp.s
 
 # target to generate assembly for a file
 sa_construct_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/sa_construct_test.dir/sa_construct_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sa_construct_test.dir/build.make sdsl-lite/test/CMakeFiles/sa_construct_test.dir/sa_construct_test.cpp.s
 .PHONY : sa_construct_test.cpp.s
 
 sd_vector_test.o: sd_vector_test.cpp.o
@@ -4109,7 +4109,7 @@ sd_vector_test.o: sd_vector_test.cpp.o
 
 # target to build an object file
 sd_vector_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sd_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/sd_vector_test.dir/sd_vector_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sd_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/sd_vector_test.dir/sd_vector_test.cpp.o
 .PHONY : sd_vector_test.cpp.o
 
 sd_vector_test.i: sd_vector_test.cpp.i
@@ -4118,7 +4118,7 @@ sd_vector_test.i: sd_vector_test.cpp.i
 
 # target to preprocess a source file
 sd_vector_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sd_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/sd_vector_test.dir/sd_vector_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sd_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/sd_vector_test.dir/sd_vector_test.cpp.i
 .PHONY : sd_vector_test.cpp.i
 
 sd_vector_test.s: sd_vector_test.cpp.s
@@ -4127,7 +4127,7 @@ sd_vector_test.s: sd_vector_test.cpp.s
 
 # target to generate assembly for a file
 sd_vector_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sd_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/sd_vector_test.dir/sd_vector_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sd_vector_test.dir/build.make sdsl-lite/test/CMakeFiles/sd_vector_test.dir/sd_vector_test.cpp.s
 .PHONY : sd_vector_test.cpp.s
 
 search_bidirectional_test.o: search_bidirectional_test.cpp.o
@@ -4136,7 +4136,7 @@ search_bidirectional_test.o: search_bidirectional_test.cpp.o
 
 # target to build an object file
 search_bidirectional_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/build.make sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/search_bidirectional_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/build.make sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/search_bidirectional_test.cpp.o
 .PHONY : search_bidirectional_test.cpp.o
 
 search_bidirectional_test.i: search_bidirectional_test.cpp.i
@@ -4145,7 +4145,7 @@ search_bidirectional_test.i: search_bidirectional_test.cpp.i
 
 # target to preprocess a source file
 search_bidirectional_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/build.make sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/search_bidirectional_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/build.make sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/search_bidirectional_test.cpp.i
 .PHONY : search_bidirectional_test.cpp.i
 
 search_bidirectional_test.s: search_bidirectional_test.cpp.s
@@ -4154,7 +4154,7 @@ search_bidirectional_test.s: search_bidirectional_test.cpp.s
 
 # target to generate assembly for a file
 search_bidirectional_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/build.make sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/search_bidirectional_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/build.make sdsl-lite/test/CMakeFiles/search_bidirectional_test.dir/search_bidirectional_test.cpp.s
 .PHONY : search_bidirectional_test.cpp.s
 
 select_support_test.o: select_support_test.cpp.o
@@ -4163,7 +4163,7 @@ select_support_test.o: select_support_test.cpp.o
 
 # target to build an object file
 select_support_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select_support_test.dir/build.make sdsl-lite/test/CMakeFiles/select_support_test.dir/select_support_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select_support_test.dir/build.make sdsl-lite/test/CMakeFiles/select_support_test.dir/select_support_test.cpp.o
 .PHONY : select_support_test.cpp.o
 
 select_support_test.i: select_support_test.cpp.i
@@ -4172,7 +4172,7 @@ select_support_test.i: select_support_test.cpp.i
 
 # target to preprocess a source file
 select_support_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select_support_test.dir/build.make sdsl-lite/test/CMakeFiles/select_support_test.dir/select_support_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select_support_test.dir/build.make sdsl-lite/test/CMakeFiles/select_support_test.dir/select_support_test.cpp.i
 .PHONY : select_support_test.cpp.i
 
 select_support_test.s: select_support_test.cpp.s
@@ -4181,7 +4181,7 @@ select_support_test.s: select_support_test.cpp.s
 
 # target to generate assembly for a file
 select_support_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select_support_test.dir/build.make sdsl-lite/test/CMakeFiles/select_support_test.dir/select_support_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/select_support_test.dir/build.make sdsl-lite/test/CMakeFiles/select_support_test.dir/select_support_test.cpp.s
 .PHONY : select_support_test.cpp.s
 
 sorted_int_stack_test.o: sorted_int_stack_test.cpp.o
@@ -4190,7 +4190,7 @@ sorted_int_stack_test.o: sorted_int_stack_test.cpp.o
 
 # target to build an object file
 sorted_int_stack_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/sorted_int_stack_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/sorted_int_stack_test.cpp.o
 .PHONY : sorted_int_stack_test.cpp.o
 
 sorted_int_stack_test.i: sorted_int_stack_test.cpp.i
@@ -4199,7 +4199,7 @@ sorted_int_stack_test.i: sorted_int_stack_test.cpp.i
 
 # target to preprocess a source file
 sorted_int_stack_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/sorted_int_stack_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/sorted_int_stack_test.cpp.i
 .PHONY : sorted_int_stack_test.cpp.i
 
 sorted_int_stack_test.s: sorted_int_stack_test.cpp.s
@@ -4208,7 +4208,7 @@ sorted_int_stack_test.s: sorted_int_stack_test.cpp.s
 
 # target to generate assembly for a file
 sorted_int_stack_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/sorted_int_stack_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_int_stack_test.dir/sorted_int_stack_test.cpp.s
 .PHONY : sorted_int_stack_test.cpp.s
 
 sorted_stack_support_test.o: sorted_stack_support_test.cpp.o
@@ -4217,7 +4217,7 @@ sorted_stack_support_test.o: sorted_stack_support_test.cpp.o
 
 # target to build an object file
 sorted_stack_support_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/sorted_stack_support_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/sorted_stack_support_test.cpp.o
 .PHONY : sorted_stack_support_test.cpp.o
 
 sorted_stack_support_test.i: sorted_stack_support_test.cpp.i
@@ -4226,7 +4226,7 @@ sorted_stack_support_test.i: sorted_stack_support_test.cpp.i
 
 # target to preprocess a source file
 sorted_stack_support_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/sorted_stack_support_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/sorted_stack_support_test.cpp.i
 .PHONY : sorted_stack_support_test.cpp.i
 
 sorted_stack_support_test.s: sorted_stack_support_test.cpp.s
@@ -4235,7 +4235,7 @@ sorted_stack_support_test.s: sorted_stack_support_test.cpp.s
 
 # target to generate assembly for a file
 sorted_stack_support_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/sorted_stack_support_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/build.make sdsl-lite/test/CMakeFiles/sorted_stack_support_test.dir/sorted_stack_support_test.cpp.s
 .PHONY : sorted_stack_support_test.cpp.s
 
 wt_byte_test.o: wt_byte_test.cpp.o
@@ -4244,7 +4244,7 @@ wt_byte_test.o: wt_byte_test.cpp.o
 
 # target to build an object file
 wt_byte_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_byte_test.dir/wt_byte_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_byte_test.dir/wt_byte_test.cpp.o
 .PHONY : wt_byte_test.cpp.o
 
 wt_byte_test.i: wt_byte_test.cpp.i
@@ -4253,7 +4253,7 @@ wt_byte_test.i: wt_byte_test.cpp.i
 
 # target to preprocess a source file
 wt_byte_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_byte_test.dir/wt_byte_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_byte_test.dir/wt_byte_test.cpp.i
 .PHONY : wt_byte_test.cpp.i
 
 wt_byte_test.s: wt_byte_test.cpp.s
@@ -4262,7 +4262,7 @@ wt_byte_test.s: wt_byte_test.cpp.s
 
 # target to generate assembly for a file
 wt_byte_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_byte_test.dir/wt_byte_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_byte_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_byte_test.dir/wt_byte_test.cpp.s
 .PHONY : wt_byte_test.cpp.s
 
 wt_int_test.o: wt_int_test.cpp.o
@@ -4271,7 +4271,7 @@ wt_int_test.o: wt_int_test.cpp.o
 
 # target to build an object file
 wt_int_test.cpp.o:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_int_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_int_test.dir/wt_int_test.cpp.o
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_int_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_int_test.dir/wt_int_test.cpp.o
 .PHONY : wt_int_test.cpp.o
 
 wt_int_test.i: wt_int_test.cpp.i
@@ -4280,7 +4280,7 @@ wt_int_test.i: wt_int_test.cpp.i
 
 # target to preprocess a source file
 wt_int_test.cpp.i:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_int_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_int_test.dir/wt_int_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_int_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_int_test.dir/wt_int_test.cpp.i
 .PHONY : wt_int_test.cpp.i
 
 wt_int_test.s: wt_int_test.cpp.s
@@ -4289,7 +4289,7 @@ wt_int_test.s: wt_int_test.cpp.s
 
 # target to generate assembly for a file
 wt_int_test.cpp.s:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_int_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_int_test.dir/wt_int_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(MAKE) $(MAKESILENT) -f sdsl-lite/test/CMakeFiles/wt_int_test.dir/build.make sdsl-lite/test/CMakeFiles/wt_int_test.dir/wt_int_test.cpp.s
 .PHONY : wt_int_test.cpp.s
 
 # Help Target
@@ -4626,6 +4626,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

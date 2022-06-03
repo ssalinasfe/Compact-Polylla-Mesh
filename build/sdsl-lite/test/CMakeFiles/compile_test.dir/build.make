@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa
+CMAKE_SOURCE_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build
+CMAKE_BINARY_DIR = /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build
 
 # Include any dependencies generated for this target.
 include sdsl-lite/test/CMakeFiles/compile_test.dir/depend.make
@@ -78,16 +78,16 @@ include sdsl-lite/test/CMakeFiles/compile_test.dir/flags.make
 
 sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.o: sdsl-lite/test/CMakeFiles/compile_test.dir/flags.make
 sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.o: ../sdsl-lite/test/compile_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.o"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_test.dir/compile_test.cpp.o -c /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/compile_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.o"
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_test.dir/compile_test.cpp.o -c /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/compile_test.cpp
 
 sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compile_test.dir/compile_test.cpp.i"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/compile_test.cpp > CMakeFiles/compile_test.dir/compile_test.cpp.i
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/compile_test.cpp > CMakeFiles/compile_test.dir/compile_test.cpp.i
 
 sdsl-lite/test/CMakeFiles/compile_test.dir/compile_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compile_test.dir/compile_test.cpp.s"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && /bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test/compile_test.cpp -o CMakeFiles/compile_test.dir/compile_test.cpp.s
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test/compile_test.cpp -o CMakeFiles/compile_test.dir/compile_test.cpp.s
 
 # Object files for target compile_test
 compile_test_OBJECTS = \
@@ -103,8 +103,8 @@ sdsl-lite/test/compile_test: sdsl-lite/external/googletest/googletest/libgtest.a
 sdsl-lite/test/compile_test: sdsl-lite/external/libdivsufsort/lib/libdivsufsort.a
 sdsl-lite/test/compile_test: sdsl-lite/external/libdivsufsort/lib/libdivsufsort64.a
 sdsl-lite/test/compile_test: sdsl-lite/test/CMakeFiles/compile_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable compile_test"
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/compile_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable compile_test"
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/compile_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sdsl-lite/test/CMakeFiles/compile_test.dir/build: sdsl-lite/test/compile_test
@@ -112,10 +112,10 @@ sdsl-lite/test/CMakeFiles/compile_test.dir/build: sdsl-lite/test/compile_test
 .PHONY : sdsl-lite/test/CMakeFiles/compile_test.dir/build
 
 sdsl-lite/test/CMakeFiles/compile_test.dir/clean:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/compile_test.dir/cmake_clean.cmake
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test && $(CMAKE_COMMAND) -P CMakeFiles/compile_test.dir/cmake_clean.cmake
 .PHONY : sdsl-lite/test/CMakeFiles/compile_test.dir/clean
 
 sdsl-lite/test/CMakeFiles/compile_test.dir/depend:
-	cd /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test /home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/build/sdsl-lite/test/CMakeFiles/compile_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/sdsl-lite/test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/build/sdsl-lite/test/CMakeFiles/compile_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sdsl-lite/test/CMakeFiles/compile_test.dir/depend
 

@@ -453,8 +453,6 @@ array
 -
 
 ../src/inversedHalfEdge.hpp
-chrono
--
 
 ../src/polylla.hpp
 array
@@ -474,7 +472,7 @@ inversedHalfEdge.hpp
 chrono
 -
 
-/home/cuyiguaton/Dropbox/Doctorado/comprimidas/programa/main.cpp
+/home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida/main.cpp
 algorithm
 -
 vector
