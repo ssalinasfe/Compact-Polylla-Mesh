@@ -64,10 +64,11 @@ public:
         mesh = bit_vector(tr->halfEdges(), false);
         
         //Print info
-        //for (int e = 0; e < tr->halfEdges(); e++){
-        //    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<", origin: "<<tr->origin(e)<<", target:"<<tr->target(e)<<", "<<tr->twin(e)<<", CW_edge: "<<tr->CW_edge_to_vertex(e)<<", CCW_edge: "<<tr->CCW_edge_to_vertex(e)<<std::endl;
-        //    
-        //}
+        for (int e = 0; e < tr->halfEdges(); e++){
+            std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<", origin: "<<tr->origin(e)<<", target:"<<tr->target(e)<<", "<<tr->twin(e)<<", CW_edge: "<<tr->CW_edge_to_vertex(e)<<", CCW_edge: "<<tr->CCW_edge_to_vertex(e)<<", (new) is_border: "<<tr->is_border(e)<<", is_border_face: "<<tr->is_border_face(e)<<", (new) get_face(e): "<<tr->get_face(e)<<", (new) get_node:"<<tr->get_node(e)<<std::endl;
+        }
+
+        
 
         std::cout<<"Labeling edges"<<std::endl;
         
@@ -247,7 +248,7 @@ private:
     //Return the lenght of a halfedge
     double distance(double x1, double y1, double x2, double y2)
     {
-        return sqrt(pow(x1-x2,2) + pow(y1-y2,2));
+        return pow(x1-x2,2) + pow(y1-y2,2);
     }
 
 

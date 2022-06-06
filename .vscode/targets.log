@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun  3 13:50:16 2022
+# Make data base, printed on Mon Jun  6 12:49:05 2022
 
 # Variables
 
@@ -19,7 +19,9 @@ GNOME_SHELL_SESSION_MODE = pop
 # environment
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-fa2f51e0-792e-4310-8314-708a3c73f040.sock
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-141c2ef2-fd54-44ac-af62-0ba46e1c34a2.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
@@ -64,8 +66,6 @@ XAUTHORITY = /run/user/1001/gdm/Xauthority
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # makefile
 MAKEFLAGS = pqrR
-# environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1001/bus,guid=f2e9e6e765f7066452e6dba0629a2949
 # makefile
 CURDIR := /home/ssalinas/Dropbox/Doctorado/Investigacion/PoyllaComprimida
 # environment
@@ -95,19 +95,19 @@ ZSH = /home/ssalinas/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 15892
+VSCODE_PID = 9332
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/2709,unix/pop-os:/tmp/.ICE-unix/2709
+SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/2669,unix/pop-os:/tmp/.ICE-unix/2669
 # automatic
 *F = $(notdir $*)
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus,guid=f2e9e6e765f7066452e6dba0629a2949
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
@@ -123,6 +123,8 @@ MAKECMDGOALS := all
 # environment
 XMODIFIERS = @im=ibus
 # environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
 SHLVL = 0
 # environment
 MAKELEVEL := 0
@@ -135,7 +137,7 @@ MAKEFILES :=
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = 6978f1ca5d5647ef819400d81a22598c
+INVOCATION_ID = fed39d70e401422d9ab056a9874d086e
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -165,7 +167,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 2709
+SYSTEMD_EXEC_PID = 2688
 # environment
 DISPLAY = :1
 # environment
@@ -177,11 +179,9 @@ DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2560
+MANAGERPID = 2489
 # environment
-DBUS_STARTER_BUS_TYPE = session
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 15892
+GIO_LAUNCHED_DESKTOP_FILE_PID = 9332
 # environment
 PAGER = less
 # environment
@@ -191,7 +191,7 @@ XDG_RUNTIME_DIR = /run/user/1001
 # environment
 GPG_AGENT_INFO = /run/user/1001/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:33936
+JOURNAL_STREAM = 8:31698
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -217,7 +217,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = pop
 # variable set hash-table stats:
-# Load=103/1024=10%, Rehash=0, Collisions=6/130=5%
+# Load=103/1024=10%, Rehash=0, Collisions=5/130=4%
 
 # Pattern-specific Variable Values
 
@@ -286,6 +286,6 @@ make: *** No rule to make target 'all'.  Stop.
 
 # hash-table stats:
 # Load=26/8192=0%, Rehash=0, Collisions=0/29=0%
-# Finished Make data base on Fri Jun  3 13:50:16 2022
+# Finished Make data base on Mon Jun  6 12:49:05 2022
 
  

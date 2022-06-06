@@ -409,6 +409,7 @@ public:
     size_type origin(size_type e)
     {
         return pemb::vertex(pemb::mate(e));
+        //return get_node(e);
     }
 
     //Return the twin edge of the edge e
