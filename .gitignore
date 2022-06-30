@@ -11,10 +11,13 @@ data/*/*
 !data/datagenerator_withplotting.sh
 !data/plot_triangulation.py
 !data/10000x10000RandomPoints.py
+!data/generateplannar.cpp
 
 !data/pikachu*
 !data/points50.1.*
 !data/points50_polylla.1.pdf
+
+sdsl-lite/build/CMakeCache.txt
 
 .vscode
 .vscode/*   
