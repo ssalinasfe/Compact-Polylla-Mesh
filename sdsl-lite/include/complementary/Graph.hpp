@@ -17,7 +17,7 @@ using namespace sdsl;
 #define EMPTY 2
 #define NONE 3
 
-class Graph {
+class   Graph {
 
   private:
     Vertex * V; // Array of vertices of the tree

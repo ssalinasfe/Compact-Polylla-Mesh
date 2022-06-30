@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun  6 12:49:05 2022
+# Make data base, printed on Mon Jun  6 15:36:56 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-141c2ef2-fd54-44ac-af62-0ba46e1c34a2.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-df810e46-c318-4a67-b51b-4685d3166b7a.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
@@ -95,7 +95,7 @@ ZSH = /home/ssalinas/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 9332
+VSCODE_PID = 18989
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -181,7 +181,7 @@ MAKE_VERSION := 4.3
 # environment
 MANAGERPID = 2489
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 9332
+GIO_LAUNCHED_DESKTOP_FILE_PID = 18989
 # environment
 PAGER = less
 # environment
@@ -225,9 +225,9 @@ GDMSESSION = pop
 
 # Directories
 
-# . (device 2068, inode 9453769): 18 files, no impossibilities.
+# . (device 2068, inode 9453769): 19 files, no impossibilities.
 
-# 18 files, no impossibilities in 1 directories.
+# 19 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -277,15 +277,14 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 268 B / avg = 10 B
-# current buf: size = 8162 B / used = 268 B / count = 26 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 279 B / avg = 10 B
+# current buf: size = 8162 B / used = 279 B / count = 27 / avg = 10 B
 
-# strcache performance: lookups = 29 / hit rate = 10%
+# strcache performance: lookups = 30 / hit rate = 10%
+# hash-table stats:
+# Load=27/8192=0%, Rehash=0, Collisions=0/30=0%
+# Finished Make data base on Mon Jun  6 15:36:56 2022
+
  
 make: *** No rule to make target 'all'.  Stop.
 
-# hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=0/29=0%
-# Finished Make data base on Mon Jun  6 12:49:05 2022
-
- 

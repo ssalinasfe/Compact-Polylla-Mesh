@@ -1,2 +1,0 @@
-/usr/bin/ar qc libvoidfiles.a 
-/usr/bin/ranlib libvoidfiles.a
