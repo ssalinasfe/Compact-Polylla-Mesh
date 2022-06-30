@@ -2,8 +2,8 @@ LIB_DIR = /usr/local/lib
 INC_DIR = /usr/local/include
 MY_CXX_FLAGS= -std=c++11 -march=native -Wall -Wextra -DNDEBUG $(CODE_COVER)
 MY_CXX_OPT_FLAGS= -O3 -ffast-math -funroll-loops -msse4.2 -DHAVE_CXA_DEMANGLE
-MY_CXX=/usr/bin/g++
-MY_CC=/usr/bin/gcc
+MY_CXX=/usr/bin/g++-8
+MY_CC=/usr/bin/gcc-8
 
 # Returns $1-th .-separated part of string $2.
 dim = $(word $1, $(subst ., ,$2))
