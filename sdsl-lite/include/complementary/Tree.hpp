@@ -150,37 +150,33 @@ public:
     return 0;
   }
 
+  // Function to store in the array dfs_order the DFS ordering of the tree
   void get_DFS(int *parent, int *dfs_order) {
     unsigned int n = this->nodes();
     int cnt=0;
-    
-    //cout << "Edges: ";
-    //for(int i=0; i < 2*(n-1); i++) {
-    //  cout << "(" << this->getEdgeSrc(i) << ",";
-    //  cout << this->getEdgeTgt(i) << ") ";
-    //}
-    //cout << endl;
-
     stack <unsigned int> s;
     s.push(0); // Root      
-    cout << "DFS: ";
+
     while(!s.empty()) {
       int curr = s.top(); s.pop();
       dfs_order[cnt++] = curr;
-      //cerr << curr << " ";
       
-      int first = this->V[curr].getFirst();
-      int last = this->V[curr].getLast();
-      
-      for(int i = last; i >= first; i--) {
+      int first = this->getNodeFirst(curr);
+      int last = this->getNodeLast(curr);
+
+      // The neighbors are traversed in ccw order starting from the parent's edge
+      for(int i = parent[curr]-1; i != parent[curr];) {
+	if(i < first) i = last;
+
     	unsigned int tgt = this->getEdgeTgt(i);
-    	if(i != parent[curr])
-    	  s.push(this->getEdgeTgt(i));	
+    	if(i != parent[curr]) {
+    	  s.push(tgt);
+	}
+	else break;
+	i--;
       }
     }
-    //cout << endl;
   }
-  
 };
 
 #endif

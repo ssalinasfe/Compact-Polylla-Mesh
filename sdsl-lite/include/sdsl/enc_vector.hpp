@@ -172,7 +172,7 @@ class enc_vector
 	  size_type idx = i/dens;
 	  value_type out =  sample(idx);
 	  size_type rem = i-dens*idx;
-
+	  
 	  *offset = 0;
 	  *d = m_z.data();
 	  
@@ -191,6 +191,54 @@ class enc_vector
         {
             return t_dens;
         }
+
+        //! Return the sum of the elements from init up to end (included)
+        uint64_t get_sum(uint32_t init, uint32_t end)
+        {
+	  assert(end <= m_size);
+	  assert(init >= 0);
+
+	  uint64_t total = 0;
+	  uint8_t offset=0;
+	  const uint64_t* d;     
+	  
+	  uint32_t init_block = init/t_dens+1;
+	  uint32_t end_block = end/t_dens;
+	  uint32_t ub = std::min(end, init_block*t_dens);
+	  
+	  uint64_t val = get_value(&d, &offset, init);
+	  total += val;
+	  
+	  for(int l=init+1; l<ub; l++) {
+	    val += get_diff(&d, &offset);
+	    total += val;
+	  }
+	  
+	  if(end_block >= init_block) {
+	    for(uint j = init_block; j < end_block; j++) {
+	      uint8_t offset;
+	      const uint64_t* d;     
+	      
+	      uint64_t val = get_value(&d, &offset, j*t_dens);
+	      total += val;
+	 
+	      for(int l=1; l<t_dens; l++) {
+		val += get_diff(&d, &offset);
+		total += val;
+	     }
+	    }
+	    
+	    val = get_value(&d, &offset, end_block*t_dens);
+	    total += val;
+	    
+	    for(int l=end_block*t_dens+1; l<end; l++) {
+	      val += get_diff(&d, &offset);
+	      total += val;
+	    }
+	  }
+	  return total;
+        };
+  
 
         /*!
          * \param i The index of the sample for which all values till the next sample should be decoded. 0 <= i < size()/get_sample_dens()
