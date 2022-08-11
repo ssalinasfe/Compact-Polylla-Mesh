@@ -427,7 +427,7 @@ public:
     //Output: the edge associate to the node v
     size_type edge_of_vertex(size_type v)
     {
-        return pemb::first(v);
+        return pemb::mate(pemb::first(v));
     }
     //return the triangle incent to edge e
     triangle incident_face(uint e)
@@ -609,6 +609,10 @@ public:
     this->triangles2 = sdsl::bit_vector(n_halfedges, false);
     for(size_type i=0; i < pemb_faces(); i++)
       triangles2[first_dual(i)] = true;    
+  }
+
+  int degree(size_type v) {
+    return pemb::degree(v);
   }
 
 };

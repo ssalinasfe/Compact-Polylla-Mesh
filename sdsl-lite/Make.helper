@@ -1,7 +1,7 @@
 LIB_DIR = /usr/local/lib
 INC_DIR = /usr/local/include
-MY_CXX_FLAGS= -std=c++11 -march=native -Wall -Wextra -DNDEBUG $(CODE_COVER)
-MY_CXX_OPT_FLAGS= -O3 -ffast-math -funroll-loops -msse4.2 -DHAVE_CXA_DEMANGLE
+MY_CXX_FLAGS= -std=c++11 -march=native -DNDEBUG $(CODE_COVER)
+MY_CXX_OPT_FLAGS= -O3 -ffast-math -funroll-loops -D__extern_always_inline="extern __always_inline"  -msse4.2 -DHAVE_CXA_DEMANGLE
 MY_CXX=/usr/bin/c++
 MY_CC=/usr/bin/cc
 

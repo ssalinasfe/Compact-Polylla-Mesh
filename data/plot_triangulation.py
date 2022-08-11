@@ -131,7 +131,7 @@ def plot_with_halfedges(node_file, hedge_file, output):
                     xytext=(offsetlabel[i][0], offsetlabel[i][1]),  # distance from text to points (x,y)
                     ha='center', 
                     color='b',
-                    size=3)
+                    size=2)
 
     plt.axis("off")   # turns off axes
     plt.axis("tight")  # gets rid of white border
@@ -150,7 +150,7 @@ def plot_with_halfedges(node_file, hedge_file, output):
     #        fancybox=True, shadow=True, ncol=5)
 
     print("[Plotting]  Saving figure in " + output)
-    plt.savefig(output, dpi=1200, bbox_inches='tight')
+    plt.savefig(output, dpi=3600, bbox_inches='tight')
     #plt.show()
 
 
