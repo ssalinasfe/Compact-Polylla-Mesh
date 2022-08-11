@@ -265,41 +265,27 @@ private:
     std::size_t label_max_edge(const std::size_t e)
     {
         
-        //Get vertices of face incident to e
-        triangle face = {tr->origin(e),  tr->origin(tr->next(e)),tr->origin(tr->next(tr->next(e))) };
-
         //Calculates the size of each edge of a triangle 
-        double dist0 = distance(tr->get_PointX(face[0]), tr->get_PointY(face[0]), tr->get_PointX(face[1]), tr->get_PointY(face[1]));
-        double dist1 = distance(tr->get_PointX(face[1]), tr->get_PointY(face[1]), tr->get_PointX(face[2]), tr->get_PointY(face[2]));
-        double dist2 = distance(tr->get_PointX(face[0]), tr->get_PointY(face[0]), tr->get_PointX(face[2]), tr->get_PointY(face[2]));
+        double dist0 = tr->distance(e);
+        double dist1 = tr->distance(tr->next(e));
+        double dist2 = tr->distance(tr->next(tr->next(e)));
+        
         int max;
         //Find the longest edge of the triangle
-        if((dist0 >= dist1 && dist1 >= dist2) || (dist0 >= dist2 && dist2 >= dist1)){
-            max = 0; //edge face[0]-face[1] is max
-        }else if( (dist1 >= dist0 && dist0 >= dist2) || (dist1 >= dist2 && dist2 >= dist0)){
-            max = 1; //edge face[1]-face[2] is max
-        }else if( (dist2 >= dist1 && dist1 >= dist0) || (dist2 >= dist0 && dist0 >= dist1)){
-            max = 2; //edge face[2]-face[0] is max
+        if(std::max({dist0, dist1, dist2}) == dist0)
+            max = 0;
+        else if(std::max({dist0, dist1, dist2}) == dist1)
+            max = 1;
+        else
+            max = 2;
+        if(max == 0){
+            return e;
+        }else if (max == 1){
+            return tr->next(e);
         }else{
-            std::cout<<"ERROR: max edge not found"<<std::endl;
-            exit(0);
+            return tr->next(tr->next(e));
         }
-        std::size_t init_vertex = tr->origin(e);
-        std::size_t curr_vertex = -1;
-        std::size_t nxt = e;
-        // Return the index of the edge with the longest edge
-        while (curr_vertex != init_vertex){
-            nxt = tr->next(nxt);
-            curr_vertex = tr->origin(nxt);
-            if(max == 0 && curr_vertex == face[0]){
-                return nxt;
-            }else if(max == 1 && curr_vertex == face[1]){
-                return nxt;
-            }else if(max == 2 && curr_vertex == face[2]){
-                return nxt;
-            }          
-        }
-        return -1;
+        
     }
 
  
