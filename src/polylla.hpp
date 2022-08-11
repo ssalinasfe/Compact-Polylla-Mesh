@@ -269,23 +269,14 @@ private:
         double dist0 = tr->distance(e);
         double dist1 = tr->distance(tr->next(e));
         double dist2 = tr->distance(tr->next(tr->next(e)));
-        
-        int max;
         //Find the longest edge of the triangle
         if(std::max({dist0, dist1, dist2}) == dist0)
-            max = 0;
-        else if(std::max({dist0, dist1, dist2}) == dist1)
-            max = 1;
-        else
-            max = 2;
-        if(max == 0){
             return e;
-        }else if (max == 1){
+        else if(std::max({dist0, dist1, dist2}) == dist1)
             return tr->next(e);
-        }else{
+        else
             return tr->next(tr->next(e));
-        }
-        
+
     }
 
  
