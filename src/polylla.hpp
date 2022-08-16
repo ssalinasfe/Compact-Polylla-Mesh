@@ -112,21 +112,20 @@ public:
         //std::cout<<"Label done"<<std::endl;
         //std::cout<<"Travel phase"<<std::endl;
         polygon poly;
+        int mesh_edge;
         t_start = std::chrono::high_resolution_clock::now();
         for (int e = 0; e < tr->halfEdges(); e++){
             //for each seed edge
             if(seed_edges[e] == true){
                 poly = travel_triangles(e);
-           //     this->mesh[e] = true;
-           //     m_polygons++; 
                 if(!has_BarrierEdgeTip(poly)){ //If the polygon is a simple polygon then is part of the mesh
-                    this->mesh[e] = true;
+                    mesh_edge = search_frontier_edge(e); // One of the frontier-edges is choosen as seed edge
+                    this->mesh[mesh_edge] = true;
                     m_polygons++; 
                 }else{ //Else, the polygon is send to reparation phase
                     barrieredge_tip_reparation(e, poly);
                 }      
             }
-
         }        
         t_end = std::chrono::high_resolution_clock::now();
         elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
@@ -251,13 +250,6 @@ private:
         }
         return false;
     }
-
-    //Return the lenght of a halfedge
-    double distance(double x1, double y1, double x2, double y2)
-    {
-        return pow(x1-x2,2) + pow(y1-y2,2);
-    }
-
 
     //Label max edges of all triangles in the triangulation
     //input: edge e indicent to a triangle t

@@ -393,6 +393,7 @@ class compressTriangulation: public pemb < > {
     size_type edge_of_vertex(size_type v) {
         return pemb::mate(pemb::first(v));
     }
+    
     //return the triangle incent to edge e
     triangle incident_face(uint e) {
         triangle face;
