@@ -29,10 +29,16 @@ BUGs:
 #ifndef COMPRESSHALFEDGE_HPP
 #define COMPRESSHALFEDGE_HPP
 
+
+#include <sdsl/pemb.hpp>
+#include <complementary/Graph.hpp>
+#include <complementary/utils.hpp>
+
+using namespace sdsl;
+
 class compressTriangulation: public pemb < > {
 
-    public: typedef std::array < uint,
-    3 > triangle;
+    public: typedef std::array < uint, 3 > triangle;
     std::vector < double > points; //nodes
     sdsl::bit_vector triangles; //indices of edges to a unique triangle
     sdsl::bit_vector triangles2; //indices of edges to a unique triangle
@@ -243,6 +249,7 @@ class compressTriangulation: public pemb < > {
 
     //default constructor
     compressTriangulation() {}
+
 
     //Constructor from file
     compressTriangulation(std::string node_file, std::string graph_file): pemb < > () {
