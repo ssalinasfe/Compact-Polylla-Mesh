@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
 
 	std::string off_file = std::string(argv[1]);
 	std::string output_off = std::string(argv[2]);
-	Uncompact::Polylla mesh(off_file);
+	uncompact::Polylla mesh(off_file);
 	mesh.print_OFF(output_off);
 	//std::string node_file = std::string(argv[1]);
 	//std::string graph_file = std::string(argv[2]);
