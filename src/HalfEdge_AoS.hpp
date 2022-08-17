@@ -224,7 +224,9 @@ private:
     
 
     //Generate exterior halfedges
-    //Search border interior edges and convert to exterior halfedges
+    //Literally calculates the convex hull
+    //this takes O(n + k*k), with n the number of interior halfedges and k the number of exterior halfedges
+    //optimize to a version n + k
     void construct_exterior_halfEdges(){
 
         //search interior edges labed as border, generates exterior edges
@@ -261,6 +263,7 @@ private:
         }
         this->n_halfedges = HalfEdges.size();
     }
+
 
     //Generate interior halfedges using a a vector with the faces of the triangulation
     //if an interior half-edge is border, it is mark as border-edge
@@ -684,6 +687,18 @@ public:
         HalfEdges.at(e).face = f;
     }
 
+    int degree(int v)
+    {
+        int e_curr = edge_of_vertex(v);
+        int e_next = CCW_edge_to_vertex(e_curr);
+        int adv = 1;
+        while (e_next != e_curr)
+        {
+            e_next = CCW_edge_to_vertex(e_next);
+            adv++;
+        }
+        return adv;
+    }
 };
 
 #endif
