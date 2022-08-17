@@ -465,16 +465,15 @@ public:
 
     //print the triangulation in pg file format
     void print_pg(std::string file_name){
-        std::cout<<"Printing triangulation in pg format"<<std::endl;
         std::ofstream file;
         file.open(file_name);
         file<< n_vertices <<"\n";
         file<< n_halfedges/2 <<"\n";
-        for(uint i = 0; i < n_vertices; i++){
+        for(size_t i = 0; i < n_vertices; i++){
             vertex v = Vertices.at(i);
-            uint incident = v.incident_halfedge;
-            uint curr = incident;
-            uint twin = HalfEdges.at(curr).twin;
+            int incident = v.incident_halfedge;
+            int curr = incident;
+            int twin = HalfEdges.at(curr).twin;
             //search border edges with v as origin
             if(v.is_border){
                 while(!HalfEdges.at(twin).is_border){
@@ -484,10 +483,8 @@ public:
             }
             
             file<<origin(curr)<<" "<<target(curr)<<"\n";
-            std::cout<<"vertex: "<<i<<" "<<v.is_border<<" "<<origin(curr)<<" "<<target(curr)<<"\n";
-            uint nxt = CCW_edge_to_vertex(curr);            
+            int nxt = CCW_edge_to_vertex(curr);            
             while(nxt != curr){
-                std::cout<<origin(nxt)<<" "<<target(nxt)<<"\n";
                 file<<origin(nxt)<<" "<<target(nxt)<<"\n";
                 nxt = CCW_edge_to_vertex(nxt);
             }
