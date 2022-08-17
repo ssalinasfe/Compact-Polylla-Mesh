@@ -25,7 +25,7 @@
 #include <numeric>
 //#include <compressHalfEdge.hpp>
 //#include <compressHalfEdgeJose.hpp>
-#include <inversedHalfEdge.hpp>
+#include <CompactHalfEdge.hpp>
 #include <chrono>
 
 
@@ -64,12 +64,10 @@ public:
         triangles = tr->get_Triangles();
         mesh = bit_vector(tr->halfEdges(), false);
         
-        //Print info
-        for (int e = 0; e < tr->halfEdges(); e++){
-            std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<", origin: "<<tr->origin(e)<<", target:"<<tr->target(e)<<", "<<tr->twin(e)<<", CW_edge: "<<tr->CW_edge_to_vertex(e)<<", CCW_edge: "<<tr->CCW_edge_to_vertex(e)<<", (new) is_border: "<<tr->is_border(e)<<", is_border_face: "<<tr->is_border_face(e)<<", (new) get_face(e): "<<tr->get_face(e)<<", (new) get_node:"<<tr->get_node(e)<<std::endl;
-        }
-
-        
+        ////Print info
+        //for (int e = 0; e < tr->halfEdges(); e++){
+        //    std::cout<<"edge "<<e<<": next "<<tr->next(e)<<", prev "<<tr->prev(e)<<", origin: "<<tr->origin(e)<<", target:"<<tr->target(e)<<", "<<tr->twin(e)<<", CW_edge: "<<tr->CW_edge_to_vertex(e)<<", CCW_edge: "<<tr->CCW_edge_to_vertex(e)<<", (new) is_border: "<<tr->is_border(e)<<", is_border_face: "<<tr->is_border_face(e)<<", (new) get_face(e): "<<tr->get_face(e)<<", (new) get_node:"<<tr->get_node(e)<<std::endl;
+        //}
 
         std::cout<<"Labeling edges"<<std::endl;
         
@@ -109,8 +107,6 @@ public:
         elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
         std::cout<<"Labeled seed edges in "<<elapsed_time_ms<<" ms"<<std::endl;
         
-        //std::cout<<"Label done"<<std::endl;
-        //std::cout<<"Travel phase"<<std::endl;
         polygon poly;
         int mesh_edge;
         t_start = std::chrono::high_resolution_clock::now();

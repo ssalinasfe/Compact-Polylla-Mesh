@@ -241,8 +241,8 @@ class compressTriangulation: public pemb < > {
 
     public:
 
-        //default constructor
-        compressTriangulation() {}
+    //default constructor
+    compressTriangulation() {}
 
     //Constructor from file
     compressTriangulation(std::string node_file, std::string graph_file): pemb < > () {
@@ -261,13 +261,14 @@ class compressTriangulation: public pemb < > {
         n_halfedges = 2 * m_edges;
         n_vertices = m_vertices;
         //std::cout<<"Halfeges: "<<n_halfedges<<std::endl;
-        this -> triangles = sdsl::bit_vector(n_halfedges, true);
-        generate_list_of_triangles();
-        for (int i = 0; i < n_halfedges; i++) {
-            if (this -> triangles[i] == true) {
-                n_faces++;
-            }
-        }
+        //this -> triangles = sdsl::bit_vector(n_halfedges, true);
+        //generate_list_of_triangles();
+        //for (int i = 0; i < n_halfedges; i++) {
+        //    if (this -> triangles[i] == true) {
+        //        n_faces++;
+        //    }
+        //}
+        this->triangle_list();
         std::cout << "Generating triangle list done" << std::endl;
 
         //       std::cout << std::endl << "\tDFS" << std::endl;
@@ -290,11 +291,11 @@ class compressTriangulation: public pemb < > {
     }
 
     size_type faces() {
-        return n_faces;
+        return pemb_faces();
     }
 
     bit_vector get_Triangles() {
-        return triangles;
+        return triangles2;
     }
 
     double get_PointX(size_type i) {

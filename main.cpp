@@ -9,17 +9,11 @@
 #include <complementary/Graph.hpp>
 #include <complementary/utils.hpp>
 
-
-//#include <compressHalfEdge.hpp>
-#include <polylla.hpp>
-
-//#include <compresshalfedge.hpp>
-//#include <io_void.hpp>
-//#include <delfin.hpp>
-//
+#include <CompactPolylla.hpp>
+#include <HalfEdge_AoS.hpp>
 
 using namespace sdsl;
-//using namespace std;
+
 
 int main(int argc, char **argv) {
 
