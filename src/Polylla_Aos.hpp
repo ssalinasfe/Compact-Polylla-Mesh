@@ -15,6 +15,7 @@
 #include <cmath>
 #include <chrono>
 #include <iomanip>
+#include <algorithm>
 
 #define print_e(eddddge) eddddge<<" ( "<<tr->origin(eddddge)<<" - "<<tr->target(eddddge)<<") "
 
