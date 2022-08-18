@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(compressPolylla)
+project(compactPolylla)
 
-add_subdirectory(sdsl-lite)
+add_subdirectory(external)
 add_subdirectory(src)
 include_directories(src)
 
-add_executable(compressPolylla main.cpp)
+add_executable(compactPolylla main.cpp)
 
-target_link_libraries(compressPolylla PUBLIC voidfiles sdsl)
+target_link_libraries(compactPolylla PUBLIC polyllafiles sdsl)

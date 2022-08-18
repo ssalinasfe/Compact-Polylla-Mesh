@@ -248,7 +248,7 @@ class compressTriangulation: public pemb < >, public Mesh {
         auto t_end = std::chrono::high_resolution_clock::now();
         t_triangulation_generation = std::chrono::duration<double, std::milli>(t_end-t_start).count();    
 
-        delete dfs_order;
+        delete[] dfs_order;
     }
 
     double get_triangulation_generation_time() {

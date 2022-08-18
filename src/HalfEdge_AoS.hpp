@@ -468,6 +468,7 @@ public:
         this->n_halfedges = t.n_halfedges;
         this->Vertices = t.Vertices;
         this->HalfEdges = t.HalfEdges;
+        this-> t_triangulation_generation = t.t_triangulation_generation;
     }
 
     double get_triangulation_generation_time() {

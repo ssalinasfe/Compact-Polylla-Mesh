@@ -163,6 +163,7 @@ public:
         std::cout<<"Time to traversal "<<t_traversal<<" ms"<<std::endl;
         std::cout<<"Time to repair "<<t_repair<<" ms"<<std::endl;
         std::ofstream out(filename);
+        std::cout<<"Printing JSON file as "<<filename<<std::endl;
         out<<"{"<<std::endl;
         out<<"\"time_triangulation_generation\": "<<tr->get_triangulation_generation_time()<<","<<std::endl;
         out<<"\"time_to_label_max_edges\": "<<t_label_max_edges<<","<<std::endl;
@@ -252,6 +253,7 @@ public:
 
     //Print off file of the polylla mesh
     void print_OFF(std::string filename){
+        std::cout<<"Printing OFF file as "<<filename<<std::endl;
         std::ofstream out(filename);
         out<<"{ appearance  {+edge +face linewidth 2} LIST\n";
         out<<"OFF"<<std::endl;
