@@ -154,7 +154,7 @@ public:
         
     }
 
-    void print_time(){
+    void print_time(std::string filename){
         std::cout<<"Time to generate Triangulation: "<<tr->get_triangulation_generation_time()<<" ms"<<std::endl;
         std::cout<<"Time to label max edges "<<t_label_max_edges<<" ms"<<std::endl;
         std::cout<<"Time to label frontier edges "<<t_label_frontier_edges<<" ms"<<std::endl;
@@ -162,6 +162,24 @@ public:
         std::cout<<"Time to traversal and repair "<<t_traversal_and_repair<<" ms"<<std::endl;
         std::cout<<"Time to traversal "<<t_traversal<<" ms"<<std::endl;
         std::cout<<"Time to repair "<<t_repair<<" ms"<<std::endl;
+        std::ofstream out(filename);
+        out<<"{"<<std::endl;
+        out<<"\"time_triangulation_generation\": "<<tr->get_triangulation_generation_time()<<","<<std::endl;
+        out<<"\"time_to_label_max_edges\": "<<t_label_max_edges<<","<<std::endl;
+        out<<"\"time_to_label_frontier_edges\": "<<t_label_frontier_edges<<","<<std::endl;
+        out<<"\"time_to_label_seed_edges\": "<<t_label_seed_edges<<","<<std::endl;
+        out<<"\"time_to_traversal_and_repair\": "<<t_traversal_and_repair<<","<<std::endl;
+        out<<"\"time_to_traversal\": "<<t_traversal<<","<<std::endl;
+        out<<"\"time_to_repair\": "<<t_repair<<","<<std::endl;
+        out<<"\"polygons\": "<<m_polygons<<","<<std::endl;
+        out<<"\"n_frontier_edges\": "<<n_frontier_edges/2<<","<<std::endl;
+        out<<"\"n_barrier_edge_tips\": "<<n_barrier_edge_tips<<std::endl;
+        out<<"\"n_half_edges\": "<<tr->halfEdges()<<std::endl;
+        out<<"\"n_faces\": "<<tr->faces()<<std::endl;
+        out<<"\"n_vertices\": "<<tr->vertices()<<std::endl;
+        out<<"}"<<std::endl;
+        out.close();
+
     }
 
     //function whose input is a vector and print the elements of the vector

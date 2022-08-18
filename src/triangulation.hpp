@@ -6,13 +6,15 @@
 
 class Mesh {
   public:
+
+    virtual int faces() = 0;
+    virtual int halfEdges() = 0;
+    virtual int vertices() = 0;
+
     virtual double get_triangulation_generation_time() = 0;
     virtual double distance(int e) = 0;
     //virtual int CCW_edge_to_vertex(int e) = 0;
     virtual int CW_edge_to_vertex(int e) = 0;
-    //virtual int faces() = 0;
-    virtual int halfEdges() = 0;
-    virtual int vertices() = 0;
     virtual std::vector<int> get_Triangles() = 0;
     virtual double get_PointX(int i) = 0;
     virtual double get_PointY(int i) = 0;
