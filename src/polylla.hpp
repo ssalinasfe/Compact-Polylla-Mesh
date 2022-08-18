@@ -56,38 +56,27 @@ public:
 
     Polylla() {}; //Default constructor
 
+    Polylla(Triangulation *input_mesh){
+        this->tr = input_mesh;
+        construct_Polylla();
+    }
+
     //Constructor from a OFF file
     Polylla(std::string off_file){
-        //std::cout<<"Generating Triangulization..."<<std::endl;
-        auto t_start = std::chrono::high_resolution_clock::now();
         this->tr = new Triangulation(off_file);
-        auto t_end = std::chrono::high_resolution_clock::now();
-        double elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
-        std::cout<<"Triangulation generated "<<elapsed_time_ms<<" ms"<<std::endl;
-        std::cout<<"Triangulation memory "<<sizeof(*tr)<<" bits"<<std::endl;
         construct_Polylla();
     }
 
     //Constructor from a node_file, ele_file and neigh_file
     Polylla(std::string node_file, std::string ele_file, std::string neigh_file){
-        //std::cout<<"Generating Triangulization..."<<std::endl;
-        auto t_start = std::chrono::high_resolution_clock::now();
         this->tr = new Triangulation(node_file, ele_file, neigh_file);
-        auto t_end = std::chrono::high_resolution_clock::now();
-        double elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
-        std::cout<<"Triangulation generated "<<elapsed_time_ms<<" ms"<<std::endl;
-
         construct_Polylla();
     }
 
     //Compact Polylla constructor, from a pg file
     Polylla(std::string node_file, std::string graph_file){
-        //std::cout<<"Generating Triangulization..."<<std::endl;
-        auto t_start = std::chrono::high_resolution_clock::now();
+
         this->tr = new compactTriangulation(node_file, graph_file);
-        auto t_end = std::chrono::high_resolution_clock::now();
-        double elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
-        std::cout<<"Compact Triangulation Generated in "<<elapsed_time_ms<< " ms"<<std::endl;
         construct_Polylla();
       }
 

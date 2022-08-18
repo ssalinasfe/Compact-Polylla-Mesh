@@ -251,6 +251,7 @@ class compactTriangulation: public pemb < >, public Mesh {
         delete[] dfs_order;
     }
 
+
     double get_triangulation_generation_time() {
         return t_triangulation_generation;
     }

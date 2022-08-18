@@ -17,32 +17,25 @@ int main(int argc, char **argv) {
     neigh_file = std::string(argv[3]);
 	output_file = std::string(argv[4]);
 
-	//Generate pg
-	Triangulation plannar(node_file, ele_file, neigh_file);
-	plannar.print_pg(output_file + ".pg");
-	std::cout<<"Pg file generated in "<<plannar.get_triangulation_generation_time()<<" seconds"<<std::endl;
+	//Generate pg and generate triangulation halfedge
+	Triangulation *plannar =  new Triangulation(node_file, ele_file, neigh_file);
+	plannar->print_pg(output_file + ".pg");
+	std::cout<<"Pg file generated in "<<plannar->get_triangulation_generation_time()<<" seconds"<<std::endl;
 	std::cout<<"Memory used: "<<(long long)malloc_count_peak()<<" bytes"<<std::endl;
-	
-//	if(argc  == 4){
-//		node_file = std::string(argv[1]);
-//		graph_file = std::string(argv[2]);
-//		output_file = std::string(argv[3]);
-//		Polylla mesh(node_file, graph_file);
-//	}else if(argc == 5)
-//    {
-//        node_file = std::string(argv[1]);
-//        ele_file = std::string(argv[2]);
-//        neigh_file = std::string(argv[3]);
-//        output_file = std::string(argv[4]);
-//	}else{
-//        std::cout<<"Usage: "<<argv[0]<<" <off file .off> <output name>"<<std::endl;
-//        std::cout<<"Usage: "<<argv[0]<<" <node_file .node> <ele_file .ele> <neigh_file .neigh> <output name>"<<std::endl;
-//        return 0;
-//	}
-//	
-//	mesh.print_OFF(output + ".off");
-//	mesh.print_time(output + ".json");
-//	printf("our peak memory allocation: %lld\n",
-//		(long long)malloc_count_peak());
+
+	//Generate Polylla
+	Polylla *mesh = new Polylla(plannar);
+	mesh->print_time(output_file + ".json");
+	printf("our peak memory allocation: %lld\n", (long long)malloc_count_peak());	
+	delete mesh;
+
+	malloc_count_reset_peak();
+
+	//Generate Compact Polylla
+	Polylla *mesh_compact = new Polylla(node_file, output_file + ".pg");
+	mesh_compact->print_time(output_file + ".json");
+	printf("our peak memory allocation: %lld\n", (long long)malloc_count_peak());	
+	delete mesh_compact;
+
 	return 0;
 }
