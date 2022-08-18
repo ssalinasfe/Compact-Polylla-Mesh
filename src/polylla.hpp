@@ -21,6 +21,8 @@
 
 #include "triangulation.hpp"
 #include "HalfEdge_AoS.hpp"
+#include "CompactHalfEdge.hpp"
+
 
 class Polylla
 {
@@ -40,6 +42,7 @@ private:
     int m_polygons = 0; //Number of polygons
     int n_frontier_edges = 0; //Number of frontier edges
     int n_barrier_edge_tips = 0; //Number of barrier edge tips
+
 public:
 
     Polylla() {}; //Default constructor
@@ -69,15 +72,15 @@ public:
     }
 
     //Compact Polylla constructor, from a pg file
-    //Polylla(std::string node_file, std::string graph_file){
-    //    //std::cout<<"Generating Triangulization..."<<std::endl;
-    //    auto t_start = std::chrono::high_resolution_clock::now();
-    //    this->tr = new compressTriangulation(node_file, graph_file);
-    //    auto t_end = std::chrono::high_resolution_clock::now();
-    //    double elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
-    //    std::cout<<"Compress Triangulation Generated in "<<elapsed_time_ms<< " ms"<<std::endl;
-    //    construct_Polylla();
-    //  }
+    Polylla(std::string node_file, std::string graph_file){
+        //std::cout<<"Generating Triangulization..."<<std::endl;
+        auto t_start = std::chrono::high_resolution_clock::now();
+        this->tr = new compressTriangulation(node_file, graph_file);
+        auto t_end = std::chrono::high_resolution_clock::now();
+        double elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
+        std::cout<<"Compress Triangulation Generated in "<<elapsed_time_ms<< " ms"<<std::endl;
+        construct_Polylla();
+      }
 
     ~Polylla() {
         delete tr;
@@ -86,11 +89,9 @@ public:
     void construct_Polylla(){
         max_edges = bit_vector(tr->halfEdges(), false);
         frontier_edges = bit_vector(tr->halfEdges(), false);
-        //seed_edges = bit_vector(tr->halfEdges(), false);
         triangles = tr->get_Triangles(); //Change by triangle list
 
         //Label max edges of each triangle
-        //for (size_t t = 0; t < tr->faces(); t++){
         auto t_start = std::chrono::high_resolution_clock::now();
         for(auto &t : triangles)
             max_edges[label_max_edge(t)] = true;   

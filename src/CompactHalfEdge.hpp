@@ -34,17 +34,19 @@ BUGs:
 #include <complementary/Graph.hpp>
 #include <complementary/utils.hpp>
 
+
+#include "triangulation.hpp"
 using namespace sdsl;
 
-class compressTriangulation: public pemb < > {
+class compressTriangulation: public pemb < >, public Mesh {
 
     public: typedef std::array < uint, 3 > triangle;
     std::vector < double > points; //nodes
     sdsl::bit_vector triangles; //indices of edges to a unique triangle
     sdsl::bit_vector triangles2; //indices of edges to a unique triangle
-    size_type n_halfedges = 0; //number of halfedges
-    size_type n_faces = 0; //number of faces
-    size_type n_vertices = 0; //number of vertices
+    int n_halfedges = 0; //number of halfedges
+    int n_faces = 0; //number of faces
+    int n_vertices = 0; //number of vertices
 
     private:
         /* methods used to for the construct */
@@ -285,31 +287,28 @@ class compressTriangulation: public pemb < > {
         delete dfs_order;
     }
 
-    size_type halfEdges() {
+    int halfEdges() {
         return n_halfedges;
     }
 
-    size_type vertices() {
+    int vertices() {
         return n_vertices;
     }
 
-    size_type edges() {
+    int edges() {
         return m_edges;
     }
 
-    size_type faces() {
+    int faces() {
         return pemb_faces();
     }
 
-    bit_vector get_Triangles() {
-        return triangles2;
-    }
 
-    double get_PointX(size_type i) {
+    double get_PointX(int i) {
         return points[2 * i];
     }
 
-    double get_PointY(size_type i) {
+    double get_PointY(int i) {
         return points[2 * i + 1];
     }
 
@@ -317,7 +316,7 @@ class compressTriangulation: public pemb < > {
     //Input: e is the edge
     //Output: the next counterclockwise edge of v
     //Equivalent to pemb:next, but added a special case for border edges
-    size_type CCW_edge_to_vertex(size_type e) {
+    int CCW_edge_to_vertex(int e) {
         e = pemb::mate(e);
         size_type nxt = pemb::next(e);
         if (nxt >= n_halfedges) {
@@ -330,7 +329,7 @@ class compressTriangulation: public pemb < > {
     //Input: e is the edge
     //Output: the prev clockwise edge of v
     //This is a custom implementation of the function prev of pemb
-    size_type CW_edge_to_vertex(size_type e) {
+    int CW_edge_to_vertex(int e) {
         e = pemb::mate(e);
         size_type prv = pemb_prev(e);
         size_type last_edge;
@@ -350,7 +349,7 @@ class compressTriangulation: public pemb < > {
     //Calculates the next edge of the face incident to edge e
     //Input: e is the edge
     //Output: the next edge of the face incident to e
-    size_type next(size_type e) {
+    int next(int e) {
         //e = pemb::mate(e);
         //size_type prv = CW_edge_to_vertex(e);
         //size_type mt = pemb::mate(prv);
@@ -361,7 +360,7 @@ class compressTriangulation: public pemb < > {
     //Calculates the prev edge of the face incident to edge e
     //Input: e is the edge
     //Output: the prev edge of the face incident to e
-    size_type prev(size_type e) {
+    int prev(int e) {
         //e = pemb::mate(e);
         //size_type mt = pemb::mate(e);
         //size_type nxt = CCW_edge_to_vertex(mt);
@@ -373,7 +372,7 @@ class compressTriangulation: public pemb < > {
     //Input: e is the edge
     //Output: the head vertex v of the edge e
     //Equivalent to pemb::vertex(mate(e))
-    size_type target(size_type e) {
+    int target(int e) {
         if (e >= 2 * m_edges)
             return -1;
         return pemb::vertex(e);
@@ -382,7 +381,7 @@ class compressTriangulation: public pemb < > {
     //Input: e is the edge
     //Output: the tail vertex v of the edge e
     //Equivalent to pemb::vertex(e)
-    size_type origin(size_type e) {
+    int origin(int e) {
         return pemb::vertex(pemb::mate(e));
         //return get_node(e);
     }
@@ -391,14 +390,14 @@ class compressTriangulation: public pemb < > {
     //Input: e is the edge
     //Output: the twin edge of e
     //Equivalent to pemb::mate(e)
-    size_type twin(size_type e) {
+    int twin(int e) {
         return pemb::mate(e);
     }
 
     //return a edge associate to the node v
     //Input: v is the node
     //Output: the edge associate to the node v
-    size_type edge_of_vertex(size_type v) {
+    int edge_of_vertex(int v) {
         return pemb::mate(pemb::first(v));
     }
     
@@ -460,7 +459,7 @@ class compressTriangulation: public pemb < > {
 //    }
 
     //last(v): return i such that the last edge we process while visiting v is the ith we process during our traversal;
-    size_type pemb_last(size_type v) {
+    int pemb_last(int v) {
         if (v >= 0) {
             size_type match_in_B;
             size_type pos_in_B = m_B_st.select(v + 1); // B.select0
@@ -480,7 +479,7 @@ class compressTriangulation: public pemb < > {
         return -1;
     }
 
-    size_type pemb_prev(size_type i) {
+    int pemb_prev(int i) {
 
         if (i < 1) { //if fist edge then return last edge as prev
             return mate(n_halfedges - 1);
@@ -508,7 +507,7 @@ class compressTriangulation: public pemb < > {
     // m_B_star[i] = 0 means the i-th bracket is closed
 
     // !Return the id of the origin node of the half-edge e
-    size_type get_node(size_type e) {
+    int get_node(int e) {
         size_type pos_in_A = m_A_rank(e + 1); // rank1
 
         if (m_A[e] == 1) { // e is a half-edge of the primal spanning tree
@@ -561,17 +560,21 @@ class compressTriangulation: public pemb < > {
         }
     }
 
-    bool is_border(size_type e) {
+    bool is_border(int e) {
         size_type f = get_face(e);
 
         // The external face has id 0
         return f == 0;
     }
 
-    void triangle_list_bitvector() {
+    void get_Triangles_bitvector() {
         this -> triangles2 = sdsl::bit_vector(n_halfedges, false);
         for (size_type i = 0; i < pemb_faces(); i++)
             triangles2[first_dual(i)] = true;
+    }
+
+    std::vector<int> get_Triangles(){
+        return this->triangle_list();
     }
 
     std::vector<int> triangle_list() {
@@ -581,11 +584,11 @@ class compressTriangulation: public pemb < > {
         return triangles;
     }
 
-    int degree(size_type v) {
+    int degree(int v) {
         return pemb::degree(v);
     }
 
-    int distance(size_type e) {
+    double distance(int e) {
         int org = origin(e);
         int tgt = target(e);
         return pow(get_PointX(org) - get_PointX(tgt), 2) + pow(get_PointY(org) - get_PointY(tgt), 2);
