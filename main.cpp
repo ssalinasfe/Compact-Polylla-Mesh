@@ -26,10 +26,14 @@ int main(int argc, char **argv) {
 	std::string output_hedge_triangulation = std::string(argv[4]);
 	std::string output_hedge_polylla = std::string(argv[5]);
 	std::string output_new_node = std::string(argv[6]);
-	std::cout << "Read files: " << node_file<<" "<< graph_file<<" " << output_off<<" " << output_hedge_polylla<<" " << output_hedge_triangulation<<" " << output_new_node << std::endl;
+	//std::cout << "Read files: " << node_file<<" "<< graph_file<<" " << output_off<<" " << output_hedge_polylla<<" " << output_hedge_triangulation<<" " << output_new_node << std::endl;
 	Polylla mesh(node_file, graph_file);
 	std::cout<<"output off in "<<output_off<<std::endl;
 	mesh.print_OFF(output_off);
+	mesh.print_time();
+
+
+
 	//compressTriangulation(node_file, graph_file);
 	//std::cout<<"output new nodes index in"<<output_new_node<<std::endl;
 	//mesh.print_new_nodes(output_new_node);

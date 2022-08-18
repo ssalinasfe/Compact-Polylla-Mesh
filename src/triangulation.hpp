@@ -6,6 +6,7 @@
 
 class Mesh {
   public:
+    virtual double get_triangulation_generation_time() = 0;
     virtual double distance(int e) = 0;
     //virtual int CCW_edge_to_vertex(int e) = 0;
     virtual int CW_edge_to_vertex(int e) = 0;

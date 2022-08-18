@@ -48,6 +48,8 @@ class compressTriangulation: public pemb < >, public Mesh {
     int n_faces = 0; //number of faces
     int n_vertices = 0; //number of vertices
 
+    double t_triangulation_generation = 0;
+
     private:
         /* methods used to for the construct */
         //Generate compress planar embedding graph
@@ -219,33 +221,6 @@ class compressTriangulation: public pemb < >, public Mesh {
         points = aux;
     }
 
-    //Generate list of uniques faces
-    //The output is a bitvector triangles that containts the edges that generate the triangles
-    //each triangle is generate one time
-    void generate_list_of_triangles() {
-        triangle face;
-        triangle face_aux;
-        for (int e = 0; e < this -> n_halfedges; e++) {
-            if (this -> is_border_face(e))
-                this -> triangles[e] = false;
-            if (this -> triangles[e] == true) {
-                face = this -> incident_face(e);
-                for (int i = e + 1; i < n_halfedges; i++) {
-                    if (this -> is_interior_face(i) && this -> triangles[i] == true) {
-                        face_aux = this -> incident_face(i);
-                        if (i != e && this -> triangles[i] == true) {
-                            bool is_index_1 = face[0] == face_aux[0] || face[0] == face_aux[1] || face[0] == face_aux[2];
-                            bool is_index_2 = face[1] == face_aux[0] || face[1] == face_aux[1] || face[1] == face_aux[2];
-                            bool is_index_3 = face[2] == face_aux[0] || face[2] == face_aux[1] || face[2] == face_aux[2];
-                            if (is_index_1 && is_index_2 && is_index_3) {
-                                this -> triangles[i] = false;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     public:
 
@@ -257,35 +232,29 @@ class compressTriangulation: public pemb < >, public Mesh {
     compressTriangulation(std::string node_file, std::string graph_file): pemb < > () {
 
         Graph g = read_graph_from_file(graph_file.c_str());
-
         std::cout << "Graph done" << std::endl;
+        read_nodes_from_file(node_file);
+        std::cout << "Read nodes done" << std::endl;
+
+        auto t_start = std::chrono::high_resolution_clock::now();
+
         int * dfs_order = new int[g.vertices()];
         construct_pemb(g, dfs_order);
-        //std::cout << "pemb graph done" << std::endl;
-        //read nodes from file
-        read_nodes_from_file(node_file);
-        //std::cout << "reading nodes done" << std::endl;
         change_index_vertices_using_dfs_tree(g.vertices(), dfs_order);
+        std::cout << "pemb done" << std::endl;
         //std::cout << "changing index done" << std::endl;
         n_halfedges = 2 * m_edges;
         n_vertices = m_vertices;
-        //std::cout<<"Halfeges: "<<n_halfedges<<std::endl;
-        //this -> triangles = sdsl::bit_vector(n_halfedges, true);
-        //generate_list_of_triangles();
-        //for (int i = 0; i < n_halfedges; i++) {
-        //    if (this -> triangles[i] == true) {
-        //        n_faces++;
-        //    }
-        //}
-        this->triangle_list();
-        std::cout << "Generating triangle list done" << std::endl;
-
-        //       std::cout << std::endl << "\tDFS" << std::endl;
-        //        for(int i = 0; i < g.vertices(); i++)
-        //            std::cout << "\t" << i << ": " << dfs_order[i] << std::endl;
+        auto t_end = std::chrono::high_resolution_clock::now();
+        t_triangulation_generation = std::chrono::duration<double, std::milli>(t_end-t_start).count();    
 
         delete dfs_order;
     }
+
+    double get_triangulation_generation_time() {
+        return t_triangulation_generation;
+    }
+
 
     int halfEdges() {
         return n_halfedges;
@@ -373,17 +342,18 @@ class compressTriangulation: public pemb < >, public Mesh {
     //Output: the head vertex v of the edge e
     //Equivalent to pemb::vertex(mate(e))
     int target(int e) {
-        if (e >= 2 * m_edges)
-            return -1;
-        return pemb::vertex(e);
+        //if (e >= 2 * m_edges)
+        //    return -1;
+        //return pemb::vertex(e);
+        return get_node(e);
     }
     //Calculates the tail vertex of the edge e
     //Input: e is the edge
     //Output: the tail vertex v of the edge e
     //Equivalent to pemb::vertex(e)
     int origin(int e) {
-        return pemb::vertex(pemb::mate(e));
-        //return get_node(e);
+        //return pemb_last(e);
+        return get_node(pemb::mate(e));
     }
 
     //Return the twin edge of the edge e
@@ -425,38 +395,6 @@ class compressTriangulation: public pemb < >, public Mesh {
         return !is_border(e);
     }
 
-//    //Input: edge e
-//    //Output: true if is the face of e is border face
-//    //        false otherwise
-//    bool is_border_face(int e) {
-//        char flag = 1;
-//        size_type nxt = e;
-//        size_type mt;
-//        size_type init_vertex = pemb::vertex(nxt);
-//        size_type curr_vertex = -1;
-//        size_type i = 0;
-//        while (curr_vertex != init_vertex || flag) {
-//            if (nxt >= 2 * m_edges) {
-//                nxt = pemb::first(pemb::vertex(mt));
-//            }
-//
-//            flag = 0;
-//            mt = pemb::mate(nxt);
-//            curr_vertex = pemb::vertex(mt);
-//            i++;
-//            nxt = pemb::next(mt);
-//            if (i > 4)
-//                return true;
-//        }
-//        return false;
-//    }
-//
-//    // Input: edge e of compressTriangulation
-//    // Output: true if the edge is an interior face a
-//    //         false otherwise
-//    bool is_interior_face(size_type e) {
-//        return !this -> is_border_face(e);
-//    }
 
     //last(v): return i such that the last edge we process while visiting v is the ith we process during our traversal;
     int pemb_last(int v) {

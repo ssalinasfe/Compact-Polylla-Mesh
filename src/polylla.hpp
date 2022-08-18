@@ -43,6 +43,15 @@ private:
     int n_frontier_edges = 0; //Number of frontier edges
     int n_barrier_edge_tips = 0; //Number of barrier edge tips
 
+
+    // Tiempos de ejecución
+    double t_label_max_edges = 0;
+    double t_label_frontier_edges = 0;
+    double t_label_seed_edges = 0;
+    double t_traversal_and_repair = 0;
+    double t_traversal = 0;
+    double t_repair = 0;
+
 public:
 
     Polylla() {}; //Default constructor
@@ -91,13 +100,13 @@ public:
         frontier_edges = bit_vector(tr->halfEdges(), false);
         triangles = tr->get_Triangles(); //Change by triangle list
 
+
         //Label max edges of each triangle
         auto t_start = std::chrono::high_resolution_clock::now();
         for(auto &t : triangles)
             max_edges[label_max_edge(t)] = true;   
         auto t_end = std::chrono::high_resolution_clock::now();
-        double elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
-        std::cout<<"Labered max edges in "<<elapsed_time_ms<<" ms"<<std::endl;
+        t_label_max_edges = std::chrono::duration<double, std::milli>(t_end-t_start).count();        
 
         t_start = std::chrono::high_resolution_clock::now();
         //Label frontier edges
@@ -108,8 +117,7 @@ public:
             }
         }
         t_end = std::chrono::high_resolution_clock::now();
-        elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
-        std::cout<<"Labeled frontier edges in "<<elapsed_time_ms<<" ms"<<std::endl;
+        t_label_frontier_edges = std::chrono::duration<double, std::milli>(t_end-t_start).count();
         
         t_start = std::chrono::high_resolution_clock::now();
         //label seeds edges,
@@ -117,8 +125,7 @@ public:
             if(tr->is_interior_face(e) && is_seed_edge(e))
                 seed_edges.push_back(e);
         t_end = std::chrono::high_resolution_clock::now();
-        elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
-        std::cout<<"Labeled seed edges in "<<elapsed_time_ms<<" ms"<<std::endl;
+        t_label_seed_edges = std::chrono::duration<double, std::milli>(t_end-t_start).count();
 
 
         //Travel phase: Generate polygon mesh
@@ -130,18 +137,31 @@ public:
             if(!has_BarrierEdgeTip(poly)){ //If the polygon is a simple polygon then is part of the mesh
                 polygonal_mesh.push_back(poly);
             }else{ //Else, the polygon is send to reparation phase
+                auto t_start_repair = std::chrono::high_resolution_clock::now();
                 barrieredge_tip_reparation(e, poly);
+                auto t_end_repair = std::chrono::high_resolution_clock::now();
+                t_repair += std::chrono::duration<double, std::milli>(t_end_repair-t_start_repair).count();
             }         
         }    
         t_end = std::chrono::high_resolution_clock::now();
-        elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
-        std::cout<<"Polygons generated/repaired in "<<elapsed_time_ms<<" ms"<<std::endl;
+        t_traversal_and_repair = std::chrono::duration<double, std::milli>(t_end-t_start).count();
+        t_traversal = t_traversal_and_repair - t_repair;
         
         this->m_polygons = polygonal_mesh.size();
 
         std::cout<<"Mesh with "<<m_polygons<<" polygons "<<n_frontier_edges/2<<" edges and "<<n_barrier_edge_tips<<" barrier-edge tips."<<std::endl;
         //tr->print_pg(std::to_string(tr->vertices()) + ".pg");             
         
+    }
+
+    void print_time(){
+        std::cout<<"Time to generate Triangulation: "<<tr->get_triangulation_generation_time()<<" ms"<<std::endl;
+        std::cout<<"Time to label max edges "<<t_label_max_edges<<" ms"<<std::endl;
+        std::cout<<"Time to label frontier edges "<<t_label_frontier_edges<<" ms"<<std::endl;
+        std::cout<<"Time to label seed edges "<<t_label_seed_edges<<" ms"<<std::endl;
+        std::cout<<"Time to traversal and repair "<<t_traversal_and_repair<<" ms"<<std::endl;
+        std::cout<<"Time to traversal "<<t_traversal<<" ms"<<std::endl;
+        std::cout<<"Time to repair "<<t_repair<<" ms"<<std::endl;
     }
 
     //function whose input is a vector and print the elements of the vector
@@ -295,8 +315,6 @@ private:
 
         return false;
     }
-
-
 
 
     //Label max edges of all triangles in the triangulation
