@@ -53,9 +53,8 @@ public:
         this->tr = new compressTriangulation(node_file, graph_file);
         auto t_end = std::chrono::high_resolution_clock::now();
         double elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
-
-
         std::cout<<"Compress Triangulation Generated in "<<elapsed_time_ms<< " ms"<<std::endl;
+        
         max_edges = bit_vector(tr->halfEdges(), false);
         frontier_edges = bit_vector(tr->halfEdges(), false);
         seed_edges = bit_vector(tr->halfEdges(), false);

@@ -418,38 +418,46 @@ class compressTriangulation: public pemb < > {
         return face;
     }
 
-    //Input: edge e
-    //Output: true if is the face of e is border face
-    //        false otherwise
     bool is_border_face(int e) {
-        char flag = 1;
-        size_type nxt = e;
-        size_type mt;
-        size_type init_vertex = pemb::vertex(nxt);
-        size_type curr_vertex = -1;
-        size_type i = 0;
-        while (curr_vertex != init_vertex || flag) {
-            if (nxt >= 2 * m_edges) {
-                nxt = pemb::first(pemb::vertex(mt));
-            }
-
-            flag = 0;
-            mt = pemb::mate(nxt);
-            curr_vertex = pemb::vertex(mt);
-            i++;
-            nxt = pemb::next(mt);
-            if (i > 4)
-                return true;
-        }
-        return false;
+        return is_border(e);
     }
 
-    // Input: edge e of compressTriangulation
-    // Output: true if the edge is an interior face a
-    //         false otherwise
-    bool is_interior_face(size_type e) {
-        return !this -> is_border_face(e);
+    bool is_interior_face(int e) {
+        return !is_border(e);
     }
+
+//    //Input: edge e
+//    //Output: true if is the face of e is border face
+//    //        false otherwise
+//    bool is_border_face(int e) {
+//        char flag = 1;
+//        size_type nxt = e;
+//        size_type mt;
+//        size_type init_vertex = pemb::vertex(nxt);
+//        size_type curr_vertex = -1;
+//        size_type i = 0;
+//        while (curr_vertex != init_vertex || flag) {
+//            if (nxt >= 2 * m_edges) {
+//                nxt = pemb::first(pemb::vertex(mt));
+//            }
+//
+//            flag = 0;
+//            mt = pemb::mate(nxt);
+//            curr_vertex = pemb::vertex(mt);
+//            i++;
+//            nxt = pemb::next(mt);
+//            if (i > 4)
+//                return true;
+//        }
+//        return false;
+//    }
+//
+//    // Input: edge e of compressTriangulation
+//    // Output: true if the edge is an interior face a
+//    //         false otherwise
+//    bool is_interior_face(size_type e) {
+//        return !this -> is_border_face(e);
+//    }
 
     //last(v): return i such that the last edge we process while visiting v is the ith we process during our traversal;
     size_type pemb_last(size_type v) {
@@ -560,10 +568,17 @@ class compressTriangulation: public pemb < > {
         return f == 0;
     }
 
-    void triangle_list() {
+    void triangle_list_bitvector() {
         this -> triangles2 = sdsl::bit_vector(n_halfedges, false);
         for (size_type i = 0; i < pemb_faces(); i++)
             triangles2[first_dual(i)] = true;
+    }
+
+    std::vector<int> triangle_list() {
+        std::vector<int> triangles(pemb_faces());
+        for (size_type i = 0; i < pemb_faces(); i++)
+            triangles.at(i) = first_dual(i);
+        return triangles;
     }
 
     int degree(size_type v) {

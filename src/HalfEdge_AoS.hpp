@@ -33,8 +33,8 @@ TODO:
     constructor indepent of triangle
 */
 
-#ifndef TRIANGULATION_HPP
-#define TRIANGULATION_HPP
+#ifndef HALFEDGE_HPP
+#define HALFEDGE_HPP
 
 #include <array>
 #include <vector>
@@ -44,6 +44,8 @@ TODO:
 #include <sstream>
 #include <unordered_map>
 #include <map>
+
+#include "triangulation.hpp"
 
 struct vertex{
     double x;
@@ -64,7 +66,7 @@ struct halfEdge {
     int is_border; //1 if the halfedge is on the boundary, 0 otherwise
 };
 
-class Triangulation 
+class Triangulation : public Mesh
 {
 
 private:
