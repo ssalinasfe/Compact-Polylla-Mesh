@@ -433,7 +433,7 @@ class compactTriangulation: public pemb < >, public Mesh {
         }
     }
 
-    ~compactTriangulation() {};
+
 
     /******************************/
 

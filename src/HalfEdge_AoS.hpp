@@ -471,10 +471,6 @@ public:
         this-> t_triangulation_generation = t.t_triangulation_generation;
     }
 
-    ~Triangulation() {
-        Vertices.clear();
-        HalfEdges.clear();
-    }
     double get_triangulation_generation_time() {
         return t_triangulation_generation;
     }
