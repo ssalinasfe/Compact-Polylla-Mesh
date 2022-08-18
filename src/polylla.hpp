@@ -56,6 +56,7 @@ public:
 
     Polylla() {}; //Default constructor
 
+    //Constructor with triangulation
     Polylla(Triangulation *input_mesh){
         this->tr = input_mesh;
         construct_Polylla();
@@ -75,10 +76,16 @@ public:
 
     //Compact Polylla constructor, from a pg file
     Polylla(std::string node_file, std::string graph_file){
-
         this->tr = new compactTriangulation(node_file, graph_file);
         construct_Polylla();
-      }
+    }
+
+
+    //Compact Polylla constructor from a compact triangulation
+    Polylla(compactTriangulation *input_mesh){
+        this->tr = input_mesh;
+        construct_Polylla();
+    }
 
     ~Polylla() {
         delete tr;
