@@ -38,7 +38,7 @@ BUGs:
 #include "triangulation.hpp"
 using namespace sdsl;
 
-class compressTriangulation: public pemb < >, public Mesh {
+class compactTriangulation: public pemb < >, public Mesh {
 
     public: typedef std::array < uint, 3 > triangle;
     std::vector < double > points; //nodes
@@ -225,11 +225,11 @@ class compressTriangulation: public pemb < >, public Mesh {
     public:
 
     //default constructor
-    compressTriangulation() {}
+    compactTriangulation() {}
 
 
     //Constructor from file
-    compressTriangulation(std::string node_file, std::string graph_file): pemb < > () {
+    compactTriangulation(std::string node_file, std::string graph_file): pemb < > () {
 
         Graph g = read_graph_from_file(graph_file.c_str());
         std::cout << "Graph done" << std::endl;
@@ -432,7 +432,7 @@ class compressTriangulation: public pemb < >, public Mesh {
         }
     }
 
-    ~compressTriangulation() {};
+    ~compactTriangulation() {};
 
     /******************************/
 
