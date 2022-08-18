@@ -471,16 +471,21 @@ public:
         this-> t_triangulation_generation = t.t_triangulation_generation;
     }
 
+    ~Triangulation() {
+        Vertices.clear();
+        HalfEdges.clear();
+    }
     double get_triangulation_generation_time() {
         return t_triangulation_generation;
     }
 
     //print the triangulation in pg file format
     void print_pg(std::string file_name){
+        std::cout<<"Printing triangulation in pg file format as "<<file_name<<std::endl;
         std::ofstream file;
         file.open(file_name);
         file<< n_vertices <<"\n";
-        file<< n_halfedges <<"\n";
+        file<< n_halfedges/2 <<"\n";
         for(std::size_t i = 0; i < n_vertices; i++){
             vertex v = Vertices.at(i);
             int incident = v.incident_halfedge;
@@ -493,8 +498,9 @@ public:
                     twin = HalfEdges.at(curr).twin;
                 }
             }
+            
             file<<origin(curr)<<" "<<target(curr)<<"\n";
-            int nxt = CCW_edge_to_vertex(curr);
+            int nxt = CCW_edge_to_vertex(curr);            
             while(nxt != curr){
                 file<<origin(nxt)<<" "<<target(nxt)<<"\n";
                 nxt = CCW_edge_to_vertex(nxt);
