@@ -42,8 +42,8 @@ class compactTriangulation: public pemb < >, public Mesh {
 
     public: typedef std::array < uint, 3 > triangle;
     std::vector < double > points; //nodes
-    sdsl::bit_vector triangles; //indices of edges to a unique triangle
-    sdsl::bit_vector triangles2; //indices of edges to a unique triangle
+    //sdsl::bit_vector triangles; //indices of edges to a unique triangle
+    //sdsl::bit_vector triangles2; //indices of edges to a unique triangle
     int n_halfedges = 0; //number of halfedges
     int n_faces = 0; //number of faces
     int n_vertices = 0; //number of vertices
@@ -505,11 +505,11 @@ class compactTriangulation: public pemb < >, public Mesh {
         return f == 0;
     }
 
-    void get_Triangles_bitvector() {
-        this -> triangles2 = sdsl::bit_vector(n_halfedges, false);
-        for (size_type i = 0; i < pemb_faces(); i++)
-            triangles2[first_dual(i)] = true;
-    }
+    //void get_Triangles_bitvector() {
+    //    this -> triangles2 = sdsl::bit_vector(n_halfedges, false);
+    //    for (size_type i = 0; i < pemb_faces(); i++)
+    //        triangles2[first_dual(i)] = true;
+    //}
 
     std::vector<int> get_Triangles(){
         return this->triangle_list();
