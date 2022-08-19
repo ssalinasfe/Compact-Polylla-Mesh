@@ -1,4 +1,7 @@
 {
+"num_vertices": 2500000,
+"num_triangles": 4996057,
+"num_halfedges": 14992112,
 "mem_triangulation": 929528016,
 "mem_polylla": 660525038,
 "mem_compact_triangulation": 526930455,
