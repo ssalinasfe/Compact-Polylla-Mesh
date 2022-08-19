@@ -176,9 +176,9 @@ public:
         out<<"\"time_to_repair\": "<<t_repair<<","<<std::endl;
         out<<"\"polygons\": "<<m_polygons<<","<<std::endl;
         out<<"\"n_frontier_edges\": "<<n_frontier_edges/2<<","<<std::endl;
-        out<<"\"n_barrier_edge_tips\": "<<n_barrier_edge_tips<<std::endl;
-        out<<"\"n_half_edges\": "<<tr->halfEdges()<<std::endl;
-        out<<"\"n_faces\": "<<tr->faces()<<std::endl;
+        out<<"\"n_barrier_edge_tips\": "<<n_barrier_edge_tips<<","<<std::endl;
+        out<<"\"n_half_edges\": "<<tr->halfEdges()<<","<<std::endl;
+        out<<"\"n_faces\": "<<tr->faces()<<","<<std::endl;
         out<<"\"n_vertices\": "<<tr->vertices()<<std::endl;
         out<<"}"<<std::endl;
         out.close();

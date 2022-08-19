@@ -229,18 +229,18 @@ class compactTriangulation: public pemb < >, public Mesh {
 
     //Constructor from file
     compactTriangulation(std::string node_file, std::string graph_file): pemb < > () {
-
+        
         Graph g = read_graph_from_file(graph_file.c_str());
-        std::cout << "Graph done" << std::endl;
+        //std::cout << "Graph done" << std::endl;
         read_nodes_from_file(node_file);
-        std::cout << "Read nodes done" << std::endl;
+        //std::cout << "Read nodes done" << std::endl;
 
         auto t_start = std::chrono::high_resolution_clock::now();
 
         int * dfs_order = new int[g.vertices()];
         construct_pemb(g, dfs_order);
         change_index_vertices_using_dfs_tree(g.vertices(), dfs_order);
-        std::cout << "pemb done" << std::endl;
+        //std::cout << "pemb done" << std::endl;
         //std::cout << "changing index done" << std::endl;
         n_halfedges = 2 * m_edges;
         n_vertices = m_vertices;

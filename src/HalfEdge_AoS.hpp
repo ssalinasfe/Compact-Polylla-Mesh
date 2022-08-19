@@ -160,7 +160,7 @@ private:
             while (std::getline(neighfile, line))
             {
                 if(line[0] == '#'){
-                    std::cout<<line<<std::endl;
+                    //std::cout<<line<<std::endl;
                     continue;
                 }
                 std::istringstream(line) >> a1 >> a2 >> a3 >> a4;
@@ -269,7 +269,7 @@ private:
     //Generate interior halfedges using a a vector with the faces of the triangulation
     //if an interior half-edge is border, it is mark as border-edge
     //mark border-edges
-    void construct_interior_halfEdges_from_faces(std::vector<int> faces){
+    void construct_interior_halfEdges_from_faces(std::vector<int> &faces){
         auto hash_for_pair = [](const std::pair<int, int>& p) {
             return std::hash<int>{}(p.first) ^ std::hash<int>{}(p.second);
         };

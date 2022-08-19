@@ -13,6 +13,12 @@ data/*/*
 !data/10000x10000RandomPoints.py
 !data/generateplannar.cpp
 
+pruebas/*
+pruebas/output/*.pg
+!pruebas/generateMeshes.sh
+!pruebas/generateTriangulations.sh
+!pruebas/output/
+!pruebas/output/*
 
 sdsl-lite/build/CMakeCache.txt
 
