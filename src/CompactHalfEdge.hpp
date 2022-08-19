@@ -53,7 +53,7 @@ class compactTriangulation: public pemb < >, public Mesh {
     private:
         /* methods used to for the construct */
         //Generate compress planar embedding graph
-        void construct_pemb(Graph g, int * dfs_order) {
+        void construct_pemb(Graph &g, int *dfs_order) {
             m_vertices = g.vertices();
             m_edges = g.edges();
 
@@ -76,8 +76,7 @@ class compactTriangulation: public pemb < >, public Mesh {
             bit_vector_type B_local(2 * m_vertices, 0);
             bit_vector_type B_star_local(2 * m_edges - 2 * m_vertices + 4, 0);
 
-            unsigned int * marked_edges = new unsigned
-            int[2 * m_edges - 2 * m_vertices + 2]();
+            unsigned int * marked_edges = new unsigned int[2 * m_edges - 2 * m_vertices + 2]();
             unsigned int idx = 0;
             unsigned int ii = 0;
             unsigned int pos = 0;
@@ -165,8 +164,6 @@ class compactTriangulation: public pemb < >, public Mesh {
 
             B_star_local[0] = 1;
 
-            delete[] marked_edges;
-
             m_A.swap(A_local);
             m_B.swap(B_local);
             m_B_star.swap(B_star_local);
@@ -182,6 +179,11 @@ class compactTriangulation: public pemb < >, public Mesh {
             m_B_st.set_vector( & m_B);
             m_B_star_st.swap(B_star_local_st);
             m_B_star_st.set_vector( & m_B_star);
+            
+            delete[] marked_edges;
+            delete[] parent;
+            delete[] count_edges;
+            delete[] references;
         }
 
     //Read node file in .node format and nodes in point vector
@@ -208,16 +210,13 @@ class compactTriangulation: public pemb < >, public Mesh {
     }
 
     void change_index_vertices_using_dfs_tree(int n, int * dfs_order) {
+
         std::vector < double > aux(points.size());
-
         double x, y;
-
         for (int i = 0; i < n; i++) {
             aux[2 * i] = points[2 * dfs_order[i]];
             aux[2 * i + 1] = points[2 * dfs_order[i] + 1];
-            //std::cout<<"point "<<i<<": "<<aux[2*i]<<" "<<aux[2*i+1]<<", moving "<<dfs_order[i]<<" -> "<<i<<std::endl;
         }
-
         points = aux;
     }
 

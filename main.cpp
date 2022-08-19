@@ -22,6 +22,9 @@ int main(int argc, char **argv){
     neigh_file = std::string(argv[3]);
 	output_file = std::string(argv[4]);
 
+	std::cout<<"Current memory peak: "<<malloc_count_peak()<<std::endl;
+	std::cout<<"Current memory: "<<malloc_count_current()<<std::endl;
+	std::cout<<"---------------------------------"<<std::endl<<std::endl;
 	{
 		//Generate triangulation halfedge
 		Triangulation *plannar =  new Triangulation(node_file, ele_file, neigh_file);
@@ -31,7 +34,6 @@ int main(int argc, char **argv){
 		std::cout<<"Memory of triangulation "<<(long long)malloc_count_current()<<" bytes"<<std::endl;	mem_compact_triangulation = (long long) malloc_count_peak();
 		mem_triangulation = (long long) malloc_count_peak();
 
-		//reset memory counter
 		malloc_count_reset_peak();
 
 		//Generate Polylla
@@ -43,9 +45,10 @@ int main(int argc, char **argv){
 		std::cout<<"Memory of Polylla "<<(long long)malloc_count_current()<<" bytes"<<std::endl;	
 		delete mesh;
 	}
-
+	
 	//reset memoty
 	malloc_count_reset_peak();
+	std::cout<<"Memory after reset "<<(long long)malloc_count_peak()<<" bytes"<<std::endl;
 	
 
 	//Generate compact triangulation

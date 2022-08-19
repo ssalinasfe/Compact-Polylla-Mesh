@@ -38,6 +38,11 @@ public:
     this->E = new Edge[2*m];
   }
 
+  ~Graph () {
+    delete[] V;
+    delete[] E;
+  }
+
   unsigned int vertices() {
     return n;
   }
@@ -234,6 +239,9 @@ public:
     	}
     }
     
+    delete [] visited;
+    delete [] edges;
+
     return t;
   }
 
@@ -270,6 +278,8 @@ public:
     
     cout << "unvisited vertices: " << num_vertices << ", visited vertices: " <<
       n-num_vertices << endl;
+
+      delete [] visited;
   }
 
   int_vector<> ps_tree_encoding() {
@@ -347,6 +357,7 @@ public:
       else if(S[i] == CLOSE_PAR) S[i] = OPEN_PAR;
     }
 
+    delete [] visited;
     return S;
   }
   

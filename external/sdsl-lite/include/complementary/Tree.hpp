@@ -27,6 +27,11 @@ public:
     this->E = new Edge[2*(n-1)];
   }
   
+  ~Tree() {
+    delete[] V;
+    delete[] E;
+  }
+
   unsigned int nodes() {
     return n;
   }
@@ -102,34 +107,34 @@ public:
 
     while(!s.empty() || first) {
       if(first) { // Root
-	par = -1;
-	curr = 0;
-	first = 0;
-      }
-      else {
-	edge = s.top();s.pop();
-	par = this->E[edge].getSrc(); // parent
-	curr = this->E[edge].getTgt(); // current
+        par = -1;
+        curr = 0;
+        first = 0;
+            }
+            else {
+        edge = s.top();s.pop();
+        par = this->E[edge].getSrc(); // parent
+        curr = this->E[edge].getTgt(); // current
       }
     
       visited[curr] = 1;
 
       for(unsigned int i = this->V[curr].getFirst(); i <=
 	    this->V[curr].getLast(); i++) {
-	edges[i] = 1;
-	if(!visited[this->E[i].getTgt()])
-	  s.push(i);      
-	else if(par != (int)this->E[i].getTgt() && par != -1) {
-	  cout << "\tThe tree has cycles!" << endl;
-	  return 1;
-	}
+      edges[i] = 1;
+      if(!visited[this->E[i].getTgt()])
+        s.push(i);      
+      else if(par != (int)this->E[i].getTgt() && par != -1) {
+        cout << "\tThe tree has cycles!" << endl;
+        return 1;
+      }
       }
     }
 
     unsigned int unvisited = 0;
     for(unsigned int i = 0; i < n; i++)
       if(visited[i] == 0) { // There are unvisited nodes
-	unvisited++;
+	    unvisited++;
       }
     
     if(unvisited > 0) {
@@ -147,6 +152,9 @@ public:
       return 1;
     }
     
+    delete[] visited;
+    delete[] edges;
+
     return 0;
   }
 

@@ -224,6 +224,10 @@ namespace sdsl
 				B_star_local[0] = 1;
 
 				delete[] marked_edges;
+				delete [] parent;
+				delete [] count_edges;
+				delete [] references;
+
 
 				m_A.swap(A_local);
 				m_B.swap(B_local);

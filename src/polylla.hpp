@@ -88,6 +88,12 @@ public:
     }
 
     ~Polylla() {
+        polygonal_mesh.clear(); 
+        triangles.clear(); 
+        max_edges.clear(); 
+        frontier_edges.clear();
+        seed_edges.clear(); 
+
         delete tr;
     }
 

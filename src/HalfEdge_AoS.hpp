@@ -192,7 +192,7 @@ private:
 
     //Generate interior halfedges using faces and neigh vectors
     //also associate each vertex with an incident halfedge
-    void construct_interior_halfEdges_from_faces_and_neighs(std::vector<int> faces, std::vector<int> neighs){
+    void construct_interior_halfEdges_from_faces_and_neighs(std::vector<int> &faces, std::vector<int> &neighs){
         int neigh, origin, target;
         for(std::size_t i = 0; i < n_faces; i++){
             for(std::size_t j = 0; j < 3; j++){
@@ -469,6 +469,12 @@ public:
         this->Vertices = t.Vertices;
         this->HalfEdges = t.HalfEdges;
         this-> t_triangulation_generation = t.t_triangulation_generation;
+    }
+
+    // destructor
+    ~Triangulation() {
+        Vertices.clear();
+        HalfEdges.clear();
     }
 
     double get_triangulation_generation_time() {
