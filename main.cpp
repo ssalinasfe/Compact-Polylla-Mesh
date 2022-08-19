@@ -19,6 +19,7 @@ int main(int argc, char **argv){
 	std::string node_file, ele_file, neigh_file, graph_file, output_file;
 	long long mem_triangulation, mem_polylla, mem_compact_triangulation, mem_compact_polylla;
 	long long mem_gen_triangulation, mem_gen_polylla, mem_gen_compact_triangulation, mem_gen_compact_polylla;
+	long num_vertices, num_triangles, num_halfedges;
 
 	//Read input names
     node_file = std::string(argv[1]);
@@ -43,6 +44,10 @@ int main(int argc, char **argv){
 		mem_gen_triangulation = (long long) malloc_count_current();
 		std::cout<<"---------------------------------"<<std::endl;
 		malloc_count_reset_peak();
+
+		num_vertices = plannar->vertices();
+		num_triangles = plannar->faces();
+		num_halfedges = plannar->halfEdges();
 
 		//Generate Polylla
 		Polylla *mesh = new Polylla(plannar);
@@ -92,6 +97,9 @@ int main(int argc, char **argv){
 	std::ofstream file;
     file.open(output_file + "_mem.json");
 	file<<"{"<<std::endl;
+	file<<"\"num_vertices\": "<<num_vertices<<","<<std::endl;
+	file<<"\"num_triangles\": "<<num_triangles<<","<<std::endl;
+	file<<"\"num_halfedges\": "<<num_halfedges<<","<<std::endl;
 	file<<"\"mem_triangulation\": "<<mem_triangulation<<","<<std::endl;
 	file<<"\"mem_polylla\": "<<mem_polylla<<","<<std::endl;
 	file<<"\"mem_compact_triangulation\": "<<mem_compact_triangulation<<","<<std::endl;

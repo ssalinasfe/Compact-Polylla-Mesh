@@ -1,0 +1,10 @@
+{
+"mem_triangulation": 929528016,
+"mem_polylla": 660525038,
+"mem_compact_triangulation": 526930455,
+"mem_compact_polylla": 166332866,
+"mem_gen_triangulation": 539780330,
+"mem_gen_polylla": 645532974,
+"mem_gen_compact_triangulation": 45588354,
+"mem_gen_compact_polylla": 151340558
+}
