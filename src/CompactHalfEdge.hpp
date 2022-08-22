@@ -301,10 +301,8 @@ class compactTriangulation: public pemb < >, public Mesh {
     int CW_edge_to_vertex(int e) {
         e = pemb::mate(e);
         size_type prv = pemb_prev(e);
-        size_type last_edge;
         if (prv >= n_halfedges) {
-
-            last_edge = pemb_last(pemb::vertex(e));
+            size_type last_edge = pemb_last(pemb::vertex(e));
             //Especial case only detected in border edges
             if (last_edge == e) {
                 prv = pemb::mate(e - 1);
