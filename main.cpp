@@ -19,6 +19,7 @@ int main(int argc, char **argv){
 	std::string node_file, ele_file, neigh_file, graph_file, output_file;
 	long long mem_triangulation, mem_polylla, mem_compact_triangulation, mem_compact_polylla;
 	long long mem_gen_triangulation, mem_gen_polylla, mem_gen_compact_triangulation, mem_gen_compact_polylla;
+	long long mem_initial;
 	long num_vertices, num_triangles, num_halfedges;
 
 	//Read input names
@@ -32,7 +33,7 @@ int main(int argc, char **argv){
 	std::cout<<"Current memory peak: "<<malloc_count_peak()<<std::endl;
 	std::cout<<"Current memory: "<<malloc_count_current()<<std::endl;
 	std::cout<<"---------------------------------"<<std::endl<<std::endl;
-
+	mem_initial = malloc_count_current();
 	{
 		//Generate triangulation halfedge
 		Triangulation *plannar =  new Triangulation(node_file, ele_file, neigh_file);
@@ -59,9 +60,8 @@ int main(int argc, char **argv){
 		std::cout<<"---------------------------------"<<std::endl;
 		mesh->print_time(output_file + "_time.json");
 		std::cout<<"---------------------------------"<<std::endl;
+		//mesh->print_OFF(output_file + ".off");
 		delete mesh;
-		
-
 	}
 	
 	//reset memoty
@@ -100,6 +100,7 @@ int main(int argc, char **argv){
 	file<<"\"num_vertices\": "<<num_vertices<<","<<std::endl;
 	file<<"\"num_triangles\": "<<num_triangles<<","<<std::endl;
 	file<<"\"num_halfedges\": "<<num_halfedges<<","<<std::endl;
+	file<<"\"mem_initial\": "<<mem_initial<<","<<std::endl;
 	file<<"\"mem_triangulation\": "<<mem_triangulation<<","<<std::endl;
 	file<<"\"mem_polylla\": "<<mem_polylla<<","<<std::endl;
 	file<<"\"mem_compact_triangulation\": "<<mem_compact_triangulation<<","<<std::endl;
