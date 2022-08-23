@@ -11,5 +11,5 @@ do
     output="points_${num_vertices}.1"
     echo -n "Generating mesh... with ${i} vertices "
     ./compactPolylla ${node_file} ${ele_file} ${neigh_file} ${file_folder}${output}
-    i=$(($i + 500000 ))
+    i=$(($i + 1000000 ))
 done

@@ -14,11 +14,11 @@ data/*/*
 !data/generateplannar.cpp
 
 pruebas/*
-pruebas/output/*.pg
+pruebas/output/*.1.pg
 !pruebas/generateMeshes.sh
 !pruebas/generateTriangulations.sh
 !pruebas/output/
-!pruebas/output/*
+!pruebas/output/*.json
 
 sdsl-lite/build/CMakeCache.txt
 
