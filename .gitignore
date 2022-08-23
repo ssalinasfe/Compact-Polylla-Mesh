@@ -20,6 +20,7 @@ pruebas/output/*.1.pg
 !pruebas/generateAll.sh
 !pruebas/output/
 !pruebas/output/*.json
+!pruebas/randomPoints.py
 
 sdsl-lite/build/CMakeCache.txt
 
