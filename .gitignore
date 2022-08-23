@@ -17,6 +17,7 @@ pruebas/*
 pruebas/output/*.1.pg
 !pruebas/generateMeshes.sh
 !pruebas/generateTriangulations.sh
+!pruebas/generateAll.sh
 !pruebas/output/
 !pruebas/output/*.json
 
