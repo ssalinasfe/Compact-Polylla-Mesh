@@ -56,6 +56,8 @@ int main(int argc, char **argv){
 		mem_polylla = (long long) malloc_count_current();
 		mem_gen_polylla = (long long) malloc_count_peak();
 		
+		mesh->print_OFF(output_file + ".off");
+
 		std::cout<<"Memory used to generate Polylla "<<(long long)malloc_count_peak()<<" bytes"<<std::endl;
 		std::cout<<"Memory of Polylla "<<(long long)malloc_count_current()<<" bytes"<<std::endl;	
 		std::cout<<"---------------------------------"<<std::endl;
@@ -97,6 +99,7 @@ int main(int argc, char **argv){
 	std::cout<<"---------------------------------"<<std::endl;
 	mesh_compact->print_time(output_file + "_time_compact.json");
 	std::cout<<"---------------------------------"<<std::endl;
+	mesh_compact->print_OFF(output_file + ".off");
 	delete mesh_compact;
 
 	std::ofstream file;

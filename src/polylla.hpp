@@ -109,12 +109,20 @@ public:
         triangles = tr->get_Triangles(); //Change by triangle list
         seed_bet_mark = bit_vector(this->tr->halfEdges(), false);
 
-        //Label max edges of each triangle
+        ////Label max edges of each triangle
+        //auto t_start = std::chrono::high_resolution_clock::now();
+        //for(auto &t : triangles)
+        //    max_edges[label_max_edge(t)] = true;   
+        //auto t_end = std::chrono::high_resolution_clock::now();
+        //t_label_max_edges = std::chrono::duration<double, std::milli>(t_end-t_start).count();        
+
+        ////Label max edges of each triangle
         auto t_start = std::chrono::high_resolution_clock::now();
-        for(auto &t : triangles)
-            max_edges[label_max_edge(t)] = true;   
+        for(int i = 0; i < tr->faces(); i++)
+            max_edges[label_max_edge(tr->incident_halfedge(i))] = true;
         auto t_end = std::chrono::high_resolution_clock::now();
         t_label_max_edges = std::chrono::duration<double, std::milli>(t_end-t_start).count();        
+
 
         t_start = std::chrono::high_resolution_clock::now();
         //Label frontier edges

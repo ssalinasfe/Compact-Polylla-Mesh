@@ -29,6 +29,7 @@ class Mesh {
     //virtual bool is_border_vertex(int v) = 0;
     virtual int degree(int v) = 0;
     
+    virtual int incident_halfedge(int f)= 0;
     //Destructor
     virtual ~Mesh(){ };
 

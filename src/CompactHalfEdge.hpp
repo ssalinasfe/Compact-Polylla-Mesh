@@ -246,11 +246,6 @@ class compactTriangulation: public pemb < >, public Mesh {
         n_vertices = m_vertices;
         auto t_end = std::chrono::high_resolution_clock::now();
         t_triangulation_generation = std::chrono::duration<double, std::milli>(t_end-t_start).count();    
-
-        std::cout<<"---------------------------------"<<std::endl;
-        std::cout << "Size nodes" << points.size()*sizeof(double)  << std::endl;
-        std::cout<<"---------------------------------"<<std::endl;
-
         delete[] dfs_order;
     }
 
@@ -483,7 +478,7 @@ class compactTriangulation: public pemb < >, public Mesh {
     }
 
     // !Return the id of the incident face to the half-edge e
-    size_type get_face(size_type e) {
+    int get_face(int e) {
         size_type pos_in_A = e + 1 - m_A_rank(e + 1); // rank0
 
         if (m_A[e] == 0) { // e is a half-edge of the dual spanning tree
@@ -542,6 +537,11 @@ class compactTriangulation: public pemb < >, public Mesh {
         int tgt = target(e);
         return pow(get_PointX(org) - get_PointX(tgt), 2) + pow(get_PointY(org) - get_PointY(tgt), 2);
         //return abs(get_PointX(org) - get_PointX(tgt)) + abs(get_PointY(org) - get_PointY(tgt));
+    }
+
+    int incident_halfedge(int f)
+    {
+        return first_dual(f);
     }
 };
 

@@ -717,6 +717,12 @@ public:
         }
         return adv;
     }
+
+    int incident_halfedge(int f)
+    {
+        return 3*f;
+    }
+
 };
 
 #endif
