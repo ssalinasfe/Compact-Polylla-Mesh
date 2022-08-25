@@ -247,14 +247,27 @@ class compactTriangulation: public pemb < >, public Mesh {
         auto t_end = std::chrono::high_resolution_clock::now();
         t_triangulation_generation = std::chrono::duration<double, std::milli>(t_end-t_start).count();    
 
+        std::cout<<"---------------------------------"<<std::endl;
+        std::cout << "Size nodes" << points.size()*sizeof(double)  << std::endl;
+        std::cout<<"---------------------------------"<<std::endl;
+
         delete[] dfs_order;
     }
+
 
 
     double get_triangulation_generation_time() {
         return t_triangulation_generation;
     }
 
+    long long get_size_nodes() {
+        return sizeof(decltype(points.back())) * points.capacity();
+    }
+
+    long long get_size_pemb() {
+        nullstream ns;
+        return pemb::serialize(ns);
+    }
 
     int halfEdges() {
         return n_halfedges;

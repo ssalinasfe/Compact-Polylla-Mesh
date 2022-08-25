@@ -3,12 +3,12 @@
 "num_triangles": 19992081,
 "num_halfedges": 59984160,
 "mem_initial": 1118,
-"mem_triangulation": 3719050903,
-"mem_polylla": 2656051198,
-"mem_compact_triangulation": 2108080574,
-"mem_compact_polylla": 678672662,
-"mem_gen_triangulation": 2159557678,
-"mem_gen_polylla": 2642680382,
-"mem_gen_compact_triangulation": 182225614,
-"mem_gen_compact_polylla": 665349850
+"mem_triangulation": 2159557678,
+"mem_polylla": 2642680382,
+"mem_compact_triangulation": 182225614,
+"mem_compact_polylla": 665349850,
+"mem_gen_triangulation": 3719050903,
+"mem_gen_polylla": 2656051198,
+"mem_gen_compact_triangulation": 2108080574,
+"mem_gen_compact_polylla": 678672662
 }

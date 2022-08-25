@@ -19,6 +19,7 @@ int main(int argc, char **argv){
 	std::string node_file, ele_file, neigh_file, graph_file, output_file;
 	long long mem_triangulation, mem_polylla, mem_compact_triangulation, mem_compact_polylla;
 	long long mem_gen_triangulation, mem_gen_polylla, mem_gen_compact_triangulation, mem_gen_compact_polylla;
+	long long mem_pemb, mem_nodes;
 	long long mem_initial;
 	long num_vertices, num_triangles, num_halfedges;
 
@@ -54,7 +55,7 @@ int main(int argc, char **argv){
 		Polylla *mesh = new Polylla(plannar);
 		mem_polylla = (long long) malloc_count_current();
 		mem_gen_polylla = (long long) malloc_count_peak();
-
+		
 		std::cout<<"Memory used to generate Polylla "<<(long long)malloc_count_peak()<<" bytes"<<std::endl;
 		std::cout<<"Memory of Polylla "<<(long long)malloc_count_current()<<" bytes"<<std::endl;	
 		std::cout<<"---------------------------------"<<std::endl;
@@ -73,11 +74,15 @@ int main(int argc, char **argv){
 	compactTriangulation *compact = new compactTriangulation(node_file, output_file + ".pg");
 	mem_compact_triangulation = (long long) malloc_count_current();
 	mem_gen_compact_triangulation = (long long) malloc_count_peak();
+	mem_pemb = compact->get_size_pemb();
+	mem_nodes = compact->get_size_nodes();
 
 	std::cout<<"---------------------------------"<<std::endl;
 	std::cout<<"Compact Triangulation generated in "<<compact->get_triangulation_generation_time()<<" seconds"<<std::endl;
 	std::cout<<"Memory used to generate compact mesh "<<(long long)malloc_count_peak()<<" bytes"<<std::endl;
 	std::cout<<"Memory of compact mesh "<<(long long)malloc_count_current()<<" bytes"<<std::endl;	
+	std::cout<<"Memory of pemb serialize "<<compact->get_size_pemb()<<" bytes"<<std::endl;	
+	std::cout<<"Memory of nodes of compact mesh "<<compact->get_size_nodes()<<" bytes"<<std::endl;	
 	std::cout<<"---------------------------------"<<std::endl;
 	//reset memory counter
 	malloc_count_reset_peak();
@@ -108,7 +113,9 @@ int main(int argc, char **argv){
 	file<<"\"mem_gen_triangulation\": "<<mem_gen_triangulation<<","<<std::endl;
 	file<<"\"mem_gen_polylla\": "<<mem_gen_polylla<<","<<std::endl;
 	file<<"\"mem_gen_compact_triangulation\": "<<mem_gen_compact_triangulation<<","<<std::endl;
-	file<<"\"mem_gen_compact_polylla\": "<<mem_gen_compact_polylla<<std::endl;
+	file<<"\"mem_gen_compact_polylla\": "<<mem_gen_compact_polylla<<","<<std::endl;
+	file<<"\"mem_pemb\": "<<mem_pemb<<","<<std::endl;
+	file<<"\"mem_nodes\": "<<mem_nodes<<std::endl;
 	file<<"}";
 	file.close();
 

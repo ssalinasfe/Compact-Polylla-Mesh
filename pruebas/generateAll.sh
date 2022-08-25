@@ -20,7 +20,7 @@ do
     echo -n "Generating mesh with ${i} vertices "
     ./compactPolylla ${node_file} ${ele_file} ${neigh_file} ${file_folder}${output}
 
-    (eval "rm ${file_folder}/points_$i.pg")
+    (eval "rm ${file_folder}points_$i.pg")
 
     i=$(($i + 1000000 ))
 
