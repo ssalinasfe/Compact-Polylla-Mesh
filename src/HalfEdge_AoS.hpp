@@ -481,6 +481,14 @@ public:
         return t_triangulation_generation;
     }
 
+    long long get_size_vertex_struct() {
+        return sizeof(decltype(Vertices.back())) * Vertices.capacity();
+    }
+
+    long long get_size_vertex_half_edge() {
+        return sizeof(decltype(HalfEdges.back())) * HalfEdges.capacity();
+    }
+
     //print the triangulation in pg file format
     void print_pg(std::string file_name){
         std::cout<<"Printing triangulation in pg file format as "<<file_name<<std::endl;

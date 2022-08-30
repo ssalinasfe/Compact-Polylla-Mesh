@@ -170,6 +170,7 @@ public:
         
     }
 
+
     void print_time(std::string filename){
         std::cout<<"Time to generate Triangulation: "<<tr->get_triangulation_generation_time()<<" ms"<<std::endl;
         std::cout<<"Time to label max edges "<<t_label_max_edges<<" ms"<<std::endl;
