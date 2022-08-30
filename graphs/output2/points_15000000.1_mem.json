@@ -1,0 +1,16 @@
+{
+"num_vertices": 15000000,
+"num_triangles": 29990159,
+"num_halfedges": 89980316,
+"mem_initial": 1305,
+"mem_triangulation": 2879450233,
+"mem_polylla": 3662892149,
+"mem_compact_triangulation": 273271057,
+"mem_compact_polylla": 1056755569,
+"mem_gen_triangulation": 4858938728,
+"mem_gen_polylla": 3743016125,
+"mem_gen_compact_triangulation": 3164804009,
+"mem_gen_compact_polylla": 1136555021,
+"mem_pemb": 30933194,
+"mem_nodes": 240000000
+}

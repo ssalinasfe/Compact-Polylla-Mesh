@@ -1,0 +1,17 @@
+{
+"time_triangulation_generation": 14059.7,
+"time_to_label_max_edges": 22378,
+"time_to_label_frontier_edges": 8343.49,
+"time_to_label_seed_edges": 10718,
+"time_to_label_total": 41439.5,
+"time_to_traversal_and_repair": 18406.4,
+"time_to_traversal": 16192.9,
+"time_to_repair": 2213.43,
+"time_to_generate_polygonal_mesh": 59845.9,
+"polygons": 4837501,
+"n_frontier_edges": 19839410,
+"n_barrier_edge_tips": 298871,
+"n_half_edges": 89980316,
+"n_faces": 29990159,
+"n_vertices": 15000000
+}

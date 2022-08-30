@@ -41,7 +41,8 @@ int main(int argc, char **argv){
 		plannar->print_pg(output_file + ".pg");
 		std::cout<<"Triangulation generated in "<<plannar->get_triangulation_generation_time()<<" seconds"<<std::endl;
 		std::cout<<"Memory used to generate triangulation "<<(long long)malloc_count_peak()<<" bytes"<<std::endl;
-		std::cout<<"Memory of triangulation "<<(long long)malloc_count_current()<<" bytes"<<std::endl;	mem_compact_triangulation = (long long) malloc_count_peak();
+		std::cout<<"Memory of triangulation "<<(long long)malloc_count_current()<<" bytes"<<std::endl;	
+
 		mem_triangulation = (long long) malloc_count_current();
 		mem_gen_triangulation = (long long) malloc_count_peak();
 		std::cout<<"---------------------------------"<<std::endl;
